@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 import ReadNext from '../ReadNext';
+import CommentThread from '../CommentThread';
 import './style.css';
 import '../../static/css/highlight.css';
 
@@ -27,6 +28,10 @@ class SitePost extends React.Component {
             <div className="date-published">
               <em>Published {moment(post.date).format('D MMM YYYY')}</em>
             </div>
+            <CommentThread
+              post={post}
+              forumName={config.disqusForumName}
+            />
           </div>
           <div className="footer">
             <ReadNext post={post} {...this.props} />

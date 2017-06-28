@@ -53,11 +53,16 @@
 	line-height: 31px;
 	margin-bottom: 31px;
 }
-.blog-single h1, .blog-single .date-published, .blog-single .text *:not(div) {
+.blog-single h1, .blog-single .date-published, .blog-single .text, .blog-single .comment-thread *:not(div) {
 	max-width: 630px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.blog-single .comment-thread {
+	margin-top: 20px;
+}
+
 .blog-single .text img {
 	max-width: 100%;
 	height: auto;
@@ -94,7 +99,7 @@
 	.blog-single h1 {
 		margin-top: 15px;
 	}
-	.blog-single .text, .blog-single .footer {
+	.blog-single .text, .blog-single .comment-thread, .blog-single .footer {
 		padding: 0 15px;
 		line-height: 26px;
 		margin-bottom: 26px;
