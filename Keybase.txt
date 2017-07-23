@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/nickytonline
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://iamdeveloper.com
+  * I am nickytonline (https://keybase.io/nickytonline) on keybase.
+  * I have a public key ASBEWNdvh5sdoMlT4StLMkid8-ZPj6_B1YaHLB15-j9SHwo
+
+To do so, I am signing this object:
+
+{
+    &quot;body&quot;: {
+        &quot;key&quot;: {
+            &quot;eldest_kid&quot;: &quot;0120a5a58be023e71a6a66e4551139db453f016931c9f2234fb5119850eaa433c3b50a&quot;,
+            &quot;host&quot;: &quot;keybase.io&quot;,
+            &quot;kid&quot;: &quot;01204458d76f879b1da0c953e12b4b32489df3e64f8fafc1d586872c1d79fa3f521f0a&quot;,
+            &quot;uid&quot;: &quot;4f71d610f16a2678ce302707fe682519&quot;,
+            &quot;username&quot;: &quot;nickytonline&quot;
+        },
+        &quot;merkle_root&quot;: {
+            &quot;ctime&quot;: 1500770528,
+            &quot;hash&quot;: &quot;8cef6f054bc1ff1cb314bc126e50cf7730dbd5127411c77c5e14aef9f5b158ba70df4ede17ec6bbfc7fda341908e6998a6114c97b2ead3e1bbf83dbdc47d1ee9&quot;,
+            &quot;hash_meta&quot;: &quot;6a414e9731d532ccff4cbcf9c981105148b4de16cb9f55b35133a588dbcba560&quot;,
+            &quot;seqno&quot;: 1272857
+        },
+        &quot;service&quot;: {
+            &quot;hostname&quot;: &quot;iamdeveloper.com&quot;,
+            &quot;protocol&quot;: &quot;http:&quot;
+        },
+        &quot;type&quot;: &quot;web_service_binding&quot;,
+        &quot;version&quot;: 1
+    },
+    &quot;client&quot;: {
+        &quot;name&quot;: &quot;keybase.io go client&quot;,
+        &quot;version&quot;: &quot;1.0.25&quot;
+    },
+    &quot;ctime&quot;: 1500770586,
+    &quot;expire_in&quot;: 504576000,
+    &quot;prev&quot;: &quot;cbcee173c05b78158740c801a34c835011a9c75be90cd181c2657ba914a7d432&quot;,
+    &quot;seqno&quot;: 19,
+    &quot;tag&quot;: &quot;signature&quot;
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRFjXb4ebHaDJU+ErSzJInfPmT4+vwdWGhywdefo/Uh8Kp3BheWxvYWTFA0x7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYTVhNThiZTAyM2U3MWE2YTY2ZTQ1NTExMzlkYjQ1M2YwMTY5MzFjOWYyMjM0ZmI1MTE5ODUwZWFhNDMzYzNiNTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNDQ1OGQ3NmY4NzliMWRhMGM5NTNlMTJiNGIzMjQ4OWRmM2U2NGY4ZmFmYzFkNTg2ODcyYzFkNzlmYTNmNTIxZjBhIiwidWlkIjoiNGY3MWQ2MTBmMTZhMjY3OGNlMzAyNzA3ZmU2ODI1MTkiLCJ1c2VybmFtZSI6Im5pY2t5dG9ubGluZSJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUwMDc3MDUyOCwiaGFzaCI6IjhjZWY2ZjA1NGJjMWZmMWNiMzE0YmMxMjZlNTBjZjc3MzBkYmQ1MTI3NDExYzc3YzVlMTRhZWY5ZjViMTU4YmE3MGRmNGVkZTE3ZWM2YmJmYzdmZGEzNDE5MDhlNjk5OGE2MTE0Yzk3YjJlYWQzZTFiYmY4M2RiZGM0N2QxZWU5IiwiaGFzaF9tZXRhIjoiNmE0MTRlOTczMWQ1MzJjY2ZmNGNiY2Y5Yzk4MTEwNTE0OGI0ZGUxNmNiOWY1NWIzNTEzM2E1ODhkYmNiYTU2MCIsInNlcW5vIjoxMjcyODU3fSwic2VydmljZSI6eyJob3N0bmFtZSI6ImlhbWRldmVsb3Blci5jb20iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjI1In0sImN0aW1lIjoxNTAwNzcwNTg2LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6ImNiY2VlMTczYzA1Yjc4MTU4NzQwYzgwMWEzNGM4MzUwMTFhOWM3NWJlOTBjZDE4MWMyNjU3YmE5MTRhN2Q0MzIiLCJzZXFubyI6MTksInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAhsvRwyh0CDPG25ZLRUf3Fidkytl+ZEINTe88T7oSaH31dwQEAGfew9GH2UUeUZtOCx0cKxnH7GBFpuKQtOnwA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIC3LYd/mXr72XXsuERrdeGxNf/N4oC9JlAG8+fhCBi5Fo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nickytonline
+
+==================================================================
