@@ -6,7 +6,6 @@ const CommentThread = ({ post, forumName }) => (
     <DisqusThread
       shortname={forumName}
       identifier={post.path}
-      category_id={post.category}
       title={post.title}
     />
   </div>
