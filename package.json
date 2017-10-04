@@ -4,7 +4,7 @@
   "description": "Simple starter for Gatsby",
   "main": "n/a",
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "gatsby develop && cp ./keybase.txt ./public",
     "build": "gatsby build",
     "clean:docs": "rm -rf docs",
     "clean": "npm run clean:docs",
