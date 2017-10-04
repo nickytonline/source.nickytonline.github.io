@@ -11,8 +11,7 @@
     "copy:files": "find ./pages -maxdepth 1 -type f -regextype posix-extended -regex '.+\\.(pdf|txt|png|jpg|jpeg|gif)$' -exec cp -v {} ./docs ';'",
     "copy": "npm run copy:files",
     "lint": "./node_modules/.bin/eslint --cache --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build --prefix-links && cp -rf public/* ../nickytonline.github.io"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
