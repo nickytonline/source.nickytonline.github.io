@@ -1,24 +1,85 @@
+[![Gatsby Version](https://img.shields.io/badge/gatsby-1.8.12-744C9E.svg)](https://github.com/gatsbyjs/gatsby) [![Code Climate](https://codeclimate.com/github/alxshelepenok/gatsby-starter-lumen.png)](https://codeclimate.com/github/alxshelepenok/gatsby-starter-lumen) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/alxshelepenok/gatsby-starter-lumen/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url/https/github.com/alxshelepenok/gatsby-starter-lumen.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https://github.com/alxshelepenok/gatsby-starter-lumen)
+
 # Lumen
 
-[Gatsby](https://github.com/gatsbyjs/gatsby) starter for creating a blog.
+Lumen is a minimal, lightweight and mobile-first starter for creating blogs uses [Gatsby](https://github.com/gatsbyjs/gatsby).
 
 ## Features
-+ Clean and extensible code.
 + Lost Grid ([peterramsing/lost](https://github.com/peterramsing/lost)).
-+ Beautiful Typography ([matejlatin/Gutenberg](https://github.com/matejlatin/Gutenberg)).
++ Beautiful typography inspired by [matejlatin/Gutenberg](https://github.com/matejlatin/Gutenberg).
++ [Mobile-First](https://medium.com/@mrmrs_/mobile-first-css-48bc4cc3f60f) approach in development.
++ Stylesheet built using SASS and [BEM](http://getbem.com/naming/)-Style naming.
++ Syntax highlighting in code blocks.
++ Sidebar menu built using a configuration block.
++ Archive organized by tags and categories.
++ Automatic RSS generation.
++ Automatic Sitemap generation.
++ Offline support.
++ Google Analitics support.
 
-## Installing
+## Folder Structure
+
+```
+└── src
+    ├── assets
+    │   ├── fonts
+    │   │   └── fontello-771c82e0
+    │   │       ├── css
+    │   │       └── font
+    │   └── scss
+    │       ├── base
+    │       ├── mixins
+    │       └── pages
+    ├── components
+    │   ├── CategoryTemplateDetails
+    │   ├── Links
+    │   ├── Menu
+    │   ├── PageTemplateDetails
+    │   ├── Post
+    │   ├── PostTemplateDetails
+    │   ├── Sidebar
+    │   └── TagTemplateDetails
+    ├── layouts
+    ├── pages
+    │   ├── articles
+    │   │   ├── 2016-01-09---Perfecting-the-Art-of-Perfection
+    │   │   ├── 2016-01-12---The-Origins-of-Social-Stationery-Lettering
+    │   │   ├── 2016-02-02---A-Brief-History-of-Typography
+    │   │   ├── 2017-18-08---The-Birth-of-Movable-Type
+    │   │   └── 2017-19-08---Humane-Typography-in-the-Digital-Age
+    │   └── pages
+    │       ├── 2015-05-01---about
+    │       └── 2015-05-01---contact
+    └── templates
+```
+
+## Getting Started
 Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new lumen https://github.com/wpioneer/gatsby-starter-lumen`
+`gatsby new lumen https://github.com/alxshelepenok/gatsby-starter-lumen`
 
-## Running in development
+#### Running in Development
 `gatsby develop`
+
+#### Building
+`gatsby build`
+
+## Screenshot
 
 ![](http://i.imgur.com/422y5GV.png)
 
 ## Ports
-
 [Statinamic port](https://github.com/thangngoc89/statinamic-theme-lumen) by [Khoa Nguyen](https://github.com/thangngoc89)
+
+## Contributors
+
+[<img alt="alxshelepenok" src="https://avatars2.githubusercontent.com/u/8599449?v=4&s=117" width="117">](https://github.com/alxshelepenok) |[<img alt="abisz" src="https://avatars3.githubusercontent.com/u/7287780?v=4&s=117" width="117">](https://github.com/abisz) |[<img alt="ihororlovskyi" src="https://avatars3.githubusercontent.com/u/7969737?v=4&s=117" width="117">](https://github.com/ihororlovskyi) |[<img alt="vinnymac" src="https://avatars0.githubusercontent.com/u/1832781?v=4&s=117" width="117">](https://github.com/vinnymac) |[<img alt="axelclark" src="https://avatars1.githubusercontent.com/u/16856928?v=4&s=117" width="117">](https://github.com/axelclark) |[<img alt="concreted" src="https://avatars2.githubusercontent.com/u/4016897?v=4&s=117" width="117">](https://github.com/concreted) |
+:---: |:---: |:---: |:---: |:---: |:---: |
+[alxshelepenok](https://github.com/alxshelepenok) |[abisz](https://github.com/abisz) |[ihororlovskyi](https://github.com/ihororlovskyi) |[vinnymac](https://github.com/vinnymac) |[axelclark](https://github.com/axelclark) |[concreted](https://github.com/concreted) |
+
+[<img alt="charandas" src="https://avatars2.githubusercontent.com/u/542168?v=4&s=117" width="117">](https://github.com/charandas) |[<img alt="zollillo" src="https://avatars3.githubusercontent.com/u/8833904?v=4&s=117" width="117">](https://github.com/zollillo) |[<img alt="swapnilmishra" src="https://avatars2.githubusercontent.com/u/875450?v=4&s=117" width="117">](https://github.com/swapnilmishra) |
+:---: |:---: |:---: |
+[charandas](https://github.com/charandas) |[zollillo](https://github.com/zollillo) |[swapnilmishra](https://github.com/swapnilmishra) |
+
 
 ## License
 The MIT License (MIT)

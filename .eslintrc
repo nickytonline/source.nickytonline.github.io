@@ -1,19 +1,25 @@
 {
+    "parser": "babel-eslint",
     "extends": "airbnb",
     "plugins": [
         "react",
         "jsx-a11y",
         "import"
     ],
+    "globals": {
+        "graphql": true
+    },
     "rules": {
         "global-require": [0],
         "react/jsx-filename-extension": [0],
         "react/prefer-es6-class": [0],
         "react/prefer-stateless-function": [0],
         "react/forbid-prop-types": [0],
-        /* to allow importing 'gatsby-helpers' */
         "import/no-extraneous-dependencies": [0],
+        "comma-dangle": ["error", "never"],
+        "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
         "import/no-unresolved": [0],
-        "import/extensions": [0]
+        "import/extensions": [0],
+        "no-console": "off"
     }
 }
