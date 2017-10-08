@@ -30,7 +30,7 @@ So let's get to it. If you've never used a statically typed language like Java o
   * Visual Studio 2017 (includes TypeScript support)
   * [alm.tools](http://alm.tools)
   * Did I miss one?
-* Intellisense when using npm packages that have TypeScript type definitions even if your project isn't written in TypeScript (As far as I know this only applies to VS Code. Please chime in if this is not the case.)
+* Intellisense when using npm packages that have TypeScript declaration files even if your project isn't written in TypeScript (As far as I know this only applies to VS Code. Please chime in if this is not the case.)
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">If you&#39;re not using <a href="https://twitter.com/typescriptlang?ref_src=twsrc%5Etfw">@typescriptlang</a>, you can still benefit from it in <a href="https://twitter.com/code?ref_src=twsrc%5Etfw">@code</a>. Packages u import that have typings provide typed intellisense. <a href="https://t.co/hA81wrdMO0">pic.twitter.com/hA81wrdMO0</a></p>&mdash; VS Code Tips (@vscodetips) <a href="https://twitter.com/vscodetips/status/910937405267509249?ref_src=twsrc%5Etfw">September 21, 2017</a></blockquote>
 
