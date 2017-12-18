@@ -14,8 +14,7 @@ I'm not going to be one of those that tells you have to use TypeScript (or Flow 
 
 I've been using TypeScript since fall 2014 (v. 1.3). It's come a long way. The amount of care that has gone into the language to keep it as a superset of JavaScript (not altering the JS language) is amazing. Kudos to [Anders Hejlsberg, the entire TypeScript team and OSS peeps](https://github.com/Microsoft/TypeScript/graphs/contributors) that have made this such a great project.
 
-Why TypeScript?
----------------
+## Why TypeScript?
 
 So let's get to it. If you've never used a statically typed language like Java or C#, this may seem foreign to you. You're probably asking yourself, why TypeScript?
 
@@ -36,15 +35,13 @@ So let's get to it. If you've never used a statically typed language like Java o
 
 Great, looks awesome, but what about consuming npm packages from projects that don't use TypeScript? As mentioned briefly above, Visual Studio Code can grab the declaration files even if your project doesn't use TypeScript. So where are these declaration files coming from?
 
-TypeScript Declaration Files
-----------------------------
+## TypeScript Declaration Files
 
 What is a TypeScript declaration file? In a nutshell, it's a file that describes what types are in a package. For authors of TypeScript based projects, they will almost always [author TypeScript declaration files](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html). For projects that aren't written in TypeScript, sometimes, package authors will write the declaration files by hand and maintain them in their projects. In most cases though, the community has stepped in/up to write declaration files by hand of projects that aren't written in TypeScript. They're all housed in a repository called [DefinitelyTyped](http://definitelytyped.org), a repository of high quality TypeScript type definitions maintained by the JS/TS OSS community.
 
 To add types for a package that does not have its own declaration file, install its equivalent `@types` package. e.g. `npm install lodash --save;npm install @types/lodash --save-dev;` Now when you use lodash in your TS project in a TS capable editor, you will get typed Intellisense.
 
-Who's Using It?
----------------
+## Who's Using It?
 
 The hard (smart) work and love that has gone into TypeScript has not gone unnoticed. In recent times, some fairly large projects that you may know have migrated to TypeScript.
 
@@ -62,23 +59,25 @@ The hard (smart) work and love that has gone into TypeScript has not gone unnoti
 
 I'm sure there are others, but these are the big ones I'm aware of. You can always check GitHub for [trending TypeScript projects](https://github.com/trending/typescript).
 
-Additional Resources
---------------------
+## Additional Resources
 
 Here are some additional resources to get you up and running.
 
 * [TypeScript Playground](https://www.typescriptlang.org/play)
 * [TypeScript Deep Dive](https://www.gitbook.com/book/basarat/typescript)
 * [Full-stack TypeScript](https://fullstacktypescript.slack.com) on Slack
+* [TypeScript Fundamentals](https://typescriptcourses.com/typescript-fundamentals) (Great free course)
+* [Quokka.js](https://quokkajs.com) (live scratchpad for JS with TypeScript support but only for VS Code)
 * Accounts to follow on Twitter:
   * The Offical TypeScript account ([@typescriptlang](https://twitter.com/typescriptlang))
   * Daniel Rosenwasser ([@drosenwasser](https://twitter.com/drosenwasser))
   * Mohamed Hegazy ([@fdsmars](https://twitter.com/fdsmars))
   * Marius Schulz ([@mariusschulz](https://twitter.com/mariusschulz))
   * Basarat Ali Syed ([@basarat](https://twitter.com/basarat))
+  * James Henry ([@mrjameshenry](https://twitter.com/mrjameshenry))
   * If I missed one that you think should be on this list, let me know (nick at iamdeveloper dot com).
 
-To summarize, TypeScript is a great option if you're looking to scale a team up quickly on a codebase (Intellisense, refactoring) as well as catching silly errors via type checking. In a later post I'll go into how to migrate an existing codebase to TypeScript. If you're interested in seeing what a project looks like after being converted to TypeScript, check out  [ts-react-slingshot](https://github.com/typescriptcrew/ts-react-slingshot).
+To summarize, TypeScript is a great option if you're looking to scale a team up quickly on a codebase (Intellisense, refactoring) as well as catching silly errors via type checking. In a later post I'll go into how to migrate an existing codebase to TypeScript. If you're interested in seeing what a project looks like after being converted to TypeScript, check out [ts-react-slingshot](https://github.com/typescriptcrew/ts-react-slingshot).
 
 Thanks goes out to [@drosenwasser](https://twitter.com/drosenwasser), [@RichSeviora](https://twitter.com/RichSeviora) and [@nojvek](https://twitter.com/nojvek) for taking the time to review this blog post. 💯 🔥
 
