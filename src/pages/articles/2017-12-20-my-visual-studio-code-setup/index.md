@@ -4,10 +4,11 @@ date: "2017-12-20T05:00:00Z"
 layout: post
 draft: false
 path: "/my-visual-studio-code-setup/"
-category: "Developer Tools"
+category: "Programming"
 description: "A small write up on my Visual Studio Code setup"
 tags:
   - "Visual Studio Code"
+  - "Developer Tools"
 ---
 
 This originally was [just a gist](https://gist.github.com/nickytonline/3d5ffeab871a6662d7a3f89bb0bed0f8), but I thought it made sense to just convert it to a blog post.
