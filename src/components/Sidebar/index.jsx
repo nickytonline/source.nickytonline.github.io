@@ -5,7 +5,13 @@ import Link from 'gatsby-link';
 import Menu from '../Menu';
 import Links from '../Links';
 import profilePic from '../../pages/photo.jpg';
+import christmasProfilePic from '../../pages/nick-santa.jpg';
+
 import './style.scss';
+
+function getProfilePic(date) {
+  return date.getMonth() === 11 ? christmasProfilePic : profilePic;
+}
 
 class Sidebar extends React.Component {
   render() {
@@ -18,13 +24,13 @@ class Sidebar extends React.Component {
       <div>
         <Link to="/">
           <img
-            src={profilePic}
+            src={getProfilePic(new Date())}
             className="sidebar__author-photo"
             width="75" height="75"
             alt={author.name}
           />
         </Link>
-        { isHomePage ? (
+        {isHomePage ? (
           <h1 className="sidebar__author-title">
             <Link className="sidebar__author-title-link" to="/">{author.name}</Link>
           </h1>
