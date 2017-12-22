@@ -123,4 +123,6 @@ Custom Key Bindings
 ]
 ```
 
+Also, if you're looking for great tips and tricks on Visual Studio code, check out http://vscodetips.com.
+
 Questions or comments? Hit me up on Twitter [https://twitter.com/nickytonline/status/878284255146557444](https://twitter.com/nickytonline/status/878284255146557444).
