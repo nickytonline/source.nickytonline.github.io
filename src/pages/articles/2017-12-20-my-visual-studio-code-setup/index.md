@@ -95,7 +95,7 @@ I use [Fish Shell](https://fishshell.com) and [Fisherman](https://github.com/fis
 Font
 ----
 
-I use [Fira Code](https://github.com/tonsky/FiraCode) in VS Code. Once you've installed Fira Code, the setup in Code is quite easy.
+I use [Fira Code](https://github.com/tonsky/FiraCode) in VS Code. Once you've [installed](https://github.com/tonsky/FiraCode/wiki#installing-font) Fira Code, the setup in Code is quite easy.
 
 ![Fira Font](https://camo.githubusercontent.com/3a8948f34284f378ead7af5846aa432035c687ad/687474703a2f2f732e746f6e736b792e6d652f696d67732f666972615f636f64655f6c6f676f2e737667)
 
