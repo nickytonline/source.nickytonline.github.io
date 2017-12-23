@@ -13,6 +13,10 @@ tags:
 
 This originally was [just a gist](https://gist.github.com/nickytonline/3d5ffeab871a6662d7a3f89bb0bed0f8), but I thought it made sense to just convert it to a blog post.
 
+As the [stateofjs.com](https://stateofjs.com) survey this year noted, Visual Studio Code is quickly becoming the [editor of choice](https://stateofjs.com/2017/other-tools/) for many web developers.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Perhaps the most striking stat on the 2017 State of <a href="https://twitter.com/hashtag/JavaScript?src=hash&amp;ref_src=twsrc%5Etfw">#JavaScript</a> Survey: VS Code (<a href="https://twitter.com/code?ref_src=twsrc%5Etfw">@code</a>) is by far the most popular editor - and it&#39;s only 2.5 years old!<br><br>❤️ the new Microsoft.<a href="https://t.co/BwfJBHln4y">https://t.co/BwfJBHln4y</a> <a href="https://t.co/pd1GWQJB7X">pic.twitter.com/pd1GWQJB7X</a></p>&mdash; Cory House 🏠 (@housecor) <a href="https://twitter.com/housecor/status/940799686826430464?ref_src=twsrc%5Etfw">December 13, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 [VS Code](https://code.visualstudio.com/Download) is my editor of choice. It's great for web dev, and if you're developing with [TypeScript](http://www.typescriptlang.org), it's definitely the way to go. Fun fact... it's written in TypeScript. If you're interested in learning more about TypeScript, check out my blog post [Why You Might Want to Consider Using TypeScript](why-you-might-want-to-consider-using-typescript).
 
 Here's my current [Visual Studio Code](https://code.visualstudio.com) setup.
