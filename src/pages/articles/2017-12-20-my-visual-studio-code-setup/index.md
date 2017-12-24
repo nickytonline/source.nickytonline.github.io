@@ -65,6 +65,8 @@ Extensions
 Extension Packs
 ---------------
 
+What are [extension packs](https://code.visualstudio.com/docs/extensionAPI/extension-manifest#_extension-packs)? tl;dr, they're a grouping of extensions. These became available in early 2017.
+
 * [Git](https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack)
 * [Node](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack)
 
