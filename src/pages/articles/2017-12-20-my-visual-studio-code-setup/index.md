@@ -19,7 +19,9 @@ As the [stateofjs.com](https://stateofjs.com) survey this year noted, Visual Stu
 
 [VS Code](https://code.visualstudio.com/Download) is my editor of choice. It's great for web dev, and if you're developing with [TypeScript](http://www.typescriptlang.org), it's definitely the way to go. Fun fact... it's written in TypeScript. If you're interested in learning more about TypeScript, check out my blog post [Why You Might Want to Consider Using TypeScript](why-you-might-want-to-consider-using-typescript).
 
-Here's my current [Visual Studio Code](https://code.visualstudio.com) setup.
+TypeScript is what gives VS Code its refactoring and intellisense capabilities. Here's the really cool part. You get typed intellisense even if you're not using TypeScript via [Automatic Type Acquisition](https://code.visualstudio.com/docs/languages/javascript#_automatic-type-acquisition).
+
+Alright, let's get to it. Here's my current [Visual Studio Code](https://code.visualstudio.com) setup.
 
 Extensions
 ----------
