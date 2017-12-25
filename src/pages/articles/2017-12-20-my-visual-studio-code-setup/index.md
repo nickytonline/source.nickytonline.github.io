@@ -36,6 +36,7 @@ VS Code has a huge array of extensions available on their [marketplace](https://
 
 ### Formatting/Linting
 
+* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 * [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
 * [Prettify JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json)
