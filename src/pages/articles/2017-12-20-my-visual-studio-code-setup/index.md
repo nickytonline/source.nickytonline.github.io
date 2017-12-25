@@ -23,63 +23,96 @@ TypeScript is what gives VS Code its refactoring and intellisense capabilities. 
 
 Alright, let's get to it. Here's my current [Visual Studio Code](https://code.visualstudio.com) setup.
 
-Extensions
-----------
+## Extensions
 
-* [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
-* [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) (a must have)
-* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+VS Code has a huge array of extensions available on their [marketplace](https://marketplace.visualstudio.com/vscode). As well as extensions, in 2017, [extension packs](https://code.visualstudio.com/docs/extensionAPI/extension-manifest#_extension-packs) became available. tl;dr, they're a grouping of extensions.
+
+[Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) is a must have extension and I recommend installing it as the first extension. With this extension, you'll be able to backup most of your settings to a private gist. From there restoring your settings is pretty easy. It's great for backing up settings as well as synching settings, which is what I do between my work and personal laptop.
+
+### Node/JS
+
+* [Node extension pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack) (must have)
+* [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+
+### Formatting/Linting
+
 * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+* [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
+* [Prettify JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json)
+* [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+### CSS
+
+* [IntelliSense for CSS class names](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
+* [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+* [Color Picker](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color)
+* [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+* [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+
+### Debugging
+
+Language extensions like Go and Python (see below) when installed get all the proper tooling set up to debug for those specific languages. Here's some others. The easiest way to get started with debugging is to press `F5` and VS Code will offer you debugging configurations to get set up with.
+
+* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+
+### Git
+
+* [Git extension pack](https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack) (must have)
 * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
 * [gitflow](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow)
-* [Go](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
-* [IntelliSense for CSS class names](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
-* [HTML Snippets](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets)
+* [Open in GitHub / Bitbucket / Gitlab / VisualStudio.com !](https://marketplace.visualstudio.com/items?itemName=ziyasal.vscode-open-in-github)
+
+### Unit Testing
+
 * [JavaScript Unit Test snippets](https://marketplace.visualstudio.com/items?itemName=iZDT.javascript-unit-test-snippet)
-* [Prettify JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json)
-* [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
-* [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
-* [View in Browser](https://marketplace.visualstudio.com/items?itemName=qinjia.view-in-browser)
-* [Color Picker](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color)
-* [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
-* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-* [Image Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
-* [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
 * [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
-* [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-* [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
-* [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
-* [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-* [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
-* [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css)
-* [Gatsby Snippets](https://marketplace.visualstudio.com/items?itemName=nickytonline.vscode-gatsby-snippets)
-* [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
-* [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
-* [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) (check out [Introducing Quokka...](https://medium.com/@artem.govorov/introducing-quokka-the-live-scratchpad-for-javascript-free-developer-tool-a0eb15bb4f54))
+
+### React
+
 * [React Redux ES6 Snippets](https://marketplace.visualstudio.com/items?itemName=timothymclane.react-redux-es6-snippets)
 * [Reactjs code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
+* [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
+
+### Other Languages
+
+* [Go](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
+### REPLs/Playgrounds
+
+* [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) (check out [Introducing Quokka...](https://medium.com/@artem.govorov/introducing-quokka-the-live-scratchpad-for-javascript-free-developer-tool-a0eb15bb4f54))
+
+### Viewers
+
+* [Image Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
+* [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
+* [View in Browser](https://marketplace.visualstudio.com/items?itemName=qinjia.view-in-browser)
+
+### DevOpsy Stuff
+
 * [Jenkinsfile Support](https://marketplace.visualstudio.com/items?itemName=secanis.jenkinsfile-support)
 * [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
 
-Extension Packs
----------------
+### Hack the Editor
 
-What are [extension packs](https://code.visualstudio.com/docs/extensionAPI/extension-manifest#_extension-packs)? tl;dr, they're a grouping of extensions. These became available in early 2017.
+* [Guides](https://marketplace.visualstudio.com/items?itemName=spywhere.guides)
+* [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) (currently used for the [Cobalt 2 theme](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2).)
 
-* [Git](https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack)
-* [Node](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack)
+### Miscellaneous
 
-Themes
-------
+* [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
+* [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+* [Gatsby Snippets](https://marketplace.visualstudio.com/items?itemName=nickytonline.vscode-gatsby-snippets)
+
+## Themes
 
 * [Cobalt 2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
 * [Dracula theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
 * [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
 * [Material theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
 
-Current Theme Setup
--------------------
+### Current Theme Setup
 
 I'm currently taking the [Cobalt 2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2) theme for a spin with the Fish Shell Fisherman Agnoster theme.
 
@@ -91,13 +124,11 @@ I still love using the [Dracula theme](https://marketplace.visualstudio.com/item
 
 I've also used [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme), and [Material theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme) which are great as well.
 
-Shell
------
+## Shell
 
 I use [Fish Shell](https://fishshell.com) and [Fisherman](https://github.com/fisherman/fisherman) with the Agnoster theme right now.
 
-Font
-----
+## Font
 
 I use [Fira Code](https://github.com/tonsky/FiraCode) in VS Code. Once you've [installed](https://github.com/tonsky/FiraCode/wiki#installing-font) Fira Code, the setup in Code is quite easy.
 
@@ -115,8 +146,7 @@ Open your user settings and add the following:
 
 Boom! Bob's your uncle and you now have Fira Code in all it's awesome ligatureness (is that a word?).
 
-Custom Key Bindings
--------------------
+## Custom Key Bindings
 
 ```json
 // Place your key bindings in this file to overwrite the defaults
@@ -131,7 +161,7 @@ Custom Key Bindings
   },
   {
     "key": "cmd+shift+s",
-    "command": "workbench.action.terminal.focusNext"
+    "command": "workbench.action.terminal.focusPrevious"
   },
   {
     "key": "cmd+shift+x",
@@ -140,6 +170,6 @@ Custom Key Bindings
 ]
 ```
 
-Also, if you're looking for great tips and tricks on Visual Studio code, check out https://www.vscodetips.com.
+Also, if you're looking for great tips and tricks on Visual Studio code, check out [www.vscodetips.com](https://www.vscodetips.com).
 
-Questions or comments? Hit me up on Twitter [https://twitter.com/nickytonline/status/878284255146557444](https://twitter.com/nickytonline/status/878284255146557444).
+Questions or comments? Hit me up on [Twitter](https://twitter.com/nickytonline/status/878284255146557444).
