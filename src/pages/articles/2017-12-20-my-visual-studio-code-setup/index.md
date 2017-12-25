@@ -55,7 +55,7 @@ Extensions
 * [Gatsby Snippets](https://marketplace.visualstudio.com/items?itemName=nickytonline.vscode-gatsby-snippets)
 * [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
 * [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
-* [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
+* [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) (check out [Introducing Quokka...](https://medium.com/@artem.govorov/introducing-quokka-the-live-scratchpad-for-javascript-free-developer-tool-a0eb15bb4f54))
 * [React Redux ES6 Snippets](https://marketplace.visualstudio.com/items?itemName=timothymclane.react-redux-es6-snippets)
 * [Reactjs code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
