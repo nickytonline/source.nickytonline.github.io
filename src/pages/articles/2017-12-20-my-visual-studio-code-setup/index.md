@@ -170,6 +170,6 @@ Boom! Bob's your uncle and you now have Fira Code in all it's awesome ligaturene
 ]
 ```
 
-Also, if you're looking for great tips and tricks on Visual Studio code, check out [www.vscodetips.com](https://www.vscodetips.com).
+Also, if you're looking for great tips and tricks on Visual Studio code, check out [www.vscodetips.com](https://www.vscodetips.com). One last thing that I'm really looking forward to is the availabilty of [Live Share](https://code.visualstudio.com/blogs/2017/11/15/live-share).
 
 Questions or comments? Hit me up on [Twitter](https://twitter.com/nickytonline/status/878284255146557444).
