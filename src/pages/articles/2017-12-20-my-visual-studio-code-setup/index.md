@@ -27,7 +27,7 @@ Alright, let's get to it. Here's my current [Visual Studio Code](https://code.vi
 
 VS Code has a huge array of extensions available on their [marketplace](https://marketplace.visualstudio.com/vscode). As well as extensions, in 2017, [extension packs](https://code.visualstudio.com/docs/extensionAPI/extension-manifest#_extension-packs) became available. tl;dr, they're a grouping of extensions.
 
-[Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) is a must have extension and I recommend installing it as the first extension. With this extension, you'll be able to backup most of your settings to a private gist. From there restoring your settings is pretty easy. It's great for backing up settings as well as synching settings, which is what I do between my work and personal laptop.
+[Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) is a must have extension and I recommend installing it as your first extension. With this extension, you'll be able to backup most of your settings to a private gist. From there, restoring your settings is pretty easy. It's great for backing up settings as well as synching settings, which is what I do between my work and personal laptop.
 
 ### Node/JS
 
