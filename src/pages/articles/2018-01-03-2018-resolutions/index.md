@@ -8,6 +8,7 @@ category: "Self Improvement"
 description: "Resolutions for the year we know as 2018."
 tags:
   - "Dev Goals"
+  - "Resolutions"
 ---
 
 So like many, I too will make resolutions for 2018. I made myself accountable by joining a recent [#DevDiscuss on Twitter](https://twitter.com/ThePracticalDev/status/948373905181478913).
@@ -30,6 +31,6 @@ In 2018, I will keep contributing to OSS including react-slingshot, but specific
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Main dev New Year&#39;s resolution for 2018 is too make sure I read everything I add to <a href="https://twitter.com/Pocket?ref_src=twsrc%5Etfw">@Pocket</a>.</p>&mdash; Nick Taylor (@nickytonline) <a href="https://twitter.com/nickytonline/status/947522380632678402?ref_src=twsrc%5Etfw">December 31, 2017</a></blockquote>
 
-5. [Functional-Light JavaScript](https://leanpub.com/fljs) is supposed to be a fantastic book. Kyle Simpson is a great teacher and has plenty of books out there, i.e. YDKJS. I'm looking forward to reading this one.
+5. [Functional-Light JavaScript](https://leanpub.com/fljs) is supposed to be a fantastic book. Kyle Simpson is a great teacher and has plenty of books out there, i.e. [YDKJS](https://github.com/getify/You-Dont-Know-JS). I'm looking forward to reading this one.
 
 Now it's time to add a reminder in Google Inbox for the end of the year to see if I'm all talk or not. 😉 💪
