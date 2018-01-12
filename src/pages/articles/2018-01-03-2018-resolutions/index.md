@@ -34,3 +34,4 @@ In 2018, I will keep contributing to OSS including react-slingshot, but specific
 5. [Functional-Light JavaScript](https://leanpub.com/fljs) is supposed to be a fantastic book. Kyle Simpson is a great teacher and has plenty of books out there, i.e. [YDKJS](https://github.com/getify/You-Dont-Know-JS). I'm looking forward to reading this one.
 
 Now it's time to add a reminder in Google Inbox for the end of the year to see if I'm all talk or not. 😉 💪
+g
