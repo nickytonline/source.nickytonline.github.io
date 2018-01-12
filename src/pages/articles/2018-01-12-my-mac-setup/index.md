@@ -21,7 +21,7 @@ I participated in this week’s [#devdiscuss about tooling](https://twitter.com/
 * The Homebrew duo. These are a must have to simplify installing most things on your Mac. As soon as these are installed, you may proceed.
 * [Homebrew](https://brew.sh) - run `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` from the command line to install it.
 * [Homebrew Cask](https://caskroom.github.io) - run `brew tap caskroom/cask` from the command line to install it.
-* [Spectacle](https://www.spectacleapp.com), the best application I’ve found for managing windows on MacOS. This is especially useful for anyone coming from Windows who are used to this out of the box functionality. Run `brew cask install spectacle` from the command line to install it.
+* [Spectacle](https://www.spectacleapp.com), the best application I’ve found for managing windows on macOS. This is especially useful for anyone coming from Windows who are used to this out of the box functionality. Run `brew cask install spectacle` from the command line to install it.
 * [Alfred](https://www.alfredapp.com) ([buy the Alfred Powerpack](https://www.alfredapp.com/powerpack/buy/) to get the full use of Alfred). Run `brew cask install alfred` from the command line to install it.
 
 ### Alfred Setup
