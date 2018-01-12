@@ -10,7 +10,7 @@ tags:
   - "Developer Tools"
 ---
 
-Maybe I should start a series called “Not just a Gist”, as I’m slowly converting gists of mine to blog posts. The last one I converted was all about [My Visual Studio Code Setup](https://vscode.iamdeveloper.com).
+Maybe I should start a series called “Not just a Gist”, as I’m slowly converting gists of mine to blog posts. The last one I converted was all about [My Visual Studio Code Setup](https://www.iamdeveloper.com/my-visual-studio-code-setup).
 
 I participated in this week’s [#devdiscuss about tooling](https://twitter.com/ThePracticalDev/status/950910573369229313), and I posted a few links to gists that are my setup on my Mac.
 
