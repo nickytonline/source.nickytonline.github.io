@@ -10,7 +10,7 @@ tags:
   - "Developer Tools"
 ---
 
-Maybe I should start a series called “Not just a Gist”, as I’m slowly converting gists of mine to blog posts. The last one I converted was all about [My Visual Studio Code Setup](https://www.iamdeveloper.com/my-visual-studio-code-setup).
+Maybe I should start a series called “Not just a Gist”, as I’m slowly converting gists of mine to blog posts. The last one I converted was all about [My Visual Studio Code Setup](https://vscode.iamdeveloper.com).
 
 I participated in this week’s [#devdiscuss about tooling](https://twitter.com/ThePracticalDev/status/950910573369229313), and I posted a few links to gists that are my setup on my Mac.
 
@@ -19,8 +19,8 @@ I participated in this week’s [#devdiscuss about tooling](https://twitter.com/
 ## Tools you absolutely need on your Mac
 
 * The Homebrew duo. These are a must have to simplify installing most things on your Mac. As soon as these are installed, you may proceed.
-* [Homebrew](https://brew.sh) - run `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` from the command line to install it.
-* [Homebrew Cask](https://caskroom.github.io) - run `brew tap caskroom/cask` from the command line to install it.
+  * [Homebrew](https://brew.sh) - run `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` from the command line to install it.
+  * [Homebrew Cask](https://caskroom.github.io) - run `brew tap caskroom/cask` from the command line to install it.
 * [Spectacle](https://www.spectacleapp.com), the best application I’ve found for managing windows on macOS. This is especially useful for anyone coming from Windows who are used to this out of the box functionality. Run `brew cask install spectacle` from the command line to install it.
 * [Alfred](https://www.alfredapp.com) ([buy the Alfred Powerpack](https://www.alfredapp.com/powerpack/buy/) to get the full use of Alfred). Run `brew cask install alfred` from the command line to install it.
 
@@ -30,11 +30,17 @@ Alfred is so awesome, it deserves it’s own section in this post. It’s basica
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Also, this Alfred workflow is awesome for my workflow with GitHub, <a href="https://t.co/fjNOo6iuvL">https://t.co/fjNOo6iuvL</a> <a href="https://twitter.com/hashtag/devdiscuss?src=hash&amp;ref_src=twsrc%5Etfw">#devdiscuss</a> <a href="https://twitter.com/hashtag/git?src=hash&amp;ref_src=twsrc%5Etfw">#git</a></p>&mdash; Nick Taylor (@nickytonline) <a href="https://twitter.com/nickytonline/status/950915346596327424?ref_src=twsrc%5Etfw">January 10, 2018</a></blockquote>
 
+![](https://thepracticaldev.s3.amazonaws.com/i/3a5uy98t5v0dskpk36nu.png)
+
 I never used Alfred until this past summer. Why did I not use it sooner?!
 
-*(╯°□°）╯︵ ┻━┻*
+_(╯°□°）╯︵ ┻━┻_
 
 The Syntax FM podcast has a great episode on tooling, including Alfred, [Our favourite Productivity Hacks 🔥 — Syntax Podcast 011](https://syntax.fm/show/011/our-favourite-productivity-hacks). You should check it out.
+
+Along with workflows, you can also install themes. I like [Wes Bos](https://dev.to/wesbos)’ Cobalt 2 theme for other things and I guess since Wes is a huge fan of Alfred, he decided to make the theme for Alfred as well. You can simply pick it from the available themes in the Alfred preferences.
+
+![](https://thepracticaldev.s3.amazonaws.com/i/2djw6ar9a2iqmvsdipyz.png)
 
 At the time of this writing, here’s all the workflows that I currently have installed:
 
@@ -46,33 +52,34 @@ At the time of this writing, here’s all the workflows that I currently have in
 * [ngreenstein/alfred-process-killer](https://github.com/nathangreenstein/alfred-process-killer). Grab it [here](https://github.com/ngreenstein/alfred-process-killer/blob/master/Kill%20Process.alfredworkflow?raw=true).
 * [RunCommand](http://www.packal.org/workflow/runcommand). I only really use this to start Visual Studio Code from the command line.
 * [StackOverflow Search](http://www.packal.org/workflow/stackoverflow-search). Search stackoverflow.com right from Alfred. The only tweak I did to this workflow was change the keyword to launch it. I switched `.so` to `sos`. Otherwise it launches the RunCommand workflow and errors out because of the initial `.` running an invalid command. I also find it funny that I called it `sos`. Send help! 🆘
-* [TimeZones](http://geekzone.philosophicalzombie.net/post/45823505821/alfred-workflow-timezones-a-customizable-world). Grab it [here](http://cl.ly/UamX/download/TimeZones v1.7.alfredworkflow). A super quick way to get the time in a country or city.
+* [TimeZones](http://geekzone.philosophicalzombie.net/post/45823505821/alfred-workflow-timezones-a-customizable-world). Grab it [here]([http://cl.ly/UamX/download/TimeZones](http://cl.ly/UamX/download/TimeZones) v1.7.alfredworkflow). A super quick way to get the time in a country or city.
 * [UUIDgen](http://www.packal.org/workflow/uuidgen).
 * [Packal Updater](http://www.packal.org/workflow/packal-updater). It updates any workflows you have that you grabbed via [Packal](http://www.packal.org), a popular workflow and themes directory for Alfred.
 * These are some workflows I opened sourced that I find handy, [nickytonline/alfred-workflows: Hopefully useful workflows for Alfred](https://github.com/nickytonline/alfred-workflows).
 * I have a few others I made, but they’re just simple workflows for opening stuff like my Google Music. It uses an Alfred workflow template to just open a URL. Try making one yourself! I promise it’s not hard.
 
-If you use Alfred and have some workflows that are not listed here, please mention them in the comments. I'm always looking for new ones to improve my whole dev workflow.
+If you use Alfred and have some workflows that are not listed here, please mention them in the comments. I’m always looking for new ones to improve my whole dev workflow.
 
 ## Tools for Web Development
 
-* [VS Code](https://code.visualstudio.com), here's [my setup](http://vscode.iamdeveloper.com). Run `brew cask install visual-studio-code` from the command line to install it.
-* [n](https://github.com/tj/n), run `brew install n` from the command line to install it.
+* [VS Code](https://code.visualstudio.com), here’s [my setup](https://www.iamdeveloper.com/my-visual-studio-code-setup). Run `brew cask install visual-studio-code` from the command line to install it.
+* [n](https://github.com/tj/n), for installing different versions of node. I’m sure someone is going to suggest using [nvm](https://github.com/creationix/nvm). The problem was though, when I switched from [zsh](http://www.zsh.org/) (another great choice for a shell), I was unable to get nvm working with fish, so I just switched to n which works super well. Run `brew install n` from the command line to install it.
 * [now.sh](https://now.sh), great for hosting but also great for knocking out some POCs and deploying it. Run `brew cask install now` from the command line to install it.
 * [Docker](https://www.docker.com/get-docker), containerize all the things! Run `brew cask install docker` from the command line to install it.
 * [FiraCode font](https://github.com/tonsky/FiraCode) for my shell and my favourite editor.
+* I’ve discovered what the [whole commotion is about `npx`](https://dev.to/peter_kuehne/comment/213k), so I’ve also added the to my tool belt. Thanks [Peter Kühne](https://dev.to/peter_kuehne)!
 
 ## Shell/Terminal Setup
 
-* [iTerm2](https://www.iterm2.com/) - run brew `cask install iterm2` from the command line to install it.
-* [Fish shell](http://fishshell.com) - run brew `cask install fish` from the command line to install it.
-* [Fisherman](https://github.com/fisherman/fisherman), run `curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher` from the command line to install it.
+* [iTerm2](https://www.iterm2.com/), a better terminal then the out of the box macOS terminal app. Run brew `cask install iterm2` from the command line to install it.
+* [Fish shell](http://fishshell.com), a better shell experience. Run brew `cask install fish` from the command line to install it.
+* [Fisherman](https://github.com/fisherman/fisherman), for themes and other utilities for the fish shell. Run `curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher` from the command line to install it.
 * edc/bass (to support bash utilities) - Assumes Fisherman is installed. Run `fisher edc/bass` from the command line to install it.
-* I use the git CLI with [git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases). Here's my list of [git aliases](https://gitaliases.iamdeveloper.com).
+* I use the git CLI with [git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases). Here’s my list of [git aliases](https://gitaliases.iamdeveloper.com).
 
 ## Useful Utilities
 
-* [Unarchiver](https://theunarchiver.com) - run `brew cask install the-unarchiver` from the command line to install it.
+* [The Unarchiver](https://theunarchiver.com) - run `brew cask install the-unarchiver` from the command line to install it.
 * [Amphetamine](https://itunes.apple.com/us/app/amphetamine/id937984704), sometimes you just want your laptop to stay awake… 💊
 * [VLC](https://www.videolan.org/vlc/download-macosx.html) - run `brew cask install vlc` from the command line to install it.
 * [f.lux](https://justgetflux.com), so you can be nice to your 👀 in the evening. Run `brew cask install flux` from the command line to install it.
@@ -84,7 +91,7 @@ If you use Alfred and have some workflows that are not listed here, please menti
 * [Bear](http://www.bear-writer.com/), this is definitely my favourite new app. It’s the first note taking app that I’m consistently using. I think it’s all due to markdown support and simplicity.
 * [LiceCap](https://www.cockos.com/licecap/licecap125.dmg), for animated GIF screen captures. I find this tool very easy to use and the animated screen captures are pretty decent. Run `brew cask install licecap` from the command line to install it.
 
-## Tweaking MacOS
+## Tweaking macOS
 
 * [Prevent Mission control from rearranging Spaces](https://spigotdesign.com/prevent-mission-control-rearranging-desktop-spaces). This drives me nuts, so I remove the setting. I arrange my spaces because I want them to stay like that.
 * If you’re on a Mac with a Touchbar, map the function keys to always be used when in browsers, your editors or any other tools you use for dev.
