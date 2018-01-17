@@ -76,6 +76,24 @@ If you use Alfred and have some workflows that are not listed here, please menti
 * [Fisherman](https://github.com/fisherman/fisherman), for themes and other utilities for the fish shell. Run `curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher` from the command line to install it.
 * edc/bass (to support bash utilities) - Assumes Fisherman is installed. Run `fisher edc/bass` from the command line to install it.
 * I use the git CLI with [git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases). Here’s my list of [git aliases](https://gitaliases.iamdeveloper.com).
+* **Update 2018/01/16: I forgot to add the fish aliases I use because I'm a lazy typer or just can't remember the real command. Feel free to run the script snippet below to add them to your 🐡 🐚 .**
+
+```
+alias cg="g clone git@gist.github.com:$argv.git" # Clones a gist, just pass in the gist ID
+funcsave cg
+
+alias flushdns="sudo killall -HUP mDNSResponder" # Because I never remember this command
+funcsave flushdns
+
+alias g="git"
+funcsave g
+
+alias glog="git log --oneline --decorate --all --graph"
+funcsave glog
+
+alias y="yarn"  # Some say I live dangerously aliasing this to 'y'. I say yolo.
+funcsave y
+```
 
 ## Useful Utilities
 
