@@ -60,6 +60,12 @@ At the time of this writing, here’s all the workflows that I currently have in
 
 If you use Alfred and have some workflows that are not listed here, please mention them in the comments. I’m always looking for new ones to improve my whole dev workflow.
 
+You can also launch the terminal from Alfred, by typing `>` in the Alfred search bar followed by the command you wish to run. Since I use iTerm, I want that to open instead of the default Terminal app. Since [Alfred 2.7.2](https://www.alfredapp.com/blog/tips-and-tricks/better-iterm-integration-in-alfred), you can run a custom Applescript to launch another terminal application. Open the Alfred preferences window and click on the Features button in the top of the preferences window then click on the Terminal / Shell button at the bottom. In the Application drop down menu, select Custom and paste in [this script](https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript) from the [Custom iTerm Applescripts for Alfred](https://github.com/stuartcryan/custom-iterm-applescripts-for-alfred) repository.
+
+![](https://thepracticaldev.s3.amazonaws.com/i/30almlm8iljcxrzcqlk4.png)
+
+You're all good to go. To test it out launch Alfred and in the search bar type `> ls` and press ENTER. iTerm should open up with a listing of the current directory.
+
 ## Tools for Web Development
 
 * [VS Code](https://code.visualstudio.com), here’s [my setup](https://www.iamdeveloper.com/my-visual-studio-code-setup). Run `brew cask install visual-studio-code` from the command line to install it.
