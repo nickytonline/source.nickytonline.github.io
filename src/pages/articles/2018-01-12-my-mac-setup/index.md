@@ -38,7 +38,11 @@ _(╯°□°）╯︵ ┻━┻_
 
 The Syntax FM podcast has a great episode on tooling, including Alfred, [Our favourite Productivity Hacks 🔥 — Syntax Podcast 011](https://syntax.fm/show/011/our-favourite-productivity-hacks). You should check it out.
 
-Along with workflows, you can also install themes. I like [Wes Bos](https://dev.to/wesbos)’ Cobalt 2 theme for other things and I guess since Wes is a huge fan of Alfred, he decided to make the theme for Alfred as well. You can simply pick it from the available themes in the Alfred preferences.
+Along with workflows, you can also install themes. I like [Wes Bos](https://dev.to/wesbos)’ Cobalt 2 theme for other things and I guess since Wes is a huge fan of Alfred, he decided to make the theme for Alfred as well. Download the [raw Cobalt 2 theme file](https://raw.githubusercontent.com/wesbos/Cobalt2-Alfred-Theme/master/Cobalt2-alfred3.x.alfredappearance) from the [github.com/wesbos/Cobalt2-Alfred-Theme](https://github.com/wesbos/Cobalt2-Alfred-Theme) repository. Once downloaded, open the file and it will ask you if you want to import the theme into Alfred.
+
+![](https://thepracticaldev.s3.amazonaws.com/i/56k68zpta3vkfbx8ybif.png)
+
+Click the import button and Alfred has been Cobalted.
 
 ![](https://thepracticaldev.s3.amazonaws.com/i/2djw6ar9a2iqmvsdipyz.png)
 
