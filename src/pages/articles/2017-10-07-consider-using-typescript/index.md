@@ -1,9 +1,9 @@
 ---
-title: "Why You Might Want to Consider Using TypeScript"
+title: "Consider Using TypeScript"
 date: "2017-10-07T10:00:00Z"
 layout: post
 draft: false
-path: "/why-you-might-want-to-consider-using-typescript/"
+path: "/consider-using-typescript/"
 category: "programming"
 description: "A small write up on the benefits of using TypeScript."
 tags:
