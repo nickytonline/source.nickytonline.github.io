@@ -10,9 +10,7 @@ class IndexRoute extends React.Component {
     const { title, subtitle } = this.props.data.site.siteMetadata;
     const posts = this.props.data.allMarkdownRemark.edges;
     posts.forEach((post) => {
-      items.push(
-        <Post data={post} key={post.node.fields.slug} />
-      );
+      items.push(<Post data={post} key={post.node.fields.slug} />);
     });
 
     return (
@@ -23,9 +21,7 @@ class IndexRoute extends React.Component {
         </Helmet>
         <Sidebar {...this.props} />
         <div className="content">
-          <div className="content__inner">
-            {items}
-          </div>
+          <div className="content__inner">{items}</div>
         </div>
       </div>
     );
@@ -66,14 +62,15 @@ export const pageQuery = graphql`
           twitter
           github
           stackoverflow
+          devto
         }
       }
     }
     allMarkdownRemark(
-        limit: 1000,
-        filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } },
-        sort: { order: DESC, fields: [frontmatter___date] }
-      ){
+      limit: 1000
+      filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           fields {

@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import PageTemplateDetails from '../components/PageTemplateDetails';
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import PageTemplateDetails from "../components/PageTemplateDetails";
 
 class PageTemplate extends React.Component {
   render() {
@@ -59,6 +59,7 @@ export const pageQuery = graphql`
           twitter
           github
           stackoverflow
+          devto
         }
       }
     }

@@ -20,7 +20,8 @@ module.exports = {
       twitter: 'https://twitter.com/nickytonline',
       github: 'https://github.com/nickytonline',
       linkedin: 'http://www.linkedin.com/in/nickytonline',
-      stackoverflow: 'https://stackoverflow.com/users/77814/nickytonline'
+      stackoverflow: 'https://stackoverflow.com/users/77814/nickytonline',
+      devto: 'https://dev.to/nickytonline'
     }
   },
   plugins: [
@@ -47,7 +48,7 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => (
+            serialize: ({ query: { site, allMarkdownRemark } }) =>
               allMarkdownRemark.edges.map(edge =>
                 Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.frontmatter.description,
@@ -56,8 +57,7 @@ module.exports = {
                   guid: site.siteMetadata.url + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': edge.node.html }]
                 })
-              )
-            ),
+              ),
             query: `
               {
                 allMarkdownRemark(

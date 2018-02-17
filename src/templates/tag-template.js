@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import Sidebar from '../components/Sidebar';
-import TagTemplateDetails from '../components/TagTemplateDetails';
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import Sidebar from "../components/Sidebar";
+import TagTemplateDetails from "../components/TagTemplateDetails";
 
 class TagTemplate extends React.Component {
   render() {
@@ -52,14 +52,21 @@ export const pageQuery = graphql`
           twitter
           github
           stackoverflow
+          devto
         }
       }
     }
     allMarkdownRemark(
-        limit: 1000,
-        filter: { frontmatter: { tags: { in: [$tag] }, layout: { eq: "post" }, draft: { ne: true } } },
-        sort: { order: DESC, fields: [frontmatter___date] }
-      ){
+      limit: 1000
+      filter: {
+        frontmatter: {
+          tags: { in: [$tag] }
+          layout: { eq: "post" }
+          draft: { ne: true }
+        }
+      }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           fields {
