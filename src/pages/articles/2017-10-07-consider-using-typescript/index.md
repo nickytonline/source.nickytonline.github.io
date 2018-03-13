@@ -56,7 +56,8 @@ The hard (smart) work and love that has gone into TypeScript has not gone unnoti
 * [TypeScript at Lyft](https://eng.lyft.com/typescript-at-lyft-64f0702346ea)
 * [RxJS](https://github.com/ReactiveX/rxjs)
 * [glimmer.js](https://github.com/glimmerjs/glimmer.js) (of Ember fame), also related [Glimmer.js: What’s the Deal with TypeScript?](https://medium.com/@tomdale/glimmer-js-whats-the-deal-with-typescript-f666d1a3aad0)
-* Update 2017/12/21: Rollup is currently [being converted to TypeScript](https://github.com/rollup/rollup/pull/1806)
+* [Rollup](https://github.com/rollup/rollup)
+* [Lighter than Lightweight: How We Built the Same App Twice with Preact and Glimmer.js | LinkedIn Engineering](https://engineering.linkedin.com/blog/2018/03/how-we-built-the-same-app-twice-with-preact-and-glimmerjs)
 
 I'm sure there are others, but these are the big ones I'm aware of. You can always check GitHub for [trending TypeScript projects](https://github.com/trending/typescript).
 
