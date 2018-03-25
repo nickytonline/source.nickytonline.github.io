@@ -4,7 +4,6 @@ date: "2018-03-26T05:00:00Z"
 layout: post
 draft: false
 path: "/2018-03-26-getting-started-with-react-storybook/"
-category: "Category"
 description: "A short write up on setting up React Storybook."
 tags:
   - "React", "UX"
