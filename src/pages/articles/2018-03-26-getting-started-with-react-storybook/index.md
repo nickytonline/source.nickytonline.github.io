@@ -19,7 +19,7 @@ Here’s some quick references:
 
 * [Storybook](https://storybook.js.org), loads of great documentation here.
 * A [great example from airbnb](http://airbnb.io/react-dates) of Storybook.
-* Slides from my talk I did last year,[story.iamdeveloper.com](http://story.iamdeveloper.com)
+* Slides from my talk I did last year, [story.iamdeveloper.com](http://story.iamdeveloper.com)
 
 ## Get Storybook installed and running in your project
 
