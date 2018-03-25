@@ -50,6 +50,6 @@ We’ll assume you already have a React project created.
 ![Screenshot of Storybook in action](./assets/storybook.gif)
 
 8.  The other script, `build-storybook`, if run, will generate a static Storybook site that you can deploy to wherever you like. By default, it will be generated into a folder called `storybook-static`.
-9. Now go build some cool stuff and post a blog post about it on [dev.to](https://dev.to/new).
+9. Now go build some cool stuff and create a blog post about it on [dev.to](https://dev.to/new).
 
 In my next post, we’ll dig into some of the cool features of Storybook.
