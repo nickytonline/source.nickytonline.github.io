@@ -6,20 +6,13 @@ draft: false
 path: "/2018-03-26-getting-started-with-react-storybook/"
 description: "A short write up on setting up React Storybook."
 tags:
-  - "React", "UX"
-category:
-  - "Front-End Dev"
+  - "React"
+category: "UI/UX"
 ---
 
 ## Story what?
 
 Storybook is a great tool for developing and showcasing components. I love it so much, I did a [talk about it](https://story.iamdeveloper.com) at [js-montreal](http://js-montreal.org) last summer. Storybook forces you, a good thing, to develop your components as components because you're not in the actual application.
-
-Here’s some quick references:
-
-* [Storybook](https://storybook.js.org), loads of great documentation here.
-* A [great example from airbnb](http://airbnb.io/react-dates) of Storybook.
-* Slides from my talk I did last year, [story.iamdeveloper.com](http://story.iamdeveloper.com)
 
 ## Get Storybook installed and running in your project
 
@@ -50,6 +43,39 @@ We’ll assume you already have a React project created.
 ![Screenshot of Storybook in action](./assets/storybook.gif)
 
 8.  The other script, `build-storybook`, if run, will generate a static Storybook site that you can deploy to wherever you like. By default, it will be generated into a folder called `storybook-static`.
-9. Now go build some cool stuff and create a blog post about it on [dev.to](https://dev.to/new).
 
-In my next post, we’ll dig into some of the cool features of Storybook.
+##  Anatomy of a Story
+
+Now that you've got Storybook running in your project, you probably took a look at the out of the box stories that ship with it.
+
+Let's break down what's going on in one of the sample stories.
+
+```javascript
+// We need the storiesOf function to write our stories.
+import { storiesOf } from '@storybook/react';
+
+// A function that allows you to simulate an action.
+import { action } from '@storybook/addon-actions';
+
+// The React component that we want to use in our Storybook stories.
+import { Button } from '@storybook/react/demo';
+
+// Here Button is the component name that you will see in the collapsible component tree
+// in the Storybook application.
+storiesOf('Button', module)
+
+  // A first story to show what the button looks like with text.
+  // Notice the  simulated action as well.
+  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
+
+  // A secont story to show what the button looks like with emojis.
+  .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
+```
+
+That's pretty much all there is to writing stories.  It's really easy to use and such a great tool. In my next post, we’ll dig into some of the cool features of Storybook.
+
+## References
+
+* [Storybook](https://storybook.js.org), loads of great documentation here.
+* A [great example from airbnb](http://airbnb.io/react-dates) of Storybook.
+* Slides from my talk I did last year, [story.iamdeveloper.com](http://story.iamdeveloper.com)
