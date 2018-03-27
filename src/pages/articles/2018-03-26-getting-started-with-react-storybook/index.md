@@ -68,7 +68,7 @@ storiesOf('Button', module)
   // Notice the  simulated action as well.
   .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
 
-  // A secont story to show what the button looks like with emojis.
+  // A second story to show what the button looks like with emojis.
   .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
 ```
 
