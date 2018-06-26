@@ -10,7 +10,9 @@
     "clean": "npm run clean:public",
     "lint": "./node_modules/.bin/eslint --cache --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public"
+    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -47,7 +49,8 @@
     "gatsby-transformer-sharp": "1.6.20",
     "lodash": "4.17.5",
     "react-helmet": "5.2.0",
-    "typeface-roboto": "0.0.54"
+    "typeface-roboto": "0.0.54",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "babel-eslint": "7.2.3",
@@ -61,5 +64,6 @@
     "lost": "8.2.0",
     "postcss-pxtorem": "4.0.1",
     "url-loader": "0.6.2"
-  }
+  },
+  "snyk": true
 }
