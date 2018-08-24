@@ -1,13 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import Sidebar from "../components/Sidebar";
-import TagTemplateDetails from "../components/TagTemplateDetails";
+import React from 'react'
+import Helmet from 'react-helmet'
+import Sidebar from '../components/Sidebar'
+import TagTemplateDetails from '../components/TagTemplateDetails'
 
 class TagTemplate extends React.Component {
   render() {
-    const { title } = this.props.data.site.siteMetadata;
-    const { tag } = this.props.pathContext;
+    const { title } = this.props.data.site.siteMetadata
+    const { tag } = this.props.pathContext
 
     return (
       <div>
@@ -15,24 +14,11 @@ class TagTemplate extends React.Component {
         <Sidebar {...this.props} />
         <TagTemplateDetails {...this.props} />
       </div>
-    );
+    )
   }
 }
 
-TagTemplate.propTypes = {
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired
-      })
-    })
-  }),
-  pathContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired
-  })
-};
-
-export default TagTemplate;
+export default TagTemplate
 
 export const pageQuery = graphql`
   query TagPage($tag: String) {
@@ -48,10 +34,11 @@ export const pageQuery = graphql`
         author {
           name
           email
-          linkedin
+          stackoverflow
           twitter
           github
-          stackoverflow
+          rss
+          linkedin
           devto
         }
       }
@@ -83,4 +70,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import kebabCase from 'lodash/kebabCase';
@@ -45,19 +44,6 @@ class CategoriesRoute extends React.Component {
   }
 }
 
-CategoriesRoute.propTypes = {
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired
-      })
-    }),
-    allMarkdownRemark: PropTypes.shape({
-      group: PropTypes.array.isRequired
-    })
-  })
-};
-
 export default CategoriesRoute;
 
 export const pageQuery = graphql`
@@ -74,10 +60,11 @@ export const pageQuery = graphql`
         author {
           name
           email
-          linkedin
+          stackoverflow
           twitter
           github
-          stackoverflow
+          rss
+          linkedin
           devto
         }
       }

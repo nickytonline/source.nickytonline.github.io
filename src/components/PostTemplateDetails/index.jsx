@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import moment from 'moment';
+import Disqus from '../Disqus/Disqus';
 import './style.scss';
 
 class PostTemplateDetails extends React.Component {
@@ -19,14 +19,20 @@ class PostTemplateDetails extends React.Component {
     const tagsBlock = (
       <div className="post-single__tags">
         <ul className="post-single__tags-list">
-          {tags.map((tag, i) =>
+          {tags && tags.map((tag, i) => (
             <li className="post-single__tags-list-item" key={tag}>
               <Link to={tag} className="post-single__tags-list-item-link">
                 {post.frontmatter.tags[i]}
               </Link>
             </li>
-          )}
+          ))}
         </ul>
+      </div>
+    );
+
+    const commentsBlock = (
+      <div>
+        <Disqus postNode={post} siteMetadata={this.props.data.site.siteMetadata} />
       </div>
     );
 
@@ -46,27 +52,16 @@ class PostTemplateDetails extends React.Component {
             <hr />
             <p className="post-single__footer-text">
               {subtitle}
-              <a href={author.twitter} target="_blank" rel="noopener noreferrer">
+              <a href={`https://twitter.com/${author.twitter}`} target="_blank" rel="noopener noreferrer">
                 <br /> <strong>{author.name}</strong> on Twitter
               </a>
             </p>
+            {commentsBlock}
           </div>
         </div>
       </div>
     );
   }
 }
-
-PostTemplateDetails.propTypes = {
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        subtitle: PropTypes.string.isRequired,
-        author: PropTypes.object.isRequired
-      })
-    }),
-    markdownRemark: PropTypes.object.isRequired
-  })
-};
 
 export default PostTemplateDetails;

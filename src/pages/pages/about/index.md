@@ -1,7 +1,7 @@
 ---
-title: "About me"
+title: 'About me'
 layout: page
-path: "/about"
+path: '/about'
 ---
 
-I have no allergies. I’m also not a big fan of spiders.
+I'm not a big fan of spiders.
