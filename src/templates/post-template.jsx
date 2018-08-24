@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import PostTemplateDetails from '../components/PostTemplateDetails';
 
@@ -7,18 +6,13 @@ class PostTemplate extends React.Component {
   render() {
     const { title, subtitle } = this.props.data.site.siteMetadata;
     const post = this.props.data.markdownRemark;
-
-    let description;
-    if (post.frontmatter.description !== null) {
-      description = post.frontmatter.description;
-    } else {
-      description = subtitle;
-    }
+    const { title: postTitle, description: postDescription } = post.frontmatter;
+    const description = postDescription !== null ? postDescription : subtitle;
 
     return (
       <div>
         <Helmet>
-          <title>{`${post.frontmatter.title} - ${title}`}</title>
+          <title>{`${postTitle} - ${title}`}</title>
           <meta name="description" content={description} />
         </Helmet>
         <PostTemplateDetails {...this.props} />
@@ -26,18 +20,6 @@ class PostTemplate extends React.Component {
     );
   }
 }
-
-PostTemplate.propTypes = {
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        subtitle: PropTypes.string.isRequired
-      })
-    }),
-    markdownRemark: PropTypes.object.isRequired
-  })
-};
 
 export default PostTemplate;
 
@@ -52,6 +34,8 @@ export const pageQuery = graphql`
           name
           twitter
         }
+        disqusShortname
+        url
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

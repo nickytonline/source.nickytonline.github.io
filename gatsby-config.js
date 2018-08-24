@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    url: 'https://www.iamdeveloper.com',
+    url: 'https://lumen.netlify.com',
     title: 'Just some dev',
     subtitle: '',
     copyright: '© All rights reserved.',
+    disqusShortname: '',
     menu: [
       {
         label: 'Articles',
@@ -17,11 +18,12 @@ module.exports = {
     author: {
       name: 'Nick Taylor',
       email: 'nick@iamdeveloper.com',
-      twitter: 'https://twitter.com/nickytonline',
-      github: 'https://github.com/nickytonline',
-      linkedin: 'http://www.linkedin.com/in/nickytonline',
+      twitter: 'nickytonline',
+      github: 'nickytonline',
+      linkedin: 'nickytonline',
       stackoverflow: 'https://stackoverflow.com/users/77814/nickytonline',
-      devto: 'https://dev.to/nickytonline'
+      devto: 'https://dev.to/nickytonline',
+      rss: '/rss.xml'
     }
   },
   plugins: [
@@ -39,9 +41,9 @@ module.exports = {
           {
             site {
               siteMetadata {
-                url
+                site_url: url
                 title
-                subtitle
+                description: subtitle
               }
             }
           }
@@ -53,11 +55,10 @@ module.exports = {
                 Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.frontmatter.description,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.url + edge.node.fields.slug,
-                  guid: site.siteMetadata.url + edge.node.fields.slug,
+                  url: site.siteMetadata.site_url + edge.node.fields.slug,
+                  guid: site.siteMetadata.site_url + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': edge.node.html }]
-                })
-              ),
+                })),
             query: `
               {
                 allMarkdownRemark(
@@ -94,16 +95,11 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 960,
-              linkImagesToOriginal: false
-            }
+            options: { maxWidth: 960 }
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
-            options: {
-              wrapperStyle: 'margin-bottom: 1.0725rem'
-            }
+            options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
@@ -115,9 +111,11 @@ module.exports = {
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-55732414-1'
-      }
+      options: { trackingId: 'UA-73379983-2' }
+    },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: { fonts: ['roboto:400,400i,500,700'] }
     },
     {
       resolve: 'gatsby-plugin-sitemap',

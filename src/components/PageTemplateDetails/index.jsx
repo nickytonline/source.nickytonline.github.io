@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Sidebar from '../Sidebar';
 import './style.scss';
 
@@ -22,11 +21,5 @@ class PageTemplateDetails extends React.Component {
     );
   }
 }
-
-PageTemplateDetails.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object.isRequired
-  })
-};
 
 export default PageTemplateDetails;

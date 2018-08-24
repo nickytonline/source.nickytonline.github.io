@@ -1,16 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Post from '../Post';
 
 class CategoryTemplateDetails extends React.Component {
   render() {
     const items = [];
-    const category = this.props.pathContext.category;
+    const { category } = this.props.pathContext;
     const posts = this.props.data.allMarkdownRemark.edges;
     posts.forEach((post) => {
-      items.push(
-        <Post data={post} key={post.node.fields.slug} />
-      );
+      items.push(<Post data={post} key={post.node.fields.slug} />);
     });
 
     return (
@@ -29,16 +26,5 @@ class CategoryTemplateDetails extends React.Component {
     );
   }
 }
-
-CategoryTemplateDetails.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array.isRequired
-    })
-  }),
-  pathContext: PropTypes.shape({
-    category: PropTypes.string.isRequired
-  })
-};
 
 export default CategoryTemplateDetails;

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Post from '../Post';
 
 class TagTemplateDetails extends React.Component {
@@ -8,9 +7,7 @@ class TagTemplateDetails extends React.Component {
     const tagTitle = this.props.pathContext.tag;
     const posts = this.props.data.allMarkdownRemark.edges;
     posts.forEach((post) => {
-      items.push(
-        <Post data={post} key={post.node.fields.slug} />
-      );
+      items.push(<Post data={post} key={post.node.fields.slug} />);
     });
 
     return (
@@ -29,16 +26,5 @@ class TagTemplateDetails extends React.Component {
     );
   }
 }
-
-TagTemplateDetails.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array.isRequired
-    })
-  }),
-  pathContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired
-  })
-};
 
 export default TagTemplateDetails;

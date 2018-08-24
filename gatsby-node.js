@@ -9,13 +9,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
   return new Promise((resolve, reject) => {
-    const postTemplate = path.resolve('./src/templates/post-template.js');
-    const pageTemplate = path.resolve('./src/templates/page-template.js');
-    const tagTemplate = path.resolve('./src/templates/tag-template.js');
-    const categoryTemplate = path.resolve('./src/templates/category-template.js');
+    const postTemplate = path.resolve('./src/templates/post-template.jsx');
+    const pageTemplate = path.resolve('./src/templates/page-template.jsx');
+    const tagTemplate = path.resolve('./src/templates/tag-template.jsx');
+    const categoryTemplate = path.resolve('./src/templates/category-template.jsx');
 
-    graphql(
-      `
+    graphql(`
     {
       allMarkdownRemark(
         limit: 1000,
@@ -35,8 +34,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       }
     }
-  `
-    ).then((result) => {
+  `).then((result) => {
       if (result.errors) {
         console.log(result.errors);
         reject(result.errors);
@@ -47,17 +45,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage({
             path: edge.node.fields.slug,
             component: slash(pageTemplate),
-            context: {
-              slug: edge.node.fields.slug
-            }
+            context: { slug: edge.node.fields.slug }
           });
         } else if (_.get(edge, 'node.frontmatter.layout') === 'post') {
           createPage({
             path: edge.node.fields.slug,
             component: slash(postTemplate),
-            context: {
-              slug: edge.node.fields.slug
-            }
+            context: { slug: edge.node.fields.slug }
           });
 
           let tags = [];
@@ -71,9 +65,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             createPage({
               path: tagPath,
               component: tagTemplate,
-              context: {
-                tag
-              }
+              context: { tag }
             });
           });
 
@@ -88,9 +80,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             createPage({
               path: categoryPath,
               component: categoryTemplate,
-              context: {
-                category
-              }
+              context: { category }
             });
           });
         }
@@ -123,10 +113,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       value: slug
     });
 
-    if (typeof node.frontmatter.tags !== 'undefined') {
-      const tagSlugs = node.frontmatter.tags.map(
-        tag => `/tags/${_.kebabCase(tag)}/`
-      );
+    if (node.frontmatter.tags) {
+      const tagSlugs = node.frontmatter.tags.map(tag => `/tags/${_.kebabCase(tag)}/`);
       createNodeField({ node, name: 'tagSlugs', value: tagSlugs });
     }
 
