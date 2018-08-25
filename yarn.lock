@@ -4161,6 +4161,14 @@ gatsby-plugin-google-fonts@latest:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-0.0.4.tgz#dc1402a71f27c3ae6caee10777d10adadf74bd7c"
 
+gatsby-plugin-manifest@1.0.27:
+  version "1.0.27"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.27.tgz#148327ebfaf9a0a6791012cc5b5363356ee16ddf"
+  dependencies:
+    babel-runtime "^6.26.0"
+    bluebird "^3.5.0"
+    sharp "^0.20.1"
+
 gatsby-plugin-offline@^1.0.12:
   version "1.0.18"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-1.0.18.tgz#2ee2a24d2f69fcc43a015132f07141b69295318d"
@@ -9736,7 +9744,7 @@ shallowequal@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
 
-sharp@^0.20.0:
+sharp@^0.20.0, sharp@^0.20.1:
   version "0.20.7"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.20.7.tgz#d6e1abbe91453e2200090043f91a5cd345ee95cf"
   dependencies:

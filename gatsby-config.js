@@ -58,7 +58,7 @@ module.exports = {
                   url: site.siteMetadata.site_url + edge.node.fields.slug,
                   guid: site.siteMetadata.site_url + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': edge.node.html }]
-                }), ),
+                }),),
             query: `
               {
                 allMarkdownRemark(
@@ -154,6 +154,15 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-postcss-sass',
-    'gatsby-plugin-twitter'
+    'gatsby-plugin-twitter',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Just some dev',
+        short_name: 'Just some dev',
+        start_url: '/',
+        icon: 'src/assets/favicon/ms-icon-310x310.png' // This path is relative to the root of the site.
+      }
+    }
   ]
 };
