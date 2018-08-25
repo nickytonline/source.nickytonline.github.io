@@ -1,9 +1,9 @@
 ---
 title: 'My Git Aliases'
-date: '2018-08-24T00:00:00Z'
+date: '2018-08-26T00:00:00Z'
 layout: post
-draft: true
-path: '/2018-08-24-my-git-aliases/'
+draft: false
+path: '/2018-08-25-my-git-aliases/'
 category: 'Productivity'
 description: 'A list of my git aliases and what they do'
 tags:
