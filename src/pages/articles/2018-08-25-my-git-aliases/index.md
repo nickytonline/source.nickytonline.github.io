@@ -114,16 +114,16 @@ Before we get started, why git aliases? Well for one thing, I don't know about y
    Running `git vc` cleans your git repository, so anything not in git is wiped, e.g. `node_modules`, settings files which aren't supposed to be in a repo etc. So BEWARE before you run this.
 
 1. `alias.refactor commit -m 👷Refactor` -
-   When running `git refactor`, a generic refactor message is used for committing any staged files, i.e. `👷Refactor`. I'll probably improve on this to just allow a user to concatenate a custom message to it. But that's for another day.
+   When running `git refactor`, a generic refactor message is used for committing any staged files, i.e. `👷Refactor`. I'll probably improve on this to allow a user to concatenate a custom message to it. But that's for another day.
 
 1. `alias.formatting commit -m 💅Formatting` -
-   When running `git formatting`, a generic formatting message is used for committing any staged files, i.e. `💅Formatting`. I'll probably improve on this to just allow a user to concatenate a custom message to it. But that's for another day.
+   When running `git formatting`, a generic formatting message is used for committing any staged files, i.e. `💅Formatting`. I'll probably improve on this to allow a user to concatenate a custom message to it. But that's for another day.
 
 1. `alias.comments commit -m 📒Comments` -
-   When running `git comments`, a generic comments message is used for committing any staged files, i.e. `📒Comments`. I'll probably improve on this to just allow a user to concatenate a custom message to it. But that's for another day.
+   When running `git comments`, a generic comments message is used for committing any staged files, i.e. `📒Comments`. I'll probably improve on this to allow a user to concatenate a custom message to it. But that's for another day.
 
 1. `alias.tests commit -m ✅Tests` -
-   When running `git tests`, a generic tests message is used for committing any staged files, i.e. `✅Tests`. I'll probably improve on this to just allow a user to concatenate a custom message to it. But that's for another day.
+   When running `git tests`, a generic tests message is used for committing any staged files, i.e. `✅Tests`. I'll probably improve on this to allow a user to concatenate a custom message to it. But that's for another day.
 
 1. `alias.prum pull --rebase upstream master` -
    Running `git prum` rebases your current branch off your upstream remote.
