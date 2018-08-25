@@ -71,7 +71,7 @@ Before we get started, why git aliases? Well for one thing, I don't know about y
    When you want to rename a branch, run e.g. `git renb my-awesom-branch my-awesome-branch`.
 
 1. `alias.rhh reset --hard HEAD` -
-   The nuclear option. Run `git rhh` to wipe out all you changes and start from the `HEAD`.
+   The nuclear option. Run `git rhh` to wipe out all your changes and start from the `HEAD`.
 
 1. `alias.rh reset --hard` -
    When you specify what to reset to, a hard reset is performed, e.g. `git rh HEAD~2`.
