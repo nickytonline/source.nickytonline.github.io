@@ -10,7 +10,7 @@ tags:
   - 'git'
 ---
 
-Alright, so Phil Nash [roped me into this one](https://dev.to/philnash/comment/518o). This keeps in line with my other posts that are “Not just a Gist”. If you want to read about those posts, check out [mac.iamdeveloper.com](https://mac.iamdeveloper.com) and [vscode.iamdeveloper.com](https://vscode.iamdeveloper.com). This post's birth comes from [gitaliases.iamdeveloper.com](https://gitaliases.iamdeveloper.com) which is essentially a copy paste of my git aliases.
+Alright, so Phil Nash [roped me into this one](https://dev.to/philnash/comment/518o). This keeps in line with my other posts that are “Not just a Gist”. If you want to read about those posts, check out [mac.iamdeveloper.com](https://mac.iamdeveloper.com) and [vscode.iamdeveloper.com](https://vscode.iamdeveloper.com). This post’s birth comes from [a gist](https://gist.github.com/nickytonline/128d7d164d1eea5daba6753ed0829f41#file-gitconfig) which is essentially a copy paste of my git aliases.
 
 I'm going to provide my list of git aliases and explain what each alias does, plain and simple. Let's get started! 🏁 For those new to git aliases, please see the [defacto docs on aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases).
 
