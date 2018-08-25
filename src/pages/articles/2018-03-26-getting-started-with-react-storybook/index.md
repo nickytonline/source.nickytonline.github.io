@@ -1,13 +1,13 @@
 ---
-title: "Getting Started with Storybook for React"
-date: "2018-03-26T05:00:00Z"
+title: 'Getting Started with Storybook for React'
+date: '2018-03-26T05:00:00Z'
 layout: post
 draft: false
-path: "/2018-03-26-getting-started-with-react-storybook/"
-description: "A short write up on setting up React Storybook."
+path: '/2018-03-26-getting-started-with-react-storybook/'
+description: 'A short write up on setting up React Storybook.'
 tags:
-  - "React"
-category: "UI/UX"
+  - 'React'
+category: 'UI/UX'
 ---
 
 ## Story what?
@@ -44,7 +44,7 @@ We’ll assume you already have a React project created.
 
 8.  The other script, `build-storybook`, if run, will generate a static Storybook site that you can deploy to wherever you like. By default, it will be generated into a folder called `storybook-static`.
 
-##  Anatomy of a Story
+## Anatomy of a Story
 
 Now that you've got Storybook running in your project, you probably took a look at the out of the box stories that ship with it.
 
@@ -63,19 +63,22 @@ import { Button } from '@storybook/react/demo';
 // Here Button is the component name that you will see in the collapsible component tree
 // in the Storybook application.
 storiesOf('Button', module)
-
   // A first story to show what the button looks like with text.
   // Notice the  simulated action as well.
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
+  .add('with text', () => (
+    <Button onClick={action('clicked')}>Hello Button</Button>
+  ))
 
   // A second story to show what the button looks like with emojis.
-  .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
+  .add('with some emoji', () => (
+    <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
+  ));
 ```
 
-That's pretty much all there is to writing stories.  It's really easy to use and such a great tool. In my next post, we’ll dig into some of the cool features of Storybook.
+That's pretty much all there is to writing stories. It's really easy to use and such a great tool. In my next post, we’ll dig into some of the cool features of Storybook.
 
 ## References
 
-* [Storybook](https://storybook.js.org), loads of great documentation here.
-* A [great example from airbnb](http://airbnb.io/react-dates) of Storybook.
-* Slides from my talk I did last year, [story.iamdeveloper.com](http://story.iamdeveloper.com)
+- [Storybook](https://storybook.js.org), loads of great documentation here.
+- A [great example from airbnb](http://airbnb.io/react-dates) of Storybook.
+- Slides from my talk I did last year, [story.iamdeveloper.com](http://story.iamdeveloper.com)

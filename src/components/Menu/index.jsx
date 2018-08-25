@@ -23,11 +23,7 @@ class Menu extends React.Component {
       </ul>
     );
 
-    return (
-      <nav className="menu">
-        {menuBlock}
-      </nav>
-    );
+    return <nav className="menu">{menuBlock}</nav>;
   }
 }
 

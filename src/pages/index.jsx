@@ -1,16 +1,16 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Post from '../components/Post'
-import Sidebar from '../components/Sidebar'
+import React from 'react';
+import Helmet from 'react-helmet';
+import Post from '../components/Post';
+import Sidebar from '../components/Sidebar';
 
 class IndexRoute extends React.Component {
   render() {
-    const items = []
-    const { title, subtitle } = this.props.data.site.siteMetadata
-    const posts = this.props.data.allMarkdownRemark.edges
-    posts.forEach(post => {
-      items.push(<Post data={post} key={post.node.fields.slug} />)
-    })
+    const items = [];
+    const { title, subtitle } = this.props.data.site.siteMetadata;
+    const posts = this.props.data.allMarkdownRemark.edges;
+    posts.forEach((post) => {
+      items.push(<Post data={post} key={post.node.fields.slug} />);
+    });
 
     return (
       <div>
@@ -23,11 +23,11 @@ class IndexRoute extends React.Component {
           <div className="content__inner">{items}</div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default IndexRoute
+export default IndexRoute;
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -73,4 +73,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -1,14 +1,14 @@
 ---
-title: "2018 Resolutions"
-date: "2018-01-03T00:00:00Z"
+title: '2018 Resolutions'
+date: '2018-01-03T00:00:00Z'
 layout: post
 draft: false
-path: "/2018-resolutions/"
-category: "Self Improvement"
-description: "Resolutions for the year we know as 2018."
+path: '/2018-resolutions/'
+category: 'Self Improvement'
+description: 'Resolutions for the year we know as 2018.'
 tags:
-  - "Dev Goals"
-  - "Resolutions"
+  - 'Dev Goals'
+  - 'Resolutions'
 ---
 
 So like many, I too will make resolutions for 2018. I made myself accountable by joining a recent [#DevDiscuss on Twitter](https://twitter.com/ThePracticalDev/status/948373905181478913).

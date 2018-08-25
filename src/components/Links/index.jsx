@@ -1,10 +1,10 @@
-import React from 'react'
-import './style.scss'
-import '../../assets/fonts/fontello-771c82e0/css/fontello.css'
+import React from 'react';
+import './style.scss';
+import '../../assets/fonts/fontello-771c82e0/css/fontello.css';
 
 class Links extends React.Component {
   render() {
-    const author = this.props.data
+    const author = this.props.data;
     const links = {
       stackoverflow: author.stackoverflow,
       twitter: author.twitter,
@@ -12,8 +12,8 @@ class Links extends React.Component {
       linkedin: author.linkedin,
       devto: author.devto,
       rss: author.rss,
-      email: author.email,
-    }
+      email: author.email
+    };
 
     return (
       <div className="links">
@@ -89,8 +89,8 @@ class Links extends React.Component {
           </li>
         </ul>
       </div>
-    )
+    );
   }
 }
 
-export default Links
+export default Links;

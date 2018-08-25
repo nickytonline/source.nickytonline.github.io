@@ -1,14 +1,14 @@
 ---
-title: "My Visual Studio Code Setup"
-date: "2017-12-20T05:00:00Z"
+title: 'My Visual Studio Code Setup'
+date: '2017-12-20T05:00:00Z'
 layout: post
 draft: false
-path: "/my-visual-studio-code-setup/"
-category: "Programming"
-description: "A small write up on my Visual Studio Code setup"
+path: '/my-visual-studio-code-setup/'
+category: 'Programming'
+description: 'A small write up on my Visual Studio Code setup'
 tags:
-  - "Visual Studio Code"
-  - "Developer Tools"
+  - 'Visual Studio Code'
+  - 'Developer Tools'
 ---
 
 This originally was [just a gist](https://gist.github.com/nickytonline/3d5ffeab871a6662d7a3f89bb0bed0f8), but I thought it made sense to just convert it to a blog post.
@@ -31,77 +31,77 @@ VS Code has a huge array of extensions available on their [marketplace](https://
 
 ### Node/JS
 
-* [Node extension pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack) (must have)
-* [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+- [Node extension pack](https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack) (must have)
+- [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 
 ### Formatting/Linting
 
-* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-* [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-* [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
-* [Prettify JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json)
-* [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
+- [Prettify JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json)
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ### CSS
 
-* [IntelliSense for CSS class names](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
-* [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-* [Color Picker](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color)
-* [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
-* [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+- [IntelliSense for CSS class names](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
+- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+- [Color Picker](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color)
+- [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 
 ### Debugging
 
 Language extensions like Go and Python (see below) when installed get all the proper tooling set up to debug for those specific languages. Here's some others. The easiest way to get started with debugging is to press `F5` and VS Code will offer you debugging configurations to get set up with.
 
-* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+- [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
 ### Git
 
-* [Git extension pack](https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack) (must have)
-* [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
-* [gitflow](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow)
-* [Open in GitHub / Bitbucket / Gitlab / VisualStudio.com !](https://marketplace.visualstudio.com/items?itemName=ziyasal.vscode-open-in-github)
+- [Git extension pack](https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack) (must have)
+- [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
+- [gitflow](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow)
+- [Open in GitHub / Bitbucket / Gitlab / VisualStudio.com !](https://marketplace.visualstudio.com/items?itemName=ziyasal.vscode-open-in-github)
 
 ### Unit Testing
 
-* [JavaScript Unit Test snippets](https://marketplace.visualstudio.com/items?itemName=iZDT.javascript-unit-test-snippet)
-* [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
+- [JavaScript Unit Test snippets](https://marketplace.visualstudio.com/items?itemName=iZDT.javascript-unit-test-snippet)
+- [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 
 ### React
 
-* [React Redux ES6 Snippets](https://marketplace.visualstudio.com/items?itemName=timothymclane.react-redux-es6-snippets)
-* [Reactjs code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
-* [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
+- [React Redux ES6 Snippets](https://marketplace.visualstudio.com/items?itemName=timothymclane.react-redux-es6-snippets)
+- [Reactjs code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
+- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
 
 ### Other Languages
 
-* [Go](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
-* [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Go](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 ### REPLs/Playgrounds
 
-* [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) (check out [Introducing Quokka...](https://medium.com/@artem.govorov/introducing-quokka-the-live-scratchpad-for-javascript-free-developer-tool-a0eb15bb4f54))
+- [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) (check out [Introducing Quokka...](https://medium.com/@artem.govorov/introducing-quokka-the-live-scratchpad-for-javascript-free-developer-tool-a0eb15bb4f54))
 
 ### Viewers
 
-* [Image Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
-* [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
-* [View in Browser](https://marketplace.visualstudio.com/items?itemName=qinjia.view-in-browser)
-* **Update 2018/02/16:** [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode), not a viewer per se, but a great way to take beautiful images of code snippets.
+- [Image Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
+- [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
+- [View in Browser](https://marketplace.visualstudio.com/items?itemName=qinjia.view-in-browser)
+- **Update 2018/02/16:** [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode), not a viewer per se, but a great way to take beautiful images of code snippets.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hey <a href="https://twitter.com/syntaxfm?ref_src=twsrc%5Etfw">@syntaxfm</a>, have you seen the new Polacode extension for <a href="https://twitter.com/code?ref_src=twsrc%5Etfw">@code</a>? It&#39;s 🔥 <a href="https://t.co/lnWgxDq9Hu">https://t.co/lnWgxDq9Hu</a> <a href="https://twitter.com/hashtag/vscode?src=hash&amp;ref_src=twsrc%5Etfw">#vscode</a> <a href="https://t.co/cama1UWzh4">pic.twitter.com/cama1UWzh4</a></p>&mdash; Nick Taylor (@nickytonline) <a href="https://twitter.com/nickytonline/status/964579536137523200?ref_src=twsrc%5Etfw">February 16, 2018</a></blockquote>
 
 ### DevOpsy Stuff
 
-* [Jenkinsfile Support](https://marketplace.visualstudio.com/items?itemName=secanis.jenkinsfile-support)
-* [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
+- [Jenkinsfile Support](https://marketplace.visualstudio.com/items?itemName=secanis.jenkinsfile-support)
+- [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
 
 ### Hack the Editor
 
-* [Guides](https://marketplace.visualstudio.com/items?itemName=spywhere.guides)
-* [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) (currently used for the [Cobalt 2 theme](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2).)
+- [Guides](https://marketplace.visualstudio.com/items?itemName=spywhere.guides)
+- [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css) (currently used for the [Cobalt 2 theme](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2).)
 
 **Update 2018/01/28:** The Custom CSS and JS Loader can also be used to get a kind of Operator Mono look by using two fonts. See the tweet below. I did run in to some issues though. The main one was that the CSS class names had changed. Just read the whole tweet thread for all the info.
 
@@ -113,16 +113,16 @@ TLDR; check out https://gist.github.com/nickytonline/8086319bf5836797ee3dea802a7
 
 ### Miscellaneous
 
-* [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
-* [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
-* [Gatsby Snippets](https://marketplace.visualstudio.com/items?itemName=nickytonline.vscode-gatsby-snippets)
+- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
+- [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+- [Gatsby Snippets](https://marketplace.visualstudio.com/items?itemName=nickytonline.vscode-gatsby-snippets)
 
 ## Themes
 
-* [Cobalt 2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
-* [Dracula theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
-* [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
-* [Material theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
+- [Cobalt 2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
+- [Dracula theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
+- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+- [Material theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
 
 ### Current Theme Setup
 
