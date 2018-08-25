@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
+    url: 'https://www.iamdeveloper.com',
     title: 'Just some dev',
     subtitle: '',
     copyright: '© All rights reserved.',
@@ -58,7 +58,7 @@ module.exports = {
                   url: site.siteMetadata.site_url + edge.node.fields.slug,
                   guid: site.siteMetadata.site_url + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': edge.node.html }]
-                })),
+                }), ),
             query: `
               {
                 allMarkdownRemark(
