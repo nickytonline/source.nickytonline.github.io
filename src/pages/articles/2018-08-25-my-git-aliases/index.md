@@ -128,4 +128,6 @@ Before we get started, why git aliases? Well for one thing, I don't know about y
 1. `alias.prum pull --rebase upstream master` -
    Running `git prum` rebases your current branch off your upstream remote.
 
+1. `alias.mend commit --amend` - Running `git mend` lets you amend a commit.
+
 FIN
