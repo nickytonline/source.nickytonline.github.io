@@ -21,7 +21,7 @@ In this post, I’ll show you how to get React Storybook up and running with Pre
 5. Now let’s uninstall `react` from our dependencies as we want to use react! (It’s assumed that you’re project already had react in it.
 6. Next we need to install [preact-compat](https://github.com/developit/preact-compat) so that Preact will play nicely with Storybook. If you need react-compat as a dependency for other react libraries, install it to dependencies, `npm install preact-compat`. Otherwise install it as a dev depency, i.e. `npm install preact-compat -D`
 7. Almost there!
-8. The last thing we need to do is tell web pack (what Storybook uses under the hood), to use preact-compat. To do this, we need to create a custom webpack configuration file for Storybook. Lucky for us, Storybook supports this out of the box. In the root folder where your package.json file is, there will be a new folder called `.storybook`. In there it contains files related to Storybook configuration. Create a new file in there called `webpack.config.js` and paste the following contents and save the file.
+8. The last thing we need to do is tell [webpack](https://webpack.js.org) (what Storybook uses under the hood), to use preact-compat. To do this, we need to create a custom webpack configuration file for Storybook. Lucky for us, Storybook supports this out of the box. In the root folder where your package.json file is, there will be a new folder called `.storybook`. In there it contains files related to Storybook configuration. Create a new file in there called `webpack.config.js` and paste the following contents and save the file.
 
 ```
 module.exports = {
@@ -35,7 +35,7 @@ module.exports = {
 };
 ```
 
-Note that this is a super bare bones webpack configuration. You can add anything else here you may need just like a regular [webpack](https://webpack.js.org) configuration file.
+Note that this is a super bare bones webpack configuration. You can add anything else here you may need just like a regular webpack configuration file.
 
 9. Storybook will create some demo stories for you found in the root folder of your app at `./stories/index.stories.js`
 10. Open this file and remove the React reference and replace it with `import { h } from "preact";`
