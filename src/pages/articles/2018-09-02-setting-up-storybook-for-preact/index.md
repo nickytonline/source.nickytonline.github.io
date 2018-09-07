@@ -19,7 +19,7 @@ In this post, I’ll show you how to get React Storybook up and running with Pre
 3. Next from the command line, run `getstorybook`
 4. This will install all the dependencies you need to run Storybook.
 5. Now let’s uninstall `react` from our dependencies as we want to use preact!
-6. Next we need to install [preact-compat](https://github.com/developit/preact-compat) so that Preact will play nicely with Storybook. If you need react-compat as a dependency for other react libraries, install it to dependencies, `npm install preact-compat`. Otherwise install it as a dev depency, i.e. `npm install preact-compat -D`
+6. Next we need to install [preact-compat](https://github.com/developit/preact-compat) so that Preact will play nicely with Storybook. If you need preact-compat as a dependency for other react libraries, install it to dependencies, `npm install preact-compat`. Otherwise install it as a dev depency, i.e. `npm install preact-compat -D`
 7. Almost there!
 8. The last thing we need to do is tell [webpack](https://webpack.js.org) (what Storybook uses under the hood), to use preact-compat. To do this, we need to create a custom webpack configuration file for Storybook. Lucky for us, Storybook supports this out of the box. In the root folder where your package.json file is, there will be a new folder called `.storybook`. In there it contains files related to Storybook configuration. Create a new file in there called `webpack.config.js` and paste the following contents and save the file.
 
