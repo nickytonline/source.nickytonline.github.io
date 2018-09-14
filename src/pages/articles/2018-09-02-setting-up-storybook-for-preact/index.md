@@ -10,7 +10,7 @@ tags:
   - 'Preact'
 ---
 
-In my last Storybook post, [Getting Started with Storybook for React](https://www.iamdeveloper.com/2018-03-26-getting-started-with-react-storybook), I showed you how to install Storybook for React and gave a quick breakdown of what all the pieces were. I suggest giving that a quick read before continuing here.
+In my last Storybook post, [Getting Started with Storybook for React](/2018-03-26-getting-started-with-react-storybook), I showed you how to install Storybook for React and gave a quick breakdown of what all the pieces were. I suggest giving that a quick read before continuing here.
 
 In this post, I’ll show you how to get React Storybook up and running with Preact. The assumption is that the project you want to add [Storybook](https://storybook.js.org) to already has [Preact](https://github.com/developit/preact) installed as a dependency.
 
