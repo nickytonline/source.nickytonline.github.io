@@ -5,10 +5,18 @@ import Menu from '../Menu';
 import Links from '../Links';
 import profilePic from '../../pages/photo.jpg';
 import christmasProfilePic from '../../pages/nick-santa.jpg';
+import halloweenProfilePic from '../../pages/nick-halloween.jpg';
 import './style.scss';
 
 function getProfilePic(date) {
-  return date.getMonth() === 11 ? christmasProfilePic : profilePic;
+  switch (date.getMonth()) {
+    case 9:
+      return halloweenProfilePic;
+    case 11:
+      return christmasProfilePic;
+    default:
+      return profilePic;
+  }
 }
 
 class Sidebar extends React.Component {
