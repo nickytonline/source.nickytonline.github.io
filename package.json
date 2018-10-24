@@ -11,7 +11,9 @@
     "lint": "./node_modules/.bin/eslint --cache --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -55,11 +57,11 @@
     "gatsby-plugin-offline": "^1.0.12",
     "gatsby-plugin-postcss-sass": "^1.0.15",
     "gatsby-plugin-react-helmet": "^2.0.3",
-    "gatsby-plugin-sharp": "^1.6.25",
+    "gatsby-plugin-sharp": "^2.0.5",
     "gatsby-plugin-sitemap": "^1.2.10",
     "gatsby-plugin-twitter": "^1.0.20",
     "gatsby-remark-copy-linked-files": "^1.5.25",
-    "gatsby-remark-images": "^1.5.37",
+    "gatsby-remark-images": "^2.0.1",
     "gatsby-remark-prismjs": "^1.2.12",
     "gatsby-remark-responsive-iframe": "^1.4.16",
     "gatsby-remark-smartypants": "^1.4.10",
@@ -69,7 +71,8 @@
     "lodash": "^4.17.4",
     "react": "^15.6.1",
     "react-disqus-comments": "^1.1.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "snyk": "^1.104.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -84,5 +87,6 @@
     "lost": "^8.2.0",
     "postcss-pxtorem": "^4.0.1",
     "prettier": "^1.10.2"
-  }
+  },
+  "snyk": true
 }
