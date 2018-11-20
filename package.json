@@ -47,7 +47,7 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "gatsby": "^1.9.164",
+    "gatsby": "^2.0.0",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-catch-links": "^1.0.14",
     "gatsby-plugin-feed": "^1.3.15",
