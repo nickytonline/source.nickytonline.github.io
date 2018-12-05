@@ -47,7 +47,7 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "gatsby": "^1.9.164",
+    "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-catch-links": "^1.0.14",
     "gatsby-plugin-feed": "^1.3.15",
@@ -66,7 +66,7 @@
     "gatsby-remark-responsive-iframe": "^1.4.16",
     "gatsby-remark-smartypants": "^1.4.10",
     "gatsby-source-filesystem": "^1.5.11",
-    "gatsby-transformer-remark": "^1.7.28",
+    "gatsby-transformer-remark": "^1.7.44",
     "gatsby-transformer-sharp": "^1.6.16",
     "lodash": "^4.17.4",
     "react": "^15.6.1",
