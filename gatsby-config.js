@@ -23,6 +23,7 @@ module.exports = {
       linkedin: 'nickytonline',
       stackoverflow: 'https://stackoverflow.com/users/77814/nickytonline',
       devto: 'https://dev.to/nickytonline',
+      mastodon: 'https://toot.cafe/@nickytonline',
       rss: '/rss.xml'
     }
   },
@@ -58,7 +59,7 @@ module.exports = {
                   url: site.siteMetadata.site_url + edge.node.fields.slug,
                   guid: site.siteMetadata.site_url + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': edge.node.html }]
-                }),),
+                }), ),
             query: `
               {
                 allMarkdownRemark(
