@@ -13,7 +13,8 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "precommit": "lint-staged",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "prepublish": "npm run snyk-protect"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -72,7 +73,7 @@
     "react": "^15.6.1",
     "react-disqus-comments": "^1.1.1",
     "react-helmet": "^5.2.0",
-    "snyk": "^1.104.2"
+    "snyk": "^1.117.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
