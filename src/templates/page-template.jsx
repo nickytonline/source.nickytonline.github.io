@@ -43,6 +43,7 @@ export const pageQuery = graphql`
           rss
           linkedin
           devto
+          mastodon
         }
       }
     }

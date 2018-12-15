@@ -50,4 +50,22 @@
       }
     }
   }
+
+  .icon-mastodon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &__content {
+      width: 60%;
+      height: 60%;
+      fill: lighten($color-base, 20%);
+
+      &:hover,
+      &:focus {
+        fill: $color-base;
+      }
+    }
+  }
 }
