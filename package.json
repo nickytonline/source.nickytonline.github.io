@@ -57,7 +57,7 @@
     "gatsby-plugin-offline": "^1.0.12",
     "gatsby-plugin-postcss-sass": "^1.0.15",
     "gatsby-plugin-react-helmet": "^2.0.3",
-    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-plugin-sharp": "^2.0.16",
     "gatsby-plugin-sitemap": "^1.2.10",
     "gatsby-plugin-twitter": "^1.0.20",
     "gatsby-remark-copy-linked-files": "^1.5.25",
