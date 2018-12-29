@@ -19,11 +19,7 @@ So here’s my [2018 Resolutions - Just some dev](https://www.iamdeveloper.com/2
   <br /><br />
   Although I didn’t contribute to TypeScript or VS Code, I’m still very happy with this year’s contributions.
 
-- _Keep on blogging_: I continued to blog with a few blog posts and lots more short posts/comments on dev.to. People seemed to like “My Mac Setup” which was one of the most popular posts for mid-January on dev.to. Work and life got busy so not as much blogging as I’d had hoped.
-  <br />
-
-  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">✨ The 7 Most Popular DEV Posts from the Past Week ✨<br><br>Featuring posts from <a href="https://twitter.com/dan_abramov?ref_src=twsrc%5Etfw">@dan_abramov</a>, <a href="https://twitter.com/nickytonline?ref_src=twsrc%5Etfw">@nickytonline</a>, <a href="https://twitter.com/I3ekka?ref_src=twsrc%5Etfw">@I3ekka</a>, <a href="https://twitter.com/mattstratton?ref_src=twsrc%5Etfw">@mattstratton</a>, <a href="https://twitter.com/bendhalpern?ref_src=twsrc%5Etfw">@bendhalpern</a>, <a href="https://twitter.com/_PatrickGod?ref_src=twsrc%5Etfw">@_PatrickGod</a> and <a href="https://twitter.com/PeterKimFrank?ref_src=twsrc%5Etfw">@PeterKimFrank</a><br><br>👏👏👏👏👏<a href="https://t.co/7tFFg6zcW5">https://t.co/7tFFg6zcW5</a></p>&mdash; DEV Community 👩‍💻👨‍💻 (@ThePracticalDev) <a href="https://twitter.com/ThePracticalDev/status/945707784498286592?ref_src=twsrc%5Etfw">December 26, 2017</a></blockquote>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+- _Keep on blogging_: I continued to blog with a few blog posts and lots more short posts/comments on dev.to. People seemed to like “My Mac Setup” which was one of the most [popular posts for mid-January on dev.to](https://dev.to/thepracticaldev/the-7-most-popular-dev-posts-from-the-past-week-36c8). Work and life got busy so not as much blogging as I’d had hoped.
 
 - _Start making stuff on [codepen.io](https://codepen.io)_: Prior to 2018, I had never made any. I made a few to have a bit of fun, but I didn’t maintain this.
   <br />
