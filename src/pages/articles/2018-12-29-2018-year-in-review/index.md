@@ -45,4 +45,4 @@ Aside from the new gig, I'm about to pass 12000 followers on [dev.to](https://de
 
 So as we close off 2018, I just want to say thanks to the dev.to core team and the community. You're all great.
 
-![That's all folks!](https://media.giphy.com/media/upg0i1m4DLe5q/200w_d.gif)
+![That's all folks!](https://media.giphy.com/media/upg0i1m4DLe5q/giphy.gif)
