@@ -41,4 +41,8 @@ It’s fun making resolutions, but honestly, I did not lose any sleep over not c
 
 Prior to starting work, I attended a week long conference with the whole team. We’re distributed, so they try to have these team conferences once or every two years. As a brand new employee who hadn’t even started work yet, it was amazing to meet, wine/dine with my future co-workers and work on ways to improve the product. I’ve been loving it since day 1. Great work/life balance and all the good things you look for in a job. 💯
 
+Aside from the new gig, I'm about to pass 12000 followers on [dev.to](https://dev.to)! 🔥
+
+So as we close off 2018, I just want to say thanks to the dev.to core team and the community. You're all great.
+
 ![That's all folks!](https://media.giphy.com/media/upg0i1m4DLe5q/200w_d.gif)
