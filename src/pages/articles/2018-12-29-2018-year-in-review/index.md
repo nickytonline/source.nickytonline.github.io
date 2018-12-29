@@ -23,7 +23,7 @@ So here’s my [2018 Resolutions - Just some dev](https://www.iamdeveloper.com/2
 
 - _Start making stuff on [codepen.io](https://codepen.io)_: Prior to 2018, I had never made any. I made a few to have a bit of fun, but I didn’t maintain this.
   <br />
-    <iframe height='265' scrolling='no' title='Probably another Battleship board' src='//codepen.io/nickytonline/embed/zRNMvO/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/nickytonline/pen/zRNMvO/'>Probably another Battleship board</a> by Nick Taylor (<a href='https://codepen.io/nickytonline'>@nickytonline</a>) on <a href='https://codepen.io'>CodePen</a>.
+  <iframe height='265' scrolling='no' title='💩 Notification' src='//codepen.io/nickytonline/embed/ppMmyZ/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/nickytonline/pen/ppMmyZ/'>💩 Notification</a> by Nick Taylor (<a href='https://codepen.io/nickytonline'>@nickytonline</a>) on <a href='https://codepen.io'>CodePen</a>.
   </iframe>
 
 * _Read everything in my Pocket_: This just didn’t happen. In fact shortly after writing my 2018 resolutions, I stopped reading Pocket completely. It had nothing to do with the product, just got busy and when you add to Pocket, it’s like it’s just sent up in the ether. Having said that, I highly recommend this tool for offline reading. I’m gonna try and catch up on some reading while I head away to a chalet for a few days.
