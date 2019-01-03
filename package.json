@@ -1,21 +1,19 @@
 {
-  "name": "iamdeveloper-dot-com",
-  "description": "My blog, based off of the Netlify CMS Gatsby Starter, https://github.com/netlify-templates/gatsby-starter-netlify-cms.",
-  "version": "1.0.0",
-  "author": "Nick Taylor",
-  "keywords": [
-    "gatsby",
-    "blog",
-    "react"
-  ],
-  "license": "MIT",
+  "version": "2.0.2",
+  "name": "gatsby-starter-lumen",
+  "description": "Simple starter for Gatsby",
+  "main": "n/a",
   "scripts": {
-    "start": "npm run develop",
-    "clean": "rimraf .cache public",
-    "build": "npm run clean && gatsby build && cp ./keybase.txt ./public/  && cp ./_redirects ./public/",
-    "develop": "npm run clean && gatsby develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "gatsby develop",
+    "build": "gatsby build && cp ./keybase.txt ./public/  && cp ./_redirects ./public/",
+    "clean:public": "rm -rf public",
+    "clean": "npm run clean:public",
+    "lint": "./node_modules/.bin/eslint --cache --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "precommit": "lint-staged",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -37,32 +35,44 @@
     "trailingComma": "all",
     "printWidth": 80
   },
+  "repository": "git+https://github.com/alxshelepenok/gatsby-starter-lumen.git",
+  "keywords": [
+    "gatsby",
+    "blog",
+    "react",
+    "theme",
+    "starter"
+  ],
+  "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "bulma": "^0.7.0",
-    "gatsby": "^2.0.66",
-    "gatsby-image": "^2.0.23",
-    "gatsby-plugin-netlify": "^2.0.6",
-    "gatsby-plugin-netlify-cms": "^3.0.9",
-    "gatsby-plugin-purgecss": "^3.0.0",
-    "gatsby-plugin-react-helmet": "^3.0.4",
-    "gatsby-plugin-sass": "^2.0.7",
-    "gatsby-plugin-sharp": "^2.0.15",
-    "gatsby-remark-copy-linked-files": "^2.0.7",
-    "gatsby-remark-images": "^3.0.1",
-    "gatsby-remark-relative-images": "^0.2.1",
-    "gatsby-source-filesystem": "^2.0.12",
-    "gatsby-transformer-remark": "^2.1.15",
-    "gatsby-transformer-sharp": "^2.1.9",
-    "lodash": "^4.17.5",
-    "lodash-webpack-plugin": "^0.11.4",
-    "netlify-cms": "^2.3.2",
-    "node-sass": "^4.11.0",
-    "parcel-bundler": "^1.9.4",
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.4.1",
+    "bluebird": "^3.5.1",
+    "gatsby": "^1.9.164",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-catch-links": "^1.0.14",
+    "gatsby-plugin-feed": "^1.3.15",
+    "gatsby-plugin-google-analytics": "^1.0.15",
+    "gatsby-plugin-google-fonts": "latest",
+    "gatsby-plugin-manifest": "1.0.27",
+    "gatsby-plugin-offline": "^1.0.12",
+    "gatsby-plugin-postcss-sass": "^1.0.15",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-plugin-sitemap": "^1.2.10",
+    "gatsby-plugin-twitter": "^1.0.20",
+    "gatsby-remark-copy-linked-files": "^1.5.25",
+    "gatsby-remark-images": "^2.0.1",
+    "gatsby-remark-prismjs": "^1.2.12",
+    "gatsby-remark-responsive-iframe": "^1.4.16",
+    "gatsby-remark-smartypants": "^1.4.10",
+    "gatsby-source-filesystem": "^1.5.11",
+    "gatsby-transformer-remark": "^1.7.28",
+    "gatsby-transformer-sharp": "^1.6.16",
+    "lodash": "^4.17.4",
+    "react": "^15.6.1",
+    "react-disqus-comments": "^1.1.1",
     "react-helmet": "^5.2.0",
-    "uuid": "^3.2.1"
+    "snyk": "^1.104.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -77,5 +87,6 @@
     "lost": "^8.2.0",
     "postcss-pxtorem": "^4.0.1",
     "prettier": "^1.10.2"
-  }
+  },
+  "snyk": true
 }

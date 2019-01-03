@@ -1,73 +1,74 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Link, graphql } from 'gatsby';
-import Layout from '../components/Layout';
+import Helmet from 'react-helmet';
+import Post from '../components/Post';
+import Sidebar from '../components/Sidebar';
 
-export default class IndexPage extends React.Component {
+class IndexRoute extends React.Component {
   render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
+    const items = [];
+    const { title, subtitle } = this.props.data.site.siteMetadata;
+    const posts = this.props.data.allMarkdownRemark.edges;
+    posts.forEach((post) => {
+      items.push(<Post data={post} key={post.node.fields.slug} />);
+    });
 
     return (
-      <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="content" />
-            {posts.map(({ node: post }) => (
-              <div
-                className="content"
-                style={{ border: '1px solid #333', padding: '2em 4em' }}
-                key={post.id}
-              >
-                <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-      </Layout>
+      <div>
+        <Helmet>
+          <title>{title}</title>
+          <meta name="description" content={subtitle} />
+        </Helmet>
+        <Sidebar {...this.props} />
+        <div className="content">
+          <div className="content__inner">{items}</div>
+        </div>
+      </div>
     );
   }
 }
 
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
-};
+export default IndexRoute;
 
 export const pageQuery = graphql`
   query IndexQuery {
+    site {
+      siteMetadata {
+        title
+        subtitle
+        copyright
+        menu {
+          label
+          path
+        }
+        author {
+          name
+          email
+          stackoverflow
+          twitter
+          github
+          rss
+          linkedin
+          devto
+          mastodon
+        }
+      }
+    }
     allMarkdownRemark(
+      limit: 1000
+      filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
-          id
           fields {
             slug
+            categorySlug
           }
           frontmatter {
             title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
+            date
+            category
+            description
           }
         }
       }
