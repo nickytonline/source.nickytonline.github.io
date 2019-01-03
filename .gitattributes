@@ -1,3 +1,0 @@
-*.jsx linguist-language=JavaScript
-public linguist-vendored
-src/assets/fonts linguist-vendored
