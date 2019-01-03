@@ -7,6 +7,7 @@ tags:
   - react
   - ui
   - ux
+  - storybook
 ---
 ## Story what?
 
