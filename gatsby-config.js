@@ -1,169 +1,70 @@
 module.exports = {
   siteMetadata: {
-    url: 'https://www.iamdeveloper.com',
     title: 'Just some dev',
-    subtitle: '',
-    copyright: '© All rights reserved.',
-    disqusShortname: '',
-    menu: [
-      {
-        label: 'Articles',
-        path: '/'
-      },
-      {
-        label: 'About me',
-        path: '/about/'
-      }
-    ],
-    author: {
-      name: 'Nick Taylor',
-      email: 'nick@iamdeveloper.com',
-      twitter: 'nickytonline',
-      github: 'nickytonline',
-      linkedin: 'nickytonline',
-      stackoverflow: 'https://stackoverflow.com/users/77814/nickytonline',
-      devto: 'https://dev.to/nickytonline',
-      mastodon: 'https://toot.cafe/@nickytonline',
-      rss: '/rss.xml'
-    }
+    description: '',
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    {
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/img`,
+        name: 'uploads',
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages'
-      }
+        name: 'pages',
+      },
     },
     {
-      resolve: 'gatsby-plugin-feed',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                site_url: url
-                title
-                description: subtitle
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.edges.map(edge =>
-                Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.frontmatter.description,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.site_url + edge.node.fields.slug,
-                  guid: site.siteMetadata.site_url + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': edge.node.html }]
-                }), ),
-            query: `
-              {
-                allMarkdownRemark(
-                  limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
-                ) {
-                  edges {
-                    node {
-                      html
-                      fields {
-                        slug
-                      }
-                      frontmatter {
-                        title
-                        date
-                        layout
-                        draft
-                        description
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: '/rss.xml'
-          }
-        ]
-      }
+        path: `${__dirname}/src/img`,
+        name: 'images',
+      },
     },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
-            options: { maxWidth: 960 }
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              name: 'uploads',
+            },
           },
           {
-            resolve: 'gatsby-remark-responsive-iframe',
-            options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
+            resolve: 'gatsby-remark-images',
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 2048,
+            },
           },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants'
-        ]
-      }
-    },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-73379983-2' }
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static',
+            },
+          },
+        ],
+      },
     },
     {
-      resolve: 'gatsby-plugin-google-fonts',
-      options: { fonts: ['roboto:400,400i,500,700'] }
-    },
-    {
-      resolve: 'gatsby-plugin-sitemap',
+      resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        query: `
-            {
-              site {
-                siteMetadata {
-                  url
-                }
-              }
-              allSitePage(
-                filter: {
-                  path: { regex: "/^(?!/404/|/404.html|/dev-404-page/)/" }
-                }
-              ) {
-                edges {
-                  node {
-                    path
-                  }
-                }
-              }
-          }`,
-        output: '/sitemap.xml',
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map((edge) => {
-            return {
-              url: site.siteMetadata.url + edge.node.path,
-              changefreq: 'daily',
-              priority: 0.7
-            };
-          })
-      }
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
     },
-    'gatsby-plugin-offline',
-    'gatsby-plugin-catch-links',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-postcss-sass',
-    'gatsby-plugin-twitter',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'Just some dev',
-        short_name: 'Just some dev',
-        start_url: '/',
-        icon: 'src/assets/favicon/ms-icon-310x310.png' // This path is relative to the root of the site.
-      }
-    }
-  ]
+    'gatsby-plugin-purgecss', // must be after other CSS plugins
+    'gatsby-plugin-netlify', // make sure to keep it last in the array
+  ],
 };
