@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Just some dev',
-    description: '',
+    description: 'Just some software developer writing things ✏️',
     siteUrl: 'https://www.imdeveloper.com',
   },
   plugins: [
