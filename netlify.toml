@@ -4,3 +4,38 @@
 [build.environment]
   YARN_VERSION = "1.9.4"
   YARN_FLAGS = "--no-ignore-optional"
+
+[[redirects]]
+  from = "https://vscode.iamdeveloper.com/*"
+  to = "https://dev.to/nickytonline/my-visual-studio-code-setup-2ima:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://osx.iamdeveloper.com/*"
+  to = "https://gist.github.com/nickytonline/378e7a6584542112f53c0067a6a4684c:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://story.iamdeveloper.com/*"
+  to = "https://github.com/nickytonline/js-montreal-storybook-talk-2017-06-13:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://resources.iamdeveloper.com/*"
+  to = "https://gist.github.com/nickytonline/5cf16c4adab6c558552d384db4cc2057:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://mac.iamdeveloper.com/*"
+  to = "https://dev.to/nickytonline/my-mac-setup-2m05:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://gitaliases.iamdeveloper.com/*"
+  to = "https://dev.to/nickytonline/my-git-aliases-5dea:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://cv.iamdeveloper.com/*"
+  to = "https://stackoverflow.com/cv/nickytonline:splat"
+  status = 301
