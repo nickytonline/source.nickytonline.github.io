@@ -46,3 +46,40 @@ from = "https://cv.iamdeveloper.com/*"
 to = "https://stackoverflow.com/cv/nickytonline:splat"
 status = 301
 force = true
+
+# Redirects for old URLs of blog posts pre-2019
+[[redirects]]
+from = "/2018-resolutions/"
+to = "/blog/2018-01-03-2018-resolutions/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/my-mac-setup/"
+to = "/blog/2018-01-12-my-mac-setup/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/2018-03-26-getting-started-with-react-storybook/"
+to = "/blog/2018-03-26-getting-started-with-react-storybook/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/2018-08-25-my-git-aliases/"
+to = "/blog/2018-08-25-my-git-aliases/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/2018-09-02-setting-up-storybook-for-preact/"
+to = "/blog/2018-09-02-setting-up-storybook-for-preact/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/2018-12-29-2018-year-in-review/"
+to = "/blog/2018-12-29-2018-year-in-review/"
+status = 301
+force = true
