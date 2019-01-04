@@ -2,9 +2,13 @@ module.exports = {
   siteMetadata: {
     title: 'Just some dev',
     description: '',
+    siteUrl: 'https://www.imdeveloper.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-feed',
+    },
     'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-manifest',
