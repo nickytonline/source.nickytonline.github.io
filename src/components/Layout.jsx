@@ -45,11 +45,6 @@ const TemplateWrapper = ({ children }) => (
             sizes="16x16"
           />
 
-          <link
-            rel="mask-icon"
-            href="/img/safari-pinned-tab.svg"
-            color="#ff4400"
-          />
           <meta name="theme-color" content="#fff" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
