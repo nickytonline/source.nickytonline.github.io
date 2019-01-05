@@ -11,6 +11,19 @@ $body-color: #333
 
 @import "~bulma"
 
+.navbar
+  position: sticky
+  top: 0
+
+  .logo__emoji
+    margin-right: 0.6rem
+
+@media screen and (max-width: 1087px)
+  .navbar-menu.is-active
+    position: absolute
+    z-index: 1
+    width: 100%
+
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -26,6 +39,13 @@ $body-color: #333
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
     margin-top: 0
+
+.content.content--front-page
+  margin-bottom: 5rem
+
+@media screen and (max-width: 1087px)
+  .content.content--front-page
+    margin-bottom: 2rem
 
 // Helper Classes
 .full-width-image-container
@@ -44,16 +64,3 @@ $body-color: #333
 
 .section
   padding-top: 1rem
-
-.navbar
-  position: sticky
-  top: 0
-
-  .logo__emoji
-    margin-right: 0.6rem
-
-@media screen and (max-width: 1087px)
-  .navbar-menu.is-active
-    position: absolute
-    z-index: 1
-    width: 100%

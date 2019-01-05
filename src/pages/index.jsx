@@ -16,7 +16,7 @@ export default class IndexPage extends React.Component {
               Latest Posts
             </h2>
             {posts.map(({ node: post }) => (
-              <div className="content" key={post.id}>
+              <div className="content content--front-page" key={post.id}>
                 <p>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
