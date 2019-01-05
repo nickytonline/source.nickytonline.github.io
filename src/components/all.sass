@@ -9,8 +9,7 @@ $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 
-.logo__emoji
-  margin-right: 0.6rem
+@import "~bulma"
 
 .content .taglist
   list-style: none
@@ -42,7 +41,19 @@ $body-color: #333
   justify-content: center
   align-items: center
 
-@import "~bulma"
 
 .section
   padding-top: 1rem
+
+.navbar
+  position: sticky
+  top: 0
+
+  .logo__emoji
+    margin-right: 0.6rem
+
+@media screen and (max-width: 1087px)
+  .navbar-menu.is-active
+    position: absolute
+    z-index: 1
+    width: 100%
