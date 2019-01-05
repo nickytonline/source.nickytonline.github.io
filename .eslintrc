@@ -3,6 +3,7 @@
   "extends": "airbnb",
   "plugins": ["react", "jsx-a11y", "import"],
   "globals": {
-    "graphql": true
+    "graphql": true,
+    "document": false
   }
 }
