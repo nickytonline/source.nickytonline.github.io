@@ -10,6 +10,9 @@ In May of 2016, I decided to embark with a fintech startup and live in Barcelona
 
 The risk for me was that although I had just over a year of professional TypeScript experience and plenty of JavaScript under the belt, I had no professional experience with React or Node (aside from some build tools) and had only ever had mainly full-stackish roles all in the .NET ecosystem. In the past, when opportunities like this would come around, I would have said to myself, you’re not what they’re looking for, but this time I said screw it, go for it.
 
+
+![Do it Ben Stiller Meme](https://media.giphy.com/media/wi8Ez1mwRcKGI/giphy.gif "Do it Ben Stiller Meme")
+
 “[I dropped .NET a couple of years ago. I had done WebForms, ASP.NET MVC, SharePoint etc. and wen… — DEV](https://dev.to/nickytonline/comment/2ao1)”
 
 Although I had no professional React experience, I had started to contribute to a pretty popular React/Redux boilerplate called [React Slingshot](https://github.com/coryhouse/react-slingshot/commits?author=nickytonline) (eventually I was [asked to become a maintainer]([https://github.com/coryhouse/react-slingshot/pull/298#issuecomment-258616537]) and accepted 😉) to help me learn React along with [Dan Abramov](https://dev.to/dan_abramov)’s awesome free egghead.io Redux Course. With that under my belt, I took off for Barcelona. I met/worked with a lot of good people, got to head to London a couple of times to visit/work with my UK co-workers and finished off the summer by spending a bit of downtime on the coast of Spain as well as seeing a free (thank you Tourism Andorra) outdoor show of Cirque du Soleil's [Scalada : Vision](https://visitandorra.com/en/agenda/scalada-vision-by-cirque-du-soleil-2016/) in Andorra in the mountains.
@@ -19,6 +22,7 @@ During my interviews for my next role, one of the places that stood out was Inte
 One of the developers had expressed interest in TypeScript so I decided to take my React, Redux and TypeScript skills and build a browser extension using those technologies. It was a lot of fun to build the extension and I got it working, including hot reloading. You could log in to the big sites, Twitter, Facebook etc. and the extension would save your login/password. If you were logged out and revisited one of those sites, you’d be automatically logged on. As well, I had made a basic admin page to modify your credentials per domain. When I spoke to my future co-workers, they had said that aside from being competent, it was my take home test that had stood out. 
 
 To sum it up, what I’ve found to be successful career wise these past few years:
+
 * Looking to switch jobs? Don’t, regardless of how fed up you are, quit before landing another job because there is less pressure during a job hunt when you’re employed.
 * Take chances… really. You might even get to visit some interesting places.
 * Standout.
