@@ -85,5 +85,13 @@ module.exports = {
     },
     'gatsby-plugin-purgecss', // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Proza Libre', 'Open Sans'],
+        },
+      },
+    },
   ],
 };
