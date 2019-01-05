@@ -24,14 +24,14 @@ export default class IndexPage extends React.Component {
                   <span> &bull; </span>
                   <small>{post.frontmatter.date}</small>
                 </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
+                <p>{post.excerpt}</p>
+                <Link
+                  className="button button--read-more"
+                  to={post.fields.slug}
+                  role="button"
+                >
+                  Keep Reading →
+                </Link>
               </div>
             ))}
           </div>
