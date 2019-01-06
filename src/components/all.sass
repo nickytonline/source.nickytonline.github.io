@@ -6,13 +6,30 @@ $dark-orange: #ee7600
 html, body
   background-color: $off-white
 
-.container a
-  color: $body-color
-  text-decoration: underline
+.container
+  a
+    color: $body-color
+    text-decoration: underline
 
-  &:hover
-    color: $dark-orange
+    &:hover
+      color: $dark-orange
+      text-decoration: none
+
+  .taglist__tag
+    border-radius: 0.75rem
+    padding: 0.5rem
+    color: $body-color
+    font-weight: bold
+    background-color: $off-white
+    border: 0.125rem solid $body-color //$dark-orange
     text-decoration: none
+    transition: background-color 0.8s, color 0.8s
+
+    &:hover
+      color: $off-white
+      background-color: $body-color //$dark-orange
+      border-color: $body-color
+      transition: background-color 0.8s, color 0.8s
 
 .navbar
   position: sticky
