@@ -12,9 +12,7 @@ export default class IndexPage extends React.Component {
       <Layout>
         <section className="section section--blog-posts">
           <div className="container">
-            <h1 className="title is-size-3 has-text-weight-bold is-bold-light">
-              Latest Posts
-            </h1>
+            <h1 className="title">Latest Posts</h1>
             {posts.map(({ node: post }) => (
               <div className="content content--front-page" key={post.id}>
                 <h2>
