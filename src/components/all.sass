@@ -77,7 +77,11 @@ html, body
 .content.content--front-page
   margin-bottom: 5rem
   border-radius: 0.5rem
-  background-color: rgba($off-white, 0.75)
+  background-color: rgba($off-white, 0.8)
+  padding: 0.625rem
+
+  &:last-child
+    margin-bottom: 0
 
   .blog-title
     color: #ee7600
@@ -141,9 +145,9 @@ body, button, input, select, textarea
 
 @media screen and (min-width: 813px)
   .section
-    background-size: calc(100vw * 0.3)
-    background-position-x: calc(100% - 2rem)
-    background-position-y: calc(100% - 2rem)
+    background-size: calc(100vw * 0.35)
+    background-position-x: center
+    background-position-y: center
     background-repeat: no-repeat
     background-attachment: fixed
     background-color: transparent
@@ -156,13 +160,13 @@ body, button, input, select, textarea
     background-image: url(/img/undraw_contact_us_15o2.svg)
 
   .section.section--blog-posts
+    background-size: calc(100vw * 0.25)
+    background-position-x: calc(100% - 2rem)
+    background-position-y: calc(100% - 2rem)
     background-image: url(/img/undraw_typewriter_i8xd.svg)
-    padding-bottom: calc(100vw * 0.35)
+    padding-bottom: calc(100vw * 0.25)
 
   .section.section--not-found
-    background-size: calc(100vw * 0.4)
-    background-position-x: center
-    background-position-y: center
     background-image: url(/img/undraw_blank_canvas_3rbb.svg)
 
 @media screen and (max-width: 1024px)
@@ -172,7 +176,7 @@ body, button, input, select, textarea
 
 @media screen and (min-width: 1025px)
   .content.content--front-page
-    max-width: 60rem
+    max-width: 80rem
 
 @media screen and (min-device-width: 1200px)
   .content--front-page .button--read-more
