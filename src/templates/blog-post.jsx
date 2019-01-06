@@ -23,14 +23,14 @@ export const BlogPostTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title">{title}</h1>
-            <p>{description}</p>
+            <p className="blog-post-description">{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: '4rem' }}>
                 <h4>Tags</h4>
                 <ul className="taglist">
                   {tags.map(tag => (
-                    <li key={`${tag  }tag`}>
+                    <li key={`${tag}tag`}>
                       <Link
                         to={`/tags/${kebabCase(tag)}/`}
                         className="taglist__tag"
