@@ -8,11 +8,11 @@ $kaldi-red-invert: #fff
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
-
+$off-white: #fdfdfd
 @import "~bulma"
 
 html, body
-  background-color: #fdfdfd
+  background-color: $off-white
 
 .navbar
   position: sticky
@@ -26,7 +26,7 @@ html, body
     font-weight: bold
 
     &:hover
-      color: #fdfdfd
+      color: $off-white
 
 @media screen and (max-width: 1087px)
   .navbar-menu.is-active
@@ -55,6 +55,8 @@ html, body
 
 .content.content--front-page
   margin-bottom: 5rem
+  border-radius: 0.5rem
+  background-color: rgba($off-white, 0.75)
 
   .blog-title
     color: #ee7600
@@ -109,7 +111,9 @@ body, button, input, select, textarea
     background-position-x: calc(100% - 2rem)
     background-position-y: calc(100% - 2rem)
     background-repeat: no-repeat
-    height: calc(100vh - 3.25rem)
+    background-attachment: fixed
+    background-color: transparent
+    min-height: 100vh
 
   .section.section--about-me
     background-image: url(/img/undraw_about_me_wa29.svg)
@@ -117,7 +121,15 @@ body, button, input, select, textarea
   .section.section--contact
     background-image: url(/img/undraw_contact_us_15o2.svg)
 
-@media screen and (max-width: 1023px)
+  .section.section--blog-posts
+    background-image: url(/img/undraw_typewriter_i8xd.svg)
+    padding-bottom: calc(100vw * 0.35)
+
+@media screen and (max-width: 1024px)
   .section
-    background-size: 30rem
+    background-size: 20rem
     background-position-x: center
+
+@media screen and (min-width: 1025px)
+  .content.content--front-page
+    width: calc(100% - calc(100vw * 0.32))
