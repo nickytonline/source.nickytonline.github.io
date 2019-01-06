@@ -1,6 +1,7 @@
 $body-color: #333
 $off-white: #fdfdfd
 $dark-orange: #ee7600
+$navbar-height: 3.25rem
 @import "~bulma"
 
 html, body
@@ -35,6 +36,8 @@ html, body
   position: sticky
   top: 0
   background: #ffa500 linear-gradient(#ffa500,#ff8c00);
+  height: $navbar-height
+  max-height: $navbar-height
 
   .logo__emoji
     margin-right: 0.6rem
@@ -144,7 +147,7 @@ body, button, input, select, textarea
     background-repeat: no-repeat
     background-attachment: fixed
     background-color: transparent
-    min-height: 100vh
+    min-height: calc(100vh - #{$navbar-height})
 
   .section.section--about-me
     background-image: url(/img/undraw_about_me_wa29.svg)
