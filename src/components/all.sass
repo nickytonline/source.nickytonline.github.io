@@ -147,3 +147,15 @@ body, button, input, select, textarea
 @media screen and (min-width: 1025px)
   .content.content--front-page
     max-width: 60rem
+
+@media screen and (min-device-width: 1200px)
+  .content--front-page .button--read-more
+    opacity: 0
+    transition: opacity 0.8s
+    pointer-events: none
+
+  .content--front-page:hover .button--read-more
+      opacity: 1
+      transition: opacity 0.8s
+      pointer-events: auto
+
