@@ -10,7 +10,7 @@ function encode(data) {
 
 const Index = () => (
   <Layout>
-    <section className="section">
+    <section className="section section--contact">
       <div className="container">
         <div className="content">
           <h1>Contact</h1>

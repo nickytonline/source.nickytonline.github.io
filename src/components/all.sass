@@ -95,9 +95,29 @@ html, body
   &:hover
     border: 0.0625rem solid rgba(51, 51, 51, 0.1)
     background-color: rgba(51, 51, 51, 0.1)
+
 h1, h2, h3
   font-family: "Proza Libre"
 
 // Will clean this up to just body once I've pulled out bulma
 body, button, input, select, textarea
   font-family: "Open Sans"
+
+@media screen and (min-width: 813px)
+  .section
+    background-size: calc(100vw * 0.35)
+    background-position-x: calc(100% - 2rem)
+    background-position-y: calc(100% - 2rem)
+    background-repeat: no-repeat
+    height: calc(100vh - 3.25rem)
+
+  .section.section--about-me
+    background-image: url(/img/undraw_about_me_wa29.svg)
+
+  .section.section--contact
+    background-image: url(/img/undraw_contact_us_15o2.svg)
+
+@media screen and (max-width: 1023px)
+  .section
+    background-size: 30rem
+    background-position-x: center
