@@ -89,7 +89,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Proza Libre', 'Open Sans'],
+          families: ['Montserrat', 'Source Sans Pro'],
         },
       },
     },
