@@ -22,22 +22,18 @@ html, body
     color: $body-color
     font-weight: bold
     background-color: $off-white
-    border: 0.125rem solid $body-color //$dark-orange
+    border: 0.125rem solid $body-color
     text-decoration: none
     transition: background-color 0.8s, color 0.8s
 
     &:hover
       color: $off-white
-      background-color: $body-color //$dark-orange
+      background-color: $body-color
       border-color: $body-color
       transition: background-color 0.8s, color 0.8s
 
   .blog-post-description
-    // font-style: italic
-    border-bottom: 0.0625rem solid $dark-orange
-    display: inline-block
-    // color: $off-white
-    // padding: 0.25rem
+    color: rgba(51, 51, 51, 0.5)
 
 .navbar
   position: sticky
@@ -170,7 +166,13 @@ body, button, input, select, textarea
   .content.content--front-page
     max-width: 80rem
 
+  .blog-post-description:before
+    content: '→'
+    color: $dark-orange
+    margin-right: 0.5rem
+
 @media screen and (min-device-width: 1200px)
+
   .content--front-page .button--read-more
     opacity: 0
     transition: opacity 0.8s
