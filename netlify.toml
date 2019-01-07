@@ -49,6 +49,12 @@ force = true
 
 # Redirects for old URLs of blog posts pre-2019
 [[redirects]]
+from = "/consider-using-typescript/"
+to = "/blog/2017-10-07-consider-using-typescript/"
+status = 301
+force = true
+
+[[redirects]]
 from = "/2018-resolutions/"
 to = "/blog/2018-01-03-2018-resolutions/"
 status = 301
