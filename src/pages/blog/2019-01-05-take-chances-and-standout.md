@@ -5,6 +5,7 @@ date: 2019-01-05T18:40:00.493Z
 description: Some career advice on taking chances and standing out.
 tags:
   - career
+  - interviewing
 ---
 This is my first time writing a post about career advice. This kind of advice is definitely not a one size fits all. Everyone has their own experiences, circumstances etc., but hopefully some of what I discuss will resonate with you.
 
