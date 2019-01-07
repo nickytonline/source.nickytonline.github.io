@@ -39,7 +39,7 @@ I was lucky enough to get a second interview, with none other than [John Resig](
 
 ![awesome giphy meme](https://media.giphy.com/media/Z6f7vzq3iP6Mw/giphy.gif "awesome giphy meme")
 
-Things moved on to a third interview with a potential future co-worker and then from there, it'd be wrapping things up. Unfortunately things did not work out in the end, but even though I was disappointed, it was still amazing because I got to PR what I thought was a cool browser extension of their a11y tool, I got to speak to John Resig for a solid hour, just the two of us.
+Things moved on to a third interview with a potential future co-worker and then from there, it'd be wrapping things up. Unfortunately things did not work out in the end, but even though I was disappointed, it was still amazing because I got to PR what I thought was a cool browser extension of their a11y tool and I got to speak to John Resig for a solid hour, just the two of us.
 
 
 So remember:
