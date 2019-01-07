@@ -1,6 +1,7 @@
 $body-color: #333
 $off-white: #fdfdfd
 $dark-orange: #ee7600
+$medium-purple: #5750e6
 $navbar-height: 3.25rem
 @import "~bulma"
 
@@ -38,7 +39,7 @@ html, body
 .navbar
   position: sticky
   top: 0
-  background: #ffa500 linear-gradient(#ffa500,#ff8c00);
+  background: linear-gradient(45deg, #5750e6 80%, #ee7600 0%)
   height: $navbar-height
   max-height: $navbar-height
 
@@ -46,20 +47,27 @@ html, body
     margin-right: 0.6rem
 
   a
+    color: $off-white
     text-decoration: none
     font-weight: bold
 
     &:hover
-      color: $off-white
+      color: $dark-orange
 
 @media screen and (max-width: 1087px)
+  .navbar-burger
+    color: $off-white
+
   .navbar-menu.is-active
     position: absolute
     z-index: 1
     width: 100%
 
-    a:hover
-      color: $dark-orange
+    a
+      color: $medium-purple
+
+      &:hover
+        color: $dark-orange
 
 .content .taglist
   list-style: none
