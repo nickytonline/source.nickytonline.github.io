@@ -49,3 +49,5 @@ So remember:
   * Contribute to open-source. Some will disagree because of work/life balance, but in my experience, it helps set you apart.
   * standout in another way that you think would set you apart from other candidates.
 * Apply to places, even when you think you're not good enough, because you never know. And even when interviewing somewhere doesn't work out, you still learn something about yourself or work. And who knows, maybe you'll have some interesting conversations along the way.
+
+![follow your dreams giphy meme](https://media.giphy.com/media/htmzQfHfZF9wQ/giphy-downsized.gif "follow your dreams giphy meme")
