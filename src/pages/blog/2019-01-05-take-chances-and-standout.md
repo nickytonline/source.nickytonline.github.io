@@ -30,7 +30,7 @@ It was a lot of fun building the extension. I got it working, including hot relo
 
 While I was interviewing for a new job at several places last summer/fall, Khan Academy seemed like an interesting place to potentially work at. Once again though, I looked at the requirements, and I was like, I don't think they'd be interested in me. I actually put off applying for about 5 weeks. Eventually I applied with what I thought was a unique cover letter, along with the usual stuff, like [my GitHub profile](https://github.com/nickytonline).
 
-I wasn't expecting to hear back from them, but eventually I did. I initially corresponded with one of their talent recruiters via e-mail who set me up with an interview with my potential Engineering manager. That interview seem to go well, and I mentioned that I had put up a PR for their t0ta11y project.
+I wasn't expecting to hear back from them, but eventually I did. I initially corresponded with one of their talent recruiters via e-mail who set me up with an interview with my potential Engineering manager. That interview seem to go well, and I mentioned that [I had put up a PR](https://github.com/Khan/tota11y/pull/131) for their t0ta11y project.
 
 ![t0ta11y browser extension screen capture](/img/t0ta11y-screen-capture.gif "t0ta11y browser extension screen capture")
 
