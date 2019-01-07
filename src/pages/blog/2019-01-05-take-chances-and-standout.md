@@ -13,12 +13,11 @@ In May of 2016, I decided to embark with a startup and live in Barcelona for the
 
 The risk for me was that although I had just over a year of professional TypeScript experience and plenty of JavaScript under the belt, I had no professional experience with React or Node (aside from some build tools) and had only ever had mainly full-stackish roles all in the .NET ecosystem. In the past, when opportunities like this would come around, I would have said to myself, you’re not what they’re looking for. But I had already been interviewing for JS full-stack and front-end roles, so I knew this was what I wanted. And so I took the plunge. It was probably the best decision in my career as it put me on the path that I really wanted to be on.
 
-![Do it Ben Stiller Meme](https://media.giphy.com/media/wi8Ez1mwRcKGI/giphy.gif "Do it Ben Stiller Meme")
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Most of my career has been in the .NET ecosystem doing full-stack during parts of my career. I dropped it completely in 2015 and just went full JS/Node/TypeScript/React. Best decision of my life and I didn&#39;t need to take a paycut.</p>&mdash; Nick Taylor (@nickytonline) <a href="https://twitter.com/nickytonline/status/970335487071342593?ref_src=twsrc%5Etfw">March 4, 2018</a></blockquote>
 
 Although I had no professional React experience, I had started to contribute to a pretty popular React/Redux boilerplate called [React Slingshot](https://github.com/coryhouse/react-slingshot/commits?author=nickytonline) (eventually I was [asked to become a maintainer]([https://github.com/coryhouse/react-slingshot/pull/298#issuecomment-258616537]) and accepted 😉) to help me learn React along with [Dan Abramov](https://dev.to/dan_abramov)’s awesome free egghead.io Redux Course. With that under my belt, I took off for Barcelona.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Most of my career has been in the .NET ecosystem doing full-stack during parts of my career. I dropped it completely in 2015 and just went full JS/Node/TypeScript/React. Best decision of my life and I didn&#39;t need to take a paycut.</p>&mdash; Nick Taylor (@nickytonline) <a href="https://twitter.com/nickytonline/status/970335487071342593?ref_src=twsrc%5Etfw">March 4, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![Do it Ben Stiller Meme](https://media.giphy.com/media/wi8Ez1mwRcKGI/giphy.gif "Do it Ben Stiller Meme")
 
 I met/worked with a lot of great people, got to head to London a couple of times to visit/work with my UK co-workers and finished off the summer by spending a bit of downtime on the coast of Spain as well as seeing a free (thank you Tourism Andorra) outdoor show of Cirque du Soleil's [Scalada : Vision](https://visitandorra.com/en/agenda/scalada-vision-by-cirque-du-soleil-2016/) in Andorra in the mountains.
 
