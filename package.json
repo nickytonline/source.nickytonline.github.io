@@ -52,6 +52,7 @@
     "gatsby-plugin-sass": "^2.0.7",
     "gatsby-plugin-sharp": "^2.0.15",
     "gatsby-plugin-sitemap": "^2.0.4",
+    "gatsby-plugin-twitter": "^2.0.8",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-copy-linked-files": "^2.0.7",
     "gatsby-remark-images": "^3.0.1",
