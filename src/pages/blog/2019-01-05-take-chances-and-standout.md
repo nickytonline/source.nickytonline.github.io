@@ -32,6 +32,8 @@ While I was interviewing for a new job at several places last summer/fall, Khan 
 
 I wasn't expecting to hear back from them, but eventually I did. I initially corresponded with one of their talent recruiters via e-mail who set me up with an interview with my potential Engineering manager. That interview seem to go well, and I mentioned that [I had put up a PR](https://github.com/Khan/tota11y/pull/131) for their t0ta11y project.
 
+Here's a screen capture of my PR in action
+
 ![t0ta11y browser extension screen capture](/img/t0ta11y-screen-capture.gif "t0ta11y browser extension screen capture")
 
 I was lucky enough to get a second interview, with none other than [John Resig](https://johnresig.com), the creator of [jQuery](https://jquery.com). I did not know that he was working at Khan, so I was a little nervous but excited at the same time. I got to speak with John for a solid hour about front-end. It was amazing.
