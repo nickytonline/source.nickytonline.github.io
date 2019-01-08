@@ -1,12 +1,5 @@
 import React from 'react';
-import { navigate } from 'gatsby-link';
 import Layout from '../../components/Layout';
-
-function encode(data) {
-  return Object.keys(data)
-    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-    .join('&');
-}
 
 const Index = () => (
   <Layout>
@@ -14,15 +7,60 @@ const Index = () => (
       <div className="container">
         <div className="content">
           <h1>Contact</h1>
-          Wanna get in touch? Drop me an e-mail at nick at iamdeveloper dot com
-          or check me out on{' '}
-          <a
-            href="https://dev.to/nickytonline"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            GitHub etc.
-          </a>
+          <ul className="social-icons">
+            <li>
+              <a
+                href="https://twitter.com/nickytonline"
+                aria-label="Twitter account for nickytonline"
+              >
+                <i className="icon icon--twitter" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/nickytonline"
+                aria-label="Github account for nickytonline"
+              >
+                <i className="icon icon--github" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/nickytonline"
+                aria-label="LinkedIn account for nickytonline"
+              >
+                <span className="icon icon--linkedin" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://dev.to/nickytonline"
+                aria-label="dev.to account for nickytonline"
+              >
+                <span className="icon icon--devto" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://stackoverflow.com/users/77814/nickytonline"
+                aria-label="Stack Overflow account for nickytonline"
+              >
+                <span className="icon icon--stackoverflow" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://toot.cafe/@nickytonline"
+                aria-label="Mastodon account for nickytonline"
+              >
+                <span className="icon icon--mastodon" />
+              </a>
+            </li>
+          </ul>
+          <p>
+            Wanna get in touch? Drop me an e-mail at nick at iamdeveloper dot
+            com.
+          </p>
         </div>
       </div>
     </section>
