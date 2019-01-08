@@ -67,6 +67,14 @@ html, body
       &:hover
         color: $dark-orange
 
+    .icon
+      background-color: $medium-purple
+
+      &:hover
+        background-color: $dark-orange
+
+
+
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -189,46 +197,32 @@ body, button, input, select, textarea
       transition: opacity 0.8s
       pointer-events: auto
 
-ul.social-icons // won't need the ul in selector once bulma is out
-  margin: 0
-  padding: 0
-  display: flex
-  list-style: none
-  align-items: center
-
-  li
-    list-style: none
-
-  .icon
-    margin-right: 1rem
-
 .icon
-  width: 1.5rem
-  height: 1.5rem
-  background-size: 1.5rem
+  width: 1.25rem
+  height: 1.25rem
+  background-size: 1.25rem
   background-position-x: center
   background-position-y: center
   background-repeat: no-repeat
-  background-color: transparent
-  opacity: 0.3
+  background-color: rgba($off-white, 0.3)
 
   &:hover
-    opacity: 1
+    background-color: $off-white
 
 .icon--twitter
-  background-image: url(/img/twitter.svg)
+  mask: url(/img/twitter.svg)
 
 .icon--github
-  background-image: url(/img/github.svg)
+  mask: url(/img/github.svg)
 
 .icon--linkedin
-  background-image: url(/img/linkedin.svg)
+  mask: url(/img/linkedin.svg)
 
 .icon--devto
-  background-image: url(/img/dev-dot-to.svg)
+  mask: url(/img/dev-dot-to.svg)
 
 .icon--stackoverflow
-  background-image: url(/img/stackoverflow.svg)
+  mask: url(/img/stackoverflow.svg)
 
 .icon--mastodon
-  background-image: url(/img/mastodon.svg)
+  mask: url(/img/mastodon.svg)

@@ -62,6 +62,48 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact" aria-label="Contact">
                 Contact
               </Link>
+              <a
+                className="navbar-item"
+                href="https://twitter.com/nickytonline"
+                aria-label="Twitter account for nickytonline"
+              >
+                <i className="icon icon--twitter" />
+              </a>
+              <a
+                className="navbar-item"
+                href="https://github.com/nickytonline"
+                aria-label="Github account for nickytonline"
+              >
+                <i className="icon icon--github" />
+              </a>
+              <a
+                className="navbar-item"
+                href="https://www.linkedin.com/in/nickytonline"
+                aria-label="LinkedIn account for nickytonline"
+              >
+                <span className="icon icon--linkedin" />
+              </a>
+              <a
+                className="navbar-item"
+                href="https://dev.to/nickytonline"
+                aria-label="dev.to account for nickytonline"
+              >
+                <span className="icon icon--devto" />
+              </a>
+              <a
+                className="navbar-item"
+                href="https://stackoverflow.com/users/77814/nickytonline"
+                aria-label="Stack Overflow account for nickytonline"
+              >
+                <span className="icon icon--stackoverflow" />
+              </a>
+              <a
+                className="navbar-item"
+                href="https://toot.cafe/@nickytonline"
+                aria-label="Mastodon account for nickytonline"
+              >
+                <span className="icon icon--mastodon" />
+              </a>
             </div>
           </div>
         </div>
