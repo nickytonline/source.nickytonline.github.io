@@ -164,6 +164,17 @@ body, button, input, select, textarea
   .section--thanks
       background-image: url(/img/undraw_having_fun_iais.svg)
 
+      ul
+        margin: 0
+
+        li
+          list-style: none
+
+          &:before
+            content: '→'
+            color: $dark-orange
+            margin-right: 0.5rem
+
   .section.section--blog-posts
     background-size: calc(100vw * 0.25)
     background-position-x: calc(100% - 2rem)
