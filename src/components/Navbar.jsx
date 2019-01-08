@@ -64,24 +64,10 @@ const Navbar = class extends React.Component {
               </Link>
               <a
                 className="navbar-item"
-                href="https://twitter.com/nickytonline"
-                aria-label="Twitter account for nickytonline"
-              >
-                <i className="icon icon--twitter" />
-              </a>
-              <a
-                className="navbar-item"
                 href="https://github.com/nickytonline"
                 aria-label="Github account for nickytonline"
               >
                 <i className="icon icon--github" />
-              </a>
-              <a
-                className="navbar-item"
-                href="https://www.linkedin.com/in/nickytonline"
-                aria-label="LinkedIn account for nickytonline"
-              >
-                <span className="icon icon--linkedin" />
               </a>
               <a
                 className="navbar-item"
@@ -92,10 +78,24 @@ const Navbar = class extends React.Component {
               </a>
               <a
                 className="navbar-item"
+                href="https://twitter.com/nickytonline"
+                aria-label="Twitter account for nickytonline"
+              >
+                <i className="icon icon--twitter" />
+              </a>
+              <a
+                className="navbar-item"
                 href="https://stackoverflow.com/users/77814/nickytonline"
                 aria-label="Stack Overflow account for nickytonline"
               >
                 <span className="icon icon--stackoverflow" />
+              </a>
+              <a
+                className="navbar-item"
+                href="https://www.linkedin.com/in/nickytonline"
+                aria-label="LinkedIn account for nickytonline"
+              >
+                <span className="icon icon--linkedin" />
               </a>
               <a
                 className="navbar-item"
