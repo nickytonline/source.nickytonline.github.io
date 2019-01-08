@@ -6,6 +6,7 @@ $navbar-height: 3.25rem
 @import "~bulma"
 
 html, body
+  color: $dark-purple
   background-color: $off-white
 
 .container
@@ -134,10 +135,12 @@ html, body
     color: $off-white
 
 h1, h2, h3
-  color: $dark-purple !important // remove this line once Bulma is pulled out
   font-family: "Montserrat"
 
 .content // won't need this once bulma is out
+  small // won't need this once bulma is out
+    color: $dark-purple
+
   h1
     font-weight: 700
     font-size: 2rem
