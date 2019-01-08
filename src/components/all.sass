@@ -1,4 +1,4 @@
-$body-color: #333
+$dark-purple: #403a58
 $off-white: #fdfdfd
 $dark-orange: #ee7600
 $medium-purple: #5750e6
@@ -10,7 +10,7 @@ html, body
 
 .container
   a
-    color: $body-color
+    color: $dark-purple
     text-decoration: underline
 
     &:hover
@@ -20,16 +20,16 @@ html, body
   .taglist__tag
     border-radius: 0.75rem
     padding: 0.5rem
-    color: $body-color
+    color: $dark-purple
     font-weight: bold
     background-color: $off-white
-    border: 0.125rem solid $body-color
+    border: 0.125rem solid $dark-purple
     text-decoration: none
 
     &:hover
       color: $off-white
-      background-color: $body-color
-      border-color: $body-color
+      background-color: $dark-purple
+      border-color: $dark-purple
 
   .blog-post-description
     color: rgba(51, 51, 51, 0.5)
@@ -37,7 +37,7 @@ html, body
 .navbar
   position: sticky
   top: 0
-  background: linear-gradient(45deg, #5750e6 80%, #ee7600 0%)
+  background: linear-gradient(45deg, $dark-purple 80%, #ee7600 0%)
   height: $navbar-height
   max-height: $navbar-height
 
@@ -62,7 +62,7 @@ html, body
     width: 100%
 
     a
-      color: $medium-purple
+      color: $dark-purple
 
       &:hover
         color: $dark-orange
@@ -124,26 +124,30 @@ html, body
 .content--front-page .button--read-more
   margin-top: 0.5rem
   font-size: 0.75
-  color: $medium-purple
-  border: 0.0625rem solid $medium-purple
+  color: $dark-purple
+  border: 0.0625rem solid $dark-purple
   background-color: rgba(87, 80, 230, 0.1)
   text-decoration: none
 
   &:hover
-    background-color: $medium-purple
+    background-color: $dark-purple
     color: $off-white
 
 h1, h2, h3
+  color: $dark-purple !important // remove this line once Bulma is pulled out
   font-family: "Montserrat"
 
 .content // won't need this once bulma is out
   h1
+    font-weight: 700
     font-size: 2rem
 
   h2
+    font-weight: 550
     font-size: 1.5rem
 
   h3
+    font-weight: 400
     font-size: 1.25rem
 
 // Will clean this up to just body once I've pulled out bulma
