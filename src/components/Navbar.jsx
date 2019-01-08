@@ -70,42 +70,45 @@ const Navbar = class extends React.Component {
                 href="https://github.com/nickytonline"
                 aria-label="Github account for nickytonline"
               >
-                <i className="icon icon--github" />
+                <span className="icon icon--github" data-name="GitHub" />
               </a>
               <a
                 className="navbar-item"
                 href="https://dev.to/nickytonline"
                 aria-label="dev.to account for nickytonline"
               >
-                <span className="icon icon--devto" />
+                <span className="icon icon--devto" data-name="dev.to" />
               </a>
               <a
                 className="navbar-item"
                 href="https://twitter.com/nickytonline"
                 aria-label="Twitter account for nickytonline"
               >
-                <i className="icon icon--twitter" />
+                <span className="icon icon--twitter" data-name="Twitter" />
               </a>
               <a
                 className="navbar-item"
                 href="https://stackoverflow.com/users/77814/nickytonline"
                 aria-label="Stack Overflow account for nickytonline"
               >
-                <span className="icon icon--stackoverflow" />
+                <span
+                  className="icon icon--stackoverflow"
+                  data-name="Stack Overflow"
+                />
               </a>
               <a
                 className="navbar-item"
                 href="https://www.linkedin.com/in/nickytonline"
                 aria-label="LinkedIn account for nickytonline"
               >
-                <span className="icon icon--linkedin" />
+                <span className="icon icon--linkedin" data-name="LinkedIn" />
               </a>
               <a
                 className="navbar-item"
                 href="https://toot.cafe/@nickytonline"
                 aria-label="Mastodon account for nickytonline"
               >
-                <span className="icon icon--mastodon" />
+                <span className="icon icon--mastodon" data-name="Mastodon" />
               </a>
             </div>
           </div>

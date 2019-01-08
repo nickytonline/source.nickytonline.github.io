@@ -68,10 +68,15 @@ html, body
         color: $dark-orange
 
     .icon
-      background-color: $medium-purple
+      width: inherit
+      mask: none
+      background: none;
 
       &:hover
-        background-color: $dark-orange
+        background: none;
+
+      &:before
+        content: attr(data-name)
 
 
 
