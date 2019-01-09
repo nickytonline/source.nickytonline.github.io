@@ -1,6 +1,8 @@
 $dark-purple: #403a58
 $off-white: #fdfdfd
-$dark-orange: #ee7600
+$medium-pink: #f76265
+$lighter-purple: #d2cffd
+$light-purple: #6159ff
 $medium-purple: #5750e6
 $navbar-height: 3.25rem
 @import "~bulma"
@@ -15,7 +17,7 @@ html, body
     text-decoration: underline
 
     &:hover
-      color: $dark-orange
+      color: $medium-pink
       text-decoration: none
 
   .taglist__tag
@@ -38,7 +40,7 @@ html, body
 .navbar
   position: sticky
   top: 0
-  background: linear-gradient(45deg, $dark-purple 80%, #ee7600 0%)
+  background: linear-gradient(45deg, $dark-purple 80%, $lighter-purple 0%)
   height: $navbar-height
   max-height: $navbar-height
 
@@ -51,11 +53,11 @@ html, body
     font-weight: bold
 
     &:hover
-      color: $dark-orange
+      color: $medium-pink
 
 @media screen and (max-width: 1087px)
   .navbar-burger
-    color: $off-white
+    color: $dark-purple
 
   .navbar-menu.is-active
     position: absolute
@@ -66,7 +68,7 @@ html, body
       color: $dark-purple
 
       &:hover
-        color: $dark-orange
+        color: $medium-pink
 
     .icon
       width: inherit
@@ -107,7 +109,7 @@ html, body
     margin-bottom: 0
 
   .blog-title
-    color: #ee7600
+    color: $medium-pink
     font-weight: bold
     text-decoration: none
 
@@ -184,7 +186,7 @@ body, button, input, select, textarea
 
           &:before
             content: '→'
-            color: $dark-orange
+            color: $medium-pink
             margin-right: 0.5rem
 
   .section.section--blog-posts
@@ -208,7 +210,7 @@ body, button, input, select, textarea
 
   .blog-post-description:before
     content: '→'
-    color: $dark-orange
+    color: $medium-pink
     margin-right: 0.5rem
 
 @media screen and (min-device-width: 1200px)
