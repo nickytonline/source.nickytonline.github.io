@@ -21,18 +21,27 @@ html, body
       text-decoration: none
 
   .taglist__tag
-    border-radius: 0.75rem
-    padding: 0.5rem
+    position: relative
     color: $dark-purple
     font-weight: bold
-    background-color: $off-white
-    border: 0.125rem solid $dark-purple
     text-decoration: none
+    margin-right: 0.25rem
 
-    &:hover
-      color: $off-white
+    &:after
+      position: absolute
+      top: 0.5rem
+      margin-left: 0.125rem
+      content: ''
+      color: $dark-purple
+      width: 1.5rem
+      height: 1.5rem
+      background-position-x: center
+      background-position-y: center
+      mask: url(/img/blog-tag.svg)
       background-color: $dark-purple
-      border-color: $dark-purple
+
+    &:hover:after
+      background-color: $medium-pink
 
   .blog-post-description
     color: rgba(51, 51, 51, 0.5)
