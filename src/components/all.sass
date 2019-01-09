@@ -27,6 +27,13 @@ html, body
     text-decoration: none
     margin-right: 0.25rem
 
+    .taglist__tag__count
+      margin-left: 0.25rem
+      color: $medium-pink
+
+    &:hover .taglist__tag__count
+      color: $dark-purple
+
     &:last-child
       margin-right: 0
 
@@ -41,10 +48,10 @@ html, body
       background-position-x: center
       background-position-y: center
       mask: url(/img/blog-tag.svg)
-      background-color: $dark-purple
+      background-color: $lighter-purple
 
     &:hover:after
-      background-color: $medium-pink
+      background-color: $dark-purple
 
   .blog-post-description
     color: rgba(51, 51, 51, 0.5)

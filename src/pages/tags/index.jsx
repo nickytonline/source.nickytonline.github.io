@@ -29,7 +29,10 @@ const TagsPage = ({
                     to={`/tags/${kebabCase(tag.fieldValue)}/`}
                     className="taglist__tag"
                   >
-                    {tag.fieldValue} ({tag.totalCount})
+                    {tag.fieldValue}
+                    <span className="taglist__tag__count">
+                      {tag.totalCount}
+                    </span>
                   </Link>
                 </li>
               ))}
