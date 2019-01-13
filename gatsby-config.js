@@ -109,5 +109,6 @@ module.exports = {
     },
     'gatsby-plugin-sitemap',
     'gatsby-plugin-twitter',
+    'gatsby-plugin-typescript',
   ],
 };

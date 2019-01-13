@@ -2,6 +2,7 @@ const _ = require('lodash');
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -36,7 +37,9 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
-        component: path.resolve(`src/templates/${String(edge.node.frontmatter.templateKey)}.jsx`,),
+        component: path.resolve(
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.jsx`,
+        ),
         // additional data can be passed via context
         context: {
           id,
@@ -82,4 +85,28 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     });
   }
+};
+
+exports.onCreateWebpackConfig = ({
+  stage,
+  rules,
+  loaders,
+  plugins,
+  actions,
+}) => {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.tsx?$/,
+          loader: 'ts-loader',
+          options: {
+            // disable type checker - we will use it in fork plugin
+            transpileOnly: true,
+          },
+        },
+      ],
+    },
+    plugins: [new ForkTsCheckerWebpackPlugin({ tslint: true })],
+  });
 };
