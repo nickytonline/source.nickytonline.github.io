@@ -36,7 +36,9 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
-        component: path.resolve(`src/templates/${String(edge.node.frontmatter.templateKey)}.jsx`,),
+        component: path.resolve(
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.jsx`,
+        ),
         // additional data can be passed via context
         context: {
           id,
@@ -82,4 +84,31 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     });
   }
+};
+
+exports.onCreateWebpackConfig = ({
+  stage,
+  rules,
+  loaders,
+  plugins,
+  actions,
+}) => {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.tsx?$/,
+          enforce: 'pre',
+          use: [
+            {
+              loader: 'tslint-loader',
+              options: {
+                /* Loader options go here */
+              },
+            },
+          ],
+        },
+      ],
+    },
+  });
 };

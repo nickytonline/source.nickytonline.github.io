@@ -109,5 +109,12 @@ module.exports = {
     },
     'gatsby-plugin-sitemap',
     'gatsby-plugin-twitter',
+    {
+      resolve: 'gatsby-plugin-typescript',
+      options: {
+        isTSX: true,
+        allExtensions: true,
+      },
+    },
   ],
 };

@@ -10,17 +10,19 @@
   ],
   "license": "MIT",
   "scripts": {
-    "start": "npm run develop",
     "clean": "rimraf .cache public",
-    "build": "npm run clean && gatsby build && cp ./keybase.txt ./public/",
-    "develop": "npm run clean && gatsby develop",
+    "prebuild": "npm run clean && npm run typecheck",
+    "build": "gatsby build && cp ./keybase.txt ./public/",
+    "predevelop": "npm run clean",
+    "develop": "gatsby develop",
+    "typecheck": "tsc",
     "serve": "gatsby serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "*.{js,jsx,ts,tsx}": [
       "prettier --write",
-      "eslint --fix",
+      "tslint --fix",
       "git add"
     ],
     "*.json": [
@@ -72,17 +74,29 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.119",
+    "@types/react": "^16.7.18",
+    "@types/react-helmet": "^5.0.8",
+    "@types/webpack": "^4.4.22",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.3",
+    "gatsby-plugin-typescript": "^2.0.3",
     "gh-pages": "^2.0.1",
     "husky": "1.2.0",
     "lint-staged": "8.1.0",
     "lost": "^8.3.0",
     "postcss-pxtorem": "^4.0.1",
-    "prettier": "^1.15.3"
+    "prettier": "^1.15.3",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-loader": "^3.5.4",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.2.2"
   }
 }
