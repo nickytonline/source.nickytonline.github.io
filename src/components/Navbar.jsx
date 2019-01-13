@@ -34,14 +34,15 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link className="logo" to="/" className="navbar-item" title="Logo">
+            <Link className="logo navbar-item" to="/" title="Logo">
               <span
                 className="logo__emoji"
                 role="img"
                 aria-label="laptop emoji"
               >
                 💻
-              </span>{' '}
+              </span>
+{' '}
               just some dev
             </Link>
             {/* Hamburger menu */}
