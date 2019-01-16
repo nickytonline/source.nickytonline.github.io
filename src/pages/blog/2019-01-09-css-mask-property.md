@@ -16,7 +16,7 @@ Have you ever had an icon you liked and wanted to put on your site, but were lik
 
 If you want to see it in action, take a look at the icons in the menu of my website, \[iamdeveloper.com](https://www.iamdeveloper.com "www.iamdeveloper.com web site").
 
-Support for the CSS mask property is [pretty good](https://caniuse.com/#feat=css-masks) unless you still need to support Internet Explorer. If that's the case, a quick Google will show you provide you with some fallback options.
+Support for the CSS mask property is [pretty good](https://caniuse.com/#feat=css-masks) unless you still need to support Internet Explorer. If that's the case, a quick Google will provide you with some fallback options.
 
 Also, there's a little bonus with this blog post. I use [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) and JavaScript to get the logo colour to change, so check that out too in the codepen.
 
