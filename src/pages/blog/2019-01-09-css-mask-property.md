@@ -14,7 +14,9 @@ Have you ever had an icon you liked and wanted to put on your site, but were lik
 
 ![](/img/css-mask-property-in-actio.gif)
 
-Have some fun and try it yourself! 👋
+If you want to see it in action, take a look at the icons in the menu of my website, \[iamdeveloper.com](https://www.iamdeveloper.com "www.iamdeveloper.com web site"). 
+
+Have some fun and try it out in the codepen! 👋
 
 <iframe height='265' scrolling='no' title='codepen for blog post on the CSS mask property' src='//codepen.io/nickytonline/embed/ebxrpv/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/nickytonline/pen/ebxrpv/'>codepen for blog post on the CSS mask property</a> by Nick Taylor (<a href='https://codepen.io/nickytonline'>@nickytonline</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
