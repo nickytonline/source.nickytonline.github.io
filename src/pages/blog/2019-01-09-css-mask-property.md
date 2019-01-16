@@ -14,7 +14,9 @@ Have you ever had an icon you liked and wanted to put on your site, but were lik
 
 ![](/img/css-mask-property-in-actio.gif)
 
-If you want to see it in action, take a look at the icons in the menu of my website, \[iamdeveloper.com](https://www.iamdeveloper.com "www.iamdeveloper.com web site"). 
+If you want to see it in action, take a look at the icons in the menu of my website, \[iamdeveloper.com](https://www.iamdeveloper.com "www.iamdeveloper.com web site").
+
+Also, there's a little bonus with this blog post. I use [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) and JavaScript to get the logo colour to change, so check that out too in the codepen.
 
 Have some fun and try it out in the codepen! 👋
 
