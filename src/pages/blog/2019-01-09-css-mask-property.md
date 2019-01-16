@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: CSS mask property
+title: The CSS mask property
 date: 2019-01-09T16:44:39.919Z
 description: An overview of how the mask CSS property works
 tags:
