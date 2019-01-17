@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Take chances and standout because who knows?
+title: Take chances and standout
 date: 2019-01-05T18:40:00.493Z
 description: Some career advice on taking chances and standing out.
 tags:
