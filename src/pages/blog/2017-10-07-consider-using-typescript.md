@@ -6,6 +6,7 @@ description: A small write up on the benefits of using TypeScript.
 tags:
   - typescript
 ---
+
 I'm not going to be one of those that tells you have to use TypeScript (or Flow for that matter). I'm also not going to go into the whole [TS vs. Flow](https://www.google.ca/search?q=flow+vs.+typescript&rlz=1C5CHFA_enCA763CA763&oq=flow+vs.+typescript&aqs=chrome.0.0l4.3590j0j4&sourceid=chrome&ie=UTF-8) debate. There are plenty of people already doing that. All I want to do is present some good reasons why you might want to consider using TypeScript. After that, I leave it up to you.
 
 I've been using TypeScript since fall 2014 (v. 1.3). It's come a long way. The amount of care that has gone into the language to keep it as a superset of JavaScript (not altering the JS language) is amazing. Kudos to [Anders Hejlsberg, the entire TypeScript team and OSS peeps](https://github.com/Microsoft/TypeScript/graphs/contributors) that have made this such a great project.
@@ -27,7 +28,7 @@ So let's get to it. If you've never used a statically typed language like Java o
   - Did I miss one?
 - Intellisense when using npm packages that have TypeScript declaration files even if your project isn't written in TypeScript (As far as I know this only applies to VS Code. Please chime in if this is not the case.)
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">If you&#39;re not using <a href="https://twitter.com/typescriptlang?ref_src=twsrc%5Etfw">@typescriptlang</a>, you can still benefit from it in <a href="https://twitter.com/code?ref_src=twsrc%5Etfw">@code</a>. Packages u import that have typings provide typed intellisense. <a href="https://t.co/hA81wrdMO0">pic.twitter.com/hA81wrdMO0</a></p>&mdash; VS Code Tips (@vscodetips) <a href="https://twitter.com/vscodetips/status/910937405267509249?ref_src=twsrc%5Etfw">September 21, 2017</a></blockquote>
+https://twitter.com/vscodetips/status/910937405267509249
 
 Great, looks awesome, but what about consuming npm packages from projects that don't use TypeScript? As mentioned briefly above, Visual Studio Code can grab the declaration files even if your project doesn't use TypeScript. So where are these declaration files coming from?
 
@@ -41,7 +42,7 @@ To add types for a package that does not have its own declaration file, install 
 
 The hard (smart) work and love that has gone into TypeScript has not gone unnoticed. In recent times, some fairly large projects that you may know have migrated to TypeScript.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">1/ It seems like a lot of big companies lately are migrating to a type system for big projects. <a href="https://twitter.com/github?ref_src=twsrc%5Etfw">@github</a>, <a href="https://t.co/WbXrUbR1Xj">https://t.co/WbXrUbR1Xj</a>,</p>&mdash; Nick Taylor (@nickytonline) <a href="https://twitter.com/nickytonline/status/913242699255488512?ref_src=twsrc%5Etfw">September 28, 2017</a></blockquote>
+https://twitter.com/nickytonline/status/913242699255488512
 
 - Fun fact, [Visual Studio Code](https://github.com/Microsoft/vscode) is written in TypeScript!
 - Angular adopted TypeScript in version 2 (related [Dart, Typescript and official languages at Google](news.dartlang.org/2017/04/dart-typescript-and-official-languages.html))

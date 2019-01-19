@@ -40,6 +40,7 @@
     "printWidth": 80
   },
   "dependencies": {
+    "@raae/gatsby-remark-oembed": "0.0.3",
     "bulma": "^0.7.2",
     "gatsby": "^2.0.89",
     "gatsby-image": "^2.0.25",
@@ -54,7 +55,6 @@
     "gatsby-plugin-sass": "^2.0.7",
     "gatsby-plugin-sharp": "^2.0.17",
     "gatsby-plugin-sitemap": "^2.0.4",
-    "gatsby-plugin-twitter": "^2.0.8",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-copy-linked-files": "^2.0.8",
     "gatsby-remark-images": "^3.0.1",
