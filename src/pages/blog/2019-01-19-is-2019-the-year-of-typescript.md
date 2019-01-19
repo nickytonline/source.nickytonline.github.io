@@ -21,13 +21,11 @@ https://twitter.com/kentcdodds/status/1075853845048188929
 
 https://twitter.com/ryanflorence/status/1057097944082591744
 
-{% twitter 1079106970953560065 %}
+https://twitter.com/rauchg/status/1079106970953560065
 
 Is this the final nail in the coffin for Flow? Is it another year where TypeScript adoption continues to rise and it becomes the Year of TypeScript?
 
 There's even a [horse_ts](https://twitter.com/horse_ts) Twitter account now. It's not too hard to guess who it is, but I still find it pretty funny.
-
-https://twitter.com/rauchg/status/1079106970953560065
 
 "So if you’ve been a holdout (like me, to be honest), 2019 is definitely the year to learn TypeScript.", @kball quote from https://zendev.com/2019/01/15/frontend-development-topics-to-learn-in-2019.html
 
