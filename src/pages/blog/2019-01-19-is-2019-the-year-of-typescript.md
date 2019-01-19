@@ -31,5 +31,5 @@ There's even a [horse_ts](https://twitter.com/horse_ts) Twitter account now. It'
 
 Share your thoughts on the [mirrored post on dev.to](https://dev.to/nickytonline/is-2019-the-year-of-typescript-18p2)
 
-And while you're here check out my older post [Consider Using TypeScript(https://dev.to/nickytonline/why-you-might-want-to-consider-using-typescript-6j3 "Consider Using TypeScript)
+And while you're here check out my older post [Consider Using TypeScript](https://www.iamdeveloper.com/blog/2017-10-07-consider-using-typescript/ "Consider Using TypeScript)
 
