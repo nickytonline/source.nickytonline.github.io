@@ -139,3 +139,5 @@ funcsave hot
 That’s pretty much the round up of what I have on my machine at the moment. I should probably get around to writing a script that installs all this, but for the time being, other priorities.
 
 I’m always looking for new tools to make me more efficient, so feel free to chime in in the comments below.
+
+And here's the link to [my mac setup script](https://gist.github.com/nickytonline/729fc106a0146345c0b90f3356a41e4d#file-my-mac-setup-sh "my mac setup script") which I made a little while's after this blog post. It's not perfect, but it's helped me set up a few machines pretty easily.
