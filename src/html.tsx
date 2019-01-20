@@ -1,15 +1,15 @@
 import * as React from 'react';
 
 export type HTMLProps = {
-  htmlAttributes:
+  htmlAttributes: React.HTMLAttributes<HTMLHtmlElement>;
   headComponents: React.ReactNode;
-  bodyAttributes:
+  bodyAttributes: React.HTMLAttributes<HTMLBodyElement>;
   preBodyComponents: React.ReactNode;
   body: string;
   postBodyComponents: React.ReactNode;
-}
+};
 
-export default class HTML extends React.Component {
+export default class HTML extends React.Component<HTMLProps, {}> {
   render() {
     return (
       <html {...this.props.htmlAttributes}>
