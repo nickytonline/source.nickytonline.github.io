@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import { SocialIcon } from 'components';
-import { SiteMetaData, SocialLinkId } from '../../types/site-meta-data';
+import { SiteMetaData, SocialLinkId } from 'types/site-meta-data';
 
 export type NavbarProps = {
   siteMetadata: SiteMetaData;
@@ -12,7 +12,7 @@ export class Navbar extends React.Component<NavbarProps, {}> {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(
       document.querySelectorAll('.navbar-burger'),
-      0
+      0,
     );
     // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styles from './SocialIcon.module.scss';
-import { SocialLinkId } from '../../types/site-meta-data';
+import { SocialLinkId } from 'types/site-meta-data';
 
 export type SocialIconProps = {
   id: SocialLinkId;

@@ -5,8 +5,8 @@ import { StaticQuery, graphql } from 'gatsby';
 import { Navbar } from 'components';
 
 import './all.sass';
-import { SiteMetaData } from '../../types/site-meta-data';
-import { ChildrenProp } from '../../types/children-prop';
+import { SiteMetaData } from 'types/site-meta-data';
+import { ChildrenProp } from 'types/children-prop';
 
 export type LayoutProps = ChildrenProp;
 

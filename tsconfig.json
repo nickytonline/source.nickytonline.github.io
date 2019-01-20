@@ -63,7 +63,7 @@
     "baseUrl": "./src",
     "paths": {
       "components/*": ["components/*"],
-      "types/*": ["../types"]
+      "types/*": ["../types/*"]
     }
   },
   "include": ["./src", "./types"]
