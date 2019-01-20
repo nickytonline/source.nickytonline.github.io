@@ -7,7 +7,7 @@ export type NavbarProps = {
   siteMetadata: SiteMetaData;
 };
 
-const Navbar = class extends React.Component<NavbarProps, {}> {
+export class Navbar extends React.Component<NavbarProps, {}> {
   componentDidMount() {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(
@@ -87,6 +87,4 @@ const Navbar = class extends React.Component<NavbarProps, {}> {
       </nav>
     );
   }
-};
-
-export default Navbar;
+}
