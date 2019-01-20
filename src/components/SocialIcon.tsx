@@ -19,3 +19,5 @@ export const SocialIcon: React.FC<SocialIconProps> = ({ id, name, url }) => (
     <span className={`${styles.icon} ${styles[id]}`} data-name={name} />
   </a>
 );
+
+SocialIcon.displayName = 'SocialIcon';
