@@ -4,9 +4,9 @@ export type PageTemplateProps = {
   title: string;
   content: string;
   contentComponent?:
-    | React.ComponentClass<HtmlContentProps, any>
+    | React.ComponentClass<HtmlContentProps, {}>
     | React.FunctionComponent<HtmlContentProps>
-    | React.ComponentClass<ContentProps, any>
+    | React.ComponentClass<ContentProps, {}>
     | React.FunctionComponent<ContentProps>
     | undefined;
 };
