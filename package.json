@@ -11,11 +11,12 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf .cache public",
-    "prebuild": "npm run clean && npm run typecheck",
+    "prebuild": "npm run clean && npm run type-check",
     "build": "gatsby build && cp ./keybase.txt ./public/",
     "predevelop": "npm run clean",
     "develop": "gatsby develop",
-    "typecheck": "tsc",
+    "type-check": "tsc",
+    "type-check:watch": "npm run type-check -- --watch",
     "serve": "gatsby serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

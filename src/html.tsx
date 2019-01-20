@@ -1,5 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import * as React from 'react';
+
+export type HTMLProps = {
+  htmlAttributes:
+  headComponents: React.ReactNode;
+  bodyAttributes:
+  preBodyComponents: React.ReactNode;
+  body: string;
+  postBodyComponents: React.ReactNode;
+}
 
 export default class HTML extends React.Component {
   render() {
@@ -30,12 +38,3 @@ export default class HTML extends React.Component {
     );
   }
 }
-
-HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
-  body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
-};
