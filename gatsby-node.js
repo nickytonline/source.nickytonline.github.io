@@ -24,8 +24,9 @@ exports.createPages = ({ actions, graphql }) => {
       }
     }
   `).then((result) => {
+    // eslint-disable-line consistent-return
     if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()));
+      result.errors.forEach(e => console.error(e.toString())); // eslint-disable-line no-console
       return Promise.reject(result.errors);
     }
 
@@ -87,10 +88,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 };
 
 exports.onCreateWebpackConfig = ({
-  stage,
-  rules,
-  loaders,
-  plugins,
+  // stage,
+  // rules,
+  // loaders,
+  // plugins,
   actions,
 }) => {
   actions.setWebpackConfig({

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ThanksPageTemplate } from '../../templates/thanks-page';
 
-const ThanksPagePreview = ({ entry, widgetFor }) => (
+export const ThanksPagePreview = ({ entry, widgetFor }) => (
   <ThanksPageTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
@@ -15,5 +15,3 @@ ThanksPagePreview.propTypes = {
   }),
   widgetFor: PropTypes.func,
 };
-
-export default ThanksPagePreview;

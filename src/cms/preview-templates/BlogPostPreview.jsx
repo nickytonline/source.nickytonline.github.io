@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { BlogPostTemplate } from '../../templates/blog-post';
 
-const BlogPostPreview = ({ entry, widgetFor }) => (
+export const BlogPostPreview = ({ entry, widgetFor }) => (
   <BlogPostTemplate
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
@@ -17,5 +17,3 @@ BlogPostPreview.propTypes = {
   }),
   widgetFor: PropTypes.func,
 };
-
-export default BlogPostPreview;
