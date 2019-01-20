@@ -3,22 +3,11 @@ import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import { Layout } from 'components';
 import { SiteMetaData } from 'types/site-meta-data';
+import { AllMarkdownRemark } from 'types/all-markdown-remark';
 
 export type TagRouteProps = {
   data: {
-    allMarkdownRemark: {
-      edges: {
-        node: {
-          fields: {
-            slug: string;
-          };
-          frontmatter: {
-            title: string;
-          };
-        };
-      }[];
-      totalCount: number;
-    };
+    allMarkdownRemark: AllMarkdownRemark;
     site: {
       siteMetadata: SiteMetaData;
     };
