@@ -1,10 +1,12 @@
-// import { HtmlContentProps } from 'components/';
+import { HtmlContentProps, ContentProps } from 'components';
 
-export type PageTemplateProps<
-  // TODO: Fix this
-  T = any /* React.FunctionComponent<HtmlContentProps> */
-> = {
+export type PageTemplateProps = {
   title: string;
-  content?: string;
-  contentComponent?: T;
+  content: string;
+  contentComponent?:
+    | React.ComponentClass<HtmlContentProps, any>
+    | React.FunctionComponent<HtmlContentProps>
+    | React.ComponentClass<ContentProps, any>
+    | React.FunctionComponent<ContentProps>
+    | undefined;
 };

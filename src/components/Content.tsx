@@ -1,14 +1,11 @@
 import React from 'react';
 
-export type ContentProps = {
-  content: React.ReactNode;
-  className: string;
+export type ContentProps<T = React.ReactNode> = {
+  content: T;
+  className?: string;
 };
 
-export type HtmlContentProps = {
-  content: string;
-  className: string;
-};
+export type HtmlContentProps = ContentProps<string>;
 
 export const HTMLContent: React.FC<HtmlContentProps> = ({
   content,
