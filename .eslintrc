@@ -5,5 +5,8 @@
   "globals": {
     "graphql": true,
     "document": false
+  },
+  "settings": {
+    "import/core-modules": ["components", "types"]
   }
 }

@@ -94,21 +94,11 @@ exports.onCreateWebpackConfig = ({
   actions,
 }) => {
   actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: /\.tsx?$/,
-          enforce: 'pre',
-          use: [
-            {
-              loader: 'tslint-loader',
-              options: {
-                /* Loader options go here */
-              },
-            },
-          ],
-        },
-      ],
+    resolve: {
+      alias: {
+        components: path.resolve(__dirname, './src/components'),
+        types: path.resolve(__dirname, './types'),
+      },
     },
   });
 };
