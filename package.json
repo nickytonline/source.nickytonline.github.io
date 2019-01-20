@@ -22,7 +22,7 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "prettier --write",
-      "tslint --fix",
+      "eslint --fix",
       "git add"
     ],
     "*.json": [
@@ -78,11 +78,14 @@
     "@types/react": "16.7.20",
     "@types/react-helmet": "5.0.8",
     "@types/webpack": "4.4.23",
+    "@typescript-eslint/parser": "0.2.1",
     "babel-eslint": "10.0.1",
     "eslint": "5.12.1",
     "eslint-config-airbnb": "17.1.0",
+    "eslint-config-prettier": "3.6.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-react": "7.12.4",
     "gatsby-plugin-typescript": "2.0.3",
     "gh-pages": "2.0.1",
@@ -91,12 +94,6 @@
     "lost": "8.3.0",
     "postcss-pxtorem": "4.0.1",
     "prettier": "1.15.3",
-    "tslint": "5.12.1",
-    "tslint-config-airbnb": "5.11.1",
-    "tslint-config-prettier": "1.17.0",
-    "tslint-loader": "3.5.4",
-    "tslint-plugin-prettier": "2.0.1",
-    "tslint-react": "3.6.0",
     "typescript": "3.2.4"
   }
 }

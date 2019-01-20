@@ -1,6 +1,6 @@
 {
-  "parser": "babel-eslint",
-  "extends": "airbnb",
+  "parser": "@typescript-eslint/parser",
+  "extends": ["airbnb"],
   "plugins": ["react", "jsx-a11y", "import"],
   "globals": {
     "graphql": true,
