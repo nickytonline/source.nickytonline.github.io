@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from 'components';
 
-const NotFoundPage = () => (
+const NotFoundPage: React.FC<{}> = () => (
   <Layout>
     <section className="section section--not-found">
       <div className="container">
