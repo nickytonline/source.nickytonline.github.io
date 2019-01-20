@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from 'components';
 
-const Index = () => (
+const Index: React.FC<{}> = () => (
   <Layout>
     <section className="section section--contact">
       <div className="container">
