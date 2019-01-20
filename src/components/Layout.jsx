@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-import { Navbar } from '.';
+import { Navbar } from 'components';
 import './all.sass';
 
 const TemplateWrapper = ({ children }) => (

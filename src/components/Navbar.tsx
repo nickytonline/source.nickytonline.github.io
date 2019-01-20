@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import { SocialIcon } from '.';
+import { SocialIcon } from 'components';
 import { SiteMetaData, SocialLinkId } from '../../types/site-meta-data';
 
 export type NavbarProps = {
