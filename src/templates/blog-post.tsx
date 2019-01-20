@@ -1,11 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
 import { Content, HTMLContent, Layout } from 'components';
+import { MarkdownRemark } from 'types/markdown-remark';
+import { PageTemplateProps } from './page-template-props';
 
-export const BlogPostTemplate = ({
+export type BlogPostTemplateProps = PageTemplateProps & {
+  description: string;
+  tags: string[];
+  helmet?: React.ReactNode;
+};
+
+export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
   content,
   contentComponent,
   description,
@@ -48,15 +55,13 @@ export const BlogPostTemplate = ({
   );
 };
 
-BlogPostTemplate.propTypes = {
-  content: PropTypes.node.isRequired,
-  contentComponent: PropTypes.func,
-  description: PropTypes.string,
-  title: PropTypes.string,
-  helmet: PropTypes.object,
+export type BlogPostProps = {
+  data: {
+    markdownRemark: MarkdownRemark;
+  };
 };
 
-const BlogPost = ({ data }) => {
+const BlogPost: React.FC<BlogPostProps> = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
@@ -65,7 +70,7 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        helmet={
+        helmet={(
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
@@ -73,7 +78,7 @@ const BlogPost = ({ data }) => {
               content={`${post.frontmatter.description}`}
             />
           </Helmet>
-        }
+)}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -81,12 +86,7 @@ const BlogPost = ({ data }) => {
   );
 };
 
-BlogPost.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-};
-
+// Leaving this as a default export because it's instantiated via gatsby-node.js
 export default BlogPost;
 
 export const pageQuery = graphql`

@@ -2,8 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { Content, HTMLContent, Layout } from 'components';
+import { PageTemplateProps } from './page-template-props';
 
-export const ThanksPageTemplate = ({ title, content, contentComponent }) => {
+export type ThanksPageTemplateProps = PageTemplateProps;
+
+export const ThanksPageTemplate: React.FC<ThanksPageTemplateProps> = ({
+  title,
+  content,
+  contentComponent,
+}) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -16,13 +23,18 @@ export const ThanksPageTemplate = ({ title, content, contentComponent }) => {
   );
 };
 
-ThanksPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
+export type ThanksPageProps = {
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        title: string;
+      };
+      html: string;
+    };
+  };
 };
 
-const ThanksPage = ({ data }) => {
+const ThanksPage: React.FC<ThanksPageProps> = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
@@ -36,10 +48,7 @@ const ThanksPage = ({ data }) => {
   );
 };
 
-ThanksPage.propTypes = {
-  data: PropTypes.object.isRequired,
-};
-
+// Leaving this as a default export because it's instantiated via gatsby-node.js
 export default ThanksPage;
 
 export const thanksPageQuery = graphql`

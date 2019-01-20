@@ -26,7 +26,7 @@ exports.createPages = ({ actions, graphql }) => {
       }
     `)
       // eslint-disable-next-line consistent-return
-      .then((result) => {
+      .then(result => {
         if (result.errors) {
           result.errors.forEach(e => console.error(e.toString())); // eslint-disable-line no-console
           return Promise.reject(result.errors);
@@ -34,13 +34,13 @@ exports.createPages = ({ actions, graphql }) => {
 
         const posts = result.data.allMarkdownRemark.edges;
 
-        posts.forEach((edge) => {
+        posts.forEach(edge => {
           const { id } = edge.node;
           createPage({
             path: edge.node.fields.slug,
             tags: edge.node.frontmatter.tags,
             component: path.resolve(
-              `src/templates/${String(edge.node.frontmatter.templateKey)}.jsx`,
+              `src/templates/${String(edge.node.frontmatter.templateKey)}.tsx`,
             ),
             // additional data can be passed via context
             context: {
@@ -52,7 +52,7 @@ exports.createPages = ({ actions, graphql }) => {
         // Tag pages:
         let tags = [];
         // Iterate through each post, putting all found tags into `tags`
-        posts.forEach((edge) => {
+        posts.forEach(edge => {
           if (_.get(edge, 'node.frontmatter.tags')) {
             tags = tags.concat(edge.node.frontmatter.tags);
           }
@@ -61,12 +61,12 @@ exports.createPages = ({ actions, graphql }) => {
         tags = _.uniq(tags);
 
         // Make tag pages
-        tags.forEach((tag) => {
+        tags.forEach(tag => {
           const tagPath = `/tags/${_.kebabCase(tag)}/`;
 
           createPage({
             path: tagPath,
-            component: path.resolve('src/templates/tags.jsx'),
+            component: path.resolve('src/templates/tags.tsx'),
             context: {
               tag,
             },

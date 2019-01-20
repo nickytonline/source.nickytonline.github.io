@@ -1,8 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { BlogPostTemplate } from '../../templates/blog-post';
+import { PagePreviewProps } from './page-preview-props';
 
-export const BlogPostPreview = ({ entry, widgetFor }) => (
+export type BlogPostPreviewProps = PagePreviewProps;
+
+export const BlogPostPreview: React.FC<BlogPostPreviewProps> = ({
+  entry,
+  widgetFor,
+}) => (
   <BlogPostTemplate
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
@@ -11,9 +16,4 @@ export const BlogPostPreview = ({ entry, widgetFor }) => (
   />
 );
 
-BlogPostPreview.propTypes = {
-  entry: PropTypes.shape({
-    getIn: PropTypes.func,
-  }),
-  widgetFor: PropTypes.func,
-};
+BlogPostPreview.displayName = 'BlogPostPreview';

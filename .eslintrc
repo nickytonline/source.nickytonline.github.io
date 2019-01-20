@@ -8,5 +8,13 @@
   },
   "settings": {
     "import/core-modules": ["components", "types"]
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".tsx"] }
+    ],
+    "import/prefer-default-export": 0,
+    "react/prop-types": [0]
   }
 }

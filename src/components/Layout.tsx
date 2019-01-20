@@ -8,7 +8,7 @@ import './all.sass';
 import { SiteMetaData } from 'types/site-meta-data';
 import { ChildrenProp } from 'types/children-prop';
 
-export type LayoutProps = ChildrenProp;
+export type LayoutProps = ChildrenProp<JSX.Element>;
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => (
   <StaticQuery
