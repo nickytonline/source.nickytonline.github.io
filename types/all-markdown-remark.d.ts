@@ -1,3 +1,8 @@
+export type Tag = {
+  fieldValue: string;
+  totalCount: number;
+};
+
 export type AllMarkdownRemark = {
   edges: {
     node: {
@@ -12,5 +17,6 @@ export type AllMarkdownRemark = {
       };
     };
   }[];
+  group: Tag[];
   totalCount: number;
 };

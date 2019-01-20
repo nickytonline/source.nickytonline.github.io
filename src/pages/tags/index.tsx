@@ -3,8 +3,19 @@ import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import { Layout } from 'components';
+import { AllMarkdownRemark } from '../../../types/all-markdown-remark';
+import { SiteMetaData } from '../../../types/site-meta-data';
 
-const TagsPage = ({
+export type TagsPageProps = {
+  data: {
+    allMarkdownRemark: AllMarkdownRemark;
+    site: {
+      siteMetadata: SiteMetaData;
+    };
+  };
+};
+
+const TagsPage: React.FC<TagsPageProps> = ({
   data: {
     allMarkdownRemark: { group },
     site: {
