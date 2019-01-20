@@ -12,5 +12,7 @@ export type SocialLinks = {
 
 export type SiteMetaData = {
   siteUrl: string;
+  title: string;
+  description: string;
   socialLinks: SocialLinks;
 };

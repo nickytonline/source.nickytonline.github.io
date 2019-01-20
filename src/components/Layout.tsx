@@ -3,9 +3,14 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import { Navbar } from 'components';
-import './all.sass';
 
-const TemplateWrapper = ({ children }) => (
+import './all.sass';
+import { SiteMetaData } from '../../types/site-meta-data';
+import { ChildrenProp } from '../../types/children-prop';
+
+export type LayoutProps = ChildrenProp;
+
+export const Layout: React.FC<LayoutProps> = ({ children }) => (
   <StaticQuery
     query={graphql`
       query HeadingQuery {
@@ -44,7 +49,7 @@ const TemplateWrapper = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data: { site: { siteMetadata: SiteMetaData } }) => (
       <div>
         <Helmet>
           <html lang="en" />
@@ -83,5 +88,3 @@ const TemplateWrapper = ({ children }) => (
     )}
   />
 );
-
-export default TemplateWrapper;
