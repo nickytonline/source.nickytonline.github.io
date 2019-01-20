@@ -6,71 +6,74 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  return graphql(`
-    {
-      allMarkdownRemark(limit: 1000) {
-        edges {
-          node {
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              tags
-              templateKey
+  return (
+    graphql(`
+      {
+        allMarkdownRemark(limit: 1000) {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                tags
+                templateKey
+              }
             }
           }
         }
       }
-    }
-  `).then((result) => {
-    // eslint-disable-line consistent-return
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString())); // eslint-disable-line no-console
-      return Promise.reject(result.errors);
-    }
+    `)
+      // eslint-disable-next-line consistent-return
+      .then((result) => {
+        if (result.errors) {
+          result.errors.forEach(e => console.error(e.toString())); // eslint-disable-line no-console
+          return Promise.reject(result.errors);
+        }
 
-    const posts = result.data.allMarkdownRemark.edges;
+        const posts = result.data.allMarkdownRemark.edges;
 
-    posts.forEach((edge) => {
-      const { id } = edge.node;
-      createPage({
-        path: edge.node.fields.slug,
-        tags: edge.node.frontmatter.tags,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.jsx`,
-        ),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
-      });
-    });
+        posts.forEach((edge) => {
+          const { id } = edge.node;
+          createPage({
+            path: edge.node.fields.slug,
+            tags: edge.node.frontmatter.tags,
+            component: path.resolve(
+              `src/templates/${String(edge.node.frontmatter.templateKey)}.jsx`,
+            ),
+            // additional data can be passed via context
+            context: {
+              id,
+            },
+          });
+        });
 
-    // Tag pages:
-    let tags = [];
-    // Iterate through each post, putting all found tags into `tags`
-    posts.forEach((edge) => {
-      if (_.get(edge, 'node.frontmatter.tags')) {
-        tags = tags.concat(edge.node.frontmatter.tags);
-      }
-    });
-    // Eliminate duplicate tags
-    tags = _.uniq(tags);
+        // Tag pages:
+        let tags = [];
+        // Iterate through each post, putting all found tags into `tags`
+        posts.forEach((edge) => {
+          if (_.get(edge, 'node.frontmatter.tags')) {
+            tags = tags.concat(edge.node.frontmatter.tags);
+          }
+        });
+        // Eliminate duplicate tags
+        tags = _.uniq(tags);
 
-    // Make tag pages
-    tags.forEach((tag) => {
-      const tagPath = `/tags/${_.kebabCase(tag)}/`;
+        // Make tag pages
+        tags.forEach((tag) => {
+          const tagPath = `/tags/${_.kebabCase(tag)}/`;
 
-      createPage({
-        path: tagPath,
-        component: path.resolve('src/templates/tags.jsx'),
-        context: {
-          tag,
-        },
-      });
-    });
-  });
+          createPage({
+            path: tagPath,
+            component: path.resolve('src/templates/tags.jsx'),
+            context: {
+              tag,
+            },
+          });
+        });
+      })
+  );
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
