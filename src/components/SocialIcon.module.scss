@@ -1,0 +1,54 @@
+@import './vars';
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-size: 1.25rem;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-color: rgba($off-white, 0.3);
+
+  &:hover {
+    background-color: $off-white;
+  }
+
+  @media screen and (max-width: 1087px) {
+    & {
+      width: inherit;
+      mask: none;
+      background: none;
+
+      &:hover {
+        background: none;
+      }
+      &:before {
+        content: attr(data-name);
+      }
+    }
+  }
+}
+
+.twitter {
+  mask: url(/img/twitter.svg);
+}
+
+.github {
+  mask: url(/img/github.svg);
+}
+
+.linkedin {
+  mask: url(/img/linkedin.svg);
+}
+
+.devto {
+  mask: url(/img/dev-dot-to.svg);
+}
+
+.stackoverflow {
+  mask: url(/img/stackoverflow.svg);
+}
+
+.mastodon {
+  mask: url(/img/mastodon.svg);
+}

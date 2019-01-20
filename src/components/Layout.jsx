@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-import Navbar from '../components/Navbar';
+import Navbar from './Navbar';
 import './all.sass';
 
 const TemplateWrapper = ({ children }) => (
@@ -13,6 +13,33 @@ const TemplateWrapper = ({ children }) => (
           siteMetadata {
             title
             description
+            siteUrl
+            socialLinks {
+              github {
+                url
+                name
+              }
+              devto {
+                url
+                name
+              }
+              twitter {
+                url
+                name
+              }
+              stackoverflow {
+                url
+                name
+              }
+              linkedin {
+                url
+                name
+              }
+              mastodon {
+                url
+                name
+              }
+            }
           }
         }
       }
@@ -50,7 +77,7 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <Navbar />
+        <Navbar siteMetadata={data.site.siteMetadata} />
         <div>{children}</div>
       </div>
     )}

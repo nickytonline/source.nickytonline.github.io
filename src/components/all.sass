@@ -1,10 +1,4 @@
-$dark-purple: #403a58
-$off-white: #fdfdfd
-$medium-pink: #f76265
-$lighter-purple: #d2cffd
-$light-purple: #6159ff
-$medium-purple: #5750e6
-$navbar-height: 3.25rem
+@import './vars'
 @import "~bulma"
 
 html, body
@@ -89,19 +83,6 @@ html, body
 
       &:hover
         color: $medium-pink
-
-    .icon
-      width: inherit
-      mask: none
-      background: none;
-
-      &:hover
-        background: none;
-
-      &:before
-        content: attr(data-name)
-
-
 
 .content .taglist
   list-style: none
@@ -251,33 +232,3 @@ body, button, input, select, textarea
       opacity: 1
       transition: opacity 0.8s
       pointer-events: auto
-
-.icon
-  width: 1.25rem
-  height: 1.25rem
-  background-size: 1.25rem
-  background-position-x: center
-  background-position-y: center
-  background-repeat: no-repeat
-  background-color: rgba($off-white, 0.3)
-
-  &:hover
-    background-color: $off-white
-
-.icon--twitter
-  mask: url(/img/twitter.svg)
-
-.icon--github
-  mask: url(/img/github.svg)
-
-.icon--linkedin
-  mask: url(/img/linkedin.svg)
-
-.icon--devto
-  mask: url(/img/dev-dot-to.svg)
-
-.icon--stackoverflow
-  mask: url(/img/stackoverflow.svg)
-
-.icon--mastodon
-  mask: url(/img/mastodon.svg)

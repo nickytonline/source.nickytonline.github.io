@@ -3,6 +3,20 @@ module.exports = {
     title: 'Just some dev',
     description: 'Just some software developer writing things ✏️',
     siteUrl: 'https://www.iamdeveloper.com',
+    socialLinks: {
+      github: { url: 'https://github.com/nickytonline', name: 'GitHub' },
+      devto: { url: 'https://dev.to/nickytonline', name: 'dev.to' },
+      twitter: { url: 'https://twitter.com/nickytonline', name: 'Twitter' },
+      stackoverflow: {
+        url: 'https://stackoverflow.com/users/77814/nickytonline',
+        name: 'Stack Overflow',
+      },
+      linkedin: {
+        url: 'https://www.linkedin.com/in/nickytonline',
+        name: 'LinkedIn',
+      },
+      mastodon: { url: 'https://toot.cafe/@nickytonline', name: 'Mastodon' },
+    },
   },
   plugins: [
     'gatsby-plugin-react-helmet',

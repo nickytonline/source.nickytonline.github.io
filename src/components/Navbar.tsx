@@ -1,7 +1,13 @@
-import React from 'react';
+import * as React from 'react';
 import { Link } from 'gatsby';
+import { SocialIcon } from '.';
+import { SiteMetaData, SocialLinkId } from '../../types/site-meta-data';
 
-const Navbar = class extends React.Component {
+export type NavbarProps = {
+  siteMetadata: SiteMetaData;
+};
+
+const Navbar = class extends React.Component<NavbarProps, {}> {
   componentDidMount() {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(
@@ -11,7 +17,7 @@ const Navbar = class extends React.Component {
     // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
       // Add a click event on each of them
-      $navbarBurgers.forEach((el) => {
+      $navbarBurgers.forEach(el => {
         el.addEventListener('click', () => {
           // Get the target from the "data-target" attribute
           const target = el.dataset.target;
@@ -19,13 +25,15 @@ const Navbar = class extends React.Component {
 
           // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
           el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
+          $target!.classList.toggle('is-active');
         });
       });
     }
   }
 
   render() {
+    const { socialLinks } = this.props.siteMetadata;
+
     return (
       <nav
         className="navbar is-transparent"
@@ -42,7 +50,6 @@ const Navbar = class extends React.Component {
               >
                 💻
               </span>
-{' '}
               just some dev
             </Link>
             {/* Hamburger menu */}
@@ -66,51 +73,14 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/thanks" aria-label="Thanks">
                 Thanks
               </Link>
-              <a
-                className="navbar-item"
-                href="https://github.com/nickytonline"
-                aria-label="Github account for nickytonline"
-              >
-                <span className="icon icon--github" data-name="GitHub" />
-              </a>
-              <a
-                className="navbar-item"
-                href="https://dev.to/nickytonline"
-                aria-label="dev.to account for nickytonline"
-              >
-                <span className="icon icon--devto" data-name="dev.to" />
-              </a>
-              <a
-                className="navbar-item"
-                href="https://twitter.com/nickytonline"
-                aria-label="Twitter account for nickytonline"
-              >
-                <span className="icon icon--twitter" data-name="Twitter" />
-              </a>
-              <a
-                className="navbar-item"
-                href="https://stackoverflow.com/users/77814/nickytonline"
-                aria-label="Stack Overflow account for nickytonline"
-              >
-                <span
-                  className="icon icon--stackoverflow"
-                  data-name="Stack Overflow"
+              {Object.entries(socialLinks).map(([id, { url, name }]) => (
+                <SocialIcon
+                  key={id}
+                  id={id as SocialLinkId}
+                  url={url}
+                  name={name}
                 />
-              </a>
-              <a
-                className="navbar-item"
-                href="https://www.linkedin.com/in/nickytonline"
-                aria-label="LinkedIn account for nickytonline"
-              >
-                <span className="icon icon--linkedin" data-name="LinkedIn" />
-              </a>
-              <a
-                className="navbar-item"
-                href="https://toot.cafe/@nickytonline"
-                aria-label="Mastodon account for nickytonline"
-              >
-                <span className="icon icon--mastodon" data-name="Mastodon" />
-              </a>
+              ))}
             </div>
           </div>
         </div>
