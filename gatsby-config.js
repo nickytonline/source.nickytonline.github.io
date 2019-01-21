@@ -103,7 +103,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Montserrat', 'Source Sans Pro'],
+          families: ['Oswald', 'Droid Sans'],
         },
       },
     },
