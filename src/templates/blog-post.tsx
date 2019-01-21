@@ -70,7 +70,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         date={post.frontmatter.date}
-        helmet={
+        helmet={(
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
@@ -78,7 +78,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ data }) => {
               content={`${post.frontmatter.description}`}
             />
           </Helmet>
-        }
+)}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
