@@ -12,7 +12,7 @@ export const SocialIcon: React.FC<SocialIconProps> = ({ id, name, url }) => (
   <a
     className="navbar-item"
     href={url}
-    aria-label="Github account for nickytonline"
+    aria-label={`${name} account`}
     target="_blank"
     rel="noreferrer noopener"
   >
