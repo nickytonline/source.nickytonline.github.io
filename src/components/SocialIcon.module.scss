@@ -29,26 +29,28 @@
   }
 }
 
-.twitter {
-  mask: url(/img/twitter.svg);
-}
+@media screen and (min-width: 1088px) {
+  .twitter {
+    mask: url(/img/twitter.svg);
+  }
 
-.github {
-  mask: url(/img/github.svg);
-}
+  .github {
+    mask: url(/img/github.svg);
+  }
 
-.linkedin {
-  mask: url(/img/linkedin.svg);
-}
+  .linkedin {
+    mask: url(/img/linkedin.svg);
+  }
 
-.devto {
-  mask: url(/img/dev-dot-to.svg);
-}
+  .devto {
+    mask: url(/img/dev-dot-to.svg);
+  }
 
-.stackoverflow {
-  mask: url(/img/stackoverflow.svg);
-}
+  .stackoverflow {
+    mask: url(/img/stackoverflow.svg);
+  }
 
-.mastodon {
-  mask: url(/img/mastodon.svg);
+  .mastodon {
+    mask: url(/img/mastodon.svg);
+  }
 }
