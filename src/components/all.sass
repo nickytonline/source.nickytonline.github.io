@@ -90,6 +90,9 @@ html, body
 .section
   padding-top: 5rem
 
+  *:not(:first-child)
+    max-width: 35em
+
 .button
   border: 0.0625rem solid rgba(51, 51, 51, 0.1)
   border-radius: 2rem
@@ -131,9 +134,9 @@ body, button, input, select, textarea
 
 @media screen and (min-width: 813px)
   .section
-    background-size: calc(100vw * 0.35)
-    background-position-x: center
-    background-position-y: center
+    background-size: calc(100vw * 0.25)
+    background-position-x: calc(100% - 2rem)
+    background-position-y: calc(100% - 2rem)
     background-repeat: no-repeat
     background-attachment: fixed
     background-color: transparent
@@ -146,6 +149,9 @@ body, button, input, select, textarea
     background-image: url(/img/undraw_emails_6uqr.png)
 
   .section--thanks
+      background-size: calc(100vw * 0.3)
+      background-position-x: center
+      background-position-y: center
       background-image: url(/img/undraw_having_fun_iais.svg)
 
       ul
@@ -160,13 +166,13 @@ body, button, input, select, textarea
             margin-right: 0.5rem
 
   .section.section--blog-posts
-    background-size: calc(100vw * 0.25)
-    background-position-x: calc(100% - 2rem)
-    background-position-y: calc(100% - 2rem)
     background-image: url(/img/undraw_post_online_dkuk.svg)
     padding-bottom: calc(100vw * 0.25)
 
   .section.section--not-found
+    background-size: calc(100vw * 0.3)
+    background-position-x: center
+    background-position-y: center
     background-image: url(/img/undraw_empty_xct9.png)
 
 @media screen and (max-width: 1024px)
