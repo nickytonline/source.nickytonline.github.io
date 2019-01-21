@@ -27,7 +27,7 @@ Is this the final nail in the coffin for Flow? Is it another year where TypeScri
 
 There's even a [horse_ts](https://twitter.com/horse_ts) Twitter account now. It's not too hard to guess who it is, but I still find it pretty funny.
 
-"So if you’ve been a holdout (like me, to be honest), 2019 is definitely the year to learn TypeScript.", @kball quote from https://zendev.com/2019/01/15/frontend-development-topics-to-learn-in-2019.html
+"So if you’ve been a holdout (like me, to be honest), 2019 is definitely the year to learn TypeScript.", [KBall](https://twitter.com/kbal11) quote from https://zendev.com/2019/01/15/frontend-development-topics-to-learn-in-2019.html
 
 Share your thoughts on the [mirrored post on dev.to](https://dev.to/nickytonline/is-2019-the-year-of-typescript-18p2)
 
