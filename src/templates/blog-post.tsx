@@ -2,13 +2,15 @@ import React from 'react';
 import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
-import { Content, HTMLContent, Layout } from 'components';
+import { Content, HTMLContent, Layout, BlogTag } from 'components';
 import { MarkdownRemark } from 'types/markdown-remark';
 import { PageTemplateProps } from './page-template-props';
+import styles from './blog-post.module.scss';
 
 export type BlogPostTemplateProps = PageTemplateProps & {
   description: string;
   tags: string[];
+  date: string;
   helmet?: React.ReactNode;
 };
 
@@ -18,6 +20,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
   description,
   tags,
   title,
+  date,
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
@@ -28,21 +31,17 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title">{title}</h1>
-            <p className="blog-post-description">{description}</p>
+            <div className={styles.postDate}>{date}</div>
+            <h1 className={styles.postTitle}>{title}</h1>
+            <div className={styles.postDescription}>{description}</div>
             <PostContent content={content} />
             {tags && tags.length ? (
-              <div style={{ marginTop: '4rem' }}>
+              <div className={styles.tagContainer}>
                 <h4>Tags</h4>
                 <ul className="taglist">
                   {tags.map(tag => (
                     <li key={`${tag}tag`}>
-                      <Link
-                        to={`/tags/${kebabCase(tag)}/`}
-                        className="taglist__tag"
-                      >
-                        {tag}
-                      </Link>
+                      <BlogTag url={`/tags/${kebabCase(tag)}/`} name={tag} />
                     </li>
                   ))}
                 </ul>
@@ -70,7 +69,8 @@ const BlogPost: React.FC<BlogPostProps> = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        helmet={(
+        date={post.frontmatter.date}
+        helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
@@ -78,7 +78,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ data }) => {
               content={`${post.frontmatter.description}`}
             />
           </Helmet>
-)}
+        }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />

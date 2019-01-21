@@ -1,0 +1,29 @@
+@import '../components/vars';
+
+.postDate {
+  font-size: 0.875rem;
+  color: rgba(51, 51, 51, 0.3);
+}
+
+// Can avoid this specificity hack once Bulma is removed.
+.postTitle.postTitle.postTitle {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: $medium-pink;
+}
+
+.postDescription {
+  font-size: 0.875rem;
+  color: rgba(51, 51, 51, 0.6);
+  margin-bottom: 2rem;
+
+  &:before {
+    content: '→';
+    color: $medium-pink;
+    margin-right: 0.5rem;
+  }
+}
+
+.tagContainer {
+  margin-top: 4rem;
+}

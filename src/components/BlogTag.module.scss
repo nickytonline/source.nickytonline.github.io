@@ -1,0 +1,41 @@
+@import './vars';
+
+.tag.tag {
+  position: relative;
+  color: $dark-purple;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 0.25rem;
+
+  &:hover {
+    color: $dark-purple;
+  }
+
+  .count {
+    font-size: 0.7rem;
+    margin-left: 0.25rem;
+    color: $medium-pink;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:after {
+    position: absolute;
+    top: 0.5rem;
+    margin-left: 0.125rem;
+    content: '';
+    color: $dark-purple;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-position-x: center;
+    background-position-y: center;
+    mask: url(/img/blog-tag.svg);
+    background-color: $lighter-purple;
+  }
+
+  &:hover:after {
+    background-color: $dark-purple;
+  }
+}

@@ -14,43 +14,6 @@ html, body
       color: $medium-pink
       text-decoration: none
 
-  .taglist__tag
-    position: relative
-    color: $dark-purple
-    font-weight: bold
-    text-decoration: none
-    margin-right: 0.25rem
-
-    &:hover
-      color: $dark-purple
-
-    .taglist__tag__count
-      font-size: 0.7rem
-      margin-left: 0.25rem
-      color: $medium-pink
-
-    &:last-child
-      margin-right: 0
-
-    &:after
-      position: absolute
-      top: 0.5rem
-      margin-left: 0.125rem
-      content: ''
-      color: $dark-purple
-      width: 1.5rem
-      height: 1.5rem
-      background-position-x: center
-      background-position-y: center
-      mask: url(/img/blog-tag.svg)
-      background-color: $lighter-purple
-
-    &:hover:after
-      background-color: $dark-purple
-
-  .blog-post-description
-    color: rgba(51, 51, 51, 0.5)
-
 .navbar
   position: sticky
   top: 0
@@ -215,11 +178,6 @@ body, button, input, select, textarea
 @media screen and (min-width: 1025px)
   .content.content--front-page
     max-width: 80rem
-
-  .blog-post-description:before
-    content: '→'
-    color: $medium-pink
-    margin-right: 0.5rem
 
 @media screen and (min-device-width: 1200px)
 

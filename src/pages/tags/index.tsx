@@ -2,7 +2,7 @@ import React from 'react';
 import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
-import { Layout } from 'components';
+import { Layout, BlogTag } from 'components';
 import { AllMarkdownRemark } from '../../../types/all-markdown-remark';
 import { SiteMetaData } from '../../../types/site-meta-data';
 
@@ -36,15 +36,11 @@ const TagsPage: React.FC<TagsPageProps> = ({
             <ul className="taglist">
               {group.map(tag => (
                 <li key={tag.fieldValue}>
-                  <Link
-                    to={`/tags/${kebabCase(tag.fieldValue)}/`}
-                    className="taglist__tag"
-                  >
-                    {tag.fieldValue}
-                    <span className="taglist__tag__count">
-                      {tag.totalCount}
-                    </span>
-                  </Link>
+                  <BlogTag
+                    url={`/tags/${kebabCase(tag.fieldValue)}/`}
+                    name={tag.fieldValue}
+                    totalCount={tag.totalCount}
+                  />
                 </li>
               ))}
             </ul>
