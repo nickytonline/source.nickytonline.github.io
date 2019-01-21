@@ -18,7 +18,6 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
       <Layout>
         <section className="section section--blog-posts">
           <div className="container">
-            <h1 className="title">Latest Posts</h1>
             {posts.map(({ node: post }) => (
               <div className="content content--front-page" key={post.id}>
                 <h2>
