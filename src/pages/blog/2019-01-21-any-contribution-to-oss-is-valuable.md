@@ -19,9 +19,15 @@ For tweets on my blog posts, I had installed the [gatsby-plugin-twitter](https:/
 
 https://twitter.com/raae/status/1086362206005006336
 
-I checked out the npm package, [@raae/gatsby-remark-oembed](https://www.npmjs.com/package/@raae/gatsby-remark-oembed) and then followed the links to the repository and demo. It looked pretty awesome and fast and it supported much more than Twitter. I installed the package copied the code snippet to add to my gatsby-config.js and was all good to go. I fired up my development environment and I was getting errors about the plugin not being found. I was a little perplexed, read over things several times in the documentation and then came to the realization, that since the author published the package, the name of the npm package was not the same, it was a scoped package, i.e. `@raee/gatsby-remark-oembed` and not `gatsby-remark-oembed` like the code snippet in the documentation.
+I checked out the npm package, [@raae/gatsby-remark-oembed](https://www.npmjs.com/package/@raae/gatsby-remark-oembed) and then followed the links to the repository and demo. It looked pretty awesome and fast and it supported much more than Twitter. I installed the package copied the code snippet to add to my gatsby-config.js and was all good to go.
 
-I was glad I figured out what was up and then got the plugin running and was good to go. I published my site with the new plugin and was good to go.
+I fired up my development environment and I was getting errors about the plugin not being found.
+
+```
+Error: Unable to find plugin "gatsby-remark-oembed". Perhaps you need to install its package?
+```
+
+I was a little perplexed, read over things several times in the documentation and then came to the realization, that since the author published the package, the name of the npm package was not the same name, it was a scoped package, i.e. `@raee/gatsby-remark-oembed` instead of `gatsby-remark-oembed` (like in the code snippet in the documentation). I was glad I figured out what was up. I got the plugin running locally and then I published my site and was good to go.
 
 At this point, I was like, well if I spent 15-20 minutes trying to figure out what was up, I'm sure others would appreciate what I had discovered, so I put up a PR to update the documentation. It got merged and I felt just as good about adding these 6 characters, `@raae/` to the code snippet in the documentation as I do when I fix a bug.
 
