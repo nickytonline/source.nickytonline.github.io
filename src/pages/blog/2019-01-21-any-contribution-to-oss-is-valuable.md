@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Any contribution to OSS is valuable
+title: Any contribution to Open Source is valuable
 date: 2019-01-22T03:24:42.256Z
 description: Brief overview of every contribution to OSS being valuable.
 tags:
