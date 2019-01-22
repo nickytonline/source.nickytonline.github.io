@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Content, HTMLContent, Layout } from 'components';
+import { Content, HTMLContent, Layout, PageTitle } from 'components';
 import { MarkdownRemark } from 'types/markdown-remark';
 import { PageTemplateProps } from './page-template-props';
 
@@ -16,7 +16,7 @@ export const AboutPageTemplate: React.FC<AboutPageTemplateProps> = ({
   return (
     <section className="section section--gradient section--about-me">
       <div className="container">
-        <h1 className="title">{title}</h1>
+        <PageTitle>{title}</PageTitle>
         <PageContent className="content" content={content} />
       </div>
     </section>

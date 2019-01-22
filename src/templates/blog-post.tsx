@@ -2,7 +2,7 @@ import React from 'react';
 import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
-import { Content, HTMLContent, Layout, BlogTag } from 'components';
+import { Content, HTMLContent, Layout, BlogTag, PageTitle } from 'components';
 import { MarkdownRemark } from 'types/markdown-remark';
 import { PageTemplateProps } from './page-template-props';
 import styles from './blog-post.module.scss';
@@ -32,7 +32,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className={styles.postDate}>{date}</div>
-            <h1 className={styles.postTitle}>{title}</h1>
+            <PageTitle>{title}</PageTitle>
             <div className={styles.postDescription}>{description}</div>
             <PostContent content={content} />
             {tags && tags.length ? (

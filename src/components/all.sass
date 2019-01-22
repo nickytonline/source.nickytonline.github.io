@@ -11,7 +11,7 @@ html, body
     text-decoration: underline
 
     &:hover
-      color: $medium-pink
+      color: $aqua
       text-decoration: none
 
 .navbar
@@ -30,7 +30,7 @@ html, body
     font-weight: bold
 
     &:hover
-      color: $medium-pink
+      color: $aqua
 
 @media screen and (max-width: 1087px)
   .navbar-burger
@@ -45,7 +45,7 @@ html, body
       color: $dark-purple
 
       &:hover
-        color: $medium-pink
+        color: $aqua
 
 .content .taglist
   list-style: none
@@ -78,11 +78,6 @@ html, body
   &:last-child
     margin-bottom: 0
 
-  .blog-title
-    color: $medium-pink
-    font-weight: bold
-    text-decoration: none
-
 @media screen and (max-width: 1087px)
   .content.content--front-page
     margin-bottom: 2rem
@@ -93,37 +88,10 @@ html, body
   *:not(:first-child)
     max-width: 35em
 
-.button
-  border: 0.0625rem solid rgba(51, 51, 51, 0.1)
-  border-radius: 2rem
-
-.content--front-page .button--read-more
-  margin-top: 0.5rem
-  font-size: 0.75
-  color: $dark-purple
-  border: 0.0625rem solid $dark-purple
-  background-color: rgba(87, 80, 230, 0.1)
-  text-decoration: none
-
-  &:hover
-    background-color: $dark-purple
-    color: $off-white
-
 h1, h2, h3
   font-family: "Oswald"
 
 .content // won't need this once bulma is out
-  small // won't need this once bulma is out
-    color: $dark-purple
-
-  h1
-    font-weight: 700
-    font-size: 2rem
-
-  h2
-    font-weight: 550
-    font-size: 1.5rem
-
   h3
     font-weight: 400
     font-size: 1.25rem
@@ -162,7 +130,7 @@ body, button, input, select, textarea
 
           &:before
             content: '→'
-            color: $medium-pink
+            color: $aqua
             margin-right: 0.5rem
 
   .section.section--blog-posts

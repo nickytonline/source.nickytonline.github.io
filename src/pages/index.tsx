@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import { Layout } from 'components';
+import { Layout, PageTitle } from 'components';
 import { AllMarkdownRemark } from 'types/all-markdown-remark';
+import styles from './index.module.scss';
 
 export type IndexPageProps = {
   data: {
@@ -9,7 +10,7 @@ export type IndexPageProps = {
   };
 };
 
-export default class IndexPage extends React.Component<IndexPageProps, {}> {
+export default class IndexPage extends React.PureComponent<IndexPageProps, {}> {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
@@ -18,23 +19,18 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
       <Layout>
         <section className="section section--blog-posts">
           <div className="container">
+            <PageTitle>Latest Posts</PageTitle>
             {posts.map(({ node: post }) => (
               <div className="content content--front-page" key={post.id}>
                 <h2>
                   <Link className="blog-title" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
+                  <small className={styles.postDate}>
+                    {post.frontmatter.date}
+                  </small>
                 </h2>
                 <p>{post.excerpt}</p>
-                <Link
-                  className="button button--read-more"
-                  to={post.fields.slug}
-                  role="button"
-                >
-                  Keep Reading →
-                </Link>
               </div>
             ))}
           </div>

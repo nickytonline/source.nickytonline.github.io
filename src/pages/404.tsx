@@ -1,11 +1,11 @@
 import React from 'react';
-import { Layout } from 'components';
+import { Layout, PageTitle } from 'components';
 
 const NotFoundPage: React.FC<{}> = () => (
   <Layout>
     <section className="section section--not-found">
       <div className="container">
-        <h1 className="title">NOT FOUND</h1>
+        <PageTitle>NOT FOUND</PageTitle>
         <p>Looks like this page is missing or does not exist.</p>
       </div>
     </section>

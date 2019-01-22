@@ -2,9 +2,9 @@ import React from 'react';
 import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
-import { Layout, BlogTag } from 'components';
-import { AllMarkdownRemark } from '../../../types/all-markdown-remark';
-import { SiteMetaData } from '../../../types/site-meta-data';
+import { Layout, BlogTag, PageTitle } from 'components';
+import { AllMarkdownRemark } from 'types/all-markdown-remark';
+import { SiteMetaData } from 'types/site-meta-data';
 
 export type TagsPageProps = {
   data: {
@@ -32,7 +32,7 @@ const TagsPage: React.FC<TagsPageProps> = ({
             className="column is-10 is-offset-1"
             style={{ marginBottom: '6rem' }}
           >
-            <h1 className="title">Tags</h1>
+            <PageTitle>Tags</PageTitle>
             <ul className="taglist">
               {group.map(tag => (
                 <li key={tag.fieldValue}>
