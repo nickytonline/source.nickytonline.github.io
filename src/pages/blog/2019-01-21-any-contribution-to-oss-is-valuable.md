@@ -27,7 +27,7 @@ I fired up my development environment and I was getting errors about the plugin 
 Error: Unable to find plugin "gatsby-remark-oembed". Perhaps you need to install its package?
 ```
 
-I was a little perplexed, read over things several times in the documentation and then came to the realization, that since the author published the package, the name of the npm package was not the same name, it was a scoped package, i.e. `@raee/gatsby-remark-oembed` instead of `gatsby-remark-oembed` (like in the code snippet in the documentation). I was glad I figured out what was up. I got the plugin running locally and then I published my site and was good to go. I was also happy to have migrated it to TypeScript, but we'll save that for another post.
+I was a little perplexed, read over things several times in the documentation and then came to the realization, that since the author published the package, the name of the npm package was not the same name, it was a [scoped package](https://docs.npmjs.com/misc/scope), i.e. `@raee/gatsby-remark-oembed` instead of `gatsby-remark-oembed` (like in the code snippet in the documentation). I was glad I figured out what was up. I got the plugin running locally and then I published my site and was good to go. I was also happy to have migrated it to TypeScript, but we'll save that for another post.
 
 https://twitter.com/nickytonline/status/1087096096176959488
 
