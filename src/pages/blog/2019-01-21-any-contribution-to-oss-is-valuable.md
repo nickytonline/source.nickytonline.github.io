@@ -19,7 +19,7 @@ For tweets on my blog posts, I had installed the [gatsby-plugin-twitter](https:/
 
 https://twitter.com/raae/status/1086362206005006336
 
-I checked out the npm package, [@raae/gatsby-remark-oembed](https://www.npmjs.com/package/@raae/gatsby-remark-oembed) and then followed the links to the repository and demo. It looked pretty awesome and fast and it supported much more than Twitter. I installed the package copied the code snippet to add to my gatsby-config.js and was all good to go.
+I checked out the npm package, [@raae/gatsby-remark-oembed](https://www.npmjs.com/package/@raae/gatsby-remark-oembed) and then followed the links to the repository and demo. It looked pretty awesome and fast and it supported much more than Twitter. I installed the package, copied the code snippet to add to my gatsby-config.js and was all good to go.
 
 I fired up my development environment and I was getting errors about the plugin not being found.
 
