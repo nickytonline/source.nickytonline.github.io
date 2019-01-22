@@ -15,7 +15,7 @@ My site is currently using [Gatsby](https://gatsbyjs.org), an awesome static sit
 
 https://twitter.com/amber1ey/status/1042796116255879168
 
-For tweets on my blog posts,I had installed the [gatsby-plugin-twitter](https://www.gatsbyjs.org/packages/gatsby-plugin-twitter/) about a year ago. It was working well for me, but then I came across this tweet.
+For tweets on my blog posts, I had installed the [gatsby-plugin-twitter](https://www.gatsbyjs.org/packages/gatsby-plugin-twitter/) about a year ago. It was working well for me, but then I came across this tweet.
 
 https://twitter.com/raae/status/1086362206005006336
 
