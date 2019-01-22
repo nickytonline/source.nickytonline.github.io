@@ -25,7 +25,7 @@ I was glad I figured out what was up and then got the plugin running and was goo
 
 At this point, I was like, well if I spent 15-20 minutes trying to figure out what was up, I'm sure others would appreciate what I had discovered, so I put up a PR to update the documentation. It got merged and I felt just as good about adding these 6 characters, `@raae/` to the code snippet in the documentation as I do when I fix a bug.
 
-**Every contribution is valuable.**
+**Every contribution to open source is valuable.**
 
 https://twitter.com/raae/status/1087419926204305408
 
