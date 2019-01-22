@@ -29,9 +29,9 @@ Error: Unable to find plugin "gatsby-remark-oembed". Perhaps you need to install
 
 I was a little perplexed, read over things several times in the documentation and then came to the realization, that since the author published the package, the name of the npm package was not the same name, it was a scoped package, i.e. `@raee/gatsby-remark-oembed` instead of `gatsby-remark-oembed` (like in the code snippet in the documentation). I was glad I figured out what was up. I got the plugin running locally and then I published my site and was good to go.
 
-At this point, I was like, well if I spent 15-20 minutes trying to figure out what was up, I'm sure others would appreciate what I had discovered, so I put up a PR to update the documentation. It got merged and I felt just as good about adding these 6 characters, `@raae/` to the code snippet in the documentation as I do when I fix a bug.
+At this point, I was like, well if I spent 15-20 minutes trying to figure out what was up, I'm sure others would appreciate what I had discovered, so I put up a PR to update the documentation. It got merged and I felt just as good about adding these 6 characters, `@raae/` to the code snippet in the documentation as I do when I fix a bug or add new functionality to a project.
 
-**Every contribution to open source is valuable.**
+Remember, **Every contribution to open source is valuable.**
 
 https://twitter.com/raae/status/1087419926204305408
 
