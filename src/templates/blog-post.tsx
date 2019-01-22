@@ -21,13 +21,13 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
   tags,
   title,
   date,
-  helmet,
+  helmet = '',
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
     <section className="section">
-      {helmet || ''}
+      {helmet}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -38,7 +38,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
             {tags && tags.length ? (
               <div className={styles.tagContainer}>
                 <h4>Tags</h4>
-                <ul className="taglist">
+                <ul className={styles.tagList}>
                   {tags.map(tag => (
                     <li key={`${tag}tag`}>
                       <BlogTag url={`/tags/${kebabCase(tag)}/`} name={tag} />
@@ -70,7 +70,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         date={post.frontmatter.date}
-        helmet={(
+        helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
@@ -78,7 +78,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ data }) => {
               content={`${post.frontmatter.description}`}
             />
           </Helmet>
-)}
+        }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />

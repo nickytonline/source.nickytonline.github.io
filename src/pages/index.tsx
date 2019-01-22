@@ -26,10 +26,8 @@ export default class IndexPage extends React.PureComponent<IndexPageProps, {}> {
                   <Link className="blog-title" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
-                  <small className={styles.postDate}>
-                    {post.frontmatter.date}
-                  </small>
                 </h2>
+                <div className={styles.postDate}>{post.frontmatter.date}</div>
                 <p>{post.excerpt}</p>
               </div>
             ))}

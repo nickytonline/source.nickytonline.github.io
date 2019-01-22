@@ -2,7 +2,6 @@
 
 .postDate {
   font-size: 0.875rem;
-  color: $secondary-colour;
 }
 
 // Can avoid this specificity hack once Bulma is removed.
@@ -14,7 +13,6 @@
 
 .postDescription {
   font-size: 0.875rem;
-  color: $secondary-colour;
   margin-bottom: 2rem;
 
   &:before {
@@ -26,4 +24,20 @@
 
 .tagContainer {
   margin-top: 4rem;
+
+  .tagList {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+      margin: 0;
+      padding: 0;
+
+      &:not(:first-child) {
+        margin-left: 2rem;
+      }
+    }
+  }
 }
