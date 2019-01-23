@@ -6,13 +6,9 @@ export type SocialLinkId =
   | 'linkedin'
   | 'mastodon';
 
-export type SocialLinks = {
-  [key in SocialLinkId]: { url: string; name: string }
-};
-
-export type SiteMetaData = {
-  siteUrl: string;
-  title: string;
-  description: string;
-  socialLinks: SocialLinks;
-};
+export interface SiteMetaData {
+    siteUrl: string;
+    title: string;
+    description: string;
+    socialLinks: { [key in SocialLinkId]: { url: string; name: string } };
+}
