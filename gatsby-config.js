@@ -1,151 +1,151 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Just some dev',
-    description: 'Just some software developer writing things ✏️',
-    siteUrl: 'https://www.iamdeveloper.com',
-    socialLinks: {
-      github: { url: 'https://github.com/nickytonline', name: 'GitHub' },
-      devto: { url: 'https://dev.to/nickytonline', name: 'dev.to' },
-      twitter: { url: 'https://twitter.com/nickytonline', name: 'Twitter' },
-      stackoverflow: {
-        url: 'https://stackoverflow.com/users/77814/nickytonline',
-        name: 'Stack Overflow',
-      },
-      linkedin: {
-        url: 'https://www.linkedin.com/in/nickytonline',
-        name: 'LinkedIn',
-      },
-      mastodon: { url: 'https://toot.cafe/@nickytonline', name: 'Mastodon' },
-    },
-  },
-  plugins: [
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-feed',
-    },
-    'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'Just some dev',
-        short_name: 'Just some dev',
-        start_url: '/',
-        background_color: '#f7f0eb',
-        theme_color: '#a2466c',
-        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
-        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: 'standalone',
-        icon: 'static/img/apple-touch-icon.png',
-      },
-    },
-    'gatsby-plugin-sass',
-    {
-      // keep as first gatsby-source-filesystem plugin for gatsby image support
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/static/img`,
-        name: 'uploads',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/img`,
-        name: 'images',
-      },
-    },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'uploads',
+    siteMetadata: {
+        title: 'Just some dev',
+        description: 'Just some software developer writing things ✏️',
+        siteUrl: 'https://www.iamdeveloper.com',
+        socialLinks: {
+            github: { url: 'https://github.com/nickytonline', name: 'GitHub' },
+            devto: { url: 'https://dev.to/nickytonline', name: 'dev.to' },
+            twitter: { url: 'https://twitter.com/nickytonline', name: 'Twitter' },
+            stackoverflow: {
+                url: 'https://stackoverflow.com/users/77814/nickytonline',
+                name: 'Stack Overflow',
             },
-          },
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 2048,
+            linkedin: {
+                url: 'https://www.linkedin.com/in/nickytonline',
+                name: 'LinkedIn',
             },
-          },
-          {
-            resolve: 'gatsby-remark-copy-linked-files',
-            options: {
-              destinationDir: 'static',
-            },
-          },
-        ],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
-    'gatsby-plugin-purgecss', // must be after other CSS plugins
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Oswald', 'Droid Sans'],
+            mastodon: { url: 'https://toot.cafe/@nickytonline', name: 'Mastodon' },
         },
-      },
     },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-55732414-1',
-        // Puts tracking script in the head instead of the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ['/preview/**', '/do-not-track/me/too/'],
-      },
-    },
-    'gatsby-plugin-sitemap',
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: '@raae/gatsby-remark-oembed',
+    plugins: [
+        'gatsby-plugin-react-helmet',
+        {
+            resolve: 'gatsby-plugin-feed',
+        },
+        'gatsby-plugin-offline',
+        {
+            resolve: 'gatsby-plugin-manifest',
             options: {
-              providers: {
-                // Important to exclude providers
-                // that adds js to the page.
-                // If you do not need them.
-                include: ['Twitter'],
-              },
+                name: 'Just some dev',
+                short_name: 'Just some dev', // eslint-disable-line @typescript-eslint/camelcase
+                start_url: '/', // eslint-disable-line @typescript-eslint/camelcase
+                background_color: '#f7f0eb', // eslint-disable-line @typescript-eslint/camelcase
+                theme_color: '#a2466c', // eslint-disable-line @typescript-eslint/camelcase
+                // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+                // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+                display: 'standalone',
+                icon: 'static/img/apple-touch-icon.png',
             },
-          },
-        ],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-typescript',
-      options: {
-        isTSX: true,
-        allExtensions: true,
-      },
-    },
-  ],
+        },
+        'gatsby-plugin-sass',
+        {
+            // keep as first gatsby-source-filesystem plugin for gatsby image support
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/static/img`,
+                name: 'uploads',
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/src/pages`,
+                name: 'pages',
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/src/img`,
+                name: 'images',
+            },
+        },
+        'gatsby-plugin-sharp',
+        'gatsby-transformer-sharp',
+        {
+            resolve: 'gatsby-transformer-remark',
+            options: {
+                plugins: [
+                    {
+                        resolve: 'gatsby-remark-relative-images',
+                        options: {
+                            name: 'uploads',
+                        },
+                    },
+                    {
+                        resolve: 'gatsby-remark-images',
+                        options: {
+                            // It's important to specify the maxWidth (in pixels) of
+                            // the content container as this plugin uses this as the
+                            // base for generating different widths of each image.
+                            maxWidth: 2048,
+                        },
+                    },
+                    {
+                        resolve: 'gatsby-remark-copy-linked-files',
+                        options: {
+                            destinationDir: 'static',
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-netlify-cms',
+            options: {
+                modulePath: `${__dirname}/src/cms/cms.js`,
+            },
+        },
+        'gatsby-plugin-purgecss', // must be after other CSS plugins
+        'gatsby-plugin-netlify', // make sure to keep it last in the array
+        {
+            resolve: 'gatsby-plugin-web-font-loader',
+            options: {
+                google: {
+                    families: ['Oswald', 'Droid Sans'],
+                },
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-google-analytics',
+            options: {
+                trackingId: 'UA-55732414-1',
+                // Puts tracking script in the head instead of the body
+                head: false,
+                // Setting this parameter is optional
+                anonymize: true,
+                // Setting this parameter is also optional
+                respectDNT: true,
+                // Avoids sending pageview hits from custom paths
+                exclude: ['/preview/**', '/do-not-track/me/too/'],
+            },
+        },
+        'gatsby-plugin-sitemap',
+        {
+            resolve: 'gatsby-transformer-remark',
+            options: {
+                plugins: [
+                    {
+                        resolve: '@raae/gatsby-remark-oembed',
+                        options: {
+                            providers: {
+                                // Important to exclude providers
+                                // that adds js to the page.
+                                // If you do not need them.
+                                include: ['Twitter'],
+                            },
+                        },
+                    },
+                ],
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-typescript',
+            options: {
+                isTSX: true,
+                allExtensions: true,
+            },
+        },
+    ],
 };

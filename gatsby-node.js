@@ -1,13 +1,13 @@
-const _ = require('lodash');
-const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
-const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+const _ = require('lodash'); // eslint-disable-line @typescript-eslint/no-var-requires
+const path = require('path'); // eslint-disable-line @typescript-eslint/no-var-requires
+const { createFilePath } = require('gatsby-source-filesystem'); // eslint-disable-line @typescript-eslint/no-var-requires
+const { fmImagesToRelative } = require('gatsby-remark-relative-images'); // eslint-disable-line @typescript-eslint/no-var-requires
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
+    const { createPage } = actions;
 
-  return (
-    graphql(`
+    return (
+        graphql(`
       {
         allMarkdownRemark(limit: 1000) {
           edges {
@@ -25,84 +25,84 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     `)
-      // eslint-disable-next-line consistent-return
-      .then(result => {
-        if (result.errors) {
-          result.errors.forEach(e => console.error(e.toString())); // eslint-disable-line no-console
-          return Promise.reject(result.errors);
-        }
+        // eslint-disable-next-line consistent-return
+            .then(result => {
+                if (result.errors) {
+                    result.errors.forEach(e => console.error(e.toString())); // eslint-disable-line no-console
+                    return Promise.reject(result.errors);
+                }
 
-        const posts = result.data.allMarkdownRemark.edges;
+                const posts = result.data.allMarkdownRemark.edges;
 
-        posts.forEach(edge => {
-          const { id } = edge.node;
-          createPage({
-            path: edge.node.fields.slug,
-            tags: edge.node.frontmatter.tags,
-            component: path.resolve(
-              `src/templates/${String(edge.node.frontmatter.templateKey)}.tsx`,
-            ),
-            // additional data can be passed via context
-            context: {
-              id,
-            },
-          });
-        });
+                posts.forEach(edge => {
+                    const { id } = edge.node;
+                    createPage({
+                        path: edge.node.fields.slug,
+                        tags: edge.node.frontmatter.tags,
+                        component: path.resolve(
+                            `src/templates/${String(edge.node.frontmatter.templateKey)}.tsx`,
+                        ),
+                        // additional data can be passed via context
+                        context: {
+                            id,
+                        },
+                    });
+                });
 
-        // Tag pages:
-        let tags = [];
-        // Iterate through each post, putting all found tags into `tags`
-        posts.forEach(edge => {
-          if (_.get(edge, 'node.frontmatter.tags')) {
-            tags = tags.concat(edge.node.frontmatter.tags);
-          }
-        });
-        // Eliminate duplicate tags
-        tags = _.uniq(tags);
+                // Tag pages:
+                let tags = [];
+                // Iterate through each post, putting all found tags into `tags`
+                posts.forEach(edge => {
+                    if (_.get(edge, 'node.frontmatter.tags')) {
+                        tags = tags.concat(edge.node.frontmatter.tags);
+                    }
+                });
+                // Eliminate duplicate tags
+                tags = _.uniq(tags);
 
-        // Make tag pages
-        tags.forEach(tag => {
-          const tagPath = `/tags/${_.kebabCase(tag)}/`;
+                // Make tag pages
+                tags.forEach(tag => {
+                    const tagPath = `/tags/${_.kebabCase(tag)}/`;
 
-          createPage({
-            path: tagPath,
-            component: path.resolve('src/templates/tags.tsx'),
-            context: {
-              tag,
-            },
-          });
-        });
-      })
-  );
+                    createPage({
+                        path: tagPath,
+                        component: path.resolve('src/templates/tags.tsx'),
+                        context: {
+                            tag,
+                        },
+                    });
+                });
+            })
+    );
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-  fmImagesToRelative(node); // convert image paths for gatsby images
+    const { createNodeField } = actions;
+    fmImagesToRelative(node); // convert image paths for gatsby images
 
-  if (node.internal.type === 'MarkdownRemark') {
-    const value = createFilePath({ node, getNode });
-    createNodeField({
-      name: 'slug',
-      node,
-      value,
-    });
-  }
+    if (node.internal.type === 'MarkdownRemark') {
+        const value = createFilePath({ node, getNode });
+        createNodeField({
+            name: 'slug',
+            node,
+            value,
+        });
+    }
 };
 
 exports.onCreateWebpackConfig = ({
-  // stage,
-  // rules,
-  // loaders,
-  // plugins,
-  actions,
+    // stage,
+    // rules,
+    // loaders,
+    // plugins,
+    actions,
 }) => {
-  actions.setWebpackConfig({
-    resolve: {
-      alias: {
-        components: path.resolve(__dirname, './src/components'),
-        types: path.resolve(__dirname, './types'),
-      },
-    },
-  });
+    actions.setWebpackConfig({
+        resolve: {
+            alias: {
+                components: path.resolve(__dirname, './src/components'),
+                types: path.resolve(__dirname, './types'),
+            },
+        },
+    });
 };
