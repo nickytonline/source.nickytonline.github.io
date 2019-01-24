@@ -16,10 +16,6 @@ html, body
       color: $medium-pink
       text-decoration: none
 
-  pre
-    overflow: scroll
-    min-height: 3rem
-
 .navbar
   position: sticky
   top: 0
@@ -72,9 +68,6 @@ html, body
 .content
   & > *:not(:first-child)
     max-width: 35rem
-
-  pre
-    overflow: scroll
 
 .content.content.content--front-page
   margin-bottom: 5rem
@@ -171,3 +164,12 @@ body, button, input, select, textarea
       opacity: 1
       transition: opacity 0.8s
       pointer-events: auto
+
+.gatsby-highlight-code-line
+  background-color: #feb
+  display: block
+  margin-right: -1em
+  margin-left: -1em
+  padding-right: 1em
+  padding-left: 0.75em
+  border-left: 0.25em solid #f99
