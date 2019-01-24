@@ -9,6 +9,7 @@ tags:
   - react
   - career
 ---
+
 We hear people say it all the time, but I would like to reiterate it. Any contribution you make to open source is a valuable contribution. Sure we all like adding features or fixing bugs in a project, but updating documentation is still worthwhile. I was reminded of this on the weekend.
 
 My site is currently using [Gatsby](https://gatsbyjs.org), an awesome React based static site generator on steroids.
@@ -23,7 +24,7 @@ I checked out the npm package, [@raae/gatsby-remark-oembed](https://www.npmjs.co
 
 I fired up my development environment and I was getting errors about the plugin not being found.
 
-```
+```bash
 Error: Unable to find plugin "gatsby-remark-oembed". Perhaps you need to install its package?
 ```
 
@@ -38,4 +39,3 @@ At this point, I was like, well if I spent 15-20 minutes trying to figure out wh
 https://twitter.com/raae/status/1087419926204305408
 
 Thanks for the thanks [@raae](https://twitter.com/raae)!
-

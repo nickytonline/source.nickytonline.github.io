@@ -86,7 +86,7 @@ You're all good to go. To test it out launch Alfred and in the search bar type `
 - I use the git CLI with [git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases). Here’s my list of [git aliases](https://gitaliases.iamdeveloper.com).
 - fish shell aliases I use because I'm a lazy typer or just can't remember the real command. Feel free to run the script snippet below to add them to your 🐡 🐚 .\*\*
 
-```
+```bash
 alias cg="eval \"git clone git@github.com:$argv.git\"" # Clones a gist, just pass in the gist ID
 funcsave cg
 
@@ -140,4 +140,4 @@ That’s pretty much the round up of what I have on my machine at the moment. I 
 
 I’m always looking for new tools to make me more efficient, so feel free to chime in in the comments below.
 
-And here's the link to [my mac setup script](https://gist.github.com/nickytonline/729fc106a0146345c0b90f3356a41e4d#file-my-mac-setup-sh "my mac setup script") which I made a little while's after this blog post. It's not perfect, but it's helped me set up a few machines pretty easily.
+And here's the link to [my mac setup script](https://gist.github.com/nickytonline/729fc106a0146345c0b90f3356a41e4d#file-my-mac-setup-sh 'my mac setup script') which I made a little while's after this blog post. It's not perfect, but it's helped me set up a few machines pretty easily.

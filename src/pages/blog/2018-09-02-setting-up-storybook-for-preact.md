@@ -23,15 +23,15 @@ In this post, I’ll show you how to get React Storybook up and running with Pre
 7. Almost there!
 8. The last thing we need to do is tell [webpack](https://webpack.js.org) (what Storybook uses under the hood), to use preact-compat. To do this, we need to create a custom webpack configuration file for Storybook. Lucky for us, Storybook supports this out of the box. In the root folder where your package.json file is, there will be a new folder called `.storybook`. In there it contains files related to Storybook configuration. Create a new file in there called `webpack.config.js` and paste the following contents and save the file.
 
-```
+```javascript
 module.exports = {
   resolve: {
-    extensions: [".js", "jsx"],
+    extensions: ['.js', 'jsx'],
     alias: {
-      react: "preact-compat",
-      "react-dom": "preact-compat"
-    }
-  }
+      react: 'preact-compat',
+      'react-dom': 'preact-compat',
+    },
+  },
 };
 ```
 

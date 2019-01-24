@@ -9,6 +9,7 @@ tags:
   - ux
   - storybook
 ---
+
 ## Story what?
 
 Storybook is a great tool for developing and showcasing components. I love it so much, I did a [talk about it](https://story.iamdeveloper.com) at [js-montreal](http://js-montreal.org) last summer. Storybook forces you, a good thing, to develop your components as components because you're not in the actual application. It supports [React](https://storybook.js.org/basics/guide-react), React Native, [Vue](https://storybook.js.org/basics/guide-vue) and [Angular](https://storybook.js.org/basics/guide-angular).
@@ -30,7 +31,7 @@ We’ll assume you already have a React project created.
 
 4. If you look in your `package.json` file, you’ll have two new scripts.
 
-```javascript
+```bash
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
 ```
