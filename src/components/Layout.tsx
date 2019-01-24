@@ -6,7 +6,6 @@ import { SiteMetaData } from 'types/site-meta-data';
 import { ChildrenProp } from 'types/children-prop';
 
 import './all.sass';
-import 'prismjs/themes/prism-solarizedlight.css';
 
 export type LayoutProps = ChildrenProp<JSX.Element>;
 
