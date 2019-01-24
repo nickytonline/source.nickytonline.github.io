@@ -97,17 +97,6 @@ module.exports = {
                 modulePath: `${__dirname}/src/cms/cms.js`,
             },
         },
-        {
-            resolve: `gatsby-plugin-purgecss`,
-            options: {
-                printRejected: true, // Print removed selectors and processed file names
-                // develop: true, // Enable while using `gatsby develop`
-                // tailwind: true, // Enable tailwindcss support
-                // whitelist: ['whitelist'], // Don't remove this selector
-                ignore: ['prismjs/'], // Ignore files/folders
-                // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
-            },
-        }, // must be after other CSS plugins
         'gatsby-plugin-netlify', // make sure to keep it last in the array
         {
             resolve: 'gatsby-plugin-web-font-loader',
@@ -132,24 +121,6 @@ module.exports = {
             },
         },
         'gatsby-plugin-sitemap',
-        {
-            resolve: 'gatsby-transformer-remark',
-            options: {
-                plugins: [
-                    {
-                        resolve: '@raae/gatsby-remark-oembed',
-                        options: {
-                            providers: {
-                                // Important to exclude providers
-                                // that adds js to the page.
-                                // If you do not need them.
-                                include: ['Twitter'],
-                            },
-                        },
-                    },
-                ],
-            },
-        },
         {
             resolve: 'gatsby-plugin-typescript',
             options: {
@@ -197,8 +168,30 @@ module.exports = {
                             noInlineHighlight: false,
                         },
                     },
+                    {
+                        resolve: '@raae/gatsby-remark-oembed',
+                        options: {
+                            providers: {
+                                // Important to exclude providers
+                                // that adds js to the page.
+                                // If you do not need them.
+                                include: ['Twitter'],
+                            },
+                        },
+                    },
                 ],
             },
         },
+        {
+            resolve: `gatsby-plugin-purgecss`,
+            options: {
+                printRejected: true, // Print removed selectors and processed file names
+                // develop: true, // Enable while using `gatsby develop`
+                // tailwind: true, // Enable tailwindcss support
+                // whitelist: ['whitelist'], // Don't remove this selector
+                ignore: ['prismjs/'], // Ignore files/folders
+                // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+            },
+        }, // must be after other CSS plugins
     ],
 };
