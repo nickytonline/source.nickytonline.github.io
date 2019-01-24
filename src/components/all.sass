@@ -70,7 +70,7 @@ html, body
     margin-top: 0
 
 .content
-  *:not(:first-child)
+  & > *:not(:first-child)
     max-width: 35rem
 
   pre
@@ -81,7 +81,6 @@ html, body
   border-radius: 0.5rem
   padding: 0.625rem
   background-color: rgba($main-bg-colour, 0.8);
-  max-width: 35rem;
 
   &:last-child
     margin-bottom: 0
@@ -93,7 +92,7 @@ html, body
 .section
   padding-top: 5rem
 
-  *:not(:first-child)
+  & > *:not(:first-child)
     max-width: 35em
 
 h1, h2, h3
