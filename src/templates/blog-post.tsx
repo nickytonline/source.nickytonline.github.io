@@ -34,7 +34,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                         <div className={styles.postDate}>{date}</div>
                         <PageTitle>{title}</PageTitle>
                         <div className={styles.postDescription}>{description}</div>
-                        <PostContent content={content} />
+                        <PostContent className={styles.postContent} content={content} />
                         {tags && tags.length ? (
                             <div className={styles.tagContainer}>
                                 <h4>Tags</h4>
