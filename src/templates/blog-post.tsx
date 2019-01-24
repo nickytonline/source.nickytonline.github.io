@@ -6,7 +6,6 @@ import { Content, HTMLContent, Layout, BlogTag, PageTitle } from 'components';
 import { MarkdownRemark } from 'types/markdown-remark';
 import { PageTemplateProps } from './page-template-props';
 import styles from './blog-post.module.scss';
-import 'prismjs/themes/prism-solarizedlight.css';
 
 export type BlogPostTemplateProps = PageTemplateProps & {
     description: string;
