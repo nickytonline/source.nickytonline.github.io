@@ -19,6 +19,7 @@ First let's start off with some things to remember if you're migrating a React a
    https://twitter.com/nickytonline/status/1088614757127593985
 
 1. Create a reusable `children` prop and add it to your component props' type via an intersection.
+
         ```
         // some file housing the ChildrenProp
         export type ChildrenProp = { children: React.ReactNode };
