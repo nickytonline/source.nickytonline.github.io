@@ -6,6 +6,7 @@ description: Some handy TypeScript tips.
 tags:
   - typescript
   - javascript
+  - react
 ---
 We'll start off with the usual shameless plug of another blog post. If you haven't read it yet, check out my blog post, [Consider Using TypeScript](https://www.iamdeveloper.com/blog/2017-10-07-consider-using-typescript/).
 
