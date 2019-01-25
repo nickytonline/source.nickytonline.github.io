@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: TypeScript Tips Part I
 date: 2019-01-25T02:13:23.494Z
-description: Some handy tips to help you out on your path towards TypeScript.
+description: Some handy TypeScript tips.
 tags:
   - typescript
   - javascript
@@ -35,12 +35,33 @@ Alright, let's move on to outside of React Land.
 
 1. If you're not sure what the shape of something you're building is yet, or your consuming something that for whatever reason you don't know the shape, you're going to type is as `any` until you start to figure things out. If you're using TypeScript 3.0 and up, don't. Prefer the `unknown` type.
 
-   https://twitter.com/nickytonline/status/1087886002063138816
-
    You get all the benefits of the `any` type, but as soon as you try to access anything on the object, you will need to do a type assertion. For more information see the documentation on the [`unknown`](https://blogs.msdn.microsoft.com/typescript/2018/07/30/announcing-typescript-3-0/#the-unknown-type) type
 
-1. Sometimes you have code where you know something is going to exist no matter what, so you don't want to have a check if it's null or undefined. TypeScript allows you via the `!` operator to basically say, "Hey TypeScript, trust me, I know what I'm doing.". Use this sparingly because, well, this giphy.
+   https://twitter.com/nickytonline/status/1087886002063138816
+
+1. Sometimes you have code where you know something is going to exist no matter what, so you don't want to have a check if it's null or undefined. TypeScript allows you via the `!` operator to basically say, "Hey TypeScript, trust me, I know what I'm doing.".
+
+   For example, instead of doing this
+
+   ```
+   const someElementReference = document.querySelector('.awesome-selector');
+
+   if (someElementReference) {
+      someElementReference.setAttribute('data-i-checked-first', `I wasn't sure if you'd exist`);
+   }
+   ```
+
+   you could do this
+
+   ```
+   const someElementReference = document.querySelector('.awesome-selector');
+
+   someElementReference.setAttribute('data-yolo', `I know what I'm doing!`);
+   ```
+
+   Use this sparingly because, well, this giphy.
 
    https://media.giphy.com/media/A9grgCQ0Dm012/giphy-downsized.gif
-1. 
+
+That's all for now, until part II. I said it, so I need to write it now. 😉
 
