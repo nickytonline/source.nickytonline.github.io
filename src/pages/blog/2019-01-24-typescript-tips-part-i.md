@@ -9,7 +9,7 @@ tags:
 ---
 We'll start off with the usual shameless plug of another blog post. If you haven't read it yet, check out my blog post, [Consider Using TypeScript](https://www.iamdeveloper.com/blog/2017-10-07-consider-using-typescript/).
 
-We're going to look at a few tips that may/can help you on your in journey TypeScript land.
+We're going to look at a few tips that may/can help you on your journey in TypeScript land.
 
 First let's start off with some things to remember if you're migrating a React application to TypeScript.
 
@@ -39,7 +39,7 @@ Alright, let's move on to outside of React Land.
 
    https://twitter.com/nickytonline/status/1087886002063138816
 
-1. Sometimes you have code where you know something is going to exist no matter what, so you don't want to have a check if it's null or undefined. TypeScript allows you via the `!` operator to basically say, "Hey TypeScript, trust me, I know what I'm doing.".
+1. Sometimes you have code where you know something is going to exist no matter what, so you don't want to have a check to see if it's null or undefined. TypeScript allows you via the `!` operator to basically say, "Hey TypeScript, trust me, I know what I'm doing.".
 
    For example, instead of doing this
 
