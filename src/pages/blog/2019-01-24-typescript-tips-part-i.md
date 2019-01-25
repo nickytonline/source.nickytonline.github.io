@@ -35,7 +35,7 @@ First let's start off with some things to remember if you're migrating a React a
 
 Alright, let's move on to outside of React Land.
 
-1. If you're not sure what the shape of something you're building is yet, or your consuming something that for whatever reason you don't know the shape, you're going to type is as `any` until you start to figure things out. If you're using TypeScript 3.0 and up, don't. Prefer the `unknown` type.
+1. If you're not sure what the shape of something you're building is yet, or your consuming something that for whatever reason you don't know the shape, you're going to type it as `any` until you start to figure things out. If you're using TypeScript 3.0 and up, don't. Prefer the `unknown` type.
 
    You get all the benefits of the `any` type, but as soon as you try to access anything on the object, you will need to do a type assertion. For more information, see the documentation on the [`unknown`](https://blogs.msdn.microsoft.com/typescript/2018/07/30/announcing-typescript-3-0/#the-unknown-type) type
 
