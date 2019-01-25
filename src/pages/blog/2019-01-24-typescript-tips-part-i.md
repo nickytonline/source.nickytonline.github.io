@@ -62,7 +62,7 @@ Alright, let's move on to outside of React Land.
 
    Use this sparingly because, well, this giphy.
 
-   https://media.giphy.com/media/A9grgCQ0Dm012/giphy-downsized.gif
+   ![I got the power! Bruce Almighty movie gif](https://media.giphy.com/media/A9grgCQ0Dm012/giphy-downsized.gif)
 
 That's all for now, until part II. I said it, so I need to write it now. 😉
 
