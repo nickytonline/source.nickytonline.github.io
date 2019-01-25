@@ -15,7 +15,7 @@ We're going to look at a few tips that may/can help you on your journey in TypeS
 First let's start off with some things to remember if you're migrating a React application to TypeScript.
 
 1. When porting components to TypeScript, ensure that the file extension is `.tsx`, not `.ts`. If you don't, you'll be scratching your head for hours as to why JSX is not being recognized.
-1. Also, ensure that you have `"jsx"` TypeScript compiler option set properly as well. By default, it's set to `"preserve"`. You want it to be set to `"react"`. e.g. https://github.com/nickytonline/www.iamdeveloper.com/blob/master/tsconfig.json#L12
+1. Also, ensure that you have the `"jsx"` TypeScript compiler option set properly as well. By default, it's set to `"preserve"`. You want it to be set to `"react"`. e.g. https://github.com/nickytonline/www.iamdeveloper.com/blob/master/tsconfig.json#L12
 
    https://twitter.com/nickytonline/status/1088614757127593985
 
