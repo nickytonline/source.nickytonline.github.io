@@ -35,6 +35,10 @@
     "*.md": [
       "prettier --write",
       "git add"
+    ],
+    "*.{sass,scss,css}": [
+      "stylelint --fix --config .styletinrc.json",
+      "git add"
     ]
   },
   "prettier": {
@@ -93,6 +97,9 @@
     "lint-staged": "8.1.0",
     "postcss-pxtorem": "4.0.1",
     "prettier": "1.16.0",
+    "stylelint": "9.10.1",
+    "stylelint-config-recommended": "2.1.0",
+    "stylelint-scss": "3.5.1",
     "typescript": "3.2.4"
   }
 }
