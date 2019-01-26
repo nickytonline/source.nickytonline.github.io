@@ -3,7 +3,7 @@
 
 html, body
   color: $dark-purple
-  background-color: $main-bg-colour
+  background-color: $main-bg-color
 
 .container
   overflow-wrap: break-word
@@ -13,7 +13,7 @@ html, body
     text-decoration: underline
 
     &:hover
-      color: $medium-pink
+      color: $accent-color
       text-decoration: none
 
 .navbar
@@ -32,7 +32,7 @@ html, body
     font-weight: bold
 
     &:hover
-      color: $medium-pink
+      color: $accent-color
 
 @media screen and (max-width: 1087px)
   .navbar-burger
@@ -47,7 +47,7 @@ html, body
       color: $dark-purple
 
       &:hover
-        color: $medium-pink
+        color: $accent-color
 
 .content .taglist
   list-style: none
@@ -72,7 +72,7 @@ html, body
   margin-bottom: 5rem
   border-radius: 0.5rem
   padding: 0.625rem
-  background-color: rgba($main-bg-colour, 0.8)
+  background-color: rgba($main-bg-color, 0.8)
   max-width: 35em
 
   &:last-child
@@ -111,27 +111,30 @@ body, button, input, select, textarea
     min-height: calc(100vh - #{$navbar-height})
 
   .section.section--about-me
+    @include dope-link-style;
     background-image: url(/img/undraw_uploading_go67.svg)
 
   .section.section--contact
+    @include dope-link-style;
     background-image: url(/img/undraw_video_call_kxyp.svg)
 
   .section--thanks
-      background-size: calc(100vw * 0.3)
-      background-position-x: center
-      background-position-y: center
-      background-image: url(/img/undraw_having_fun_iais.svg)
+    @include dope-link-style;
+    background-size: calc(100vw * 0.3)
+    background-position-x: center
+    background-position-y: center
+    background-image: url(/img/undraw_having_fun_iais.svg)
 
-      ul
-        margin: 0
+    ul
+      margin: 0
 
-        li
-          list-style: none
+      li
+        list-style: none
 
-          &:before
-            content: '→'
-            color: $medium-pink
-            margin-right: 0.5rem
+        &:before
+          content: '→'
+          color: $accent-color
+          margin-right: 0.5rem
 
   .section.section--blog-posts
     background-image: url(/img/undraw_post_online_dkuk.svg)

@@ -11,14 +11,16 @@
     color: $dark-purple;
   }
 
-  .count {
-    font-size: 0.7rem;
-    margin-left: 0.25rem;
-    color: $medium-pink;
-  }
-
   &:last-child {
     margin-right: 0;
+  }
+
+  &:before {
+    content: attr(data-count);
+    position: absolute;
+    font-size: 0.6rem;
+    color: rgba($dark-purple, 0.55);
+    right: -0.65rem;
   }
 
   &:after {

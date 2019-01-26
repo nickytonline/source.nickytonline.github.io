@@ -8,7 +8,7 @@
 .postTitle.postTitle.postTitle {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  color: $medium-pink;
+  color: $accent-color;
 }
 
 .postDescription {
@@ -44,4 +44,6 @@
 
 .postContent {
   max-width: 35em;
+
+  @include dope-link-style;
 }
