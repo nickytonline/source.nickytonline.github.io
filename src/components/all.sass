@@ -93,7 +93,7 @@ h1, h2, h3
 
 .content // won't need this once bulma is out
   h3
-    font-weight: 400
+    font-weight: $font-weight-light-bold
     font-size: 1.25rem
 
 // Will clean this up to just body once I've pulled out bulma
@@ -126,15 +126,15 @@ body, button, input, select, textarea
     background-image: url(/img/undraw_having_fun_iais.svg)
 
     ul
-      margin: 0
+      margin: 1rem
 
       li
         list-style: none
 
         &:before
-          content: '→'
-          color: $accent-color
-          margin-right: 0.5rem
+          content: '👏'
+          font-size: 0.9rem;
+          margin-right: 0.6rem
 
   .section.section--blog-posts
     background-image: url(/img/undraw_post_online_dkuk.svg)

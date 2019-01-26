@@ -9,6 +9,9 @@ $brown-accent: #c9696e;
 $secondary-color: rgba(51, 51, 51, 0.6);
 $main-bg-color: #e9e9f1;
 $accent-color: #ff8c00;
+$font-weight-light-bold: 400;
+$font-weight-bold: 600;
+$font-weight-heavy-bold: 700;
 
 @mixin dope-link-style(
   $textColor: $dark-purple,
@@ -22,6 +25,7 @@ $accent-color: #ff8c00;
 
     &:hover {
       color: $textColor;
+      font-weight: $font-weight-bold;
     }
 
     &:after {
