@@ -46,9 +46,9 @@ class TagRoute extends React.Component<TagRouteProps, {}> {
                             >
                                 <h3>{tagHeader}</h3>
                                 <ul className={styles.postLinks}>{postLinks}</ul>
-                                <p>
-                                    <Link to="/tags/">Browse all tags</Link>
-                                </p>
+                                <Link className={styles.browseAllTags} to="/tags/">
+                  Browse all tags
+                                </Link>
                             </div>
                         </div>
                     </div>
