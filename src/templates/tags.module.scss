@@ -1,12 +1,7 @@
-.postLinks.postLinks {
-  list-style: none;
-  margin: 0.5rem;
+@import '../components/mixins';
 
-  li:before {
-    content: '✏️';
-    font-size: 0.8rem;
-    margin-right: 0.5rem;
-  }
+.postLinks.postLinks {
+  @include dope-list('✏️');
 }
 
 .browseAllTags {

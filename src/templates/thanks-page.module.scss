@@ -1,12 +1,7 @@
+@import '../components/mixins';
+
 .thanks.thanks {
   ul {
-    list-style: none;
-    margin: 0.5rem;
-
-    li:before {
-      content: '👏';
-      font-size: 0.8rem;
-      margin-right: 0.5rem;
-    }
+    @include dope-list('👏');
   }
 }
