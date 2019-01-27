@@ -96,6 +96,11 @@ h1, h2, h3
     font-weight: $font-weight-light-bold
     font-size: 1.25rem
 
+  pre[class*='language-'] > code
+    padding: 0
+    border-left-color: $accent-color
+    box-shadow: -0.0625rem 0px 0px 0px $accent-color, 0px 0px 0px 0.0625rem $off-white
+
 // Will clean this up to just body once I've pulled out bulma
 body, button, input, select, textarea
   font-family: "Droid Sans"
