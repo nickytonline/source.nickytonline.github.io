@@ -21,16 +21,16 @@ First let's start off with some things to remember if you're migrating a React a
 
 1. Create a reusable `children` prop and add it to your component props' type via an intersection.
 
-        ```
-        // some file housing the ChildrenProp
-        export type ChildrenProp = { children: React.ReactNode };
-        
-        // some other component file that consumes it.
-        export type SomeComponentProps = ChildrenProp & {
-            someOtherProp: boolean;
-            ...
-        };
-        ```
+   ```javascript
+   // some file housing the ChildrenProp
+   export type ChildrenProp = { children: React.ReactNode };
+
+   // some other component file that consumes it.
+   export type SomeComponentProps = ChildrenProp & {
+      someOtherProp: boolean;
+      ...
+   };
+   ```
 1. Bonus points, make it generic with a default, https://github.com/nickytonline/www.iamdeveloper.com/blob/master/types/children-prop.d.ts
 
 Alright, let's move on to outside of React Land.
@@ -47,7 +47,7 @@ Alright, let's move on to outside of React Land.
 
    For example, instead of doing this
 
-   ```
+   ```javascript
    const someElementReference = document.querySelector('.awesome-selector');
 
    if (someElementReference) {
