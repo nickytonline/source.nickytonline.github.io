@@ -5,7 +5,7 @@ import { Navbar } from 'components';
 import { SiteMetaData } from 'types/site-meta-data';
 import { ChildrenProp } from 'types/children-prop';
 
-import './all.sass';
+import './all.scss';
 
 export type LayoutProps = ChildrenProp<JSX.Element>;
 

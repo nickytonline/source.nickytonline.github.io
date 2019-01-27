@@ -37,7 +37,7 @@
       "git add"
     ],
     "*.{sass,scss,css}": [
-      "stylelint --fix --config .styletinrc.json",
+      "stylelint --config .styletinrc.json",
       "git add"
     ]
   },

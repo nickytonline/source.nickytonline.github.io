@@ -1,0 +1,128 @@
+@import './vars';
+@import './mixins';
+@import '~bulma';
+
+html,
+body {
+  color: $dark-purple;
+  background-color: $main-bg-color;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Oswald, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+// Will clean this up to just body once I've pulled out bulma
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Droid Sans', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+.container {
+  overflow-wrap: break-word;
+}
+
+.container.content {
+  @include dope-link-style;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(45deg, $dark-purple 80%, $lighter-purple 0%);
+  height: $navbar-height;
+  max-height: $navbar-height;
+
+  .logo__emoji {
+    margin-right: 0.6rem;
+  }
+}
+
+.navbar-item.navbar-item {
+  color: $off-white;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.content .taglist {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+
+  li {
+    padding: 0 2rem 1rem 0;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+  }
+}
+
+.content {
+  // won't need this once bulma is out
+  h3 {
+    font-weight: $font-weight-light-bold;
+    font-size: 1.25rem;
+  }
+}
+
+.container .content {
+  max-width: 35rem;
+
+  a {
+    color: $dark-purple;
+    text-decoration: underline;
+
+    &:hover {
+      color: $accent-color;
+      text-decoration: none;
+    }
+  }
+
+  &:not(.content--front-page) {
+    @include dope-link-style;
+  }
+}
+
+.content.content.content--front-page {
+  margin-bottom: 5rem;
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  background-color: rgba($main-bg-color, 0.8);
+  max-width: 35em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.section {
+  padding-top: 5rem;
+
+  & > *:not(:first-child) {
+    max-width: 35em;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  .navbar-item.navbar-item:not(.logo) {
+    color: $dark-purple;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@mixin dope-link-style(
+  $textColor: $dark-purple,
+  $firstGradientColor: $main-bg-color,
+  $secondGradientColor: $accent-color
+) {
+  a {
+    position: relative;
+    color: $textColor;
+    text-decoration: none;
+
+    &:hover {
+      color: $textColor;
+      font-weight: $font-weight-bold;
+    }
+
+    &:after {
+      content: '';
+      height: 0.125rem;
+      background: linear-gradient(
+        to right,
+        $firstGradientColor,
+        $secondGradientColor
+      );
+      width: 100%;
+      position: absolute;
+      bottom: -0.1875rem;
+      left: 0;
+      border-radius: 0.0625rem;
+    }
+  }
+}
