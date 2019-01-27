@@ -1,0 +1,19 @@
+@import './vars';
+
+.content {
+  h3 {
+    // won't need this once bulma is out
+    font-weight: $font-weight-light-bold;
+    font-size: 1.25rem;
+  }
+
+  pre[class*='language-'] {
+    padding: 0;
+
+    & > code {
+      border-left-color: $accent-color;
+      box-shadow: -0.0625rem 0px 0px 0px $accent-color,
+        0px 0px 0px 0.0625rem $off-white;
+    }
+  }
+}

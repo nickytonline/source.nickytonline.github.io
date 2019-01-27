@@ -1,5 +1,5 @@
 @import './vars'
-@import "~bulma"
+@import '~bulma'
 
 html, body
   color: $dark-purple
@@ -34,21 +34,6 @@ html, body
     &:hover
       color: $accent-color
 
-@media screen and (max-width: 1087px)
-  .navbar-burger
-    color: $dark-purple
-
-  .navbar-menu.is-active
-    position: absolute
-    z-index: 1
-    width: 100%
-
-    a
-      color: $dark-purple
-
-      &:hover
-        color: $accent-color
-
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -78,9 +63,6 @@ html, body
   &:last-child
     margin-bottom: 0
 
-@media screen and (max-width: 1087px)
-  .content.content--front-page
-    margin-bottom: 2rem
 
 .section
   padding-top: 5rem
@@ -96,82 +78,13 @@ h1, h2, h3
     font-weight: $font-weight-light-bold
     font-size: 1.25rem
 
-  pre[class*='language-'] > code
-    padding: 0
-    border-left-color: $accent-color
-    box-shadow: -0.0625rem 0px 0px 0px $accent-color, 0px 0px 0px 0.0625rem $off-white
-
 // Will clean this up to just body once I've pulled out bulma
 body, button, input, select, textarea
   font-family: "Droid Sans"
 
-@media screen and (min-width: 813px)
-  .section
-    background-size: calc(100vw * 0.25)
-    background-position-x: calc(100% - 2rem)
-    background-position-y: calc(100% - 2rem)
-    background-repeat: no-repeat
-    background-attachment: fixed
-    background-color: transparent
-    min-height: calc(100vh - #{$navbar-height})
 
-  .section.section--about-me
-    @include dope-link-style;
-    background-image: url(/img/undraw_uploading_go67.svg)
 
-  .section.section--contact
-    @include dope-link-style;
-    background-image: url(/img/undraw_video_call_kxyp.svg)
 
-  .section--thanks
-    @include dope-link-style;
-    background-size: calc(100vw * 0.3)
-    background-position-x: center
-    background-position-y: center
-    background-image: url(/img/undraw_having_fun_iais.svg)
-
-    ul
-      margin: 1rem
-
-      li
-        list-style: none
-
-        &:before
-          content: '👏'
-          font-size: 0.9rem;
-          margin-right: 0.6rem
-
-  .section.section--blog-posts
-    background-image: url(/img/undraw_post_online_dkuk.svg)
-    padding-bottom: calc(100vw * 0.25)
-
-  .section.section--not-found
-    background-size: calc(100vw * 0.3)
-    background-position-x: center
-    background-position-y: center
-    background-image: url(/img/undraw_empty_xct9.svg)
-
-@media screen and (max-width: 1024px)
-  .section
-    padding-top: 2rem
-    background-size: 20rem
-    background-position-x: center
-
-@media screen and (min-width: 1025px)
-  .content.content--front-page
-    max-width: 80rem
-
-@media screen and (min-device-width: 1200px)
-
-  .content--front-page .button--read-more
-    opacity: 0
-    transition: opacity 0.8s
-    pointer-events: none
-
-  .content--front-page:hover .button--read-more
-      opacity: 1
-      transition: opacity 0.8s
-      pointer-events: auto
 
 .gatsby-highlight-code-line
   background-color: #feb
@@ -180,4 +93,4 @@ body, button, input, select, textarea
   margin-left: -1em
   padding-right: 1em
   padding-left: 0.75em
-  border-left: 0.25em solid #f99
+  border-left: 0.25em solid f99
