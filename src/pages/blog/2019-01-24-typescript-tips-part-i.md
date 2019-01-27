@@ -57,7 +57,7 @@ Alright, let's move on to outside of React Land.
 
    you could do this
 
-   ```
+   ```javascript
    const someElementReference = document.querySelector('.awesome-selector');
 
    someElementReference!.setAttribute('data-yolo', `I know what I'm doing!`);
