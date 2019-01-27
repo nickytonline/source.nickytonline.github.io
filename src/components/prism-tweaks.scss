@@ -11,7 +11,8 @@
     padding: 0;
 
     & > code {
-      min-height: 3rem;
+      min-height: 4.5rem;
+      padding-bottom: 1.5rem;
       border-left-color: $accent-color;
       box-shadow: -0.0625rem 0px 0px 0px $accent-color,
         0px 0px 0px 0.0625rem $off-white;
