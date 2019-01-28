@@ -1,12 +1,10 @@
 import React from 'react';
 import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { Layout, BlogTag, PageTitle } from 'components';
 import { AllMarkdownRemark } from 'types/all-markdown-remark';
 import { SiteMetaData } from 'types/site-meta-data';
-
-import styles from './index.module.scss';
 
 export interface TagsPageProps {
     data: {

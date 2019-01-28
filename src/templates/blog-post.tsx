@@ -1,7 +1,7 @@
 import React from 'react';
 import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import { Content, HTMLContent, Layout, BlogTag, PageTitle } from 'components';
 import { MarkdownRemark } from 'types/markdown-remark';
 import { PageTemplateProps } from './page-template-props';
