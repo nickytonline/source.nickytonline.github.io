@@ -23,10 +23,6 @@ textarea {
   font-family: 'Droid Sans', Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
-.container {
-  overflow-wrap: break-word;
-}
-
 .navbar {
   position: sticky;
   top: 0;
@@ -69,14 +65,12 @@ textarea {
 
 .content {
   // won't need this once bulma is out
+  max-width: 35rem;
+
   h3 {
     font-weight: $font-weight-light-bold;
     font-size: 1.25rem;
   }
-}
-
-.container .content {
-  max-width: 35rem;
 
   a {
     color: $dark-purple;

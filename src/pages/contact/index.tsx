@@ -1,12 +1,12 @@
 import React from 'react';
-import { Layout, PageTitle, Section } from 'components';
+import { Layout, PageTitle, Section, Container } from 'components';
 
 import styles from './index.module.scss';
 
 const Index: React.FC<{}> = () => (
     <Layout>
         <Section className={styles.contactBackground}>
-            <div className="container">
+            <Container>
                 <div className="content">
                     <PageTitle>Contact</PageTitle>
                     <p>
@@ -14,7 +14,7 @@ const Index: React.FC<{}> = () => (
             com.
                     </p>
                 </div>
-            </div>
+            </Container>
         </Section>
     </Layout>
 );

@@ -9,6 +9,7 @@ import {
     BlogTag,
     PageTitle,
     Section,
+    Container,
 } from 'components';
 import { MarkdownRemark } from 'types/markdown-remark';
 import { PageTemplateProps } from './page-template-props';
@@ -35,7 +36,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
     return (
         <Section>
             {helmet}
-            <div className="container content">
+            <Container className="content">
                 <div className="columns">
                     <div className="column is-10 is-offset-1">
                         <div className={styles.postDate}>{date}</div>
@@ -56,7 +57,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                         ) : null}
                     </div>
                 </div>
-            </div>
+            </Container>
         </Section>
     );
 };

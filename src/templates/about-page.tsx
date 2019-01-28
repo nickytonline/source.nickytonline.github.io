@@ -1,6 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Content, HTMLContent, Layout, PageTitle, Section } from 'components';
+import {
+    Content,
+    HTMLContent,
+    Layout,
+    PageTitle,
+    Section,
+    Container,
+} from 'components';
 import { MarkdownRemark } from 'types/markdown-remark';
 import { PageTemplateProps } from './page-template-props';
 
@@ -17,10 +24,10 @@ export const AboutPageTemplate: React.FC<AboutPageTemplateProps> = ({
 
     return (
         <Section className={styles.aboutBackground}>
-            <div className="container">
+            <Container>
                 <PageTitle>{title}</PageTitle>
                 <PageContent className="content" content={content} />
-            </div>
+            </Container>
         </Section>
     );
 };

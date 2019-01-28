@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import { SocialIcon } from 'components';
+import { SocialIcon, Container } from 'components';
 import { SiteMetaData, SocialLinkId } from 'types/site-meta-data';
+
+import styles from './Navbar.module.scss';
 
 export interface NavbarProps {
     siteMetadata: SiteMetaData;
@@ -52,7 +54,7 @@ export class Navbar extends React.Component<NavbarProps, {}> {
                 role="navigation"
                 aria-label="main-navigation"
             >
-                <div className="container">
+                <Container className={styles.navbarContents}>
                     <div className="navbar-brand">
                         <Link className="logo navbar-item" to="/" title="Logo">
                             <span
@@ -95,7 +97,7 @@ export class Navbar extends React.Component<NavbarProps, {}> {
                             ))}
                         </div>
                     </div>
-                </div>
+                </Container>
             </nav>
         );
     }

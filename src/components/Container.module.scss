@@ -1,0 +1,14 @@
+@import './vars';
+
+.container {
+  overflow-wrap: break-word;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  text-rendering: optimizelegibility;
+
+  @media screen and (max-width: 1087px) {
+    & {
+      margin-left: 0;
+    }
+  }
+}

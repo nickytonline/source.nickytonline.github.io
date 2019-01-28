@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import { Layout, PageTitle, Section } from 'components';
+import { Layout, PageTitle, Section, Container } from 'components';
 import { AllMarkdownRemark } from 'types/all-markdown-remark';
 import styles from './index.module.scss';
 
@@ -18,7 +18,7 @@ export default class IndexPage extends React.PureComponent<IndexPageProps, {}> {
         return (
             <Layout>
                 <Section className={styles.mainBackground}>
-                    <div className="container">
+                    <Container>
                         <PageTitle>Latest Posts</PageTitle>
                         {posts.map(({ node: post }) => (
                             <div className="content" key={post.id}>
@@ -29,7 +29,7 @@ export default class IndexPage extends React.PureComponent<IndexPageProps, {}> {
                                 <p>{post.excerpt}</p>
                             </div>
                         ))}
-                    </div>
+                    </Container>
                 </Section>
             </Layout>
         );

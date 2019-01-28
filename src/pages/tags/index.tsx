@@ -2,7 +2,7 @@ import React from 'react';
 import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
-import { Layout, BlogTag, PageTitle, Section } from 'components';
+import { Layout, BlogTag, PageTitle, Section, Container } from 'components';
 import { AllMarkdownRemark } from 'types/all-markdown-remark';
 import { SiteMetaData } from 'types/site-meta-data';
 
@@ -26,7 +26,7 @@ const TagsPage: React.FC<TagsPageProps> = ({
     <Layout>
         <Section>
             <Helmet title={`Tags | ${title}`} />
-            <div className="container content">
+            <Container className="content">
                 <div className="columns">
                     <div
                         className="column is-10 is-offset-1"
@@ -46,7 +46,7 @@ const TagsPage: React.FC<TagsPageProps> = ({
                         </ul>
                     </div>
                 </div>
-            </div>
+            </Container>
         </Section>
     </Layout>
 );

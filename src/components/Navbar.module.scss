@@ -1,0 +1,12 @@
+.navbarContents {
+  align-items: stretch;
+  display: flex;
+  min-height: 3.25rem;
+  width: 100%;
+
+  @media screen and (max-width: 1087px) {
+    & {
+      display: block;
+    }
+  }
+}
