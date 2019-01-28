@@ -1,9 +1,9 @@
 import React from 'react';
-import { Layout, PageTitle } from 'components';
+import { Layout, PageTitle, Section } from 'components';
 
 const Index: React.FC<{}> = () => (
     <Layout>
-        <section className="section section--contact">
+        <Section className="section--contact">
             <div className="container">
                 <div className="content">
                     <PageTitle>Contact</PageTitle>
@@ -13,7 +13,7 @@ const Index: React.FC<{}> = () => (
                     </p>
                 </div>
             </div>
-        </section>
+        </Section>
     </Layout>
 );
 

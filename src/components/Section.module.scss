@@ -1,0 +1,32 @@
+@import './vars';
+
+.section {
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 5rem;
+
+  & > *:not(:first-child) {
+    max-width: 35em;
+  }
+
+  @media screen and (min-width: 813px) {
+    & {
+      background-size: calc(100vw * 0.25);
+      background-position-x: calc(100% - 2rem);
+      background-position-y: calc(100% - 2rem);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: transparent;
+      min-height: calc(100vh - #{$navbar-height});
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    & {
+      padding-top: 2rem;
+      background-size: 20rem;
+      background-position-x: center;
+    }
+  }
+}

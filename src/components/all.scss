@@ -107,14 +107,6 @@ textarea {
   }
 }
 
-.section {
-  padding-top: 5rem;
-
-  & > *:not(:first-child) {
-    max-width: 35em;
-  }
-}
-
 @media screen and (max-width: 1087px) {
   .navbar-item.navbar-item:not(.logo) {
     color: $dark-purple;
@@ -126,16 +118,6 @@ textarea {
 }
 
 @media screen and (min-width: 813px) {
-  .section {
-    background-size: calc(100vw * 0.25);
-    background-position-x: calc(100% - 2rem);
-    background-position-y: calc(100% - 2rem);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: transparent;
-    min-height: calc(100vh - #{$navbar-height});
-  }
-
   .section--about-me {
     background-image: url(/img/undraw_uploading_go67.svg);
   }
@@ -161,13 +143,5 @@ textarea {
     background-position-x: center;
     background-position-y: center;
     background-image: url(/img/undraw_empty_xct9.svg);
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .section {
-    padding-top: 2rem;
-    background-size: 20rem;
-    background-position-x: center;
   }
 }

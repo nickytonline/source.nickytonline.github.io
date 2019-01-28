@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Content, HTMLContent, Layout, PageTitle } from 'components';
+import { Content, HTMLContent, Layout, PageTitle, Section } from 'components';
 import { PageTemplateProps } from './page-template-props';
 
 import styles from './thanks-page.module.scss';
@@ -15,12 +15,12 @@ export const ThanksPageTemplate: React.FC<ThanksPageTemplateProps> = ({
     const PageContent = contentComponent || Content;
 
     return (
-        <section className="section section--gradient section--thanks">
+        <Section className="section--gradient section--thanks">
             <div className="container">
                 <PageTitle>{title}</PageTitle>
                 <PageContent className={`content ${styles.thanks}`} content={content} />
             </div>
-        </section>
+        </Section>
     );
 };
 

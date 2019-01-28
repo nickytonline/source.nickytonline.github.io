@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
-import { Layout } from 'components';
+import { Layout, Section } from 'components';
 import { SiteMetaData } from 'types/site-meta-data';
 import { AllMarkdownRemark } from 'types/all-markdown-remark';
 
@@ -38,7 +38,7 @@ class TagRoute extends React.Component<TagRouteProps, {}> {
 
         return (
             <Layout>
-                <section className="section">
+                <Section>
                     <Helmet title={`${tag} | ${title}`} />
                     <div className="container content">
                         <div className="columns">
@@ -51,7 +51,7 @@ class TagRoute extends React.Component<TagRouteProps, {}> {
                             </div>
                         </div>
                     </div>
-                </section>
+                </Section>
             </Layout>
         );
     }

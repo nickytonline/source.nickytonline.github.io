@@ -2,7 +2,14 @@ import React from 'react';
 import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
-import { Content, HTMLContent, Layout, BlogTag, PageTitle } from 'components';
+import {
+    Content,
+    HTMLContent,
+    Layout,
+    BlogTag,
+    PageTitle,
+    Section,
+} from 'components';
 import { MarkdownRemark } from 'types/markdown-remark';
 import { PageTemplateProps } from './page-template-props';
 import styles from './blog-post.module.scss';
@@ -26,7 +33,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
     const PostContent = contentComponent || Content;
 
     return (
-        <section className="section">
+        <Section>
             {helmet}
             <div className="container content">
                 <div className="columns">
@@ -50,7 +57,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                     </div>
                 </div>
             </div>
-        </section>
+        </Section>
     );
 };
 
