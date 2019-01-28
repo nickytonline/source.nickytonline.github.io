@@ -1,10 +1,16 @@
 @import '../components/mixins';
 
-.postLinks.postLinks {
+.postList.postList {
   @include dope-list('✏️');
+
+  .postLink {
+    @include dope-link-style;
+  }
 }
 
 .browseAllTags {
   display: inline-block;
   margin-top: 2rem;
+
+  @include dope-link-style;
 }

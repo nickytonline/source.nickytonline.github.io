@@ -27,10 +27,6 @@ textarea {
   overflow-wrap: break-word;
 }
 
-.container.content {
-  @include dope-link-style;
-}
-
 .navbar {
   position: sticky;
   top: 0;
@@ -93,7 +89,9 @@ textarea {
   }
 
   &:not(.content--front-page) {
-    @include dope-link-style;
+    a {
+      @include dope-link-style;
+    }
   }
 }
 
@@ -138,7 +136,7 @@ textarea {
     min-height: calc(100vh - #{$navbar-height});
   }
 
-  .section.section--about-me {
+  .section--about-me {
     background-image: url(/img/undraw_uploading_go67.svg);
   }
 
@@ -153,12 +151,12 @@ textarea {
     background-image: url(/img/undraw_having_fun_iais.svg);
   }
 
-  .section.section--blog-posts {
+  .section--blog-posts {
     background-image: url(/img/undraw_post_online_dkuk.svg);
     padding-bottom: calc(100vw * 0.25);
   }
 
-  .section.section--not-found {
+  .section--not-found {
     background-size: calc(100vw * 0.3);
     background-position-x: center;
     background-position-y: center;

@@ -24,7 +24,9 @@ class TagRoute extends React.Component<TagRouteProps, {}> {
         const posts = this.props.data.allMarkdownRemark.edges;
         const postLinks = posts.map(post => (
             <li key={post.node.fields.slug}>
-                <Link to={post.node.fields.slug}>{post.node.frontmatter.title}</Link>
+                <Link className={styles.postLink} to={post.node.fields.slug}>
+                    {post.node.frontmatter.title}
+                </Link>
             </li>
         ));
         const tag = this.props.pageContext.tag;
@@ -40,12 +42,9 @@ class TagRoute extends React.Component<TagRouteProps, {}> {
                     <Helmet title={`${tag} | ${title}`} />
                     <div className="container content">
                         <div className="columns">
-                            <div
-                                className="column is-10 is-offset-1"
-                                style={{ marginBottom: '6rem' }}
-                            >
+                            <div className="column is-10 is-offset-1">
                                 <h3>{tagHeader}</h3>
-                                <ul className={styles.postLinks}>{postLinks}</ul>
+                                <ul className={styles.postList}>{postLinks}</ul>
                                 <Link className={styles.browseAllTags} to="/tags/">
                   Browse all tags
                                 </Link>

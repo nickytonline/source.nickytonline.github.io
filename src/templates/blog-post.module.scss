@@ -46,5 +46,7 @@
 .postContent {
   max-width: 35em;
 
-  @include dope-link-style;
+  a {
+    @include dope-link-style;
+  }
 }
