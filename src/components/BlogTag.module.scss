@@ -32,7 +32,7 @@
     height: 1.5rem;
     background-position-x: center;
     background-position-y: center;
-    background-color: $dark-purple;
+    background-color: rgba($dark-purple, 0.4);
     mask: url(/img/blog-tag.svg);
   }
 
