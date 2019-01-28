@@ -21,11 +21,9 @@ export default class IndexPage extends React.PureComponent<IndexPageProps, {}> {
                     <div className="container">
                         <PageTitle>Latest Posts</PageTitle>
                         {posts.map(({ node: post }) => (
-                            <div className="content content--front-page" key={post.id}>
+                            <div className="content" key={post.id}>
                                 <h2>
-                                    <Link className="blog-title" to={post.fields.slug}>
-                                        {post.frontmatter.title}
-                                    </Link>
+                                    <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
                                 </h2>
                                 <div className={styles.postDate}>{post.frontmatter.date}</div>
                                 <p>{post.excerpt}</p>

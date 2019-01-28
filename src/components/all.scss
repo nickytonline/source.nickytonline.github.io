@@ -87,24 +87,6 @@ textarea {
       text-decoration: none;
     }
   }
-
-  &:not(.content--front-page) {
-    a {
-      @include dope-link-style;
-    }
-  }
-}
-
-.content.content.content--front-page {
-  margin-bottom: 5rem;
-  border-radius: 0.5rem;
-  padding: 0.625rem;
-  background-color: rgba($main-bg-color, 0.8);
-  max-width: 35em;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 @media screen and (max-width: 1087px) {
