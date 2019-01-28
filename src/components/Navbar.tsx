@@ -8,26 +8,38 @@ export interface NavbarProps {
 }
 
 export class Navbar extends React.Component<NavbarProps, {}> {
-    componentDidMount() {
-    // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(
-            document.querySelectorAll('.navbar-burger'),
-            0,
-        );
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
-            // Add a click event on each of them
-            $navbarBurgers.forEach(el => {
-                el.addEventListener('click', () => {
-                    // Get the target from the "data-target" attribute
-                    const target = el.dataset.target;
-                    const $target = document.getElementById(target);
+    burgerMenu: HTMLElement | null = null;
 
-                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                    el.classList.toggle('is-active');
-                    $target && $target.classList.toggle('is-active');
-                });
-            });
+    onClickMenu = (event: MouseEvent) => {
+        const burger = event.target as HTMLElement;
+
+        if (!burger) {
+            return;
+        }
+
+        const { target } = burger.dataset;
+
+        if (!target) {
+            return;
+        }
+
+        const menu = document.getElementById(target);
+
+        burger.classList.toggle('is-active');
+        menu && menu.classList.toggle('is-active');
+    };
+
+    componentDidMount() {
+        this.burgerMenu = document.querySelector('.navbar-burger');
+
+        if (this.burgerMenu) {
+            this.burgerMenu.addEventListener('click', this.onClickMenu);
+        }
+    }
+
+    componentWillUnmount() {
+        if (this.burgerMenu) {
+            this.burgerMenu.removeEventListener('click', this.onClickMenu);
         }
     }
 
