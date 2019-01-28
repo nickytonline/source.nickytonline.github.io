@@ -11,6 +11,7 @@ import {
 import { PageTemplateProps } from './page-template-props';
 
 import styles from './thanks-page.module.scss';
+import commonStyles from './common-page.module.scss';
 
 export type ThanksPageTemplateProps = PageTemplateProps;
 
@@ -22,7 +23,9 @@ export const ThanksPageTemplate: React.FC<ThanksPageTemplateProps> = ({
     const PageContent = contentComponent || Content;
 
     return (
-        <Section className={styles.thanksBackground}>
+        <Section
+            className={`${styles.thanksBackground} ${commonStyles.commonPage}`}
+        >
             <Container>
                 <PageTitle>{title}</PageTitle>
                 <PageContent className={`content ${styles.thanks}`} content={content} />

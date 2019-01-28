@@ -12,6 +12,7 @@ import { MarkdownRemark } from 'types/markdown-remark';
 import { PageTemplateProps } from './page-template-props';
 
 import styles from './about-page.module.scss';
+import commonStyles from './common-page.module.scss';
 
 export type AboutPageTemplateProps = PageTemplateProps;
 
@@ -23,7 +24,7 @@ export const AboutPageTemplate: React.FC<AboutPageTemplateProps> = ({
     const PageContent = contentComponent || Content;
 
     return (
-        <Section className={styles.aboutBackground}>
+        <Section className={`${styles.aboutBackground} ${commonStyles.commonPage}`}>
             <Container>
                 <PageTitle>{title}</PageTitle>
                 <PageContent className="content" content={content} />

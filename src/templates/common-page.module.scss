@@ -1,0 +1,7 @@
+@import '../components/mixins';
+
+.commonPage {
+  a {
+    @include dope-link-style;
+  }
+}
