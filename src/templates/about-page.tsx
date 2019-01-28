@@ -4,6 +4,8 @@ import { Content, HTMLContent, Layout, PageTitle, Section } from 'components';
 import { MarkdownRemark } from 'types/markdown-remark';
 import { PageTemplateProps } from './page-template-props';
 
+import styles from './about-page.module.scss';
+
 export type AboutPageTemplateProps = PageTemplateProps;
 
 export const AboutPageTemplate: React.FC<AboutPageTemplateProps> = ({
@@ -14,7 +16,7 @@ export const AboutPageTemplate: React.FC<AboutPageTemplateProps> = ({
     const PageContent = contentComponent || Content;
 
     return (
-        <Section className="section--gradient section--about-me">
+        <Section className={styles.aboutBackground}>
             <div className="container">
                 <PageTitle>{title}</PageTitle>
                 <PageContent className="content" content={content} />
