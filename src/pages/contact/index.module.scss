@@ -1,0 +1,9 @@
+@import '../../components/vars';
+
+.contactBackground {
+  @media screen and (min-width: 813px) {
+    & {
+      background-image: url(/img/undraw_video_call_kxyp.svg);
+    }
+  }
+}

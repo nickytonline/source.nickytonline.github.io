@@ -1,9 +1,11 @@
 import React from 'react';
 import { Layout, PageTitle, Section } from 'components';
 
+import styles from './index.module.scss';
+
 const Index: React.FC<{}> = () => (
     <Layout>
-        <Section className="section--contact">
+        <Section className={styles.contactBackground}>
             <div className="container">
                 <div className="content">
                     <PageTitle>Contact</PageTitle>

@@ -17,7 +17,7 @@ export default class IndexPage extends React.PureComponent<IndexPageProps, {}> {
 
         return (
             <Layout>
-                <Section className="section--blog-posts">
+                <Section className={styles.mainBackground}>
                     <div className="container">
                         <PageTitle>Latest Posts</PageTitle>
                         {posts.map(({ node: post }) => (
