@@ -15,7 +15,7 @@ export const ThanksPageTemplate: React.FC<ThanksPageTemplateProps> = ({
     const PageContent = contentComponent || Content;
 
     return (
-        <Section className="section--gradient section--thanks">
+        <Section className={styles.thanksBackground}>
             <div className="container">
                 <PageTitle>{title}</PageTitle>
                 <PageContent className={`content ${styles.thanks}`} content={content} />
