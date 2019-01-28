@@ -5,13 +5,13 @@ import { PagePreviewProps } from './page-preview-props';
 export type ThanksPagePreviewProps = PagePreviewProps;
 
 export const ThanksPagePreview: React.FC<ThanksPagePreviewProps> = ({
-  entry,
-  widgetFor,
+    entry,
+    widgetFor,
 }) => (
-  <ThanksPageTemplate
-    title={entry.getIn(['data', 'title'])}
-    content={widgetFor('body')}
-  />
+    <ThanksPageTemplate
+        title={entry.getIn(['data', 'title'])}
+        content={widgetFor('body')}
+    />
 );
 
 ThanksPagePreview.displayName = 'ThanksPagePreview';

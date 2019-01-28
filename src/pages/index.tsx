@@ -4,38 +4,38 @@ import { Layout, PageTitle } from 'components';
 import { AllMarkdownRemark } from 'types/all-markdown-remark';
 import styles from './index.module.scss';
 
-export type IndexPageProps = {
-  data: {
-    allMarkdownRemark: AllMarkdownRemark;
-  };
-};
+export interface IndexPageProps {
+    data: {
+        allMarkdownRemark: AllMarkdownRemark;
+    };
+}
 
 export default class IndexPage extends React.PureComponent<IndexPageProps, {}> {
-  render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
+    render() {
+        const { data } = this.props;
+        const { edges: posts } = data.allMarkdownRemark;
 
-    return (
-      <Layout>
-        <section className="section section--blog-posts">
-          <div className="container">
-            <PageTitle>Latest Posts</PageTitle>
-            {posts.map(({ node: post }) => (
-              <div className="content content--front-page" key={post.id}>
-                <h2>
-                  <Link className="blog-title" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                </h2>
-                <div className={styles.postDate}>{post.frontmatter.date}</div>
-                <p>{post.excerpt}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-      </Layout>
-    );
-  }
+        return (
+            <Layout>
+                <section className="section section--blog-posts">
+                    <div className="container">
+                        <PageTitle>Latest Posts</PageTitle>
+                        {posts.map(({ node: post }) => (
+                            <div className="content content--front-page" key={post.id}>
+                                <h2>
+                                    <Link className="blog-title" to={post.fields.slug}>
+                                        {post.frontmatter.title}
+                                    </Link>
+                                </h2>
+                                <div className={styles.postDate}>{post.frontmatter.date}</div>
+                                <p>{post.excerpt}</p>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            </Layout>
+        );
+    }
 }
 
 export const pageQuery = graphql`

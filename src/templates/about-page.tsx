@@ -7,40 +7,40 @@ import { PageTemplateProps } from './page-template-props';
 export type AboutPageTemplateProps = PageTemplateProps;
 
 export const AboutPageTemplate: React.FC<AboutPageTemplateProps> = ({
-  title,
-  content,
-  contentComponent,
+    title,
+    content,
+    contentComponent,
 }) => {
-  const PageContent = contentComponent || Content;
+    const PageContent = contentComponent || Content;
 
-  return (
-    <section className="section section--gradient section--about-me">
-      <div className="container">
-        <PageTitle>{title}</PageTitle>
-        <PageContent className="content" content={content} />
-      </div>
-    </section>
-  );
+    return (
+        <section className="section section--gradient section--about-me">
+            <div className="container">
+                <PageTitle>{title}</PageTitle>
+                <PageContent className="content" content={content} />
+            </div>
+        </section>
+    );
 };
 
-export type AboutPageProps = {
-  data: {
-    markdownRemark: MarkdownRemark;
-  };
-};
+export interface AboutPageProps {
+    data: {
+        markdownRemark: MarkdownRemark;
+    };
+}
 
 const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
-  const { markdownRemark: post } = data;
+    const { markdownRemark: post } = data;
 
-  return (
-    <Layout>
-      <AboutPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-      />
-    </Layout>
-  );
+    return (
+        <Layout>
+            <AboutPageTemplate
+                contentComponent={HTMLContent}
+                title={post.frontmatter.title}
+                content={post.html}
+            />
+        </Layout>
+    );
 };
 
 // Leaving this as a default export because it's instantiated via gatsby-node.js

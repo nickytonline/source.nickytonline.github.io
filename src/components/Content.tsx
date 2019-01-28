@@ -1,19 +1,19 @@
 import React from 'react';
 
-export type ContentProps<T = React.ReactNode> = {
-  content: T;
-  className?: string;
-};
+export interface ContentProps<T = React.ReactNode> {
+    content: T;
+    className?: string;
+}
 
 export type HtmlContentProps = ContentProps<string>;
 
 export const HTMLContent: React.FC<HtmlContentProps> = ({
-  content,
-  className,
+    content,
+    className,
 }) => (
-  <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
+    <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
 );
 
 export const Content: React.FC<ContentProps> = ({ content, className }) => (
-  <div className={className}>{content}</div>
+    <div className={className}>{content}</div>
 );

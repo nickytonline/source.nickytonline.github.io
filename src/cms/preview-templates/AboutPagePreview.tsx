@@ -5,13 +5,13 @@ import { PagePreviewProps } from './page-preview-props';
 export type AboutPagePreviewProps = PagePreviewProps;
 
 export const AboutPagePreview: React.FC<AboutPagePreviewProps> = ({
-  entry,
-  widgetFor,
+    entry,
+    widgetFor,
 }) => (
-  <AboutPageTemplate
-    title={entry.getIn(['data', 'title'])}
-    content={widgetFor('body')}
-  />
+    <AboutPageTemplate
+        title={entry.getIn(['data', 'title'])}
+        content={widgetFor('body')}
+    />
 );
 
 AboutPagePreview.displayName = 'AboutPagePreview';
