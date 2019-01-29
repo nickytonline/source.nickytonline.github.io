@@ -66,12 +66,14 @@ export class Navbar extends React.Component<NavbarProps, {}> {
                             </span>
               just some dev
                         </Link>
-                        {/* Hamburger menu */}
-                        <div className="navbar-burger burger" data-target="navMenu">
+                        <button
+                            className={`navbar-burger burger ${styles.burger}`}
+                            data-target="navMenu"
+                        >
                             <span />
                             <span />
                             <span />
-                        </div>
+                        </button>
                     </div>
                     <div id="navMenu" className="navbar-menu">
                         <div className="navbar-start has-text-centered">
