@@ -11,6 +11,13 @@
   cursor: pointer;
   margin-left: auto;
 
+  @media screen and (min-width: 1088px) {
+    & {
+      pointer-events: none;
+      display: none;
+    }
+  }
+
   & span {
     position: absolute;
     display: block;
