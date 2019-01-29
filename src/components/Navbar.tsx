@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import { SocialIcon, Container } from 'components';
+import { SocialIcon, Container, BurgerButton } from 'components';
 import { SiteMetaData, SocialLinkId } from 'types/site-meta-data';
 
 import styles from './Navbar.module.scss';
@@ -9,42 +9,7 @@ export interface NavbarProps {
     siteMetadata: SiteMetaData;
 }
 
-export class Navbar extends React.Component<NavbarProps, {}> {
-    burgerMenu: HTMLElement | null = null;
-
-    onClickMenu = (event: MouseEvent) => {
-        const burger = event.target as HTMLElement;
-
-        if (!burger) {
-            return;
-        }
-
-        const { target } = burger.dataset;
-
-        if (!target) {
-            return;
-        }
-
-        const menu = document.getElementById(target);
-
-        burger.classList.toggle('is-active');
-        menu && menu.classList.toggle('is-active');
-    };
-
-    componentDidMount() {
-        this.burgerMenu = document.querySelector('.navbar-burger');
-
-        if (this.burgerMenu) {
-            this.burgerMenu.addEventListener('click', this.onClickMenu);
-        }
-    }
-
-    componentWillUnmount() {
-        if (this.burgerMenu) {
-            this.burgerMenu.removeEventListener('click', this.onClickMenu);
-        }
-    }
-
+export class Navbar extends React.PureComponent<NavbarProps, {}> {
     render() {
         const { socialLinks } = this.props.siteMetadata;
 
@@ -66,14 +31,7 @@ export class Navbar extends React.Component<NavbarProps, {}> {
                             </span>
               just some dev
                         </Link>
-                        <button
-                            className={`navbar-burger burger ${styles.burger}`}
-                            data-target="navMenu"
-                        >
-                            <span />
-                            <span />
-                            <span />
-                        </button>
+                        <BurgerButton target="navMenu" />
                     </div>
                     <div id="navMenu" className="navbar-menu">
                         <div className="navbar-start has-text-centered">
