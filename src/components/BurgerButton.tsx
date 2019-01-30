@@ -7,6 +7,7 @@ export interface BurgerButtonProps {
 }
 
 export class BurgerButton extends React.Component<BurgerButtonProps, {}> {
+    displayName = 'BurgerButton';
     burgerMenu: HTMLElement | null = null;
 
     onClickMenu = (event: MouseEvent) => {

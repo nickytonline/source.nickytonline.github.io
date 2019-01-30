@@ -17,3 +17,5 @@ export const BlogTag: React.FC<BlogTagProps> = ({ name, url, totalCount }) => (
         {name}
     </Link>
 );
+
+BlogTag.displayName = 'BlogTag';
