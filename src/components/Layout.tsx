@@ -87,3 +87,5 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => (
         )}
     />
 );
+
+Layout.displayName = 'Layout';

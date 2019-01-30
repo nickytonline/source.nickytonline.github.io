@@ -14,6 +14,10 @@ export const HTMLContent: React.FC<HtmlContentProps> = ({
     <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
 );
 
+HTMLContent.displayName = 'HTMLContent';
+
 export const Content: React.FC<ContentProps> = ({ content, className }) => (
     <div className={className}>{content}</div>
 );
+
+Content.displayName = 'Content';

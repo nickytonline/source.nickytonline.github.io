@@ -94,6 +94,8 @@ const BlogPost: React.FC<BlogPostProps> = ({ data }) => {
     );
 };
 
+BlogPostTemplate.displayName = 'BlogPostTemplate';
+
 // Leaving this as a default export because it's instantiated via gatsby-node.js
 export default BlogPost;
 

@@ -34,6 +34,8 @@ export const ThanksPageTemplate: React.FC<ThanksPageTemplateProps> = ({
     );
 };
 
+ThanksPageTemplate.displayName = 'ThanksPageTemplate';
+
 export interface ThanksPageProps {
     data: {
         markdownRemark: {
@@ -58,6 +60,8 @@ const ThanksPage: React.FC<ThanksPageProps> = ({ data }) => {
         </Layout>
     );
 };
+
+ThanksPage.displayName = 'ThanksPage';
 
 // Leaving this as a default export because it's instantiated via gatsby-node.js
 export default ThanksPage;

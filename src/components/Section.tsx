@@ -13,3 +13,5 @@ export const Section: React.FC<SectionProps> = ({
 }) => (
     <section className={`${styles.section} ${className}`}>{children}</section>
 );
+
+Section.displayName = 'Section';

@@ -11,3 +11,5 @@ export const Container: React.FC<ContainerProps> = ({
     children,
     className = '',
 }) => <div className={`${styles.container} ${className}`}>{children}</div>;
+
+Container.displayName = 'Container';

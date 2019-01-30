@@ -53,6 +53,8 @@ const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
     );
 };
 
+AboutPageTemplate.displayName = 'AboutPageTemplate';
+
 // Leaving this as a default export because it's instantiated via gatsby-node.js
 export default AboutPage;
 
