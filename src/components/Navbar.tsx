@@ -17,7 +17,7 @@ export class Navbar extends React.PureComponent<NavbarProps, {}> {
 
         return (
             <nav
-                className="navbar is-transparent"
+                className={`navbar is-transparent ${styles.navbar}`}
                 role="navigation"
                 aria-label="main-navigation"
             >
