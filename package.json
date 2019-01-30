@@ -22,8 +22,12 @@
     "lint:css": "stylelint src/**/*.scss --config .styletinrc.json",
     "lint": "npm run lint:css && npm run lint:js",
     "serve": "gatsby serve",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
