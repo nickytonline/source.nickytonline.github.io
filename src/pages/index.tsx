@@ -11,6 +11,8 @@ export interface IndexPageProps {
 }
 
 export default class IndexPage extends React.PureComponent<IndexPageProps, {}> {
+    static displayName = 'IndexPage';
+
     render() {
         const { data } = this.props;
         const { edges: posts } = data.allMarkdownRemark;

@@ -10,6 +10,8 @@ export interface HTMLProps {
 }
 
 export default class HTML extends React.Component<HTMLProps, {}> {
+    static displayName = 'HTML';
+
     render() {
         return (
             <html {...this.props.htmlAttributes}>

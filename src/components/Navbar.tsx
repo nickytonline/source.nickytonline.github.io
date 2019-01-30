@@ -10,6 +10,8 @@ export interface NavbarProps {
 }
 
 export class Navbar extends React.PureComponent<NavbarProps, {}> {
+    static displayName = 'Navbar';
+
     render() {
         const { socialLinks } = this.props.siteMetadata;
 

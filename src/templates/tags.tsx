@@ -20,6 +20,8 @@ export interface TagRouteProps {
 }
 
 class TagRoute extends React.Component<TagRouteProps, {}> {
+    static displayName = 'TagRoute';
+
     render() {
         const posts = this.props.data.allMarkdownRemark.edges;
         const postLinks = posts.map(post => (
