@@ -34,6 +34,7 @@
     background-position-y: center;
     background-color: rgba($dark-purple, 0.4);
     mask: url(/img/blog-tag.svg);
+    mask-size: 1.5rem 1.5rem;
   }
 
   &:hover:after {
