@@ -90,6 +90,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     }
 };
 
+exports.onCreateBabelConfig = ({ actions }, options) => {
+    actions.setBabelPlugin({
+        name: `@babel/plugin-syntax-dynamic-import`,
+        options,
+    });
+};
+
 exports.onCreateWebpackConfig = ({
     // stage,
     // rules,
