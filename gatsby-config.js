@@ -1,3 +1,9 @@
+const glob = require('glob'); // eslint-disable-line @typescript-eslint/no-var-requires
+
+function getCmsFilePath(cmsDirectory) {
+    return glob.sync(`${cmsDirectory}cms.*.js`)[0];
+}
+
 module.exports = {
     siteMetadata: {
         title: 'Just some dev',
@@ -94,7 +100,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-netlify-cms',
             options: {
-                modulePath: `${__dirname}/src/cms/cms.js`,
+                modulePath: getCmsFilePath(`${__dirname}/src/cms/`),
             },
         },
         'gatsby-plugin-netlify', // make sure to keep it last in the array

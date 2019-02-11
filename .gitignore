@@ -11,3 +11,4 @@ npm-debug.log
 .eslintcache
 .gatsby-context.js
 yarn.lock
+src/cms/*.js
