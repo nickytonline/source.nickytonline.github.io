@@ -7,26 +7,14 @@
 ) {
   position: relative;
   color: $textColor;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: $secondGradientColor;
+  text-decoration-style: wavy;
 
   &:hover {
     color: $textColor;
     font-weight: $font-weight-bold;
-  }
-
-  &:after {
-    content: '';
-    height: 0.125rem;
-    background: linear-gradient(
-      to right,
-      $firstGradientColor,
-      $secondGradientColor
-    );
-    width: 100%;
-    position: absolute;
-    bottom: -0.1875rem;
-    left: 0;
-    border-radius: 0.0625rem;
+    text-decoration: none;
   }
 }
 
