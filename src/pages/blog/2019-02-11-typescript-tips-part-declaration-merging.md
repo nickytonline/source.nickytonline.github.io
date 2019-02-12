@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'TypeScript Tips Part ||: Declaration Merging'
+title: 'TypeScript Tips Part II: Declaration Merging'
 date: 2019-02-12T02:45:09.445Z
 description: An overview of declaration merging in TypeScript.
 tags:
@@ -39,7 +39,7 @@ const a: Computer = {
 	processor: ProcessorType.i9
 };
 
-// interface is merged so type checking fails
+// interface is merged so type checking fails since the processor property is missing
 const a: Computer = {
 	hardDriveType: HardDriveType.ssd,
 };
@@ -72,7 +72,7 @@ window.thingThatIsNotOnWindow.doIt();
 ```
 You can [play around with the example](https://www.typescriptlang.org/play/#src=export%20interface%20AwesomeThing%20%7B%0D%0A%09doIt%3A%20()%20%3D%3E%20void%3B%0D%0A%7D%0D%0A%0D%0Adeclare%20global%20%7B%0D%0A%09interface%20Window%20%7B%0D%0A%09%09awesomeThing%3A%20AwesomeThing%0D%0A%09%7D%0D%0A%7D%0D%0A%0D%0A%2F%2F%20The%20window%20interface%20has%20been%20merged%20with%20our%20interface%20to%20add%20awesomeThing.%0D%0Awindow.awesomeThing.doIt()%3B%0D%0A%0D%0A%2F%2F%20Errors%20because%20it's%20not%20on%20the%20%60Window%60%20interface.%0D%0Awindow.thingThatIsNotOnWindow.doIt()%3B) in the TypeScript Playground.
 
-If you'd like to see some real world examples in open source, look no further than a recent PR of mine that got merged to the [Refined GitHub](https://github.com/sindresorhus/refined-github/pull/1750) browser extension.
+If you'd like to see some real world examples in open source, look no further than a recent PR of mine that got merged to the [Refined GitHub](https://github.com/sindresorhus/refined-github/pull/1750) browser extension repository. I was really happy getting this PR in because it's an extension I use everyday.
 
 https://twitter.com/sindresorhus/status/1093893754992320513
 
