@@ -80,4 +80,4 @@ More specifically:
 - Check out [extending the Window interface](https://github.com/sindresorhus/refined-github/blob/master/source/content.ts#L91)
 - Check out [extending global in Node for unit tests](https://github.com/sindresorhus/refined-github/blob/master/test/fixtures/globals.ts#L6)
 
-That's pretty much all there is to it. To summarize declaration merging is a great way to enhance existing types.
+That's pretty much all there is to it. To summarize, declaration merging is a great way to enhance existing types.
