@@ -9,12 +9,11 @@
   color: $textColor;
   text-decoration: underline;
   text-decoration-color: $secondGradientColor;
-  text-decoration-style: wavy;
+  text-decoration-style: underline;
 
   &:hover {
     color: $textColor;
     font-weight: $font-weight-bold;
-    text-decoration: none;
   }
 }
 
