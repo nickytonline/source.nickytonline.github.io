@@ -34,20 +34,20 @@ interface Computer {
 }
 
 // interface has been merged
-const a: Computer = {
+const myPC: Computer = {
 	hardDriveType: HardDriveType.ssd,
 	processor: ProcessorType.i9
 };
 
-// interface is merged so type checking fails since the processor property is missing
-const a: Computer = {
+// interface is merged so type checking fails since the processor property is missing
+const myBadPC: Computer = {
 	hardDriveType: HardDriveType.ssd,
 };
 ```
 
-You can [play around with the example](https://www.typescriptlang.org/play/#src=enum%20HardDriveType%20%7B%0D%0A%09ssd%2C%0D%0A%09sata%0D%0A%7D%0D%0A%0D%0Aenum%20ProcessorType%20%7B%0D%0A%09i3%2C%0D%0A%09i5%2C%0D%0A%09i7%2C%0D%0A%09i9%0D%0A%7D%0D%0A%0D%0Ainterface%20Computer%20%7B%0D%0A%09processor%3A%20ProcessorType%3B%0D%0A%7D%0D%0A%0D%0Ainterface%20Computer%20%7B%0D%0A%09hardDriveType%3A%20HardDriveType%3B%0D%0A%7D%0D%0A%0D%0A%2F%2F%20interface%20has%20been%20merged%0D%0Aconst%20a%3A%20Computer%20%3D%20%7B%0D%0A%09hardDriveType%3A%20HardDriveType.ssd%2C%0D%0A%09processor%3A%20ProcessorType.i9%0D%0A%7D%3B%0D%0A%0D%0A%2F%2F%20interface%20is%20merged%20so%20type%20checking%20fails%0D%0Aconst%20a%3A%20Computer%20%3D%20%7B%0D%0A%09hardDriveType%3A%20HardDriveType.ssd%2C%0D%0A%7D%3B) in the TypeScript Playground.
+You can [play around with the example](https://www.typescriptlang.org/play/#src=enum%20HardDriveType%20%7B%0A%09ssd%2C%0A%09sata%0A%7D%0A%0Aenum%20ProcessorType%20%7B%0A%09i3%2C%0A%09i5%2C%0A%09i7%2C%0A%09i9%0A%7D%0A%0Ainterface%20Computer%20%7B%0A%09processor%3A%20ProcessorType%3B%0A%7D%0A%0Ainterface%20Computer%20%7B%0A%09hardDriveType%3A%20HardDriveType%3B%0A%7D%0A%0A%2F%2F%20interface%20has%20been%20merged%0Aconst%20myPC%3A%20Computer%20%3D%20%7B%0A%09hardDriveType%3A%20HardDriveType.ssd%2C%0A%09processor%3A%20ProcessorType.i9%0A%7D%3B%0A%0A%2F%2F%20interface%20is%20merged%20so%20type%20checking%20fails%20since%20the%20processor%20property%20is%20missing%0Aconst%20myBadPC%3A%20Computer%20%3D%20%7B%0A%09hardDriveType%3A%20HardDriveType.ssd%2C%0A%7D%3B) in the TypeScript Playground.
 
-This is a simple example to show how it works, but in a real world app, you wouldn't be declaring the interface in two pieces in a file. Let's go with something more realistic.
+So two interfaces called `Computer` are declared and all the properties of those interfaces are merged together into one declaration for the `Computer` interface. This is a simple example to show how it works, but in a real world app, you wouldn't be declaring the interface in two pieces in a file. Let's go with something more realistic.
 
 You are using a third-party library or it's something in your project that needs to live on the `window`. The `window` has it's own type, the [Window interface](https://github.com/Microsoft/TypeScript/blob/master/lib/lib.dom.d.ts#L16513). This type has all the properties you'd expect to find on MDN about `window`.
 
