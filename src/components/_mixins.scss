@@ -2,13 +2,12 @@
 
 @mixin dope-link-style(
   $textColor: $dark-purple,
-  $firstGradientColor: $main-bg-color,
-  $secondGradientColor: $accent-color
+  $textDecorationColor: $accent-color
 ) {
   position: relative;
   color: $textColor;
   text-decoration: underline;
-  text-decoration-color: $secondGradientColor;
+  text-decoration-color: $textDecorationColor;
   text-decoration-style: underline;
 
   &:hover {
