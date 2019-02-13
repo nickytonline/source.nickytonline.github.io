@@ -24,4 +24,4 @@ To get up and running:
 - Since the project uses Babel and not TypeScript as the compiler, a separate process is required to run type checking. Open another terminal and run `npm run type-check:watch`
 - If you're curious about why the Netlify CMS admin is built separately, see https://twitter.com/nickytonline/status/1095113113584787461. TLDR, it has it's own webpack config that isn't aware of the `gatbsy-plugin-typescript`.
 
-Questions about Gatsby? Check out their [documention](https://www.gatsbyjs.org/docs).
+Questions about Gatsby? Check out their [documentation](https://www.gatsbyjs.org/docs).
