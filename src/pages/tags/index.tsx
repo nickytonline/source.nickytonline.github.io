@@ -6,6 +6,8 @@ import { Layout, BlogTag, PageTitle, Section, Container } from 'components';
 import { AllMarkdownRemark } from 'types/all-markdown-remark';
 import { SiteMetaData } from 'types/site-meta-data';
 
+import styles from './index.module.scss';
+
 export interface TagsPageProps {
     data: {
         allMarkdownRemark: AllMarkdownRemark;
@@ -26,7 +28,7 @@ const TagsPage: React.FC<TagsPageProps> = ({
     <Layout>
         <Section>
             <Helmet title={`Tags | ${title}`} />
-            <Container className="content">
+            <Container className={`content ${styles.content}`}>
                 <div className="columns">
                     <div
                         className="column is-10 is-offset-1"
