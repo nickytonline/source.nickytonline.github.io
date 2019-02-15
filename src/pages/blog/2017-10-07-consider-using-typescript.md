@@ -15,7 +15,16 @@ I've been using TypeScript since fall 2014 (v. 1.3). It's come a long way. The a
 
 So let's get to it. If you've never used a statically typed language like Java or C#, this may seem foreign to you. You're probably asking yourself, why TypeScript?
 
-- Type Safety: During development, if a type is not correct, it is caught during compile time. e.g. `const index: number = 'hi'; // index can't be a string` or if a property on an object has a typo. This allows us to catch errors early on during development instead of at run-time (since JS is a dynamically typed language). Here's a good explanation of [statically typed vs. dynamic languages](https://stackoverflow.com/a/1517670/77814).
+- Type Safety: During development, if a type is not correct, it is caught during compile time. e.g.
+
+```javascript
+let index = 5;
+
+// index can't be set to a string
+index = 'hi';
+```
+
+or if a property on an object has a typo. This allows us to catch errors early on during development instead of at run-time (since JS is a dynamically typed language). Here's a good explanation of [statically typed vs. dynamic languages](https://stackoverflow.com/a/1517670/77814).
 - Refactoring and Intellisense capabilities when using a TypeScript enabled editor or plugin.
   - [Visual Studio Code](https://code.visualstudio.com), my preferred editor. Here's my setup, [vscode.iamdeveloper.com](http://vscode.iamdeveloper.com).
   - [TypeScript Atom Plugin](https://atom.io/packages/atom-typescript)
