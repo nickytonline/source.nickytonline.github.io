@@ -1,4 +1,4 @@
-@import './vars';
+@import '../../components/vars';
 
 .content {
   h3 {
@@ -11,11 +11,16 @@
     padding: 0;
 
     & > code {
+      font-family: 'dm', Helvetica, Arial, Verdana, Tahoma, sans-serif;
       min-height: 4.5rem;
       padding-bottom: 1.5rem;
       border-left-color: $accent-color;
       box-shadow: -0.0625rem 0px 0px 0px $accent-color,
         0px 0px 0px 0.0625rem $off-white;
+
+      .token.comment {
+        font-style: italic;
+      }
     }
   }
 

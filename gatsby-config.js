@@ -195,7 +195,7 @@ module.exports = {
                 // develop: true, // Enable while using `gatsby develop`
                 // tailwind: true, // Enable tailwindcss support
                 // whitelist: ['whitelist'], // Don't remove this selector
-                ignore: ['prismjs/', 'prism-tweaks.scss'], // Ignore files/folders
+                ignore: ['prismjs/', 'prism-tweaks.scss', 'dank-mono.css'], // Ignore files/folders
                 // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
             },
         }, // must be after other CSS plugins

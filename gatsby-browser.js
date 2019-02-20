@@ -1,2 +1,3 @@
 import 'prismjs/themes/prism-coy.css';
-import './src/components/prism-tweaks.scss';
+import './src/assets/styles/dank-mono.css';
+import './src/assets/styles/prism-tweaks.scss';
