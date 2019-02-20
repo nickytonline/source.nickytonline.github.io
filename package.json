@@ -54,7 +54,8 @@
   "prettier": {
     "singleQuote": true,
     "trailingComma": "all",
-    "printWidth": 80
+    "printWidth": 80,
+    "tabWidth": 4
   },
   "dependencies": {
     "@raae/gatsby-remark-oembed": "0.0.4",
