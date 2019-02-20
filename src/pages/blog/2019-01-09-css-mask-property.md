@@ -24,5 +24,9 @@ Also, there's a little bonus with this blog post. I use [CSS variables](https://
 
 Have some fun and try it out in the codepen! 👋
 
-<iframe height='265' scrolling='no' title='codepen for blog post on the CSS mask property' src='//codepen.io/nickytonline/embed/ebxrpv/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/nickytonline/pen/ebxrpv/'>codepen for blog post on the CSS mask property</a> by Nick Taylor (<a href='https://codepen.io/nickytonline'>@nickytonline</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="nickytonline" data-slug-hash="ebxrpv" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="For blog post on the CSS mask property, https://dev.to/nickytonline/css-mask-property-2d42">
+  <span>See the Pen <a href="https://codepen.io/nickytonline/pen/ebxrpv/">
+  For blog post on the CSS mask property, https://dev.to/nickytonline/css-mask-property-2d42</a> by Nick Taylor (<a href="https://codepen.io/nickytonline">@nickytonline</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
