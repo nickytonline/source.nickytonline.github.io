@@ -24,5 +24,7 @@ Also, there's a little bonus with this blog post. I use [CSS variables](https://
 
 Have some fun and try it out in the codepen! 👋
 
-<iframe height='265' scrolling='no' title='codepen for blog post on the CSS mask property' src='//codepen.io/nickytonline/embed/ebxrpv/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/nickytonline/pen/ebxrpv/'>codepen for blog post on the CSS mask property</a> by Nick Taylor (<a href='https://codepen.io/nickytonline'>@nickytonline</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height="325" style="width: 100%;" scrolling="no" title="For blog post on the CSS mask property, https://dev.to/nickytonline/css-mask-property-2d42" src="//codepen.io/nickytonline/embed/preview/ebxrpv/?height=325&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/nickytonline/pen/ebxrpv/'>For blog post on the CSS mask property, https://dev.to/nickytonline/css-mask-property-2d42</a> by Nick Taylor
+  (<a href='https://codepen.io/nickytonline'>@nickytonline</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
