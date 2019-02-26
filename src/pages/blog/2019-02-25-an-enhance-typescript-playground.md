@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: An Enhance TypeScript Playground
+title: An Enhanced TypeScript Playground
 date: 2019-02-26T03:58:04.582Z
 description: The TypeScript playground with enhancements
 tags:
