@@ -4,10 +4,10 @@ title: An Enhanced TypeScript Playground
 date: 2019-02-26T03:58:04.582Z
 description: The TypeScript playground with enhancements
 tags:
-    - typescript
+  - typescript
 ---
 
-As I was going through my Twitter feed earlier this evening, a tweet from one of my followers/someone I follow popped up.
+As I was going through my Twitter feed earlier this evening, a tweet from someone I follow popped up.
 
 https://twitter.com/styfle/status/1100193610631397376
 
