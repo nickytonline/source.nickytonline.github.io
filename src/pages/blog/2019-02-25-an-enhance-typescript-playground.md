@@ -26,7 +26,10 @@ In a nutshell, typescript-play is like the official TypeScript playground but wi
 
 What's even cooler is the fact that it's open sourced, https://github.com/agentcooper/typescript-play, so you can deploy it locally.
 
-<center>![Kanye West Awesome from giphy](https://media.giphy.com/media/5fMlYckytHM4g/giphy-downsized.gif)</center> 
+<center>
+
+![Kanye West Awesome from giphy](https://media.giphy.com/media/5fMlYckytHM4g/giphy-downsized.gif)
+</center>
 
 If you don't feel like cloning it, check it out at [typescript-play.js.org](https://typescript-play.js.org).
 
