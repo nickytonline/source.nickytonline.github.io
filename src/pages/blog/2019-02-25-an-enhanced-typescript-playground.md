@@ -11,7 +11,7 @@ As I was going through my Twitter feed earlier this evening, a tweet from one of
 
 https://twitter.com/styfle/status/1100193610631397376
 
-I was like, hey that looks pretty cool. So I asked Steven if he had created it, to which he replied.
+I was like, hey, that looks pretty cool. So I asked Steven if he had created it, to which he replied.
 
 https://twitter.com/nickytonline/status/1100196245497364480
 
