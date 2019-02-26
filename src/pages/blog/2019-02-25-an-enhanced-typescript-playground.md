@@ -13,7 +13,7 @@ https://twitter.com/styfle/status/1100193610631397376
 
 I was like, hey, that looks pretty cool. So I asked Steven if he had created it, to which he replied.
 
-https://twitter.com/nickytonline/status/1100196245497364480
+https://twitter.com/styfle/status/1100197435832446976?
 
 In a nutshell, typescript-play is like the official TypeScript playground but with some great enhancements:
 
