@@ -10,6 +10,7 @@ import {
     PageTitle,
     Section,
     Container,
+    SocialLinks,
 } from 'components';
 import { MarkdownRemark } from 'types/markdown-remark';
 import { PageTemplateProps } from './page-template-props';
@@ -41,15 +42,35 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                     <div className="column is-10 is-offset-1">
                         <div className={styles.postDate}>{date}</div>
                         <PageTitle>{title}</PageTitle>
-                        <div className={styles.postDescription}>{description}</div>
-                        <PostContent className={styles.postContent} content={content} />
+                        <div className={styles.postDescription}>
+                            {description}
+                        </div>
+                        <SocialLinks
+                            className={styles.socialLinks}
+                            message={title}
+                            url={window.location.toString()}
+                            tags={tags}
+                        />
+                        <PostContent
+                            className={styles.postContent}
+                            content={content}
+                        />
+                        <SocialLinks
+                            className={styles.socialLinksBottom}
+                            message={title}
+                            url={window.location.toString()}
+                            tags={tags}
+                        />
                         {tags && tags.length ? (
                             <div className={styles.tagContainer}>
                                 <h4>Tags</h4>
                                 <ul className={styles.tagList}>
                                     {tags.map(tag => (
                                         <li key={`${tag}tag`}>
-                                            <BlogTag url={`/tags/${kebabCase(tag)}/`} name={tag} />
+                                            <BlogTag
+                                                url={`/tags/${kebabCase(tag)}/`}
+                                                name={tag}
+                                            />
                                         </li>
                                     ))}
                                 </ul>
@@ -100,16 +121,16 @@ BlogPostTemplate.displayName = 'BlogPostTemplate';
 export default BlogPost;
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
-        description
-        tags
-      }
+    query BlogPostByID($id: String!) {
+        markdownRemark(id: { eq: $id }) {
+            id
+            html
+            frontmatter {
+                date(formatString: "MMMM DD, YYYY")
+                title
+                description
+                tags
+            }
+        }
     }
-  }
 `;

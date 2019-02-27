@@ -86,7 +86,8 @@
     "prismjs": "1.15.0",
     "react": "16.8.3",
     "react-dom": "16.8.3",
-    "react-helmet": "5.2.0"
+    "react-helmet": "5.2.0",
+    "react-social-sharing": "3.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",

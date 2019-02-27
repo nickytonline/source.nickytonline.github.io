@@ -2,51 +2,72 @@
 @import '../components/mixins';
 
 .postDate {
-  font-size: 0.875rem;
+    font-size: 0.875rem;
 }
 
 // Can avoid this specificity hack once Bulma is removed.
 .postTitle.postTitle.postTitle {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  color: $accent-color;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: $accent-color;
 }
 
 .postDescription {
-  font-size: 0.875rem;
-  margin-bottom: 2rem;
+    font-size: 0.875rem;
 
-  &:before {
-    content: '→';
-    color: $dark-purple;
-    margin-right: 0.5rem;
-  }
-}
-
-.tagContainer {
-  margin-top: 4rem;
-
-  .tagList {
-    margin: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-
-    li {
-      margin: 0;
-      padding: 0;
-
-      &:not(:first-child) {
-        margin-left: 2rem;
-      }
+    &:before {
+        content: '→';
+        color: $dark-purple;
+        margin-right: 0.5rem;
     }
-  }
 }
 
 .postContent {
-  max-width: 35em;
+    max-width: 35em;
 
-  a {
-    @include dope-link-style;
-  }
+    a {
+        @include dope-link-style;
+    }
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    a:first-child {
+        margin-left: 0;
+    }
+}
+
+.socialLinksBottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    margin-bottom: 0;
+
+    a:first-child {
+        margin-left: 0;
+    }
+}
+
+.tagContainer {
+    margin-top: 4rem;
+
+    .tagList {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        li {
+            margin: 0;
+            padding: 0;
+
+            &:not(:first-child) {
+                margin-left: 2rem;
+            }
+        }
+    }
 }
