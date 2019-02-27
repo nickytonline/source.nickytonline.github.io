@@ -33,6 +33,9 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
     helmet = '',
 }) => {
     const PostContent = contentComponent || Content;
+    // Should never be an empty string. This is just for building the site as Gatsby builds it in a node environment.
+    // Real solution is to pass in the built URL.
+    const url = typeof window !== 'undefined' ? window.location.toString() : '';
 
     return (
         <Section>
@@ -48,7 +51,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                         <SocialLinks
                             className={styles.socialLinks}
                             message={title}
-                            url={window.location.toString()}
+                            url={url}
                             tags={tags}
                         />
                         <PostContent
@@ -58,7 +61,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                         <SocialLinks
                             className={styles.socialLinksBottom}
                             message={title}
-                            url={window.location.toString()}
+                            url={url}
                             tags={tags}
                         />
                         {tags && tags.length ? (
