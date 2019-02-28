@@ -1,53 +1,54 @@
 @import './vars';
 
 .icon {
-  mask: none;
-  background: none;
-
-  &:hover {
+    mask: none;
     background: none;
-    background-color: $off-white;
-  }
 
-  @media screen and (max-width: 1087px) {
-    &:before {
-      content: attr(data-name);
+    &:hover {
+        background: none;
+        background-color: $off-white;
     }
-  }
+
+    @media screen and (max-width: 1087px) {
+        &:before {
+            content: attr(data-name);
+        }
+    }
 }
 
 @media screen and (min-width: 1088px) {
-  .icon {
-    width: 1.25rem;
-    height: 1.25rem;
-    background-size: 1.25rem;
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-color: rgba($off-white, 0.3);
-  }
+    .icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        background-size: 1.25rem;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-color: rgba($off-white, 0.3);
+    }
 
-  .twitter {
-    mask: url(/img/twitter.svg);
-  }
+    .twitter {
+        mask: url(/img/twitter.svg);
+    }
 
-  .github {
-    mask: url(/img/github.svg);
-  }
+    .github {
+        mask: url(/img/github.svg);
+    }
 
-  .linkedin {
-    mask: url(/img/linkedin.svg);
-  }
+    .linkedin {
+        mask: url(/img/linkedin.svg);
+    }
 
-  .devto {
-    mask: url(/img/dev-dot-to.svg);
-  }
+    .devto {
+        width: 1.09375rem;
+        mask: url(/img/dev-dot-to.svg);
+    }
 
-  .stackoverflow {
-    mask: url(/img/stackoverflow.svg);
-  }
+    .stackoverflow {
+        mask: url(/img/stackoverflow.svg);
+    }
 
-  .mastodon {
-    mask: url(/img/mastodon.svg);
-  }
+    .mastodon {
+        mask: url(/img/mastodon.svg);
+    }
 }
