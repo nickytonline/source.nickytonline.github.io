@@ -1,0 +1,10 @@
+.socialLinks {
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: end;
+    grid-template-columns: repeat(3, 2.5rem);
+
+    & > a {
+        margin: 0;
+    }
+}

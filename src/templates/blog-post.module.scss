@@ -31,25 +31,13 @@
 }
 
 .socialLinks {
-    display: flex;
-    justify-content: flex-end;
     margin-top: 1rem;
     margin-bottom: 2rem;
-
-    a:first-child {
-        margin-left: 0;
-    }
 }
 
 .socialLinksBottom {
-    display: flex;
-    justify-content: flex-end;
     margin-top: 2rem;
     margin-bottom: 0;
-
-    a:first-child {
-        margin-left: 0;
-    }
 }
 
 .tagContainer {

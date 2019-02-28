@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Twitter, Reddit, HackerNews } from 'react-social-sharing';
 
+import styles from './SocialLinks.module.scss';
 interface SocialLinksProps {
     message: string;
     url: string;
@@ -19,7 +20,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({
         .join(' ')}`;
 
     return (
-        <div className={className}>
+        <div className={`${styles.socialLinks} ${className}`}>
             <Twitter solid small message={messageWithTags} link={url} />
             <Reddit solid small message={message} link={url} />
             <HackerNews solid small message={message} link={url} />
