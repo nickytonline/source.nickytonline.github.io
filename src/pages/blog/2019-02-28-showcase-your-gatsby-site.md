@@ -4,7 +4,7 @@ title: Showcase your Gatsby Site
 date: 2019-03-01T03:25:02.521Z
 description: Showcase your Gatsby Site
 tags:
-  - gatsby
+  - gatsbyjs
   - oss
   - typescript
   - jamstack
