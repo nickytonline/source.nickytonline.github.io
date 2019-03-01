@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Showcase your Gatsby Site
-date: 2019-03-01T03:25:02.521Z
+date: 2019-02-28T21:23:00.000Z
 description: Showcase your Gatsby Site
 tags:
   - gatsbyjs
