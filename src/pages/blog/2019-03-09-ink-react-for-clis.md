@@ -61,6 +61,9 @@ And here's author of Gatsby working on a build flow using Ink.
 
 https://twitter.com/kylemathews/status/1104163517945397249
 
-Also, Vadim, the author of Ink, has a great intro post to it, [Building rich command-line interfaces with Ink and React](https://vadimdemedes.com/posts/building-rich-command-line-interfaces-with-ink-and-react).
+Vadim, the author of Ink, has a great intro post to it, [Building rich command-line interfaces with Ink and React](https://vadimdemedes.com/posts/building-rich-command-line-interfaces-with-ink-and-react).
 
-Happy Coding!
+
+So what are you going to build with Ink? 😉
+
+Happy coding!
