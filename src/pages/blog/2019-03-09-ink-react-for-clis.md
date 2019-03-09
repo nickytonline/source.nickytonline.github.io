@@ -18,7 +18,46 @@ Flexbox in a CLI? 🤯
 ![Holy Forking Shirt!](https://media.giphy.com/media/xT0xeGWDzEfcsd8QzC/giphy.gif)
 </center>
 
-Check out the author of Gatsby working on a build flow using Ink.
+Here's a little example straight from the repository's ReadME:
+
+```javascript
+import React, {Component} from 'react';
+import {render, Color} from 'ink';
+
+class Counter extends Component {
+	constructor() {
+		super();
+
+		this.state = {
+			i: 0
+		};
+	}
+
+	render() {
+		return (
+			<Color green>
+				{this.state.i} tests passed
+			</Color>
+		);
+	}
+
+	componentDidMount() {
+		this.timer = setInterval(() => {
+			this.setState({
+				i: this.state.i + 1
+			});
+		}, 100);
+	}
+
+	componentWillUnmount() {
+		clearInterval(this.timer);
+	}
+}
+
+render(<Counter/>);
+```
+
+And here's author of Gatsby working on a build flow using Ink.
 
 https://twitter.com/kylemathews/status/1104163517945397249
 
