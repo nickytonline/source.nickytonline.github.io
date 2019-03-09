@@ -14,6 +14,7 @@ Are you familiar with React? Then you know [Ink](https://github.com/vadimdemedes
 Flexbox in a CLI? 🤯
 
 <center>
+
 ![Holy Forking Shirt!](https://media.giphy.com/media/xT0xeGWDzEfcsd8QzC/giphy.gif)
 </center>
 
