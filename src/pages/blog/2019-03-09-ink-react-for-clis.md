@@ -11,7 +11,7 @@ This one is short and sweet.
 
 Are you familiar with React? Then you know [Ink](https://github.com/vadimdemedes/ink). I haven't tried this out yet, but basically it's a [custom React renderer](https://github.com/nitin42/Making-a-custom-React-renderer) that allows you to build beautiful CLIs.
 
-Flexbox in a CLI? 🤯
+Flexbox in a CLI? 🤯 React hooks in a CLI? YOLO my friend, YOLO.
 
 <center>
 
