@@ -64,13 +64,10 @@ https://twitter.com/kylemathews/status/1104163517945397249
 
 The jest example is also very cool.
 
-<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@vadimdemedes/ink-jest-demo?lite=true"></iframe>
+<iframe style="height: 500px;" frameborder="0" width="100%" height="500px" src="https://repl.it/@vadimdemedes/ink-jest-demo?lite=true"></iframe>
 
 Vadim, the author of Ink, has a great intro post to it, [Building rich command-line interfaces with Ink and React](https://vadimdemedes.com/posts/building-rich-command-line-interfaces-with-ink-and-react).
 
-Even the folks at npm think it's kinda cool.
-
-https://twitter.com/maybekatz/status/1103347697107361792
 
 So what are you going to build with Ink? 😉
 
