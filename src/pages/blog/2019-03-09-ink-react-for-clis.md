@@ -68,6 +68,9 @@ The jest example is also very cool.
 
 Vadim, the author of Ink, has a great intro post to it, [Building rich command-line interfaces with Ink and React](https://vadimdemedes.com/posts/building-rich-command-line-interfaces-with-ink-and-react).
 
+Even the folks at npm think it's kinda cool.
+
+https://twitter.com/maybekatz/status/1103347697107361792
 
 So what are you going to build with Ink? 😉
 
