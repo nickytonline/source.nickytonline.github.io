@@ -9,13 +9,7 @@ export interface SocialIconProps {
 }
 
 export const SocialIcon: React.FC<SocialIconProps> = ({ id, name, url }) => (
-    <a
-        className="navbar-item"
-        href={url}
-        aria-label={`${name} account`}
-        target="_blank"
-        rel="noreferrer noopener"
-    >
+    <a className="navbar-item" href={url} aria-label={`${name} account`}>
         <span className={`${styles.icon} ${styles[id]}`} data-name={name} />
     </a>
 );
