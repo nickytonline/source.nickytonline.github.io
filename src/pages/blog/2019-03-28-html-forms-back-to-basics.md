@@ -67,4 +67,4 @@ So accessing forms and form inputs can be done right off the `document` via the 
 ![](https://media.giphy.com/media/3h3ZcimVNfmi0MVvGA/giphy.gif)
 </center>
 
-Want to leave a comment? Just reply to this [Twitter thread](https://twitter.com/nickytonline/status/1111141159093616).
+Want to leave a comment? Just reply to this [Twitter thread](https://twitter.com/nickytonline/status/1111141159093616640).
