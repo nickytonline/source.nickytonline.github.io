@@ -5,6 +5,7 @@ date: 2019-03-28T04:48:20.252Z
 description: Back to some DOM basics for HTML Forms.
 tags:
   - dom
+  - javascript
   - tbt
 ---
 Let's forget frameworks and libraries for a moment. Today we’re just going to talk about the `<form />` element and some of the things you can do with it in the DOM.
