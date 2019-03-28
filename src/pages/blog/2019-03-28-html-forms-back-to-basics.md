@@ -7,6 +7,7 @@ tags:
   - dom
   - javascript
   - tbt
+  - html
 ---
 Let's forget frameworks and libraries for a moment. Today we’re just going to talk about the `<form />` element and some of the things you can do with it in the DOM.
 
