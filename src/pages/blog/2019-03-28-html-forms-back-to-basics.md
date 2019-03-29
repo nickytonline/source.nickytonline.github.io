@@ -19,7 +19,7 @@ For web devs who are getting a little long in the tooth, you’re probably famil
 
 </center>
 
-With newer DOM APIs like `querySelector` and `querySelectorAll`, we can access forms via a selector, e.g. `document.querySelector(‘form’);`. Did you know that you can also access forms directly from the `document`? There is a `HTMLCollections` of forms available via `document.forms`. Go ahead, I’ll let you open the dev tools in your favourite editor. Pretty neat eh?
+With newer DOM APIs like `querySelector` and `querySelectorAll`, we can access forms via a selector, e.g. `document.querySelector(‘form’);`. Did you know that you can also access forms directly from the `document`? There is an `HTMLCollections` of forms available via `document.forms`. Go ahead, I’ll let you open the dev tools in your favourite editor. Pretty neat eh?
 
 So let’s say we’re on [amazon.ca](https://amazon.ca).
 
