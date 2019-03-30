@@ -61,7 +61,7 @@ OK, so we see some properties like `action`, for the URL to `GET`/`POST` to, but
 
 What? All the form inputs are in there! That’s right folks, you have access to all the `<input />`s, `<textarea />`s etc via this property. Pretty cool eh? Not only that, if the form inputs have a `name` attribute, we can do the same thing we did for `document.forms`. We can access the form inputs by index or their name, e.g. `siteSearchForm.elements[‘field-keywords’]`.
 
-So accessing forms and form inputs can be done right off the `document` via the `document.forms` property. Hope you enjoyed this DOM Throwback Thursday.
+So accessing forms and form inputs can be done right off the `document` via the [`document.forms`](https://developer.mozilla.org/en-US/docs/Web/API/Document/forms) property. Hope you enjoyed this DOM Throwback Thursday.
 
 <center>
 
