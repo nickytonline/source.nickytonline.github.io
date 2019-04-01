@@ -16,10 +16,10 @@ I’ll be up front, I’m not an a11y expert, so this tool was actually really g
 
 https://twitter.com/nickytonline/status/1040818193911173120
 
+One of the coolest features is the screen reader wand (Khan's work, not mine).
+
+![t0ta11y screen reader wand in action](/img/tota11y-in-action.gif "t0ta11y screen reader wand in action")
+
 The PR isn’t merged yet, but will hopefully be in the next month or so. Regardless, you can try it out today as an unpacked extension in Chrome, FireFox, Brave or any browser that lets you load Chrome Webstore extensions. Just see the [README](https://github.com/nickytonline/tota11y/tree/poc/tota11y-as-chrome-extension#loading-tota11y-as-an-unpacked-chrome-extension) for instructions for loading it as an unpacked extension.
 
 I hope you find it useful and shoutout to the devs at Khan for making this great tool.
-
-
-
-
