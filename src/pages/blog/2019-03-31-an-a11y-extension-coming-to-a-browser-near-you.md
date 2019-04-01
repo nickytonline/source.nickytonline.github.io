@@ -6,7 +6,7 @@ description: PR I'm working on to get tota11y deployed as a browser extension.
 tags:
   - a11y
   - javascript
-  - browser-extension
+  - browserextension
 ---
 Last year when I was looking to take on a new role somewhere, one of the places I interviewed at was Khan Academy. TLDR, I wasn’t hired 😉. However, as a candidate, I wanted to stand out (relevant post [Take chances and standout](https://www.iamdeveloper.com/blog/2019-01-05-take-chances-and-standout/)). In a nutshell, I [put up a PR](https://github.com/Khan/tota11y/pull/131) to Khan’s [tota11y](https://github.com/Khan/tota11y) repository to convert their a11y tool to a browser extension.
 
