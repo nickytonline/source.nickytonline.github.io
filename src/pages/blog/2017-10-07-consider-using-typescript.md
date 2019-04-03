@@ -51,6 +51,8 @@ To add types for a package that does not have its own declaration file, install 
 
 The hard (smart) work and love that has gone into TypeScript has not gone unnoticed. In recent times, some fairly large projects that you may know have migrated to TypeScript.
 
+Note: I update this list from time to time.
+
 https://twitter.com/nickytonline/status/913242699255488512
 
 - Fun fact, [Visual Studio Code](https://github.com/Microsoft/vscode) is written in TypeScript!
@@ -59,6 +61,8 @@ https://twitter.com/nickytonline/status/913242699255488512
 - [GitHub Rewrites its Desktop Client Using Electron](https://www.infoq.com/news/2017/05/github-electron-desktop-client)
 - [Apollo GraphQL](https://github.com/apollographql)
 - [MobX](https://github.com/mobxjs/mobx)
+- [Formik](https://github.com/jaredpalmer/formik)
+- [Razzle](https://github.com/jaredpalmer/razzle)
 - [TypeScript at Lyft](https://eng.lyft.com/typescript-at-lyft-64f0702346ea)
 - [RxJS](https://github.com/ReactiveX/rxjs)
 - [glimmer.js](https://github.com/glimmerjs/glimmer.js) (of Ember fame), also related [Glimmer.js: What’s the Deal with TypeScript?](https://medium.com/@tomdale/glimmer-js-whats-the-deal-with-typescript-f666d1a3aad0)
