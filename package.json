@@ -99,7 +99,7 @@
     "@types/react": "16.8.10",
     "@types/react-helmet": "5.0.8",
     "@types/webpack": "4.4.26",
-    "@typescript-eslint/eslint-plugin": "1.5.0",
+    "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.5.0",
     "babel-loader": "8.0.5",
     "css-loader": "2.1.1",
