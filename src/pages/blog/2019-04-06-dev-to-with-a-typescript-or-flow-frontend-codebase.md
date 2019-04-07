@@ -4,8 +4,8 @@ title: dev.to with a TypeScript or Flow frontend codebase?
 date: 2019-04-07T03:37:54.849Z
 description: A discussion on porting the dev.to codebase to TypeScript or Flow
 tags:
-    - typescript
-    - flow
+  - typescript
+  - flow
 ---
 
 Before the [dev.to](https://dev.to) codebase was opensourced, I was working on it in the private repository and [created an issue](https://github.com/thepracticaldev/dev.to/issues/383#issue-351630725) in there that has since been copied to the public repository (thanks [@maestromac](https://dev.to/maestromac)!).
@@ -35,7 +35,7 @@ Here are some links if you want to read up on Flow.
 -   [Writing Better JavaScript with Flow](https://www.sitepoint.com/writing-better-javascript-with-flow)
 -   [An Introduction to Flow](https://pusher.com/sessions/meetup/js-monthly-london/flow)
 -   [Flow: A Static Type Checker for JavaScript](https://dzone.com/articles/flow-a-static-type-checker-for-javascript)
--   I honestly did not really find many posts on dev.to about Flow, but feel free to check out the [flow tag](https://dev.to/t/flow).
+-   I honestly did not really find many posts on dev.to about Flow, but feel free to check out [flow tag](https://dev.to/t/flow) and [flowtype tag](https://dev.to/t/flowtype).
 
 I'd like to start the discussion here, but feel free to jump in on the issue in the repository to discuss there as well.
 
