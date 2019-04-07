@@ -52,9 +52,7 @@ If you really don't want to see the codebase converted to use types, that's OK t
 
 </center>
 
-Just add your voice to the discussion.
-
-Is this something that would interest people in the dev.to community who are contributing to or are thinking about contributing to the frontend codebase?
+Are static types something that would interest people in the dev.to community who are contributing to or are thinking about contributing to the frontend codebase?
 
 <center>
 
