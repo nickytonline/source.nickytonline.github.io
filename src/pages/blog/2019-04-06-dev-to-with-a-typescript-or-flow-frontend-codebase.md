@@ -8,6 +8,8 @@ tags:
   - flow
 ---
 
+Shout out to [@rhymes](https://dev.to/rhymes) for giving this post a review. 👏
+
 Before the [dev.to](https://dev.to) codebase was opensourced, I was working on it in the private repository and [created an issue](https://github.com/thepracticaldev/dev.to/issues/383#issue-351630725) in there that has since been copied to the public repository (thanks [@maestromac](https://dev.to/maestromac)!).
 
 Is this something that would interest people in the dev.to community who are contributing to the frontend codebase?
