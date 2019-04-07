@@ -6,6 +6,7 @@ description: A discussion on porting the dev.to codebase to TypeScript or Flow
 tags:
   - typescript
   - flow
+  - devto
 ---
 
 Before the [dev.to](https://dev.to) codebase was opensourced, I was working on it in the private repository and [created an issue](https://github.com/thepracticaldev/dev.to/issues/383#issue-351630725) in there that has since been copied to the public repository (thanks [@maestromac](https://dev.to/maestromac)!).
