@@ -14,6 +14,8 @@ Is this something that would interest people in the dev.to community who are con
 
 For those new to types, here's a post from Preethi Kasireddy about types, [Why use static types in JavaScript? (Part 1)](https://dev.to/iampeekay/why-use-static-types-in-javascript-part-1)
 
+Also, here's a fairly recent episode from the [Script and Style](https://scriptandstyle.com) podcast about types in JavaScript, [Static Typing for JavaScript](https://scriptandstyle.com/4d5e9839).
+
 ## TypeScript
 
 I'm partial to [TypeScript](https://www.typescriptlang.org) myself. I've [written about it](https://www.iamdeveloper.com/blog/2017-10-07-consider-using-typescript/) here before.
