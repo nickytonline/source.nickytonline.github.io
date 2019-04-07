@@ -6,13 +6,10 @@ description: A discussion on porting the dev.to codebase to TypeScript or Flow
 tags:
   - typescript
   - flow
+  - devto
 ---
 
-Shout out to [@rhymes](https://dev.to/rhymes) for giving this post a review. 👏
-
 Before the [dev.to](https://dev.to) codebase was opensourced, I was working on it in the private repository and [created an issue](https://github.com/thepracticaldev/dev.to/issues/383#issue-351630725) in there that has since been copied to the public repository (thanks [@maestromac](https://dev.to/maestromac)!).
-
-Is this something that would interest people in the dev.to community who are contributing to the frontend codebase?
 
 For those new to types, here's a post from Preethi Kasireddy about types, [Why use static types in JavaScript? (Part 1)](https://dev.to/iampeekay/why-use-static-types-in-javascript-part-1)
 
@@ -56,6 +53,8 @@ If you really don't want to see the codebase converted to use types, that's OK t
 </center>
 
 Just add your voice to the discussion.
+
+Is this something that would interest people in the dev.to community who are contributing to the frontend codebase?
 
 <center>
 
