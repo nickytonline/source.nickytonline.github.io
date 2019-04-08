@@ -52,7 +52,7 @@ If you really don't want to see the codebase converted to use types, that's OK t
 
 </center>
 
-Are static types something that would interest people in the dev.to community who are contributing to or are thinking about contributing to the frontend codebase?
+Are static types something that would interest people in the dev.to community who are contributing to or are thinking about contributing to the frontend codebase? Feel free to discuss in the [comments on dev.to](https://dev.to/nickytonline/dev-to-with-a-typescript-or-flow-frontend-codebase#comments) and/or jump on over to the GitHub issue and comment there.
 
 <center>
 
