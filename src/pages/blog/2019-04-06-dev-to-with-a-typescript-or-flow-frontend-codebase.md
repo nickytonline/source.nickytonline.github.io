@@ -27,6 +27,9 @@ https://twitter.com/chantastic/status/1111321292966264832
 
 Also check out the [TypeScript tag](https://dev.to/t/typescript) on dev.to
 
+* [Unofficial Playground](https://www.iamdeveloper.com/blog/2019-02-25-an-enhanced-typescript-playground/)
+* [Official TypeScript Playground](https://www.typescriptlang.org/play/)
+
 ## Flow
 
 [Flow](https://flow.org/) is another main option in the frontend in regards to types. I've never used it myself, but it's also in use in some large codebases.
@@ -39,6 +42,8 @@ Here are some links if you want to read up on Flow.
 -   I honestly did not really find many posts on dev.to about Flow, but feel free to check out [flow tag](https://dev.to/t/flow) and [flowtype tag](https://dev.to/t/flowtype).
 
 I'd like to start the discussion here, but feel free to jump in on the issue in the repository to discuss there as well.
+
+Take Flow for a spin in the [Flow REPL](https://flow.org/try/)
 
 I've narrowed it down to those two as they are the most popular, but feel free to bring others to the table to discuss.
 
