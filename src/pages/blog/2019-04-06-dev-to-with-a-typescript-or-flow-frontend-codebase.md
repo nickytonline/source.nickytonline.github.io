@@ -9,7 +9,7 @@ tags:
   - devto
 ---
 
-Before the [dev.to](https://dev.to) codebase was opensourced, I was working on it in the private repository and [created an issue](https://github.com/thepracticaldev/dev.to/issues/383#issue-351630725) in there that has since been copied to the public repository (thanks [@maestromac](https://dev.to/maestromac)!).
+Before the [dev.to](https://dev.to) codebase was opensourced, I was working on it in the private repository and created an issue in there, [Consider using Flow or TypeScript in the Front-End Codebase](https://github.com/thepracticaldev/dev.to/issues/383#issue-351630725), that has since been copied to the public repository (thanks [@maestromac](https://dev.to/maestromac)!).
 
 For those new to types, here's a post from Preethi Kasireddy about types, [Why use static types in JavaScript? (Part 1)](https://dev.to/iampeekay/why-use-static-types-in-javascript-part-1)
 
@@ -52,7 +52,7 @@ If you really don't want to see the codebase converted to use types, that's OK t
 
 </center>
 
-Are static types something that would interest people in the dev.to community who are contributing to or are thinking about contributing to the frontend codebase?
+Are static types something that would interest people in the dev.to community who are contributing to or are thinking about contributing to the frontend codebase? Feel free to discuss in the [comments on dev.to](https://dev.to/nickytonline/dev-to-with-a-typescript-or-flow-frontend-codebase#comments) and/or jump on over to the [GitHub issue](https://github.com/thepracticaldev/dev.to/issues/383#issue-351630725) and comment there.
 
 <center>
 
