@@ -32,7 +32,7 @@ Also check out the [TypeScript tag](https://dev.to/t/typescript) on dev.to
 
 ## Flow
 
-[Flow](https://flow.org/) is another main option in the frontend in regards to types. I've never used it myself, but it's also in use in some large codebases.
+[Flow](https://flow.org/) is another main option in the frontend in regards to types, although I've never used it myself. 
 
 Here are some links if you want to read up on Flow.
 
@@ -40,6 +40,8 @@ Here are some links if you want to read up on Flow.
 -   [An Introduction to Flow](https://pusher.com/sessions/meetup/js-monthly-london/flow)
 -   [Flow: A Static Type Checker for JavaScript](https://dzone.com/articles/flow-a-static-type-checker-for-javascript)
 -   I honestly did not really find many posts on dev.to about Flow, but feel free to check out [flow tag](https://dev.to/t/flow) and [flowtype tag](https://dev.to/t/flowtype).
+
+I'd like to start the discussion here, but feel free to jump in on the issue in the repository to discuss there as well.
 
 Take Flow for a spin in the [Flow REPL](https://flow.org/try/)
 
