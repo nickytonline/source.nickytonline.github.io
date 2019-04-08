@@ -41,11 +41,13 @@ Here are some links if you want to read up on Flow.
 -   [Flow: A Static Type Checker for JavaScript](https://dzone.com/articles/flow-a-static-type-checker-for-javascript)
 -   I honestly did not really find many posts on dev.to about Flow, but feel free to check out [flow tag](https://dev.to/t/flow) and [flowtype tag](https://dev.to/t/flowtype).
 
-I'd like to start the discussion here, but feel free to jump in on the issue in the repository to discuss there as well.
-
 Take Flow for a spin in the [Flow REPL](https://flow.org/try/)
 
-I've narrowed it down to those two as they are the most popular, but feel free to bring others to the table to discuss.
+# Other Options
+
+I've narrowed it down to TypeScript and Flow as they are the most popular, but feel free to bring others to the table to discuss, e.g. Elm, Reason.
+
+https://twitter.com/thomlbvr/status/1115243007928877057
 
 ## Vanilla JS🍦
 
