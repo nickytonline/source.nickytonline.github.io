@@ -45,7 +45,7 @@ Take Flow for a spin in the [Flow REPL](https://flow.org/try/)
 
 # Other Options
 
-I've narrowed it down to TypeScript and Flow as they are the most popular, but feel free to bring others to the table to discuss, e.g. Elm, Reason
+I've narrowed it down to TypeScript and Flow as they are the most popular, but feel free to bring others to the table to discuss, e.g. Elm, Reason.
 
 https://twitter.com/thomlbvr/status/1115243007928877057
 
