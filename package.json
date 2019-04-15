@@ -115,7 +115,7 @@
     "node-glob": "1.2.0",
     "node-sass": "4.11.0",
     "postcss-pxtorem": "4.0.1",
-    "prettier": "1.16.4",
+    "prettier": "1.17.0",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
     "stylelint": "9.10.1",
