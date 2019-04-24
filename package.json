@@ -74,7 +74,7 @@
     "gatsby-plugin-sitemap": "2.0.12",
     "gatsby-plugin-web-font-loader": "1.0.4",
     "gatsby-remark-copy-linked-files": "2.0.11",
-    "gatsby-remark-images": "3.0.10",
+    "gatsby-remark-images": "3.0.11",
     "gatsby-remark-prismjs": "3.2.8",
     "gatsby-remark-relative-images": "0.2.2",
     "gatsby-source-filesystem": "2.0.31",
