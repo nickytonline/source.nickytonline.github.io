@@ -79,7 +79,7 @@
     "gatsby-remark-relative-images": "0.2.2",
     "gatsby-source-filesystem": "2.0.33",
     "gatsby-transformer-remark": "2.3.12",
-    "gatsby-transformer-sharp": "2.1.18",
+    "gatsby-transformer-sharp": "2.1.19",
     "lodash": "4.17.11",
     "lodash-webpack-plugin": "0.11.5",
     "netlify-cms": "2.9.1",
