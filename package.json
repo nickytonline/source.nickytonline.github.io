@@ -70,7 +70,7 @@
     "gatsby-plugin-purgecss": "3.1.1",
     "gatsby-plugin-react-helmet": "3.0.12",
     "gatsby-plugin-sass": "2.0.11",
-    "gatsby-plugin-sharp": "2.0.36",
+    "gatsby-plugin-sharp": "2.0.37",
     "gatsby-plugin-sitemap": "2.1.0",
     "gatsby-plugin-web-font-loader": "1.0.4",
     "gatsby-remark-copy-linked-files": "2.0.12",
