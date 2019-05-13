@@ -25,7 +25,9 @@
     "lint:css": "stylelint src/**/*.scss --config .styletinrc.json",
     "lint": "npm run lint:css && npm run lint:js",
     "serve": "gatsby serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -87,7 +89,8 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
-    "react-social-sharing": "3.0.1"
+    "react-social-sharing": "3.0.1",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
