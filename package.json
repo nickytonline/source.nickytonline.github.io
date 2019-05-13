@@ -101,7 +101,7 @@
     "@types/webpack": "4.4.31",
     "@typescript-eslint/eslint-plugin": "1.7.0",
     "@typescript-eslint/parser": "1.7.0",
-    "babel-loader": "8.0.5",
+    "babel-loader": "8.0.6",
     "css-loader": "2.1.1",
     "eslint": "5.16.0",
     "eslint-config-prettier": "4.2.0",
