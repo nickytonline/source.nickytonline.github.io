@@ -114,7 +114,7 @@
     "eslint-plugin-react": "7.13.0",
     "gatsby-plugin-typescript": "2.0.13",
     "husky": "2.2.0",
-    "lint-staged": "8.1.6",
+    "lint-staged": "8.1.7",
     "node-glob": "1.2.0",
     "node-sass": "4.12.0",
     "postcss-pxtorem": "4.0.1",
