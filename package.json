@@ -59,7 +59,7 @@
     "tabWidth": 4
   },
   "dependencies": {
-    "@raae/gatsby-remark-oembed": "0.0.6",
+    "@raae/gatsby-remark-oembed": "0.0.7",
     "bulma": "0.7.4",
     "gatsby": "2.4.4",
     "gatsby-image": "2.0.41",
