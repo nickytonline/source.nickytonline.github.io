@@ -112,7 +112,7 @@
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-react": "7.13.0",
-    "gatsby-plugin-typescript": "2.0.13",
+    "gatsby-plugin-typescript": "2.0.14",
     "husky": "2.3.0",
     "lint-staged": "8.1.7",
     "node-glob": "1.2.0",
