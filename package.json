@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "@raae/gatsby-remark-oembed": "0.0.7",
-    "bulma": "0.7.4",
+    "bulma": "0.7.5",
     "gatsby": "2.5.5",
     "gatsby-image": "2.1.0",
     "gatsby-plugin-feed": "2.2.0",
