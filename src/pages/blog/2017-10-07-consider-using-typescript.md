@@ -76,6 +76,7 @@ I'm sure there are others, but these are the big ones I'm aware of. You can alwa
 Here are some additional resources to get you up and running.
 
 - [TypeScript Playground](https://www.typescriptlang.org/play)
+- [Unofficial TypeScript Playground](https://www.iamdeveloper.com/blog/2019-02-25-an-enhanced-typescript-playground) (update May 2019)
 - [TypeScript Deep Dive](https://www.gitbook.com/book/basarat/typescript)
 - [Full-stack TypeScript](https://fullstacktypescript.slack.com) on Slack
 - [TypeScript Fundamentals](https://typescriptcourses.com/typescript-fundamentals) (Great free course)
