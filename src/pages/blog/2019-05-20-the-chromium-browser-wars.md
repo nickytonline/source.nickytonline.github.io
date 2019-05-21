@@ -6,6 +6,7 @@ description: 3 major options for a Chromium based browser. Which will you choose
 tags:
   - chromium
   - browsers
+  - browserwars
 ---
 I’ve purposely left out FireFox here because this is not about [Firefox](https://www.mozilla.org/en-CA/firefox/new/). It’s about Chromium based browsers. No knock on FireFox. It’s great as well.
 
