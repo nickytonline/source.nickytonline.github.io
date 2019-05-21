@@ -3,10 +3,13 @@ templateKey: blog-post
 title: The Chromium Browser Wars
 date: 2019-05-21T03:44:26.058Z
 description: 3 major options for a Chromium based browser. Which will you choose?
+tags:
+  - chromium
+  - browsers
 ---
 I’ve purposely left out FireFox here because this is not about [Firefox](https://www.mozilla.org/en-CA/firefox/new/). It’s about Chromium based browsers. No knock on FireFox. It’s great as well.
 
-What I’m wondering is if you are a [Google Chrome](<>) convert, will you stay a Chromer? Don’t even know if that’s a real thing. 😆 I think it was in 2009 when Chrome came out and I was on Mozilla/FireFox (shout out to [Firebug](https://getfirebug.com)). As a user, I gave Chrome a try and never looked back. It was my go to browser until [Brave](http://brave.com/) (Chromium version, not the Electron one) came around. It’s what I currently use in my day to day.
+What I’m wondering is if you are a [Google Chrome](https://www.google.com/chrome) convert, will you stay a Chromer? Don’t even know if that’s a real thing. 😆 I think it was in 2009 when Chrome came out and I was on Mozilla/FireFox (shout out to [Firebug](https://getfirebug.com)). As a user, I gave Chrome a try and never looked back. It was my go to browser until [Brave](http://brave.com/) (Chromium version, not the Electron one) came around. It’s what I currently use in my day to day.
 
 https://twitter.com/nickytonline/status/1083189063207845890
 
