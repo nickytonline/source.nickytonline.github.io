@@ -25,7 +25,7 @@ They also appear to have some web page monitoring.
 
 https://twitter.com/nickytonline/status/1130675159474626565
 
-It’s early days, but once they have official releases, it begs the question, will users care. What added value will each of the Chromium based browsers offer over the other to win users over?
+It’s early days, but once they have official releases, it begs the question, will users care? What added value will each of the Chromium based browsers offer over the other to win users over?
 
 https://twitter.com/nickytonline/status/1130675153132822530
 
