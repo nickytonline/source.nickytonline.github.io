@@ -29,3 +29,5 @@ https://twitter.com/nickytonline/status/1130675153132822530
 I think Microsoft is making a smart move by making it available on MacOS and there is also talk of a Linux version as well.
 
 https://twitter.com/MSEdgeDev/status/1130558708193288192
+
+What are your thoughts on another Chromium browser contender? Feel free to leave comments in this \[Tweet thread](https://twitter.com/nickytonline/status/1130673501738807296).
