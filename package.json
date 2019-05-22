@@ -101,7 +101,7 @@
     "@types/lodash": "4.14.130",
     "@types/react": "16.8.18",
     "@types/react-helmet": "5.0.8",
-    "@types/webpack": "4.4.31",
+    "@types/webpack": "4.4.32",
     "@typescript-eslint/eslint-plugin": "1.9.0",
     "@typescript-eslint/parser": "1.9.0",
     "babel-loader": "8.0.6",
