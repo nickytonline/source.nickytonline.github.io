@@ -121,7 +121,7 @@
     "prettier": "1.18.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
-    "stylelint": "10.0.1",
+    "stylelint": "10.1.0",
     "stylelint-config-recommended": "2.2.0",
     "stylelint-scss": "3.8.0",
     "ts-node": "8.2.0",
