@@ -127,6 +127,6 @@
     "ts-node": "8.2.0",
     "typescript": "3.5.1",
     "typescript-plugin-css-modules": "1.1.1",
-    "webpack-cli": "3.3.2"
+    "webpack-cli": "3.3.3"
   }
 }
