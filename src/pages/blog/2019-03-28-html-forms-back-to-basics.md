@@ -63,9 +63,14 @@ What? All the form inputs are in there! That’s right folks, you have access to
 
 So accessing forms and form inputs can be done right off the `document` via the [`document.forms`](https://developer.mozilla.org/en-US/docs/Web/API/Document/forms) property. Hope you enjoyed this DOM Throwback Thursday.
 
+One last fun fact. Each form element has a `form` property which is a reference to the `<form />` DOM node that the form element is contained within.
+
+![Console log of a form element](/img/form_element_reference.png)
+
 <center>
 
 ![](https://media.giphy.com/media/3h3ZcimVNfmi0MVvGA/giphy.gif)
+
 </center>
 
 Want to leave a comment? Just reply to this [Twitter thread](https://twitter.com/nickytonline/status/1111141159093616640).
