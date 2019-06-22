@@ -9,14 +9,14 @@
         background-color: $off-white;
     }
 
-    @media screen and (max-width: 1087px) {
+    @media screen and (max-width: 1023px) {
         &:before {
             content: attr(data-name);
         }
     }
 }
 
-@media screen and (min-width: 1088px) {
+@media screen and (min-width: 1024px) {
     .icon {
         width: 1.25rem;
         height: 1.25rem;

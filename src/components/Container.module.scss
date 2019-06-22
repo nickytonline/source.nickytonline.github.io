@@ -1,15 +1,15 @@
 @import './vars';
 
 .container {
-  overflow-wrap: break-word;
-  margin-left: 7rem;
-  margin-right: 7rem;
-  text-rendering: optimizelegibility;
+    overflow-wrap: break-word;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    text-rendering: optimizelegibility;
 
-  @media screen and (max-width: 1087px) {
-    & {
-      margin-left: 0;
-      margin-right: 0;
+    @media screen and (max-width: 1023px) {
+        & {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
-  }
 }
