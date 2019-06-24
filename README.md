@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/95eaa9e0-a1c1-41d5-8818-a2edbd12e70d/deploy-status)](https://app.netlify.com/sites/romantic-saha-acc18d/deploys)
 
+<img src="https://flat.badgen.net/dependabot/nickytonline/www.iamdeveloper.com?icon=dependabot" alt="Dependabot Badge" />
+
 Hey there, I'm Nick and this is my site's source code. This site started off as a clone of the [Netlify CMS Gatsby Starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms 'Netlify CMS Gatsby Starter') (check it out!). Since then, I've tweaked it a lot and converted the codebase to TypeScript.
 
 Feel free to peruse the code and/or fork it. 😉
