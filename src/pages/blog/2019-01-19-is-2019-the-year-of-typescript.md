@@ -15,8 +15,6 @@ The fact that a Facebook project is migrating to [TypeScript](http://www.typescr
 
 Other prominent JS devs have been chiming in as well. Some with a little more cursing, so apologies in advance. 😉
 
-https://twitter.com/jamiebuilds/status/1064649666275340288
-
 https://twitter.com/kentcdodds/status/1075853845048188929
 
 https://twitter.com/ryanflorence/status/1057097944082591744
