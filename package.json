@@ -90,7 +90,7 @@
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
     "react-social-sharing": "3.0.1",
-    "snyk": "^1.192.3"
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "@babel/core": "7.5.0",
