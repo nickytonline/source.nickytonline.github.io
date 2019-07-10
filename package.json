@@ -123,7 +123,7 @@
     "style-loader": "0.23.1",
     "stylelint": "10.1.0",
     "stylelint-config-recommended": "2.2.0",
-    "stylelint-scss": "3.9.0",
+    "stylelint-scss": "3.9.1",
     "ts-node": "8.3.0",
     "typescript": "3.5.3",
     "typescript-plugin-css-modules": "1.2.0",
