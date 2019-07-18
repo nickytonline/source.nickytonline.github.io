@@ -12,7 +12,14 @@ module.exports = {
         socialLinks: {
             github: { url: 'https://github.com/nickytonline', name: 'GitHub' },
             devto: { url: 'https://dev.to/nickytonline', name: 'dev.to' },
-            twitter: { url: 'https://twitter.com/nickytonline', name: 'Twitter' },
+            twitter: {
+                url: 'https://twitter.com/nickytonline',
+                name: 'Twitter',
+            },
+            instagram: {
+                url: 'https://instagram.com/nickytonline',
+                name: 'Instagram',
+            },
             stackoverflow: {
                 url: 'https://stackoverflow.com/users/77814/nickytonline',
                 name: 'Stack Overflow',
@@ -21,7 +28,10 @@ module.exports = {
                 url: 'https://www.linkedin.com/in/nickytonline',
                 name: 'LinkedIn',
             },
-            mastodon: { url: 'https://toot.cafe/@nickytonline', name: 'Mastodon' },
+            mastodon: {
+                url: 'https://toot.cafe/@nickytonline',
+                name: 'Mastodon',
+            },
         },
     },
     plugins: [

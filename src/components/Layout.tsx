@@ -12,42 +12,46 @@ export type LayoutProps = ChildrenProp<JSX.Element>;
 export const Layout: React.FC<LayoutProps> = ({ children }) => (
     <StaticQuery
         query={graphql`
-      query HeadingQuery {
-        site {
-          siteMetadata {
-            title
-            description
-            siteUrl
-            socialLinks {
-              github {
-                url
-                name
-              }
-              devto {
-                url
-                name
-              }
-              twitter {
-                url
-                name
-              }
-              stackoverflow {
-                url
-                name
-              }
-              linkedin {
-                url
-                name
-              }
-              mastodon {
-                url
-                name
-              }
+            query HeadingQuery {
+                site {
+                    siteMetadata {
+                        title
+                        description
+                        siteUrl
+                        socialLinks {
+                            github {
+                                url
+                                name
+                            }
+                            devto {
+                                url
+                                name
+                            }
+                            twitter {
+                                url
+                                name
+                            }
+                            instagram {
+                                url
+                                name
+                            }
+                            stackoverflow {
+                                url
+                                name
+                            }
+                            linkedin {
+                                url
+                                name
+                            }
+                            mastodon {
+                                url
+                                name
+                            }
+                        }
+                    }
+                }
             }
-          }
-        }
-      }
-    `}
+        `}
         render={(data: { site: { siteMetadata: SiteMetaData } }) => (
             <div>
                 <Helmet>
@@ -77,7 +81,10 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => (
                     />
 
                     <meta name="theme-color" content="#fff" />
-                    <meta property="og:title" content={data.site.siteMetadata.title} />
+                    <meta
+                        property="og:title"
+                        content={data.site.siteMetadata.title}
+                    />
                     <meta property="og:url" content="/" />
                     <meta property="og:image" content="/img/og-image.jpg" />
                 </Helmet>

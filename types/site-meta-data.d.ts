@@ -1,10 +1,11 @@
 export type SocialLinkId =
-  | 'twitter'
-  | 'github'
-  | 'devto'
-  | 'stackoverflow'
-  | 'linkedin'
-  | 'mastodon';
+    | 'twitter'
+    | 'instagram'
+    | 'github'
+    | 'devto'
+    | 'stackoverflow'
+    | 'linkedin'
+    | 'mastodon';
 
 export interface SiteMetaData {
     siteUrl: string;
