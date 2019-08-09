@@ -119,7 +119,7 @@
     "node-sass": "4.12.0",
     "postcss-pxtorem": "4.0.1",
     "prettier": "1.18.2",
-    "sass-loader": "7.1.0",
+    "sass-loader": "7.2.0",
     "style-loader": "1.0.0",
     "stylelint": "10.1.0",
     "stylelint-config-recommended": "2.2.0",
