@@ -13,6 +13,7 @@ export const BlogTag: React.FC<BlogTagProps> = ({ name, url, totalCount }) => (
         to={url}
         className={styles.tag}
         data-count={typeof totalCount !== undefined ? totalCount : ''}
+        data-cy="blog-tag"
     >
         {name}
     </Link>
