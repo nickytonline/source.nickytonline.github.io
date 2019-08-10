@@ -14,7 +14,7 @@
     "clean": "rimraf .cache public src/cms/*.js",
     "prebuild": "npm run clean && npm run lint && npm run type-check && npm run build-cms-admin",
     "build": "gatsby build && cp ./keybase.txt ./public/",
-    "postbuild": "npm run e2e & http-server -p 8080 ./public && killall node",
+    "postbuild": "http-server -p 8080 ./public & npm run e2e && killall node",
     "prebuild-cms-admin": "npm run clean && cp -R node_modules/gatsby/cache-dir/ .cache/",
     "build-cms-admin": "webpack --config webpack.config.cms.ts",
     "postbuild-cms-admin": "rimraf .cache",
