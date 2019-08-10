@@ -20,6 +20,7 @@ export class Navbar extends React.PureComponent<NavbarProps, {}> {
                 className={`navbar is-transparent ${styles.navbar}`}
                 role="navigation"
                 aria-label="main-navigation"
+                data-cy="nav-bar"
             >
                 <Container className={styles.navbarContents}>
                     <div className="navbar-brand">
@@ -29,34 +30,52 @@ export class Navbar extends React.PureComponent<NavbarProps, {}> {
                                 role="img"
                                 aria-label="laptop emoji"
                             >
-                💻
+                                💻
                             </span>
-              just some dev
+                            just some dev
                         </Link>
                         <BurgerButton target="navMenu" />
                     </div>
                     <div id="navMenu" className="navbar-menu">
                         <div className="navbar-start has-text-centered">
-                            <Link className="navbar-item" to="/" aria-label="Blog posts">
-                Blog
+                            <Link
+                                className="navbar-item"
+                                to="/"
+                                aria-label="Blog posts"
+                            >
+                                Blog
                             </Link>
-                            <Link className="navbar-item" to="/about" aria-label="About">
-                About
+                            <Link
+                                className="navbar-item"
+                                to="/about"
+                                aria-label="About"
+                            >
+                                About
                             </Link>
-                            <Link className="navbar-item" to="/contact" aria-label="Contact">
-                Contact
+                            <Link
+                                className="navbar-item"
+                                to="/contact"
+                                aria-label="Contact"
+                            >
+                                Contact
                             </Link>
-                            <Link className="navbar-item" to="/thanks" aria-label="Thanks">
-                Thanks
+                            <Link
+                                className="navbar-item"
+                                to="/thanks"
+                                aria-label="Thanks"
+                            >
+                                Thanks
                             </Link>
-                            {Object.entries(socialLinks).map(([id, { url, name }]) => (
-                                <SocialIcon
-                                    key={id}
-                                    id={id as SocialLinkId}
-                                    url={url}
-                                    name={name}
-                                />
-                            ))}
+                            {Object.entries(socialLinks).map(
+                                ([id, { url, name }]) => (
+                                    <SocialIcon
+                                        key={id}
+                                        id={id as SocialLinkId}
+                                        url={url}
+                                        name={name}
+                                    />
+                                ),
+                            )}
                         </div>
                     </div>
                 </Container>

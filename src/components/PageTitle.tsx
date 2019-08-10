@@ -9,6 +9,6 @@ export type PageTitleProps = ChildrenProp & {
 export const PageTitle: React.FC<PageTitleProps> = ({
     children,
     className = '',
-}) => <h1 className={`${styles.title} ${className}`}>{children}</h1>;
+}) => <h1 className={`${styles.title} ${className}`} data-cy="page-title">{children}</h1>;
 
 PageTitle.displayName = 'PageTitle';

@@ -14,6 +14,7 @@
     "clean": "rimraf .cache public src/cms/*.js",
     "prebuild": "npm run clean && npm run lint && npm run type-check && npm run build-cms-admin",
     "build": "gatsby build && cp ./keybase.txt ./public/",
+    "postbuild": "npm run e2e & http-server -p 8080 ./public && killall node",
     "prebuild-cms-admin": "npm run clean && cp -R node_modules/gatsby/cache-dir/ .cache/",
     "build-cms-admin": "webpack --config webpack.config.cms.ts",
     "postbuild-cms-admin": "rimraf .cache",
@@ -27,7 +28,9 @@
     "serve": "gatsby serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "e2e": "cypress run",
+    "e2e:dev": "CYPRESS_baseUrl=http://localhost:8000 cypress open"
   },
   "husky": {
     "hooks": {
@@ -114,6 +117,7 @@
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-react": "7.14.3",
     "gatsby-plugin-typescript": "2.1.2",
+    "http-server": "0.11.1",
     "husky": "3.0.3",
     "lint-staged": "9.2.1",
     "node-glob": "1.2.0",
