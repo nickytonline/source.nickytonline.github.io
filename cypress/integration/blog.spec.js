@@ -15,6 +15,6 @@ describe('Smoke test blog', () => {
 
     it('Should load embedded twitter content', () => {
         cy.visit('/blog/2019-05-20-the-chromium-browser-wars/');
-        cy.get('.twitter-tweet');
+        cy.get('twitter-widget');
     });
 });
