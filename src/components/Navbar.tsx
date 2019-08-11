@@ -24,7 +24,12 @@ export class Navbar extends React.PureComponent<NavbarProps, {}> {
             >
                 <Container className={styles.navbarContents}>
                     <div className="navbar-brand">
-                        <Link className="logo navbar-item" to="/" title="Logo">
+                        <Link
+                            className="logo navbar-item"
+                            to="/"
+                            title="Logo"
+                            data-cy="logo"
+                        >
                             <span
                                 className="logo__emoji"
                                 role="img"

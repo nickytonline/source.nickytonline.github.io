@@ -20,10 +20,25 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({
         .join(' ')}`;
 
     return (
-        <div className={`${styles.socialLinks} ${className}`}>
-            <Twitter solid small message={messageWithTags} link={url} />
-            <Reddit solid small message={message} link={url} />
-            <HackerNews solid small message={message} link={url} />
+        <div
+            className={`${styles.socialLinks} ${className}`}
+            data-cy="share-buttons"
+        >
+            <Twitter
+                solid
+                small
+                message={messageWithTags}
+                link={url}
+                data-cy="twitter"
+            />
+            <Reddit solid small message={message} link={url} data-cy="reddit" />
+            <HackerNews
+                solid
+                small
+                message={message}
+                link={url}
+                data-cy="hacker-news"
+            />
         </div>
     );
 };

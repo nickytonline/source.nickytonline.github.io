@@ -50,6 +50,7 @@ export class BurgerButton extends React.Component<BurgerButtonProps, {}> {
                 data-target={this.props.target}
                 role="button"
                 aria-label="Menu"
+                data-cy="burger-button"
             >
                 <span />
                 <span />
