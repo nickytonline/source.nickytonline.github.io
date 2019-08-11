@@ -71,7 +71,7 @@ describe('Smoke test site', () => {
         });
     });
 
-    it.only('Should be responsive to window size changes', () => {
+    it('Should be responsive to window size changes', () => {
         cy.visit('/');
 
         // Smaller window dimensions should display the burger menu
