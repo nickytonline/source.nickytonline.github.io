@@ -3,8 +3,14 @@
 describe('Smoke test site', () => {
     it('Should load the main page', () => {
         cy.visit('/');
+
+        // Ensure the main navbar is present
         cy.get('[data-cy="nav-bar"]');
+
+        // Ensure the logo is present
         cy.get('[data-cy="nav-bar"] [data-cy="logo"]');
+
+        // Ensure that the page has a title
         cy.get('[data-cy="page-title"]');
     });
 
