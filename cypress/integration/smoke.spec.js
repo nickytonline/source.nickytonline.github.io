@@ -2,16 +2,25 @@
 
 describe('Smoke test site', () => {
     it('Should load the main page', () => {
+        cy.viewport(1920, 1080);
         cy.visit('/');
 
         // Ensure the main navbar is present
-        cy.get('[data-cy="nav-bar"]');
+        cy.get('[data-cy="nav-bar"]').should('be.visible');
 
         // Ensure the logo is present
-        cy.get('[data-cy="nav-bar"] [data-cy="logo"]');
+        cy.get('[data-cy="nav-bar"] [data-cy="logo"]').should('be.visible');
+
+        cy.get('[data-cy="nav-bar"] [data-cy="social-icon"]').should(
+            'be.visible',
+        );
 
         // Ensure that the page has a title
-        cy.get('[data-cy="page-title"]');
+        cy.get('[data-cy="page-title"]')
+            .should('be.visible')
+            .then(header => {
+                expect(header.text()).to.equal('Latest Posts');
+            });
     });
 
     it('Should load a blog page', () => {
@@ -63,17 +72,37 @@ describe('Smoke test site', () => {
     });
 
     it('Should be responsive to window size changes', () => {
+        cy.visit('/');
+
+        // Smaller window dimensions should display the burger menu
         cy.viewport(1023, 768);
+        cy.get('[data-cy="nav-bar"] [data-cy="logo"]').should('be.visible');
+        cy.get('[data-cy="nav-bar"] [data-cy="burger-button"]')
+            .as('burgerButton')
+            .should('be.visible');
 
-        cy.get('[data-cy="burger-button"]').should('be.visible');
+        // Menu should only be visible once click
+        cy.get('@burgerButton').click();
 
-        // We only show icons when the screen is big enough
-        cy.get('[data-cy="social-icon"]').should('not.be.visible');
+        // The burger menu should not appear on larger dimensions
+        // and we only show icons when the screen is big enough
+        cy.window().then($window => {
+            // Viewport is still 1023 x 768 at this point
+            const socialLink = $window.document.querySelector(
+                '[data-cy="nav-bar"]  [data-cy="social-icon"]',
+            );
 
-        cy.viewport(1920, 1080);
+            expect($window.getComputedStyle(socialLink).mask).to.equal('none');
 
-        // The burger menu should not appear on larger dimensions.
-        cy.get('[data-cy="burger-button"]').should('not.be.visible');
-        cy.get('[data-cy="social-icon"]').should('be.visible');
+            cy.viewport(1920, 1080);
+
+            cy.get('[data-cy="nav-bar"] [data-cy="burger-button"]')
+                .should('not.be.visible')
+                .then(() => {
+                    const style = $window.getComputedStyle(socialLink);
+                    expect(style.mask).not.to.equal('none');
+                    expect(style.mask.startsWith('url(')).to.be.true;
+                });
+        });
     });
 });
