@@ -17,6 +17,8 @@ Thanks to all the wonderful projects that made it possible to build this blog.
 - [Netlify](https://www.netlify.com 'Netlify Website') & [Netlify CMS](https://www.netlifycms.org 'Netlify CMS Website')
 - [undraw.co](https://undraw.co 'undraw.co website')
 - [simple-icons](https://github.com/simple-icons/simple-icons 'simple-icons repository website')
+- [Cypress](https://cypress.io 'Cypress website')
+- [Dependabot](https://dependabot.com 'Dependabot website')
 - and OSS in general.
 
 To get up and running:
