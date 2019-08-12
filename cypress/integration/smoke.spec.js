@@ -71,11 +71,11 @@ describe('Smoke test site', () => {
         });
     });
 
-    it('Should be responsive to window size changes', () => {
+    it.skip('Should be responsive to window size changes', () => {
         cy.visit('/');
 
         // Smaller window dimensions should display the burger menu
-        cy.viewport(1023, 768);
+        cy.viewport('iphone-6');
         cy.get('[data-cy="nav-bar"] [data-cy="logo"]').should('be.visible');
         cy.get('[data-cy="nav-bar"] [data-cy="burger-button"]')
             .as('burgerButton')
@@ -86,26 +86,27 @@ describe('Smoke test site', () => {
 
         // The burger menu should not appear on larger dimensions
         // and we only show icons when the screen is big enough
-        cy.get('[data-cy="nav-bar"] [data-cy="social-icon"]').as('socialIcon');
-        // .then(([socialLink]) => {
-        //     cy.window().then($window => {
-        // Viewport is still 1023 x 768 at this point
-        // expect($window.getComputedStyle(socialLink).mask).to.equal(
-        //     'none',
-        // );
+        cy.get('[data-cy="nav-bar"] [data-cy="social-icon"]')
+            .as('socialIcon')
+            .then(([socialLink]) => {
+                cy.window().then($window => {
+                    // Viewport is still 1023 x 768 at this point
+                    expect($window.getComputedStyle(socialLink).mask).to.equal(
+                        'none',
+                    );
 
-        cy.viewport(1920, 1080);
+                    cy.viewport('macbook-15');
 
-        cy.get('[data-cy="nav-bar"] [data-cy="burger-button"]').should(
-            'not.be.visible',
-        );
+                    cy.get(
+                        '[data-cy="nav-bar"] [data-cy="burger-button"]',
+                    ).should('not.be.visible');
 
-        // cy.get('@socialIcon').then(() => {
-        //     const style = $window.getComputedStyle(socialLink);
-        //     expect(style.mask).not.to.equal('none');
-        //     expect(style.mask.startsWith('url(')).to.be.true;
-        // });
-        //     });
-        // });
+                    cy.get('@socialIcon').then(() => {
+                        const style = $window.getComputedStyle(socialLink);
+                        expect(style.mask).not.to.equal('none');
+                        expect(style.mask.startsWith('url(')).to.be.true;
+                    });
+                });
+            });
     });
 });
