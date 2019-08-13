@@ -71,40 +71,44 @@ describe('Smoke test site', () => {
         });
     });
 
-    it.skip('Should be responsive to window size changes', () => {
+    it('Should be responsive to window size changes', () => {
         cy.visit('/');
 
         // Smaller window dimensions should display the burger menu
         cy.viewport('iphone-6');
+
         cy.get('[data-cy="nav-bar"] [data-cy="logo"]').should('be.visible');
         cy.get('[data-cy="nav-bar"] [data-cy="burger-button"]')
             .as('burgerButton')
             .should('be.visible');
 
-        // Menu should only be visible once click
         cy.get('@burgerButton').click();
 
-        // The burger menu should not appear on larger dimensions
-        // and we only show icons when the screen is big enough
+        // Burger menu should only be visible once clicked
         cy.get('[data-cy="nav-bar"] [data-cy="social-icon"]')
             .as('socialIcon')
             .then(([socialLink]) => {
                 cy.window().then($window => {
-                    // Viewport is still 1023 x 768 at this point
-                    expect($window.getComputedStyle(socialLink).mask).to.equal(
-                        'none',
-                    );
+                    // mask and webkitMaskImage works in the test runner, but in headless, only webkitMaskImage works
+                    expect(
+                        $window.getComputedStyle(socialLink).webkitMaskImage,
+                    ).to.equal('none');
 
+                    // Test out a larger resolution
                     cy.viewport('macbook-15');
 
+                    // Burger menu should not be visible on a large screen.
                     cy.get(
                         '[data-cy="nav-bar"] [data-cy="burger-button"]',
                     ).should('not.be.visible');
 
                     cy.get('@socialIcon').then(() => {
-                        const style = $window.getComputedStyle(socialLink);
-                        expect(style.mask).not.to.equal('none');
-                        expect(style.mask.startsWith('url(')).to.be.true;
+                        // mask and webkitMaskImage works in the test runner, but in headless, only webkitMaskImage works
+                        const { webkitMaskImage } = $window.getComputedStyle(
+                            socialLink,
+                        );
+                        expect(webkitMaskImage).not.to.equal('none');
+                        expect(webkitMaskImage.startsWith('url(')).to.be.true;
                     });
                 });
             });
