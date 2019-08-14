@@ -33,6 +33,6 @@ To get up and running:
 To run Cypress:
 
 1. Run `npm run develop` to start the Gatsby development web server.
-2. Run `npm run e2e:dev` to open the Cypress test runner. For more information on Cypress, see their [official documentation](https://docs.cypress.io)
+2. Run `npm run e2e:dev` to open the Cypress test runner. For more information on Cypress, see their [official documentation](https://docs.cypress.io).
 
 Questions about Gatsby? Check out their [documentation](https://www.gatsbyjs.org/docs).
