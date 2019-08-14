@@ -25,7 +25,7 @@ export class BurgerButton extends React.Component<BurgerButtonProps, {}> {
 
         const menu = document.getElementById(target);
 
-        burger.classList.toggle('is-active');
+        burger.classList.toggle(styles.isActive);
         menu && menu.classList.toggle('is-active');
     };
 
@@ -51,11 +51,7 @@ export class BurgerButton extends React.Component<BurgerButtonProps, {}> {
                 role="button"
                 aria-label="Menu"
                 data-cy="burger-button"
-            >
-                <span />
-                <span />
-                <span />
-            </button>
+            />
         );
     }
 }
