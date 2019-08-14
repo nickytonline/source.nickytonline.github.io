@@ -23,7 +23,7 @@ export class Navbar extends React.PureComponent<NavbarProps, {}> {
                 data-cy="nav-bar"
             >
                 <Container className={styles.navbarContents}>
-                    <div className="navbar-brand">
+                    <div className={`navbar-brand ${styles.navbarBrand}`}>
                         <Link
                             className="logo navbar-item"
                             to="/"
