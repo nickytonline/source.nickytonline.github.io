@@ -16,6 +16,13 @@
     transition: background-size 0.2s 0.25s ease;
     cursor: pointer;
 
+    @media screen and (min-width: 1024px) {
+        & {
+            pointer-events: none;
+            display: none;
+        }
+    }
+
     &:before,
     &:after {
         height: 20%;
