@@ -8,14 +8,16 @@ export interface SocialIconProps {
     url: string;
 }
 
-export const SocialIcon: React.FC<SocialIconProps> = ({ id, name, url }) => (
-    <a className="navbar-item" href={url} aria-label={`${name} account`}>
-        <span
-            className={`${styles.icon} ${styles[id]}`}
-            data-name={name}
-            data-cy="social-icon"
-        />
-    </a>
+export const SocialIcon: React.FC<SocialIconProps> = React.memo(
+    ({ id, name, url }) => (
+        <a className="navbar-item" href={url} aria-label={`${name} account`}>
+            <span
+                className={`${styles.icon} ${styles[id]}`}
+                data-name={name}
+                data-cy="social-icon"
+            />
+        </a>
+    ),
 );
 
 SocialIcon.displayName = 'SocialIcon';

@@ -39,7 +39,9 @@ const TagsPage: React.FC<TagsPageProps> = ({
                             {group.map(tag => (
                                 <li key={tag.fieldValue}>
                                     <BlogTag
-                                        url={`/tags/${kebabCase(tag.fieldValue)}/`}
+                                        url={`/tags/${kebabCase(
+                                            tag.fieldValue,
+                                        )}/`}
                                         name={tag.fieldValue}
                                         totalCount={tag.totalCount}
                                     />
@@ -56,17 +58,17 @@ const TagsPage: React.FC<TagsPageProps> = ({
 export default TagsPage;
 
 export const tagPageQuery = graphql`
-  query TagsQuery {
-    site {
-      siteMetadata {
-        title
-      }
+    query TagsQuery {
+        site {
+            siteMetadata {
+                title
+            }
+        }
+        allMarkdownRemark(limit: 1000) {
+            group(field: frontmatter___tags) {
+                fieldValue
+                totalCount
+            }
+        }
     }
-    allMarkdownRemark(limit: 1000) {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
-      }
-    }
-  }
 `;

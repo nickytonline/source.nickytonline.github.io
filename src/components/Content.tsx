@@ -7,11 +7,13 @@ export interface ContentProps<T = React.ReactNode> {
 
 export type HtmlContentProps = ContentProps<string>;
 
-export const HTMLContent: React.FC<HtmlContentProps> = ({
-    content,
-    className,
-}) => (
-    <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
+export const HTMLContent: React.FC<HtmlContentProps> = React.memo(
+    ({ content, className }) => (
+        <div
+            className={className}
+            dangerouslySetInnerHTML={{ __html: content }}
+        />
+    ),
 );
 
 HTMLContent.displayName = 'HTMLContent';
