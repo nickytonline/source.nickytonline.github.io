@@ -43,11 +43,17 @@ const TagRoute: React.FC<TagRouteProps> = React.memo(
                     <Container className="content">
                         <div className="columns">
                             <div className="column is-10 is-offset-1">
-                                <h3>{tagHeader}</h3>
-                                <ul className={styles.postList}>{postLinks}</ul>
+                                <h3 data-cy="tag-header">{tagHeader}</h3>
+                                <ul
+                                    className={styles.postList}
+                                    data-cy="post-list"
+                                >
+                                    {postLinks}
+                                </ul>
                                 <Link
                                     className={styles.browseAllTags}
                                     to="/tags/"
+                                    data-cy="browse-all-tags"
                                 >
                                     Browse all tags
                                 </Link>

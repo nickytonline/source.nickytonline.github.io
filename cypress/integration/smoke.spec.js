@@ -113,4 +113,19 @@ describe('Smoke test site', () => {
                 });
             });
     });
+
+    it('should load the tags page for a specific tag', () => {
+        cy.visit('/tags/yolo');
+
+        cy.get('[data-cy="tag-header"]')
+            .should('be.visible')
+            .then(([tagHeader]) => {
+                expect(
+                    /\d+\s+post tagged with “yolo”/.test(tagHeader.innerText),
+                ).to.be.true;
+            });
+
+        cy.get('[data-cy="post-list"]').should('be.visible');
+        cy.get('[data-cy="browse-all-tags"]').should('be.visible');
+    });
 });
