@@ -128,4 +128,23 @@ describe('Smoke test site', () => {
         cy.get('[data-cy="post-list"]').should('be.visible');
         cy.get('[data-cy="browse-all-tags"]').should('be.visible');
     });
+
+    it('should load the tags page for all tags', () => {
+        cy.visit('/tags');
+
+        cy.get('[data-cy="page-title"]')
+            .should('be.visible')
+            .then(pageTitle => {
+                expect(pageTitle.text()).to.equal('Tags');
+            });
+
+        cy.get('[data-cy="blog-tag"]')
+            .should('be.visible')
+            .then(blogTags => {
+                expect(blogTags.length).to.be.greaterThan(1);
+                expect(Number(blogTags.attr('data-count'))).to.be.greaterThan(
+                    0,
+                );
+            });
+    });
 });
