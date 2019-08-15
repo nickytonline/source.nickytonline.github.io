@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 
 import styles from './BurgerButton.module.scss';
 
@@ -6,11 +6,8 @@ export interface BurgerButtonProps {
     target: string;
 }
 
-export class BurgerButton extends React.Component<BurgerButtonProps, {}> {
-    static displayName = 'BurgerButton';
-    burgerMenu: HTMLElement | null = null;
-
-    onClickMenu = (event: MouseEvent) => {
+export const BurgerButton: React.FC<BurgerButtonProps> = ({ target }) => {
+    const onClickMenu = (event: MouseEvent) => {
         const burger = event.target as HTMLElement;
 
         if (!burger) {
@@ -29,29 +26,31 @@ export class BurgerButton extends React.Component<BurgerButtonProps, {}> {
         menu && menu.classList.toggle('is-active');
     };
 
-    componentDidMount() {
-        this.burgerMenu = document.querySelector('[data-target="navMenu"]');
-
-        if (this.burgerMenu) {
-            this.burgerMenu.addEventListener('click', this.onClickMenu);
-        }
-    }
-
-    componentWillUnmount() {
-        if (this.burgerMenu) {
-            this.burgerMenu.removeEventListener('click', this.onClickMenu);
-        }
-    }
-
-    render() {
-        return (
-            <button
-                className={styles.burger}
-                data-target={this.props.target}
-                role="button"
-                aria-label="Menu"
-                data-cy="burger-button"
-            />
+    useEffect(() => {
+        const burgerMenu: HTMLElement | null = document.querySelector(
+            '[data-target="navMenu"]',
         );
-    }
-}
+
+        if (burgerMenu) {
+            burgerMenu.addEventListener('click', onClickMenu);
+        }
+
+        return () => {
+            if (burgerMenu) {
+                burgerMenu.removeEventListener('click', onClickMenu);
+            }
+        };
+    });
+
+    return (
+        <button
+            className={styles.burger}
+            data-target={target}
+            role="button"
+            aria-label="Menu"
+            data-cy="burger-button"
+        />
+    );
+};
+
+BurgerButton.displayName = 'BurgerButton';
