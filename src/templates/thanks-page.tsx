@@ -15,24 +15,25 @@ import commonStyles from './common-page.module.scss';
 
 export type ThanksPageTemplateProps = PageTemplateProps;
 
-export const ThanksPageTemplate: React.FC<ThanksPageTemplateProps> = ({
-    title,
-    content,
-    contentComponent,
-}) => {
-    const PageContent = contentComponent || Content;
+export const ThanksPageTemplate: React.FC<ThanksPageTemplateProps> = React.memo(
+    ({ title, content, contentComponent }) => {
+        const PageContent = contentComponent || Content;
 
-    return (
-        <Section
-            className={`${styles.thanksBackground} ${commonStyles.commonPage}`}
-        >
-            <Container>
-                <PageTitle>{title}</PageTitle>
-                <PageContent className={`content ${styles.thanks}`} content={content} />
-            </Container>
-        </Section>
-    );
-};
+        return (
+            <Section
+                className={`${styles.thanksBackground} ${commonStyles.commonPage}`}
+            >
+                <Container>
+                    <PageTitle>{title}</PageTitle>
+                    <PageContent
+                        className={`content ${styles.thanks}`}
+                        content={content}
+                    />
+                </Container>
+            </Section>
+        );
+    },
+);
 
 ThanksPageTemplate.displayName = 'ThanksPageTemplate';
 
@@ -67,12 +68,12 @@ ThanksPage.displayName = 'ThanksPage';
 export default ThanksPage;
 
 export const thanksPageQuery = graphql`
-  query ThanksPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-      }
+    query ThanksPage($id: String!) {
+        markdownRemark(id: { eq: $id }) {
+            html
+            frontmatter {
+                title
+            }
+        }
     }
-  }
 `;

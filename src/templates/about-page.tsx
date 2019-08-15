@@ -16,22 +16,22 @@ import commonStyles from './common-page.module.scss';
 
 export type AboutPageTemplateProps = PageTemplateProps;
 
-export const AboutPageTemplate: React.FC<AboutPageTemplateProps> = ({
-    title,
-    content,
-    contentComponent,
-}) => {
-    const PageContent = contentComponent || Content;
+export const AboutPageTemplate: React.FC<AboutPageTemplateProps> = React.memo(
+    ({ title, content, contentComponent }) => {
+        const PageContent = contentComponent || Content;
 
-    return (
-        <Section className={`${styles.aboutBackground} ${commonStyles.commonPage}`}>
-            <Container>
-                <PageTitle>{title}</PageTitle>
-                <PageContent className="content" content={content} />
-            </Container>
-        </Section>
-    );
-};
+        return (
+            <Section
+                className={`${styles.aboutBackground} ${commonStyles.commonPage}`}
+            >
+                <Container>
+                    <PageTitle>{title}</PageTitle>
+                    <PageContent className="content" content={content} />
+                </Container>
+            </Section>
+        );
+    },
+);
 
 export interface AboutPageProps {
     data: {
@@ -59,12 +59,12 @@ AboutPageTemplate.displayName = 'AboutPageTemplate';
 export default AboutPage;
 
 export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-      }
+    query AboutPage($id: String!) {
+        markdownRemark(id: { eq: $id }) {
+            html
+            frontmatter {
+                title
+            }
+        }
     }
-  }
 `;

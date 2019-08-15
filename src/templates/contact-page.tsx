@@ -15,11 +15,9 @@ import commonStyles from './common-page.module.scss';
 
 export type ContactPageTemplateProps = PageTemplateProps;
 
-export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = ({
-    title,
-    content,
-    contentComponent,
-}) => {
+export const ContactPageTemplate: React.FC<
+ContactPageTemplateProps
+> = React.memo(({ title, content, contentComponent }) => {
     const PageContent = contentComponent || Content;
 
     return (
@@ -32,7 +30,7 @@ export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = ({
             </Container>
         </Section>
     );
-};
+});
 
 ContactPageTemplate.displayName = 'ContactPageTemplate';
 
@@ -67,12 +65,12 @@ ContactPage.displayName = 'ContactPage';
 export default ContactPage;
 
 export const ContactPageQuery = graphql`
-  query ContactPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-      }
+    query ContactPage($id: String!) {
+        markdownRemark(id: { eq: $id }) {
+            html
+            frontmatter {
+                title
+            }
+        }
     }
-  }
 `;

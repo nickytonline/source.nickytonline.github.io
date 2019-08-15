@@ -9,7 +9,7 @@ import './all.scss';
 
 export type LayoutProps = ChildrenProp<JSX.Element>;
 
-export const Layout: React.FC<LayoutProps> = ({ children }) => (
+export const Layout: React.FC<LayoutProps> = React.memo(({ children }) => (
     <StaticQuery
         query={graphql`
             query HeadingQuery {
@@ -93,6 +93,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => (
             </div>
         )}
     />
-);
+));
 
 Layout.displayName = 'Layout';

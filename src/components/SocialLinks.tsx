@@ -9,36 +9,39 @@ interface SocialLinksProps {
     className: string;
 }
 
-export const SocialLinks: React.FC<SocialLinksProps> = ({
-    message,
-    url,
-    tags = [],
-    className = '',
-}) => {
-    const messageWithTags = `${message} ${tags
-        .map(tag => `#${tag}`)
-        .join(' ')}`;
+export const SocialLinks: React.FC<SocialLinksProps> = React.memo(
+    ({ message, url, tags = [], className = '' }) => {
+        const messageWithTags = `${message} ${tags
+            .map(tag => `#${tag}`)
+            .join(' ')}`;
 
-    return (
-        <div
-            className={`${styles.socialLinks} ${className}`}
-            data-cy="share-buttons"
-        >
-            <Twitter
-                solid
-                small
-                message={messageWithTags}
-                link={url}
-                data-cy="twitter"
-            />
-            <Reddit solid small message={message} link={url} data-cy="reddit" />
-            <HackerNews
-                solid
-                small
-                message={message}
-                link={url}
-                data-cy="hacker-news"
-            />
-        </div>
-    );
-};
+        return (
+            <div
+                className={`${styles.socialLinks} ${className}`}
+                data-cy="share-buttons"
+            >
+                <Twitter
+                    solid
+                    small
+                    message={messageWithTags}
+                    link={url}
+                    data-cy="twitter"
+                />
+                <Reddit
+                    solid
+                    small
+                    message={message}
+                    link={url}
+                    data-cy="reddit"
+                />
+                <HackerNews
+                    solid
+                    small
+                    message={message}
+                    link={url}
+                    data-cy="hacker-news"
+                />
+            </div>
+        );
+    },
+);

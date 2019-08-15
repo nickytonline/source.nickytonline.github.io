@@ -9,12 +9,17 @@ export interface HTMLProps {
     postBodyComponents: React.ReactNode;
 }
 
-export default class HTML extends React.Component<HTMLProps, {}> {
-    static displayName = 'HTML';
-
-    render() {
+const HTML: React.FC<HTMLProps> = React.memo(
+    ({
+        htmlAttributes,
+        headComponents,
+        bodyAttributes,
+        preBodyComponents,
+        body,
+        postBodyComponents,
+    }) => {
         return (
-            <html {...this.props.htmlAttributes}>
+            <html {...htmlAttributes}>
                 <head>
                     <meta charSet="utf-8" />
                     <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -22,21 +27,25 @@ export default class HTML extends React.Component<HTMLProps, {}> {
                         name="viewport"
                         content="width=device-width, initial-scale=1, shrink-to-fit=no"
                     />
-                    {this.props.headComponents}
+                    {headComponents}
                 </head>
-                <body {...this.props.bodyAttributes}>
-                    {this.props.preBodyComponents}
+                <body {...bodyAttributes}>
+                    {preBodyComponents}
                     <div
                         key="body"
                         id="___gatsby"
-                        dangerouslySetInnerHTML={{ __html: this.props.body }}
+                        dangerouslySetInnerHTML={{ __html: body }}
                     />
-                    {this.props.postBodyComponents}
+                    {postBodyComponents}
                     <noscript>
                         <p>This site requires that JavaScript be enabled.</p>
                     </noscript>
                 </body>
             </html>
         );
-    }
-}
+    },
+);
+
+HTML.displayName = 'HTML';
+
+export default HTML;

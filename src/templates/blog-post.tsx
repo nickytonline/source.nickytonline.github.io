@@ -23,68 +23,73 @@ export type BlogPostTemplateProps = PageTemplateProps & {
     helmet?: React.ReactNode;
 };
 
-export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
-    content,
-    contentComponent,
-    description,
-    tags,
-    title,
-    date,
-    helmet = '',
-}) => {
-    const PostContent = contentComponent || Content;
-    // Should never be an empty string. This is just for building the site as Gatsby builds it in a node environment.
-    // Real solution is to pass in the built URL.
-    const url = typeof window !== 'undefined' ? window.location.toString() : '';
+export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = React.memo(
+    ({
+        content,
+        contentComponent,
+        description,
+        tags,
+        title,
+        date,
+        helmet = '',
+    }) => {
+        const PostContent = contentComponent || Content;
+        // Should never be an empty string. This is just for building the site as Gatsby builds it in a node environment.
+        // Real solution is to pass in the built URL.
+        const url =
+            typeof window !== 'undefined' ? window.location.toString() : '';
 
-    return (
-        <Section>
-            {helmet}
-            <Container className="content">
-                <div className="columns">
-                    <div className="column is-10 is-offset-1">
-                        <div className={styles.postDate}>{date}</div>
-                        <PageTitle>{title}</PageTitle>
-                        <div className={styles.postDescription}>
-                            {description}
-                        </div>
-                        <SocialLinks
-                            className={styles.socialLinks}
-                            message={title}
-                            url={url}
-                            tags={tags}
-                        />
-                        <PostContent
-                            className={styles.postContent}
-                            content={content}
-                        />
-                        <SocialLinks
-                            className={styles.socialLinksBottom}
-                            message={title}
-                            url={url}
-                            tags={tags}
-                        />
-                        {tags && tags.length ? (
-                            <div className={styles.tagContainer}>
-                                <h4>Tags</h4>
-                                <ul className={styles.tagList}>
-                                    {tags.map(tag => (
-                                        <li key={`${tag}tag`}>
-                                            <BlogTag
-                                                url={`/tags/${kebabCase(tag)}/`}
-                                                name={tag}
-                                            />
-                                        </li>
-                                    ))}
-                                </ul>
+        return (
+            <Section>
+                {helmet}
+                <Container className="content">
+                    <div className="columns">
+                        <div className="column is-10 is-offset-1">
+                            <div className={styles.postDate}>{date}</div>
+                            <PageTitle>{title}</PageTitle>
+                            <div className={styles.postDescription}>
+                                {description}
                             </div>
-                        ) : null}
+                            <SocialLinks
+                                className={styles.socialLinks}
+                                message={title}
+                                url={url}
+                                tags={tags}
+                            />
+                            <PostContent
+                                className={styles.postContent}
+                                content={content}
+                            />
+                            <SocialLinks
+                                className={styles.socialLinksBottom}
+                                message={title}
+                                url={url}
+                                tags={tags}
+                            />
+                            {tags && tags.length ? (
+                                <div className={styles.tagContainer}>
+                                    <h4>Tags</h4>
+                                    <ul className={styles.tagList}>
+                                        {tags.map(tag => (
+                                            <li key={`${tag}tag`}>
+                                                <BlogTag
+                                                    url={`/tags/${kebabCase(
+                                                        tag,
+                                                    )}/`}
+                                                    name={tag}
+                                                />
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ) : null}
+                        </div>
                     </div>
-                </div>
-            </Container>
-        </Section>
-    );
-};
+                </Container>
+            </Section>
+        );
+    },
+);
 
 export interface BlogPostProps {
     data: {

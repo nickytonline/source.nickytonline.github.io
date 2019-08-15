@@ -8,15 +8,17 @@ export interface BlogTagProps {
     totalCount?: number;
 }
 
-export const BlogTag: React.FC<BlogTagProps> = ({ name, url, totalCount }) => (
-    <Link
-        to={url}
-        className={styles.tag}
-        data-count={typeof totalCount !== undefined ? totalCount : ''}
-        data-cy="blog-tag"
-    >
-        {name}
-    </Link>
+export const BlogTag: React.FC<BlogTagProps> = React.memo(
+    ({ name, url, totalCount }) => (
+        <Link
+            to={url}
+            className={styles.tag}
+            data-count={typeof totalCount !== undefined ? totalCount : ''}
+            data-cy="blog-tag"
+        >
+            {name}
+        </Link>
+    ),
 );
 
 BlogTag.displayName = 'BlogTag';
