@@ -2,7 +2,9 @@
 templateKey: blog-post
 title: 'Update Dependencies with Dependabot, Cypress and Netlify'
 date: 2019-08-16T02:11:34.219Z
-description: 'How to setup your CI/CD pipeline with Netlify, Dependabot, Cypress and Gatsby.'
+description: >-
+  How to set up your CI/CD pipeline with Netlify, Dependabot, Cypress and
+  Gatsby.
 tags:
   - gatsby
   - cypress
@@ -21,7 +23,17 @@ If you’re not familiar with e2e testing, basically they are tests you write th
 
 So armed with all this information, lets put all the pieces together. One last bit is that my blog runs on Gatsby, so some of the configuration will be Gatsby related. Regardless, the meat of this post can apply to other projects.
 
-## Get Cypress Setup
+## Get Your Repository Set Up for CI/CD
+
+My site is hosted on [GitHub](https://github.com), so we'll go through the settings there. If you use another service like [GitLab](https://gitlab.com)
+
+From your repository main page, click on the Settings tab. From there click the Branches section to create a branch protection rule.
+
+![Branch Protection Rule](/img/branch_protection_rules.png "Branch Protection Rule")
+
+In my case, since I use Netlify and [Snyk](https://snyk.io), I want both those status checks to pass before merging. Click on the _Save Changes_ button.
+
+## Get Cypress Set Up
 
 Since we’re currently talking about a JavaScript project, let’s add the npm scripts we need to get Cypress up and running for local development.
 
@@ -58,7 +70,15 @@ describe('Smoke test site', () => {
 
 Save the file. Since we’re in the context of a Gatsby site, let’s start up the Gatsby local development server by running `npm run develop`. All this does is run the following Gatsby CLI command, `gatsby develop`. Once the site is built, it will be running on port 8000 (default).
 
-Let’s start up the task runner again by running, `npm run e2e:dev` from the command line. In the task runner, the `smoke.spec.js`should be in the list of test files now. Click on it to start running the tests. If you’re Gatsby site is running the test should pass. Congrats, you are awesome. At this point you would right more tests to the point that you are confident that if these all pass, you are good to ship.
+Let’s start up the task runner again by running, `npm run e2e:dev` from the command line. In the task runner, the `smoke.spec.js`should be in the list of test files now. Click on it to start running the tests.
+
+![Cypress Test Selection](/img/cypress_test_selection.png "Cypress Test Selection")
+
+If you’re Gatsby site is running the test should pass.
+
+![Cypress Test Runner with a Test Passing](/img/cypress_test_runner.png "Cypress Test Runner with a Test Passing")
+
+Congrats, you are awesome. At this point you would right more tests to the point that you are confident that if these all pass, you are good to ship.
 
 At this point we’re ready to revisit our Dependabot configuration for our repository. Let’s change the settings to allow for automatic PR merging of all our dependencies (or configure it to the level you prefer.
 
