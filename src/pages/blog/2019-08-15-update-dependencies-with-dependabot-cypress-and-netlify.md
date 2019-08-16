@@ -25,7 +25,7 @@ So armed with all this information, lets put all the pieces together. One last b
 
 ## Get Your Repository Set Up for CI/CD
 
-My site is hosted on [GitHub](https://github.com), so we'll go through the settings there. If you use another service like [GitLab](https://gitlab.com)
+My site is hosted on [GitHub](https://github.com), so we'll go through the settings there. If you use another service like [GitLab](https://gitlab.com), the settings are similar.
 
 From your repository main page, click on the Settings tab. From there click the Branches section to create a branch protection rule.
 
