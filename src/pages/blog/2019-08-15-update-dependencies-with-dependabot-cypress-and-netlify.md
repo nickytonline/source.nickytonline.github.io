@@ -43,7 +43,7 @@ In my case, since I use Netlify and [Snyk](https://snyk.io), I want both those s
 Since we’re currently talking about a JavaScript project, let’s add the npm scripts we need to get Cypress up and running for local development.
 
 1. Install Cypress by running `npm install cypress -D` (-D because it’s a dev dependency)
-2. Install the foil CLI package as we’ll need that as well by running `npm install fkill-cli -D`
+2. Install the fkill CLI package as we’ll need that as well by running `npm install fkill-cli -D`
 3. Now let’s add some npm scripts to our package.json
 
 ```json
@@ -112,5 +112,9 @@ For our `postbuild` script, we want to run our Gatsby site in the container. The
 ![Dependabot Merged PR](https://raw.githubusercontent.com/nickytonline/www.iamdeveloper.com/master/static/img/dependabot_merged_pr.png "Dependabot Merged PR")
 
 If you’d like to see the whole setup of this on my site, check out my repository on GitHub, [nickytonline/www.iamdeveloper.com](https://github.com/nickytonline/www.iamdeveloper.com).
+
+Feel free to leave a comment/feedback in the thread here 👇🏻
+
+https://twitter.com/nickytonline/status/1162211437336383489
 
 👋
