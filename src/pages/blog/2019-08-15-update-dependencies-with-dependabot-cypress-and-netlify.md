@@ -38,7 +38,7 @@ In my case, since I use Netlify and [Snyk](https://snyk.io), I want both those s
 Since we’re currently talking about a JavaScript project, let’s add the npm scripts we need to get Cypress up and running for local development.
 
 1. Install Cypress by running `npm install cypress -D` (-D because it’s a dev dependency)
-2. Install the foil CLI package as we’ll need that as well by running `npm install frill-cli -D`
+2. Install the foil CLI package as we’ll need that as well by running `npm install fkill-cli -D`
 3. Now let’s add some npm scripts to our package.json
 
 ```json
