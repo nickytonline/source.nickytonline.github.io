@@ -8,7 +8,6 @@ tags:
   - cypress
   - netlify
   - automation
-  - devops
 ---
 To preface things, this post is in the context of a JavaScript project, specifically, my blog [iamdeveloper.com](https://iamdeveloper.com).
 
