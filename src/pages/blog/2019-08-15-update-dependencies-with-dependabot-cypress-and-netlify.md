@@ -85,7 +85,7 @@ If you’re Gatsby site is running the test should pass.
 
 Congrats, you are awesome. At this point you would right more tests to the point that you are confident that if these all pass, you are good to ship.
 
-Let's revisit our Dependabot configuration for our repository. Let’s change the settings to allow for automatic PR merging of all our dependencies (or configure it to the level you prefer.
+Let's revisit our Dependabot configuration for our repository. Change the settings to allow for automatic PR merging of all our dependencies (or configure it to the level you prefer.
 
 ![Dependabot Automatic PR merging settings](/img/dependabot_settings.png "Dependabot Automatic PR merging settings")
 
