@@ -11,7 +11,6 @@
   ],
   "license": "MIT",
   "scripts": {
-    "predeploy": "",
     "clean": "rimraf .cache public src/cms/*.js",
     "prebuild": "CI=1 npm i cypress && npm run clean && npm run lint && npm run type-check && npm run build-cms-admin",
     "build": "gatsby build && cp ./keybase.txt ./public/",
