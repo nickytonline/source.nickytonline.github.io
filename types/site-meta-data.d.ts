@@ -4,8 +4,7 @@ export type SocialLinkId =
     | 'github'
     | 'devto'
     | 'stackoverflow'
-    | 'linkedin'
-    | 'mastodon';
+    | 'linkedin';
 
 export interface SiteMetaData {
     siteUrl: string;

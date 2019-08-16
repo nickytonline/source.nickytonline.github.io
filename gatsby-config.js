@@ -28,10 +28,6 @@ module.exports = {
                 url: 'https://www.linkedin.com/in/nickytonline',
                 name: 'LinkedIn',
             },
-            mastodon: {
-                url: 'https://toot.cafe/@nickytonline',
-                name: 'Mastodon',
-            },
         },
     },
     plugins: [

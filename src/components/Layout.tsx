@@ -43,10 +43,6 @@ export const Layout: React.FC<LayoutProps> = React.memo(({ children }) => (
                                 url
                                 name
                             }
-                            mastodon {
-                                url
-                                name
-                            }
                         }
                     }
                 }
