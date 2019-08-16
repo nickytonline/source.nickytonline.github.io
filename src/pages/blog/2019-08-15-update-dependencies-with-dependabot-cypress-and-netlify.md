@@ -3,6 +3,12 @@ templateKey: blog-post
 title: 'Update Dependencies with Dependabot, Cypress and Netlify'
 date: 2019-08-16T02:11:34.219Z
 description: 'How to setup your CI/CD pipeline with Netlify, Dependabot, Cypress and Gatsby.'
+tags:
+  - gatsby
+  - cypress
+  - netlify
+  - automation
+  - devops
 ---
 To preface things, this post is in the context of a JavaScript project, specifically, my blog [iamdeveloper.com](https://iamdeveloper.com).
 
