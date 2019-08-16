@@ -84,7 +84,7 @@ The `build` script is what I used to build my site. It’s included just to expl
 
 For our `postbuild` script, we want to run our Gatsby site in the container. The [Gatsby CLI](https://www.gatsbyjs.org/docs/gatsby-cli) has a bunch of great commands, including `gatsby serve` which starts your site on port 9000 (default). While the server starts, we also want to start up the e2e tests. This is where our `e2e` script comes in. Once the tests finish running in the container (hopefully successfully 😉), we want to gracefully stop the site. This is where the fkill CLI comes in handy. Now since this is a post build step, things will continue along in Netlify deployment land and eventually the site will go live. In the case of a PR for dependency updates, this check will pass and because Dependabot is configured to merge PRs automatically, we’ve reached full automation of our dependency updates.
 
-![Dependabot Merged PR](/img/dependabot_merged_pr.png "Dependabot Merged PR")
+![Dependabot Merged PR](https://raw.githubusercontent.com/nickytonline/www.iamdeveloper.com/master/static/img/dependabot_merged_pr.png "Dependabot Merged PR")
 
 If you’d like to see the whole setup of this on my site, check out my repository on GitHub, [nickytonline/www.iamdeveloper.com](https://github.com/nickytonline/www.iamdeveloper.com).
 
