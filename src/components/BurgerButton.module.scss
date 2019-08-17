@@ -9,7 +9,7 @@
     height: 1.625rem;
     border: none;
     position: relative;
-    background: linear-gradient(to bottom, $dark-purple, $dark-purple);
+    background: linear-gradient(to bottom, $off-white, $off-white);
     background-size: 100% 20%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -29,7 +29,7 @@
         width: 100%;
         position: absolute;
         left: 0;
-        background-color: $dark-purple;
+        background-color: $off-white;
         content: '';
         transition: transform 0.3s ease;
     }
