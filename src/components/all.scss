@@ -65,7 +65,7 @@ textarea {
 
 .content {
     // won't need this once bulma is out
-    max-width: 50%;
+    max-width: 70%;
 
     h3 {
         font-weight: $font-weight-light-bold;
@@ -79,6 +79,12 @@ textarea {
         &:hover {
             color: $accent-color;
             text-decoration: none;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        & {
+            max-width: none;
         }
     }
 }
