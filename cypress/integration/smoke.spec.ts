@@ -148,7 +148,7 @@ describe('Smoke test site', () => {
             });
     });
 
-    it.only('should load the sitemap.xml', async () => {
+    it('should load the sitemap.xml', async () => {
         // Doing basic text comparisons to ensure the site map is considered valid.
         // This could be improved by actually checking nodes in XML, but for now, this is good enough
         cy.request('/sitemap.xml')
