@@ -155,7 +155,7 @@ describe('Smoke test site', () => {
             .its('body')
             .should('include', '<?xml version="1.0" encoding="UTF-8"?>')
             .should('include', '<urlset')
-            .should('include', 'https://www.iamdeveloper.com/')
+            .should('include', '<loc>https://www.iamdeveloper.com/</loc>')
             .should(
                 'include',
                 '<loc>https://www.iamdeveloper.com/blog/2017-06-25-reboot-in-gatsby/</loc>',
@@ -165,6 +165,8 @@ describe('Smoke test site', () => {
                 '<loc>https://www.iamdeveloper.com/tags/gatsby/</loc>',
             )
             .should('include', '<loc>https://www.iamdeveloper.com/tags/</loc>')
+            .should('include', '<changefreq>daily</changefreq>')
+            .should('inclide', '<priority>0.7</priority>')
             .should('include', '</urlset>');
     });
 });
