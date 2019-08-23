@@ -147,4 +147,24 @@ describe('Smoke test site', () => {
                 );
             });
     });
+
+    it.only('should load the sitemap.xml', async () => {
+        // Doing basic text comparisons to ensure the site map is considered valid.
+        // This could be improved by actually checking nodes in XML, but for now, this is good enough
+        cy.request('/sitemap.xml')
+            .its('body')
+            .should('include', '<?xml version="1.0" encoding="UTF-8"?>')
+            .should('include', '<urlset')
+            .should('include', 'https://www.iamdeveloper.com/')
+            .should(
+                'include',
+                '<loc>https://www.iamdeveloper.com/blog/2017-06-25-reboot-in-gatsby/</loc>',
+            )
+            .should(
+                'include',
+                '<loc>https://www.iamdeveloper.com/tags/gatsby/</loc>',
+            )
+            .should('include', '<loc>https://www.iamdeveloper.com/tags/</loc>')
+            .should('include', '</urlset>');
+    });
 });
