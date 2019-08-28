@@ -83,7 +83,7 @@
     "gatsby-remark-prismjs": "3.3.9",
     "gatsby-remark-relative-images": "0.2.3",
     "gatsby-source-filesystem": "2.1.18",
-    "gatsby-transformer-remark": "2.6.15",
+    "gatsby-transformer-remark": "2.6.19",
     "gatsby-transformer-sharp": "2.2.12",
     "lodash": "4.17.15",
     "lodash-webpack-plugin": "0.11.5",
