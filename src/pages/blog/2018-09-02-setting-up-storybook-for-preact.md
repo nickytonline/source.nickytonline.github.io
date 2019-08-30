@@ -9,6 +9,7 @@ tags:
   - ui
   - ux
 ---
+Update 2019/06/30: Storybook now has an option via the CLI to install for Preact. For more info see \[Preact for Storybook](https://storybook.js.org/docs/guides/guide-preact).TLDR \`npx -p @storybook/cli sb init --type preact\`.
 
 In my last Storybook post, [Getting Started with Storybook for React](https://www.iamdeveloper.com/blog/2018-03-26-getting-started-with-react-storybook/), I showed you how to install Storybook for React and gave a quick breakdown of what all the pieces were. I suggest giving that a quick read before continuing here.
 
@@ -45,6 +46,5 @@ Note that this is a super bare bones webpack configuration. You can add anything
 
 ## Extras
 
-- If you want to see an example of the final result, have a look at [my first commit to the dev.to repo](https://github.com/thepracticaldev/dev.to/commit/6a8df8c8ddec739280325c0000d6d32593f70ed0) I made in March of this year.
-
-- I haven't had time yet, but I was [discussing with the Storybook maintainers](https://dev.to/norbertdelangen/comment/4ccd) about potentially having a config for Preact out of the box. Maybe I'll get to it at some point, but if you're interested, by all means go for it. 🙃
+* If you want to see an example of the final result, have a look at [my first commit to the dev.to repo](https://github.com/thepracticaldev/dev.to/commit/6a8df8c8ddec739280325c0000d6d32593f70ed0) I made in March of this year.
+* I haven't had time yet, but I was [discussing with the Storybook maintainers](https://dev.to/norbertdelangen/comment/4ccd) about potentially having a config for Preact out of the box. Maybe I'll get to it at some point, but if you're interested, by all means go for it. 🙃
