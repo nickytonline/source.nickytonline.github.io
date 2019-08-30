@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'gatsby';
 import { SocialIcon, Container, BurgerButton } from 'components';
 import { SiteMetaData, SocialLinkId } from 'types/site-meta-data';
@@ -11,6 +11,7 @@ export interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = React.memo(({ siteMetadata }) => {
     const { socialLinks } = siteMetadata;
+    const navMenu: React.MutableRefObject<null | HTMLDivElement> = useRef(null);
 
     return (
         <nav
@@ -36,9 +37,14 @@ export const Navbar: React.FC<NavbarProps> = React.memo(({ siteMetadata }) => {
                         </span>
                         just some dev
                     </Link>
-                    <BurgerButton target="navMenu" />
+                    <BurgerButton
+                        toggleMenu={() => {
+                            navMenu.current &&
+                                navMenu.current.classList.toggle('is-active');
+                        }}
+                    />
                 </div>
-                <div id="navMenu" className="navbar-menu">
+                <div ref={navMenu} className="navbar-menu">
                     <div className="navbar-start has-text-centered">
                         <Link
                             className="navbar-item"
