@@ -5,6 +5,13 @@
   YARN_VERSION = "1.9.4"
   YARN_FLAGS = "--no-ignore-optional"
 
+
+[[redirects]]
+from = "https://webflow.iamdeveloper.com/*"
+to = "http://nick-taylors-first-project.webflow.io:splat"
+status = 301
+force = true
+
 [[redirects]]
 from = "https://vscode.iamdeveloper.com/*"
 to = "https://dev.to/nickytonline/my-visual-studio-code-setup-2ima:splat"
