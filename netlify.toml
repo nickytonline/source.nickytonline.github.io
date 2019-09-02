@@ -14,7 +14,7 @@ force = true
 
 [[redirects]]
 from = "https://vscode.iamdeveloper.com/*"
-to = "https://dev.to/nickytonline/my-visual-studio-code-setup-2ima:splat"
+to = "/blog/2017-12-20-my-visual-studio-code-setup/"
 status = 301
 force = true
 
@@ -38,13 +38,13 @@ force = true
 
 [[redirects]]
 from = "https://mac.iamdeveloper.com/*"
-to = "https://dev.to/nickytonline/my-mac-setup-2m05:splat"
+to = "/blog/2018-01-12-my-mac-setup/"
 status = 301
 force = true
 
 [[redirects]]
 from = "https://gitaliases.iamdeveloper.com/*"
-to = "https://dev.to/nickytonline/my-git-aliases-5dea:splat"
+to = "/blog/2018-08-25-my-git-aliases/:splat"
 status = 301
 force = true
 
