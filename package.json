@@ -69,7 +69,7 @@
     "gatsby-plugin-feed": "2.3.9",
     "gatsby-plugin-google-analytics": "2.1.13",
     "gatsby-plugin-manifest": "2.2.13",
-    "gatsby-plugin-netlify": "2.1.10",
+    "gatsby-plugin-netlify": "2.1.11",
     "gatsby-plugin-netlify-cms": "4.1.13",
     "gatsby-plugin-offline": "3.0.1",
     "gatsby-plugin-purgecss": "4.0.1",
