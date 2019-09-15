@@ -4,7 +4,7 @@ title: About Me
 ---
 I'm just some dev on the Autodesk [Shotgun](https://www.shotgunsoftware.com) team. I'm a big fan of TypeScript, JavaScript, React and Node. C#/ASP.NET once upon a time. I'm also not a big fan of spiders.
 
-I also love contributing to open source.
+I also love contributing to open source. Here are some highlights of my most recent open source work.
 
 
 * [Helped Migrate the Refined GitHub extension to TypeScript](https://github.com/sindresorhus/refined-github/commits?author=nickytonline)
