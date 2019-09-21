@@ -4,7 +4,7 @@ title: About Me
 ---
 
 <div>
-<img src="/img/nick.jpg" alt="Nick Taylor profile photo" class="left circular" /> I am a Senior Software Developer at Autodesk working on the [Shotgun](https://www.shotgunsoftware.com) product. I am a big fan of TypeScript, JavaScript, React and Node. Once upon a time, I was into C#/ASP.NET. I am also not a big fan of spiders.
+<img src="/img/nick.jpg" alt="Nick Taylor profile photo" class="profile-photo" /> I am a Senior Software Developer at Autodesk working on the [Shotgun](https://www.shotgunsoftware.com) product. I am a big fan of TypeScript, JavaScript, React and Node. Once upon a time, I was into C#/ASP.NET. I am also not a big fan of spiders.
 
 I love contributing to open source. Here are some highlights of my most recent open source work.
 
