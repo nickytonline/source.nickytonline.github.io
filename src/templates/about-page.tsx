@@ -26,7 +26,10 @@ export const AboutPageTemplate: React.FC<AboutPageTemplateProps> = React.memo(
             >
                 <Container>
                     <PageTitle>{title}</PageTitle>
-                    <PageContent className="content" content={content} />
+                    <PageContent
+                        className={`content ${styles.about}`}
+                        content={content}
+                    />
                 </Container>
             </Section>
         );
