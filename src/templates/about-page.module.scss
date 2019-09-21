@@ -1,9 +1,15 @@
-@import '../components/vars';
+@import '../components/mixins';
 
 .aboutBackground {
-  @media screen and (min-width: 813px) {
-    & {
-      background-image: url(/img/undraw_uploading_go67.svg);
+    @media screen and (min-width: 813px) {
+        & {
+            background-image: url(/img/undraw_uploading_go67.svg);
+        }
     }
-  }
+
+    .about.about {
+        ul {
+            @include dope-list('🏅');
+        }
+    }
 }
