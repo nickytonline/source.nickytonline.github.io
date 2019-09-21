@@ -111,6 +111,10 @@ textarea {
 }
 
 .profile-photo {
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+
     float: left;
     margin: 1rem;
     margin-left: 0;
