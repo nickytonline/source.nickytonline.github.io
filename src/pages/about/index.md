@@ -14,7 +14,9 @@ https://twitter.com/nickytonline/status/1171415532739997696
 
 https://twitter.com/sindresorhus/status/1093893754992320513
 
-- [dev.to repository](https://github.com/thepracticaldev/dev.to/commits?author=nickytonline). I gained early access to the repository while it was still private and was the first developer to contribute to the repository outside of the core team. Since then I have contributed quite a bit to the codebase, mainly in the frontend. I also cross-post my blog posts to [dev.to](https://dev.to/nickytonline).- [coryhouse/react-slingshot · GitHub](https://github.com/coryhouse/react-slingshot/commits?author=nickytonline). I contributed quite a bit to this repository when I started to learn React/Redux and then I was asked and accepted to become a maintainer of the repository.
+- [dev.to repository](https://github.com/thepracticaldev/dev.to/commits?author=nickytonline). I gained early access to the repository while it was still private and was the first developer to contribute to the repository outside of the core team. Since then I have contributed quite a bit to the codebase, mainly in the frontend. I also cross-post my blog posts to [dev.to](https://dev.to/nickytonline).
+
+- [coryhouse/react-slingshot · GitHub](https://github.com/coryhouse/react-slingshot/commits?author=nickytonline). I contributed quite a bit to this repository when I started to learn React/Redux and then I was asked and accepted to become a maintainer of the repository.
 
 https://twitter.com/housecor/status/1169993965464104960
 
