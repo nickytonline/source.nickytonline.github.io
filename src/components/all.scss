@@ -26,7 +26,7 @@ textarea {
 .navbar {
     position: sticky;
     top: 0;
-    background: $dark-purple;
+    background: $off-white;
     height: $navbar-height;
     max-height: $navbar-height;
 
@@ -36,7 +36,7 @@ textarea {
 }
 
 .navbar-item.navbar-item {
-    color: $off-white;
+    color: $dark-purple;
     text-decoration: none;
     font-weight: bold;
 
@@ -130,4 +130,10 @@ textarea {
     margin: 1rem;
     margin-right: 0;
     border-radius: 50%;
+}
+
+.navbar-menu {
+    @media screen and (max-width: 1023px) {
+        background-color: $off-white;
+    }
 }

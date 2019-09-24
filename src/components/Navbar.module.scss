@@ -1,8 +1,7 @@
 @import './vars';
 
 .navbar {
-    box-shadow: inset 0 0.0625rem 0 rgba($dark-purple, 0.3),
-        0 0.125rem 0.1875rem hsla(0, 0%, 0%, 0.2);
+    border-bottom: 0.125rem solid rgba($dark-purple, 0.3);
 }
 
 .navbarContents {

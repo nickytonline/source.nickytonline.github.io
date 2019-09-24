@@ -6,7 +6,11 @@
 
     &:hover {
         background: none;
-        background-color: $off-white;
+        background-color: $dark-purple;
+
+        @media screen and (max-width: 1023px) {
+            background-color: transparent;
+        }
     }
 
     @media screen and (max-width: 1023px) {
@@ -24,7 +28,7 @@
         background-position-x: center;
         background-position-y: center;
         background-repeat: no-repeat;
-        background-color: rgba($off-white, 0.3);
+        background-color: rgba($dark-purple, 0.3);
     }
 
     .twitter {
