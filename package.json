@@ -105,7 +105,7 @@
     "@babel/preset-typescript": "7.6.0",
     "@types/lodash": "4.14.139",
     "@types/node": "12.7.5",
-    "@types/react": "16.9.2",
+    "@types/react": "16.9.3",
     "@types/react-helmet": "5.0.10",
     "@types/webpack": "4.39.1",
     "@typescript-eslint/eslint-plugin": "1.13.0",
