@@ -104,7 +104,7 @@
     "@babel/plugin-syntax-dynamic-import": "7.2.0",
     "@babel/preset-typescript": "7.6.0",
     "@types/lodash": "4.14.141",
-    "@types/node": "12.7.8",
+    "@types/node": "12.7.9",
     "@types/react": "16.9.4",
     "@types/react-helmet": "5.0.10",
     "@types/webpack": "4.39.2",
