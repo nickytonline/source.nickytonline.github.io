@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link } from 'gatsby';
 import { SocialIcon, Container, BurgerButton } from 'components';
 import { SiteMetaData, SocialLinkId } from 'types/site-meta-data';
@@ -9,9 +9,37 @@ export interface NavbarProps {
     siteMetadata: SiteMetaData;
 }
 
+function useFireScroll(ref: React.RefObject<HTMLSpanElement>) {
+    // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    useEffect(() => {
+        const logo = ref.current;
+
+        if (!logo) {
+            return;
+        }
+
+        const listener = () => {
+            logo.innerText = '🔥';
+
+            setTimeout(() => {
+                logo.innerText = '👨‍💻';
+            }, 750);
+        };
+
+        window.addEventListener('scroll', listener);
+
+        return () => {
+            window.removeEventListener('scroll', listener);
+        };
+    }, [ref]);
+}
+
 export const Navbar: React.FC<NavbarProps> = React.memo(({ siteMetadata }) => {
     const { socialLinks } = siteMetadata;
-    const navMenu: React.MutableRefObject<null | HTMLDivElement> = useRef(null);
+    const navMenu = useRef<HTMLDivElement>(null);
+    const logoRef = useRef<HTMLSpanElement>(null);
+
+    useFireScroll(logoRef);
 
     return (
         <nav
@@ -32,8 +60,9 @@ export const Navbar: React.FC<NavbarProps> = React.memo(({ siteMetadata }) => {
                             className="logo__emoji"
                             role="img"
                             aria-label="laptop emoji"
+                            ref={logoRef}
                         >
-                            💻
+                            👨‍💻
                         </span>
                         just some dev
                     </Link>
