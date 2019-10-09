@@ -30,6 +30,10 @@
     position: relative;
     transition: opacity 0.35s ease-in;
     left: 1.35rem;
+    
+    @media screen and (min-width: 1920px) {
+        left: 1.15rem;
+    }    
 }
 
 .nerd.scrolling {
