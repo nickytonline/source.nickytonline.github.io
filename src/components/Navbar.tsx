@@ -19,10 +19,15 @@ function useFireScroll(ref: React.RefObject<HTMLSpanElement>) {
         }
 
         const listener = () => {
-            logo.innerText = '🔥';
+            const nerdNode = logo.querySelector(`.${styles.nerd}`);
+            const fireNode = logo.querySelector(`.${styles.fire}`);
+
+            nerdNode && nerdNode.classList.add(styles.scrolling);
+            fireNode && fireNode.classList.add(styles.scrolling);
 
             setTimeout(() => {
-                logo.innerText = '👨‍💻';
+                nerdNode && nerdNode.classList.remove(styles.scrolling);
+                fireNode && fireNode.classList.remove(styles.scrolling);
             }, 750);
         };
 
@@ -62,7 +67,10 @@ export const Navbar: React.FC<NavbarProps> = React.memo(({ siteMetadata }) => {
                             aria-label="laptop emoji"
                             ref={logoRef}
                         >
-                            👨‍💻
+                            <span className={styles.emojiBox}>
+                                <span className={styles.nerd}>👨‍💻</span>
+                                <span className={styles.fire}>🔥</span>
+                            </span>
                         </span>
                         just some dev
                     </Link>
