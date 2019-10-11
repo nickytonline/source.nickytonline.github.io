@@ -9,7 +9,7 @@ tags:
 ---
 Everyone has their favourite aliases for git and the shell. I have written about [my git aliases](https://www.iamdeveloper.com/blog/2018-08-25-my-git-aliases/) before but not my shell aliases. It is not a long list, but I have some that I find useful that you may find useful as well.
 
-Currently, my preferred shell is zsh. Here is what I currently have in config.
+Currently, my preferred shell is zsh. Here is what I currently have in my config.
 
 ```
 alias zshconfig='vi $HOME/.zshrc'
