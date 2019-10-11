@@ -9,7 +9,7 @@ tags:
 ---
 Everyone has their favourite aliases for git and the shell. I have written about [my git aliases](https://www.iamdeveloper.com/blog/2018-08-25-my-git-aliases/) before but not my shell aliases. It is not a long list, but I have some that I find useful that you may find useful as well.
 
-Currently, my preferred shell is zsh. Here is what I currently have in my config.
+Currently, my preferred shell is zsh. Here is what I currently have in config.
 
 ```
 alias zshconfig='vi $HOME/.zshrc'
@@ -27,6 +27,6 @@ crat() {
 }
 ```
 
-I liked the `edge` and `chrome` aliases because I like to use VS Code when debugging. Having the browsers start up with remote debugging makes that process just easier.
+The `edge` and `chrome` aliases are useful to me because I like to use VS Code when debugging. Having the browsers start up with remote debugging makes that process easier.
 
-What's in your shell aliases? Feel free to [leave a comment here](https://dev.to/nickytonline/my-shell-aliases-1obk#comments).
+What's in your shell aliases?
