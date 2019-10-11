@@ -25,9 +25,13 @@ export default class IndexPage extends React.PureComponent<IndexPageProps, {}> {
                         {posts.map(({ node: post }) => (
                             <div className="content" key={post.id}>
                                 <h2>
-                                    <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
+                                    <Link to={post.fields.slug}>
+                                        {post.frontmatter.title}
+                                    </Link>
                                 </h2>
-                                <div className={styles.postDate}>{post.frontmatter.date}</div>
+                                <div className={styles.postDate}>
+                                    {post.frontmatter.date}
+                                </div>
                                 <p>{post.excerpt}</p>
                             </div>
                         ))}
@@ -39,25 +43,25 @@ export default class IndexPage extends React.PureComponent<IndexPageProps, {}> {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 300)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-          }
+    query IndexQuery {
+        allMarkdownRemark(
+            sort: { order: DESC, fields: [frontmatter___date] }
+            filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+        ) {
+            edges {
+                node {
+                    excerpt(pruneLength: 300)
+                    id
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        title
+                        templateKey
+                        date(formatString: "MMMM DD, YYYY")
+                    }
+                }
+            }
         }
-      }
     }
-  }
 `;
