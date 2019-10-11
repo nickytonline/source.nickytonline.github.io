@@ -29,4 +29,4 @@ crat() {
 
 I liked the `edge` and `chrome` aliases because I like to use VS Code when debugging. Having the browsers start up with remote debugging makes that process just easier.
 
-What's in your shell aliases?
+What's in your shell aliases? Feel free to [leave a comment here](https://dev.to/nickytonline/my-shell-aliases-1obk#comments).
