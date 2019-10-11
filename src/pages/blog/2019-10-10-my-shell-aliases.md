@@ -6,6 +6,7 @@ description: 'Some of the aliases I have for my preferred shell, zsh'
 tags:
   - zsh
   - cli
+  - shell
 ---
 Everyone has their favourite aliases for git and the shell. I have written about [my git aliases](https://www.iamdeveloper.com/blog/2018-08-25-my-git-aliases/) before but not my shell aliases. It is not a long list, but I have some that I find useful that you may find useful as well.
 
