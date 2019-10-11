@@ -20,6 +20,7 @@ alias y='yarn' # I am lazy, one character FTW. YOLO
 alias ni='npm install'
 alias nr='npm run'
 alias g='git'
+alias code='code-insiders'
 
 alias edge='/Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --remote-debugging-port=2015'
 lias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222'i
