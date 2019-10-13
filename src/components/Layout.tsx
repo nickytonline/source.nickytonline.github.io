@@ -31,6 +31,7 @@ export const Layout: React.FC<LayoutProps> = React.memo(
                                 twitter {
                                     url
                                     name
+                                    userName
                                 }
                                 instagram {
                                     url
@@ -87,13 +88,15 @@ export const Layout: React.FC<LayoutProps> = React.memo(
                         <meta
                             name="twitter:site"
                             content={
-                                data.site.siteMetadata.socialLinks.twitter.name
+                                data.site.siteMetadata.socialLinks.twitter
+                                    .userName
                             }
                         />
                         <meta
                             name="twitter:creator"
                             content={
-                                data.site.siteMetadata.socialLinks.twitter.name
+                                data.site.siteMetadata.socialLinks.twitter
+                                    .userName
                             }
                         />
                         <meta
