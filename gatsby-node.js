@@ -8,24 +8,24 @@ exports.createPages = ({ actions, graphql }) => {
 
     return (
         graphql(`
-      {
-        allMarkdownRemark(limit: 1000) {
-          edges {
-            node {
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                tags
-                templateKey
-              }
+            {
+                allMarkdownRemark(limit: 1000) {
+                    edges {
+                        node {
+                            id
+                            fields {
+                                slug
+                            }
+                            frontmatter {
+                                tags
+                                templateKey
+                            }
+                        }
+                    }
+                }
             }
-          }
-        }
-      }
-    `)
-        // eslint-disable-next-line consistent-return
+        `)
+            // eslint-disable-next-line consistent-return
             .then(result => {
                 if (result.errors) {
                     result.errors.forEach(e => console.error(e.toString())); // eslint-disable-line no-console
@@ -35,12 +35,19 @@ exports.createPages = ({ actions, graphql }) => {
                 const posts = result.data.allMarkdownRemark.edges;
 
                 posts.forEach(edge => {
-                    const { id } = edge.node;
+                    const {
+                        id,
+                        fields: { slug },
+                        frontmatter,
+                    } = edge.node;
+
                     createPage({
-                        path: edge.node.fields.slug,
-                        tags: edge.node.frontmatter.tags,
+                        path: slug,
+                        tags: frontmatter.tags,
                         component: path.resolve(
-                            `src/templates/${String(edge.node.frontmatter.templateKey)}.tsx`,
+                            `src/templates/${String(
+                                frontmatter.templateKey,
+                            )}.tsx`,
                         ),
                         // additional data can be passed via context
                         context: {

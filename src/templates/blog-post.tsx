@@ -95,13 +95,14 @@ export interface BlogPostProps {
     data: {
         markdownRemark: MarkdownRemark;
     };
+    path: string;
 }
 
-const BlogPost: React.FC<BlogPostProps> = ({ data }) => {
+const BlogPost: React.FC<BlogPostProps> = ({ data, path }) => {
     const { markdownRemark: post } = data;
 
     return (
-        <Layout>
+        <Layout slug={path}>
             <BlogPostTemplate
                 content={post.html}
                 contentComponent={HTMLContent}
