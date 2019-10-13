@@ -85,6 +85,18 @@ export const Layout: React.FC<LayoutProps> = React.memo(
                         <meta property="og:url" content="/" />
                         <meta property="og:image" content="/img/og-image.jpg" />
                         <meta
+                            name="twitter:site"
+                            content={
+                                data.site.siteMetadata.socialLinks.twitter.name
+                            }
+                        />
+                        <meta
+                            name="twitter:creator"
+                            content={
+                                data.site.siteMetadata.socialLinks.twitter.name
+                            }
+                        />
+                        <meta
                             name="twitter:card"
                             content="summary_large_image"
                         />
