@@ -15,3 +15,5 @@ src/cms/*.js
 
 cypress/screenshots/
 cypress/videos/
+
+yarn.lock
