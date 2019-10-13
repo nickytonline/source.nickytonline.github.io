@@ -112,6 +112,14 @@ const BlogPost: React.FC<BlogPostProps> = ({ data, path }) => {
                     <Helmet titleTemplate="%s | Blog">
                         <title>{`${post.frontmatter.title}`}</title>
                         <meta
+                            name="twitter:title"
+                            content={`${post.frontmatter.title}`}
+                        />
+                        <meta
+                            name="twitter:description"
+                            content={`${post.frontmatter.description}`}
+                        />
+                        <meta
                             name="description"
                             content={`${post.frontmatter.description}`}
                         />
