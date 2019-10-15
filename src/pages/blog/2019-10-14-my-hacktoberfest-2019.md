@@ -19,4 +19,8 @@ The other PR that is still under review is for the [learnstorybook.com](https://
 
 The PR adds a precommit hook to format markdown files via prettier and as well, I ran prettier on all the markdown files as a lot of files had not run through prettier previously. Here is the link to the PR, [All markdown files are properly formatted now](https://github.com/chromaui/learnstorybook.com/pull/181)
 
+Although this is not from Hacktoberfest, the beauty of open source is that anyone can checkout what you are up to. I was super surprised and felt pretty good when Addy Osmani like one of my PRs for DEV.
+
+https://twitter.com/nickytonline/status/1075866822006751233
+
 I will probably contribute some more to the DEV codebase, but who knows, I may tackle an issue in another repository. YOLO.
