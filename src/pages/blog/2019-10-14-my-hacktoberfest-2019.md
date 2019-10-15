@@ -1,14 +1,13 @@
 ---
 templateKey: blog-post
-slug: my-hacktoberfest-2019
 title: My Hacktoberfest 2019
 date: 2019-10-15T01:03:13.158Z
 description: Updates about my Hacktoberfest for 2019
 tags:
-    - hacktoberfest
+  - hacktoberfest
 ---
 
-Like many of you, I am participating in Hacktoberfest as well. Most of the contributions I have made in October have been for DEV. Here are the current PRs that have been merged so far:
+Like many of you, I am participating in Hacktoberfest as well. Most of the contributions I have made in October have been for DEV. Here are the PRs that have been merged so far:
 
 -   [Mini refactor to make variable names clearer in the Categories component](https://github.com/thepracticaldev/dev.to/pull/4257)
 -   [Now eslint ignores the app/assets/javascripts/lib folder](https://github.com/thepracticaldev/dev.to/pull/4323)
