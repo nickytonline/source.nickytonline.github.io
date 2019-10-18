@@ -14,7 +14,7 @@ Like many of you, I am participating in Hacktoberfest as well. Most of the contr
 -   [VS Code Settings Update / Frontend Debug Documentation](https://github.com/thepracticaldev/dev.to/pull/4346)
 -   [Fixed a typo](https://github.com/thepracticaldev/dev.to/pull/4374)
 
-The other PR that is still under review is for the [learnstorybook.com](https://learnstorybook.com) website (repository https://github.com/chromaui/learnstorybook.com)
+The other PR that ~~is still under review~~ got merged is for the [learnstorybook.com](https://learnstorybook.com) website.
 
 The PR adds a precommit hook to format markdown files via prettier and as well, I ran prettier on all the markdown files as a lot of files had not run through prettier previously. Here is the link to the PR, [All markdown files are properly formatted now](https://github.com/chromaui/learnstorybook.com/pull/181)
 
