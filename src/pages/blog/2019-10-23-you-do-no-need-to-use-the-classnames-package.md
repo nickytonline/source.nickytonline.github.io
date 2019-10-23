@@ -29,7 +29,7 @@ If you are not familiar with template strings, you can build a string with varia
 `foo bar` // => 'foo bar', not that exciting
 `foo ${ true ? 'bar': '' }`; // => 'foo bar'
 `${true ? 'foo-bar': '' }`; // => 'foo-bar'
-`${ false ? '' : 'foo-bar'}` // => ''
+`${ false ? 'foo-bar' : ''}` // => ''
 `${ true? 'foo': '' }, { true ? 'bar': '' }`; // => 'foo bar'
 `${ true ? 'foo' : ''} ${ true? 'bar' : '' }`; // => 'foo bar'
 ```
