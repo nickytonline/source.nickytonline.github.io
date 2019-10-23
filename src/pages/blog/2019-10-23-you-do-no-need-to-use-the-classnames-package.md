@@ -34,6 +34,21 @@ If you are not familiar with template strings, you can build a string with varia
 `${ true ? 'foo' : ''} ${ true? 'bar' : '' }`; // => 'foo bar'
 ```
 
-These are trivial examples, but it is just to show you that you can do pretty much the same thing with template literals. If you want to see this in action, here is an example in this site's source, https://github.com/nickytonline/www.iamdeveloper.com/blob/master/src/components/Navbar.tsx#L51
+These are trivial examples, but it is just to show you that you can do pretty much the same thing with template literals. If you want to see this in action, here is an example in this site's source:
+
+```jsx
+...
+<nav
+   className={`navbar is-transparent ${styles.navbar}`}
+   role="navigation"
+   aria-label="main-navigation"
+   data-cy="nav-bar"
+>
+...
+```
+
+https://github.com/nickytonline/www.iamdeveloper.com/blob/master/src/components/Navbar.tsx#L51
+
+This is not mind blowing code, but just another way to do it.
 
 Happy coding!
