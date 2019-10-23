@@ -19,6 +19,7 @@ classNames({ 'foo-bar': false }); // => ''
 classNames({ foo: true }, { bar: true }); // => 'foo bar'
 classNames({ foo: true, bar: true }); // => 'foo bar'
 ```
+
 Note: `true` and `false` are used to simplify the example, but normally these would be conditional variables, methods or functions.
 
 Having said that, JavaScript has come a long way and there are features in the language that allow us to do pretty much the same thing, specifically [template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) or as it is also called, template literals.
