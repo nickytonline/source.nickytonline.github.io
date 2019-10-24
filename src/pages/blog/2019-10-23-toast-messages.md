@@ -7,7 +7,7 @@ tags:
   - codepen
   - html
 ---
-So I made a little toast message demo tonight.
+So I made a little toast message demo tonight. It also works with the keyboard if you tab. It will focus on the close button of the toaster and it you hit ENTER, the toast is toast!
 
 <iframe height="265" style="width: 100%;height: 265px;" scrolling="no" title="Toast Messages" src="https://codepen.io/nickytonline/embed/OJJmLyK?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/nickytonline/pen/OJJmLyK'>Toast Messages</a> by Nick Taylor
