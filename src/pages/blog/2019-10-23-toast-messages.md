@@ -17,3 +17,5 @@ So I made a little toast message demo tonight.
 I was just having a little fun, but it brought up a question for me. What type of HTML element should a toast message be?
 
 https://twitter.com/nickytonline/status/1187206862992789505
+
+I will have a follow up post sometime in the near future explaining all the moving parts. 😉
