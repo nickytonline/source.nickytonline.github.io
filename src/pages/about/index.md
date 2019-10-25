@@ -6,11 +6,11 @@ title: About Me
 
 I enjoy contributing to open source. Here are some highlights of my most recent open source work.
 
+- Helped the [Chroma](https://hichroma.com) team with some [frontend DX for their markdown files](https://github.com/chromaui/learnstorybook.com/pull/181)
+
 - I enabled automatic dependency updates for this site using Netlify, Dependabot and Cypress. You can read about it in my post, [Update Dependencies with Dependabot, Cypress and Netlify](https://www.iamdeveloper.com/blog/2019-08-15-update-dependencies-with-dependabot-cypress-and-netlify/).
 
 https://twitter.com/nickytonline/status/1171415532739997696
-
-- Helped the [Chroma](https://hichroma.com) team with some [frontend DX for their markdown files](https://github.com/chromaui/learnstorybook.com/pull/181)
 
 - [Helped Migrate the Refined GitHub extension to TypeScript](https://github.com/sindresorhus/refined-github/commits?author=nickytonline)
 
