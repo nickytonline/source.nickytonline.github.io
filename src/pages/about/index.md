@@ -10,6 +10,8 @@ I enjoy contributing to open source. Here are some highlights of my most recent 
 
 https://twitter.com/nickytonline/status/1171415532739997696
 
+- Helped the [Chroma](https://hichroma.com) team with some [frontend DX for their markdown files](https://github.com/chromaui/learnstorybook.com/pull/181)
+
 - [Helped Migrate the Refined GitHub extension to TypeScript](https://github.com/sindresorhus/refined-github/commits?author=nickytonline)
 
 https://twitter.com/sindresorhus/status/1093893754992320513
