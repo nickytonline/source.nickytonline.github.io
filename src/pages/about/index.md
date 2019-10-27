@@ -2,7 +2,7 @@
 templateKey: about-page
 title: About Me
 ---
-<div><img src="/img/nick.jpg" width="150" height="150" alt="Nick Taylor profile photo" class="profile-photo" /> I am a Senior Software Developer at Autodesk working on the <a href="https://www.shotgunsoftware.com" title="Shotgun">Shotgun</a> product. I am a big fan of TypeScript, JavaScript, React and Node. Once upon a time, I was into C#/ASP.NET. Aside from programming, I enjoy hitting the gym, snowboarding in the winter and a long long time ago, rugby. I am also not a big fan of spiders. <img src="/img/nick-rugby.jpg" alt="Nick playing rugby" width="150" height="150" class="sports-photo" /></div>
+<div><img src="https://www.gravatar.com/avatar/fff4f28f35615a1aca3c1f13cb37be37?s=150&d=identicon&r=PG" width="150" height="150" alt="Nick Taylor profile photo" class="profile-photo" /> I am a Senior Software Developer at Autodesk working on the <a href="https://www.shotgunsoftware.com" title="Shotgun">Shotgun</a> product. I am a big fan of TypeScript, JavaScript, React and Node. Once upon a time, I was into C#/ASP.NET. Aside from programming, I enjoy hitting the gym, snowboarding in the winter and a long long time ago, rugby. I am also not a big fan of spiders. <img src="/img/nick-rugby.jpg" alt="Nick playing rugby" width="150" height="150" class="sports-photo" /></div>
 
 I enjoy contributing to open source. Here are some highlights of my most recent open source work.
 
@@ -16,7 +16,7 @@ https://twitter.com/nickytonline/status/1171415532739997696
 
 https://twitter.com/sindresorhus/status/1093893754992320513
 
-- [dev.to repository](https://github.com/thepracticaldev/dev.to/commits?author=nickytonline). I gained early access to the repository while it was still private and was the first developer to contribute to the repository outside of the core team. Since then I have contributed quite a bit to the codebase, mainly in the frontend. I also cross-post my blog posts to [dev.to](https://dev.to/nickytonline).
+- [dev.to repository](https://github.com/thepracticaldev/dev.to/commits?author=nickytonline). I gained early access to the repository while it was still private and was the [first developer to contribute](https://dev.to/jess/dev-monthly-report--march-2018-579p) to the repository outside of the core team. Since then I have contributed quite a bit to the codebase, mainly in the frontend. I also cross-post my blog posts to [dev.to](https://dev.to/nickytonline).
 
 https://twitter.com/nickytonline/status/1029171825400537089
 
