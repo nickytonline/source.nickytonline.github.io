@@ -16,7 +16,7 @@ https://twitter.com/nickytonline/status/1171415532739997696
 
 https://twitter.com/sindresorhus/status/1093893754992320513
 
-- [dev.to repository](https://github.com/thepracticaldev/dev.to/commits?author=nickytonline). I gained early access to the repository while it was still private and was the first developer to contribute to the repository outside of the core team. Since then I have contributed quite a bit to the codebase, mainly in the frontend. I also cross-post my blog posts to [dev.to](https://dev.to/nickytonline).
+- [dev.to repository](https://github.com/thepracticaldev/dev.to/commits?author=nickytonline). I gained early access to the repository while it was still private and was the [first developer to contribute](https://dev.to/jess/dev-monthly-report--march-2018-579p) to the repository outside of the core team. Since then I have contributed quite a bit to the codebase, mainly in the frontend. I also cross-post my blog posts to [dev.to](https://dev.to/nickytonline).
 
 https://twitter.com/nickytonline/status/1029171825400537089
 
