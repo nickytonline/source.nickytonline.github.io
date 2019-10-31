@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 'A Simple ⭐ Rating Code Pen '
-date: 2019-01-18T19:44:16.154Z
+date: 2018-01-18T19:44:00.000Z
 description: Just having more fun with codepen
 tags:
   - codepen
