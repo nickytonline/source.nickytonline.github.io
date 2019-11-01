@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "A \U0001F4A9 Notification Code Pen"
-date: 2019-11-01T03:10:14.098Z
+date: 2018-01-28T04:10:14.098Z
 description: Just having more fun in codepen
 tags:
   - codepen
