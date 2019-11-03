@@ -7,7 +7,7 @@ tags:
   - codepen
   - fun
 ---
-If you want to see the previous Code Pen I did, check out [A 💩 Notification Code Pen](https://dev.to/nickytonline/a--notification-code-pen-4o0n).
+If you want to see the previous Code Pen I did, check out [A 💩 Notification Code Pen](https://www.iamdeveloper.com/blog/2019-10-31-a-%F0%9F%92%A9-notification-code-pen/).
 
 Continuing along with my [2018 Resolutions](https://www.iamdeveloper.com/blog/2018-01-03-2018-resolutions/) to make Code Pens this year, here is my latest.
 
