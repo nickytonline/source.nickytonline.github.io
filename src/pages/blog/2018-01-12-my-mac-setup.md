@@ -5,6 +5,7 @@ date: 2018-01-12T21:03:00.000Z
 description: An overview of tools and applications I have installed on my Mac.
 tags:
   - developertools
+  - mac
 ---
 
 Maybe I should start a series called “Not just a Gist”, as I’m slowly converting gists of mine to blog posts. The last one I converted was all about [My Visual Studio Code Setup](https://vscode.iamdeveloper.com).
