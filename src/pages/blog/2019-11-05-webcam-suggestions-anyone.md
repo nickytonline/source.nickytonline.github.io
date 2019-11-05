@@ -13,4 +13,6 @@ I'm looking for a webcam I can mount on my screen or sit on my desk so I'm looki
 
 I'm not looking to break the bank on this, so probably max 100$ CAD.
 
+you can pop your suggestions \[here](https://dev.to/nickytonline/webcam-suggestions-anyone-125h/#comments).
+
 Thanks in advance for any suggestions!
