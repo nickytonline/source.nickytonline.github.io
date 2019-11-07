@@ -25,7 +25,7 @@ const shallowArrayClone = originalArray.slice();
 
 ```
 
-{% twitter 908547800442404864 %}
+https://twitter.com/nickytonline/status/908547800442404864
 
 * Shallow clone of an object via object spread.
 ```javascript
@@ -66,7 +66,7 @@ const haveSameValues = uniques.length === a.length // or uniques.length === b.le
 
 * Flatten an array with the ES spread operator and Array.prototype.concat. Great tip care of Jonathan Z. White.
 
-{% twitter 985726458466263042 %} 
+https://twitter.com/jonathanzwhite/status/985726458466263042
 
 ```javascript
 const arrayToFlatten = [ [1,2,3], [4,5,6], [7,8,9] ];
