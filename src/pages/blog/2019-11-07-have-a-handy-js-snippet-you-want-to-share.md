@@ -11,6 +11,7 @@ So it's pretty simple. I'm looking for **one or two lines of JavaScript** that d
 I'll get the ball rolling and start with some examples:
 
 * Shallow array clone via Array spread.
+
 ```javascript
 const originalArray = [1, 2, 3];
 const shallowArrayClone = [...originalArray];
@@ -28,6 +29,7 @@ const shallowArrayClone = originalArray.slice();
 https://twitter.com/nickytonline/status/908547800442404864
 
 * Shallow clone of an object via object spread.
+
 ```javascript
 const originalObject = { a:1, b: 2, c: 3 };
 const shallowObjectClone = {...originalObject};
@@ -35,6 +37,7 @@ const shallowObjectClone = {...originalObject};
 ```
 
 * Shallow clone of an object via object spread with one property overridden.
+
 ```javascript
 const originalObject = { a:1, b: 2, c: 3 };
 const shallowObjectClone = {...originalObject, c: 45 };
@@ -42,6 +45,7 @@ const shallowObjectClone = {...originalObject, c: 45 };
 ```
 
 * Get unique values of an array using `Set`
+
 ```javascript
 const arrayWithDuplicateValues = [1, 2, 3, 3, 1, 5];
 const uniqueArray = Array.from(new Set(arrayWithDuplicateValues);
