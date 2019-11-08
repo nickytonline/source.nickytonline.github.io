@@ -29,3 +29,13 @@
         color: $accent-color;
     }
 }
+
+.token + .number {
+	background-color: unset;
+	border-radius: unset;
+	font-size: unset;
+	height: unset;
+	margin-right: unset;
+	min-width: unset;
+	padding: unset;
+}
