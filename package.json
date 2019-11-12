@@ -80,7 +80,7 @@
     "gatsby-plugin-web-font-loader": "1.0.4",
     "gatsby-remark-copy-linked-files": "2.1.25",
     "gatsby-remark-images": "3.1.25",
-    "gatsby-remark-prismjs": "3.3.17",
+    "gatsby-remark-prismjs": "3.3.22",
     "gatsby-remark-relative-images": "0.2.3",
     "gatsby-source-filesystem": "2.1.30",
     "gatsby-transformer-remark": "2.6.27",
