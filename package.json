@@ -90,7 +90,7 @@
     "netlify-cms": "2.9.7",
     "prismjs": "1.17.1",
     "react": "16.10.2",
-    "react-dom": "16.10.2",
+    "react-dom": "16.11.0",
     "react-helmet": "5.2.1",
     "react-social-sharing": "3.0.1",
     "react-spring": "8.0.27",
