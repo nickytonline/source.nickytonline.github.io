@@ -9,7 +9,7 @@ tags:
 ---
 Today I learnt about the `:placeholder-shown` pseudo-selector.
 
-https://www.iamdeveloper.com/admin/#/collections/blog/new
+https://twitter.com/nickytonline/status/1195102417639092224
 
 What are some things about CSS that you've learnt about recently or that you  think others would benefit from knowing? [Drop your thoughts here](https://dev.to/nickytonline/share-your-css-knowledge-35pj/#comments).
 
