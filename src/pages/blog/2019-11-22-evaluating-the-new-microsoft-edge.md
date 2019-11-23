@@ -5,6 +5,7 @@ date: 2019-11-23T02:25:44.322Z
 description: Review of the new Microsoft Edge (Chromium version)
 tags:
   - browsers
+  - browserwars
 ---
 About a month ago I Tweeted that I was going to take the new MS Edge browser for a tour.
 
