@@ -18,7 +18,7 @@ So far so good. The next thing was to install all the Chrome extensions that I h
 
 After a month of usage, I can say that it pretty much behaves as I would expect a Chromium-based browser to work. The one thing I do not like, and maybe this is just because it is a beta build for the time being, but having to go through the  Microsoft update application is annoying. I would rather it just auto-update like Chrome or Brave does. This is minor, but this is a review. 😉
 
-For mobile, it was pretty easy to find an install in the Apple App Store. I have not tried it on an Android device, but I imagine it's just as easily available from the Google Play Store.
+For mobile, it was pretty easy to find and install in the Apple App Store. I have not tried it on an Android device, but I imagine it's just as easily available from the Google Play Store.
 
 ![Install MS Edge for iOS](/img/install_edge_ios.png "Install MS Edge for iOS")
 
@@ -45,5 +45,3 @@ In the end I found this too annoying and reverted back to using Brave browser on
 I will just end with this. The new Microsoft Edge is still in Beta, so the annoyances and errors I mention above will probably get sorted out. In the meantime,I am going to Tweet them this post to provide them with my constructive feedback.
 
 https://twitter.com/MicrosoftEdge/status/1181245028280213504
-
-Feel free to [leave any comments you have here](https://dev.to/nickytonline/evaluating-the-new-microsoft-edge-4m1j/#comments).
