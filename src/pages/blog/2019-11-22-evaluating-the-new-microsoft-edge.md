@@ -36,7 +36,7 @@ The one thing that I do not understand is why they provide a continue browsing l
 
 ![MS Edge Browse Later Help Page for iOS](/img/browse_later_help_page.png "MS Edge Browse Later Help Page for iOS")
 
-Those things are somewhat minor, but the big one for me was about a week or two ago, I started getting warning messages about legitimate site I browse every day  being considered as unsafe, i.e. https://dev.to, https://netlify.com to name a couple.
+Those things are somewhat minor, but the big one for me was about a week or two ago, I started getting warning messages about legitimate sites I browse every day  being considered as unsafe, i.e. https://dev.to, https://netlify.com to name a couple.
 
 ![MS Edge on iOS reporting legitimate site as unsafe](/img/unsafe_site_edge.png "MS Edge on iOS reporting legitimate site as unsafe")
 
