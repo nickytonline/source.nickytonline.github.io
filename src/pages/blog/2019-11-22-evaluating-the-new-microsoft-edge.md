@@ -43,6 +43,6 @@ Those things are somewhat minor, but the big one for me was about a week or two 
 
 In the end I found this too annoying and reverted back to using Brave browser on my mobile.
 
-I will just end with this. The new Microsoft Edge is still in Beta, so the annoyances and errors I mention above will probably get sorted out. In the meantime,I am going to Tweet them this post to provide them with my constructive feedback.
+I will just end with this. The new Microsoft Edge is still in Beta, so the annoyances and errors I mention above will probably get sorted out. In the meantime, I am going to Tweet them this post to provide them with my constructive feedback.
 
 https://twitter.com/MicrosoftEdge/status/1181245028280213504
