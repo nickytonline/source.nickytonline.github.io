@@ -30,7 +30,7 @@ Another odd thing that I experienced on Github was that it was reporting Edge as
 
 ![MS Edge on iOS warning about being an old version of Safari on GitHub site](/img/ms_edge_ios_github_not_supporting_old_safari.png "MS Edge on iOS warning about being an old version of Safari on GitHub site")
 
-The one thing that I do not understand is why they provide a continue browsing later feature on iOS, since the feature clearly states to have the latest version of Windows installed on your PC.
+The one thing that I do not understand is why they provide a continue browsing later feature if it is not supported on macOS and Linux, since the feature clearly states to have the latest version of Windows installed on your PC. Once again, the browser is currently in BETA, so I imagine, this will get sorted out.
 
 ![MS Edge Browse Later Screen on iOS](/img/ios_browse_later.png "MS Edge Browse Later Screen on iOS")
 
