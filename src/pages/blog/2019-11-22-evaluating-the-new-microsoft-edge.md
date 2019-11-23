@@ -16,7 +16,7 @@ Once installed, I enabled sync by logging in with my Microsoft account. This is 
 
 So far so good. The next thing was to install all the Chrome extensions that I had installed on Chrome and Brave browser. Once again, this process was fairly easy. The only thing that was required was to allow extensions to be installed from an external source, i.e. the Chrome Web Store.
 
-After a month of usage, I can say that it pretty much behaves as I would expect a Chromium based browser to work. The one thing I do not like, and maybe this is just because it is a beta build for the time being, but having to go through the  Microsoft update application is annoying. I would rather it just auto update like Chrome or Brave does. This is minor, but this is a review. 😉
+After a month of usage, I can say that it pretty much behaves as I would expect a Chromium-based browser to work. The one thing I do not like, and maybe this is just because it is a beta build for the time being, but having to go through the  Microsoft update application is annoying. I would rather it just auto-update like Chrome or Brave does. This is minor, but this is a review. 😉
 
 For mobile, it was pretty easy to find an install in the Apple App Store. I have not tried it on an Android device, but I imagine it's just as easily available from the Google Play Store.
 
