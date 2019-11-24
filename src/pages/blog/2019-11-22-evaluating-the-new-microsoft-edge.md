@@ -11,6 +11,8 @@ About a month ago I Tweeted that I was going to take the new MS Edge browser for
 
 https://twitter.com/nickytonline/status/1180654867850903552
 
+https://twitter.com/MicrosoftEdge/status/1181245028280213504
+
 So the first thing I did was [grab the Edge Beta](https://www.microsoftedgeinsider.com/en-ca/) since there is currently no official release yet. I am using a Mac, so all the following applies to Mac usage.
 
 Once installed, I enabled sync by logging in with my Microsoft account. This is pretty standard browser stuff. FireFox and Chrome do this as well. I guess the one caveat is that if you do not have a Microsoft account, you will need to create one if you wish to sync your settings.
@@ -44,8 +46,6 @@ Those things are somewhat minor, but the big one for me was about a week or two 
 In the end I found this too annoying and reverted back to using Brave browser on my mobile.
 
 I will just end with this. The new Microsoft Edge is still in Beta, so the annoyances and errors I mention above will probably get sorted out.
-
-https://twitter.com/MicrosoftEdge/status/1181245028280213504
 
 In the meantime, I am going to Tweet them this post to provide them with my constructive feedback.
 
