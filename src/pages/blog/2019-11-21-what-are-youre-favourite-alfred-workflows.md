@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'What are you''re favourite Alfred workflows? '
+title: 'What are your favourite Alfred workflows? '
 date: 2019-11-21T16:30:11.091Z
 description: Discussion about favourite Alfred workflows.
 tags:
