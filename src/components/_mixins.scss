@@ -1,28 +1,33 @@
 @import './vars';
 
 @mixin dope-link-style(
-  $textColor: $dark-purple,
-  $textDecorationColor: $accent-color
+    $textColor: $dark-purple,
+    $textDecorationColor: $accent-color
 ) {
-  position: relative;
-  color: $textColor;
-  text-decoration: underline;
-  text-decoration-color: $textDecorationColor;
-  text-decoration-style: underline;
-
-  &:hover {
+    position: relative;
     color: $textColor;
-    font-weight: $font-weight-bold;
-  }
+    text-decoration: none;
+    border-bottom: 0.125rem solid $textDecorationColor;
+
+    &:hover {
+        color: $textColor;
+        background-color: $textDecorationColor;
+        border-bottom: 0.125rem solid $textColor;
+        background-image: linear-gradient(
+            315deg,
+            $textDecorationColor 0%,
+            #f9d976 74%
+        );
+    }
 }
 
 @mixin dope-list($emoji) {
-  list-style: none;
-  margin: 0.5rem;
+    list-style: none;
+    margin: 0.5rem;
 
-  li:before {
-    content: $emoji;
-    font-size: 0.8rem;
-    margin-right: 0.5rem;
-  }
+    li:before {
+        content: $emoji;
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
 }
