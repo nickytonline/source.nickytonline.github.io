@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: 'What are your favourite Alfred workflows? '
+devto_link: 'https://dev.to/nickytonline/what-are-you-re-favourite-alfred-workflows-3elm'
 date: 2019-11-21T16:30:11.091Z
 description: Discussion about favourite Alfred workflows.
 tags:
