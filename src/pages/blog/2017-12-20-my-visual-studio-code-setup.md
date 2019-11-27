@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: My Visual Studio Code Setup
+devto_link: 'https://dev.to/nickytonline/my-visual-studio-code-setup-2ima'
 date: 2017-12-21T04:00:00.000Z
 description: A small write up on my Visual Studio Code setup
 tags:
