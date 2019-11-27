@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Showcase your Gatsby Site
+devto_link: 'https://dev.to/nickytonline/showcase-your-gatsby-site-266'
 date: 2019-02-28T21:23:00.000Z
 description: Showcase your Gatsby Site
 tags:
