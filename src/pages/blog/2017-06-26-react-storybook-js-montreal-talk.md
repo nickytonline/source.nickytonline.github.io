@@ -8,5 +8,6 @@ description: An overview of React Storybook
 tags:
   - react
   - talks
+  - storybook
 ---
 My talk at the June 13th, 2017 [js-montreal](http://js-montreal.org) meetup slides/repo are available at [story.iamdeveloper.com](http://story.iamdeveloper.com). This was the first time I attended the js-montreal meetup. It was good to meet lots of new folks. Looking forward to the next one.
