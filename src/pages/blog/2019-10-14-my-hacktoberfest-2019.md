@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: My Hacktoberfest 2019
+devto_link: 'https://dev.to/nickytonline/my-hacktoberfest-2019-32i2'
 date: 2019-10-15T01:03:13.158Z
 description: Updates about my Hacktoberfest for 2019
 tags:
