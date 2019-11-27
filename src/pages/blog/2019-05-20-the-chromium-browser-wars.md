@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: The Chromium Browser Wars
+devto_link: 'https://dev.to/nickytonline/the-chromium-browser-wars-51oc'
 date: 2019-05-21T03:44:26.058Z
 description: 3 major options for a Chromium based browser. Which will you choose?
 tags:
