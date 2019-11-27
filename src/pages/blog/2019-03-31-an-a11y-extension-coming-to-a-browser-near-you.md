@@ -1,6 +1,8 @@
 ---
 templateKey: blog-post
 title: An a11y extension coming to a browser near you
+devto_link: >-
+  https://dev.to/nickytonline/an-a11y-extension-coming-to-a-browser-near-you-1mg2
 date: 2019-04-01T01:02:21.470Z
 description: PR I'm working on to get tota11y deployed as a browser extension.
 tags:
