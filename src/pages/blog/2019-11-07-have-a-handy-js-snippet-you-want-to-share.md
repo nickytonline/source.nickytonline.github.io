@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: 'Have a Handy JS Snippet You Want to Share? '
+devto_link: 'https://dev.to/nickytonline/handy-js-snippets-352f'
 date: 2018-01-23T16:29:30.310Z
 description: Looking for handy JS snippets
 tags:
