@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: My Mac Setup
+devto_link: 'https://dev.to/nickytonline/my-mac-setup-2m05'
 date: 2018-01-12T21:03:00.000Z
 description: An overview of tools and applications I have installed on my Mac.
 tags:
