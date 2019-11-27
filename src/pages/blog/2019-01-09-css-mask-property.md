@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: The CSS mask property
+devto_link: 'https://dev.to/nickytonline/css-mask-property-2d42'
 date: 2019-01-09T16:44:39.919Z
 description: An overview of how the mask CSS property works
 tags:
