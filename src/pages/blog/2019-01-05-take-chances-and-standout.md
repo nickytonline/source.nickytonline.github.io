@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Take chances and standout
+devto_link: 'https://dev.to/nickytonline/take-chances-and-standout-because-who-knows-3kh6'
 date: 2019-01-05T18:40:00.493Z
 description: Some career advice on taking chances and standing out.
 tags:
