@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Looking for Great Headphones
+devto_link: 'https://dev.to/nickytonline/looking-for-great-headphones-10pl'
 date: 2019-11-14T00:40:12.112Z
 description: Finally taking the plunge and looking to buy a decent set of headphones
 tags:
