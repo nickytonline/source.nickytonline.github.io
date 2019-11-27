@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Share your CSS knowledge
+devto_link: 'https://dev.to/nickytonline/share-your-css-knowledge-35pj'
 date: 2019-11-14T22:23:30.652Z
 description: Share your CSS knowledge
 tags:
