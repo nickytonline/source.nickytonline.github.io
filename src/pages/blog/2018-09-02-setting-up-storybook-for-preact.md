@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Setting up Storybook for Preact
+devto_link: 'https://dev.to/nickytonline/setting-up-storybook-for-preact-p5a'
 date: 2018-09-02T22:23:48.138Z
 description: Getting set up with Preact and Storybook
 tags:
