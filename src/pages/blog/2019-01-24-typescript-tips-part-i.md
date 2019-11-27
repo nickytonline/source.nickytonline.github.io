@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: TypeScript Tips Part I
+devto_link: 'https://dev.to/nickytonline/typescript-tips-part-i-4hhp'
 date: 2019-01-25T02:13:23.494Z
 description: Some handy TypeScript tips.
 tags:
