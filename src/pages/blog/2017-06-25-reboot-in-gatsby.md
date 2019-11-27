@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Reboot with Gatsby
+title: Reboot with Gatsb
 date: 2017-06-26T03:00:00.000Z
 description: A reboot of my site/blog.
 tags:
