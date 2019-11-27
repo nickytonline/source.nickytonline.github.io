@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: My Git Aliases
+devto_link: 'https://dev.to/nickytonline/my-git-aliases-5dea'
 date: 2018-08-26T21:22:00.000Z
 description: A list of my git aliases and what they do
 tags:
