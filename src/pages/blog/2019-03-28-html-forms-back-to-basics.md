@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: 'HTML Forms: Back to Basics'
+devto_link: 'https://dev.to/nickytonline/html-forms-back-to-basics-1mph'
 date: 2019-03-28T04:48:20.252Z
 description: Back to some DOM basics for HTML Forms.
 tags:
