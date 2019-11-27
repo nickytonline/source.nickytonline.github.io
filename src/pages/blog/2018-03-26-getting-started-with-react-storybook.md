@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Getting Started with Storybook for React
+devto_link: 'https://dev.to/nickytonline/getting-started-with-react-storybook-9jh'
 date: 2018-03-26T21:18:00.000Z
 description: A short write up on setting up React with Storybook
 tags:
