@@ -1,6 +1,8 @@
 ---
 templateKey: blog-post
 title: dev.to with a TypeScript or Flow frontend codebase?
+devto_link: >-
+  https://dev.to/nickytonline/dev-to-with-a-typescript-or-flow-frontend-codebase-1n33
 date: 2019-04-07T03:37:54.849Z
 description: A discussion on porting the dev.to codebase to TypeScript or Flow
 tags:
