@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Any contribution to Open Source is valuable
+devto_link: 'https://dev.to/nickytonline/any-contribution-to-open-source-is-valuable-57d3'
 date: 2019-01-22T03:24:42.256Z
 description: Brief overview of every contribution to OSS being valuable.
 tags:
