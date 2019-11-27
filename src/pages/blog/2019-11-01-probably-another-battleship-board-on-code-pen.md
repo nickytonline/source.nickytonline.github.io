@@ -1,6 +1,8 @@
 ---
 templateKey: blog-post
 title: Probably another Battleship board on Code Pen
+devto_link: >-
+  https://dev.to/nickytonline/probably-another-battleship-board-on-codepenio-coverimage-httpsc1staticflickrcom7609963333175677fc467e409ojpg--4n7m
 date: 2018-02-09T21:26:41.191Z
 description: Continuing to have fun with codepen
 tags:
