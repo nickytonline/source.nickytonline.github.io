@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Is 2019 the year of TypeScript?
+devto_link: 'https://dev.to/nickytonline/is-2019-the-year-of-typescript-18p2'
 date: 2019-01-16T16:20:00.000Z
 description: Is 2019 the year of TypeScript?
 tags:
