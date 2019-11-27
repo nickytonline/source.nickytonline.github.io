@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Webcam Suggestions Anyone?
+devto_link: 'https://dev.to/nickytonline/webcam-suggestions-anyone-125h'
 date: 2019-11-05T15:35:52.184Z
 description: I'm looking for webcam suggestions.
 tags:
