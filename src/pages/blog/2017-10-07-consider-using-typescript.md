@@ -1,6 +1,8 @@
 ---
 templateKey: blog-post
 title: Consider Using TypeScript
+devto_link: >-
+  https://dev.to/nickytonline/why-you-might-want-to-consider-using-typescript-6j3
 date: 2017-10-07T17:00:00.000Z
 description: A small write up on the benefits of using TypeScript.
 tags:
