@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: "A \U0001F4A9 Notification Code Pen"
+devto_link: 'https://dev.to/nickytonline/a--notification-code-pen-4o0n'
 date: 2018-01-28T04:10:14.098Z
 description: Just having more fun in codepen
 tags:
