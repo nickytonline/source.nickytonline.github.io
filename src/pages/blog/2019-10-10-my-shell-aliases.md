@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: My Shell Aliases
+devto_link: 'https://dev.to/nickytonline/my-shell-aliases-1obk'
 date: 2019-10-11T01:45:17.110Z
 description: 'Some of the aliases I have for my preferred shell, zsh'
 tags:
