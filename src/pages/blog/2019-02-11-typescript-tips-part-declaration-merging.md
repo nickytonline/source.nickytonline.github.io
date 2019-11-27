@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: 'TypeScript Tips Part II: Declaration Merging'
+devto_link: 'https://dev.to/nickytonline/typescript-tips-part-ii-declaration-merging-5gba'
 date: 2019-02-12T02:45:09.445Z
 description: An overview of declaration merging in TypeScript.
 tags:
