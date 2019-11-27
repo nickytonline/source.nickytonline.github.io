@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: 'Ink: React for CLIs'
+devto_link: 'https://dev.to/nickytonline/ink-react-for-clis-2l3b'
 date: 2019-03-09T21:34:54.392Z
 description: 'Ink: React for CLIs'
 tags:
