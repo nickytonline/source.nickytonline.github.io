@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: 'A Simple ⭐ Rating Code Pen '
+devto_link: 'https://dev.to/nickytonline/quick-simple-rating-code-pen-3ecp'
 date: 2018-01-18T19:44:00.000Z
 description: Just having more fun with codepen
 tags:
