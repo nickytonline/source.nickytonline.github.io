@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Quick Hulk Code Pen
+devto_link: 'https://dev.to/nickytonline/quick-hulk-code-pen-18i1'
 date: 2018-01-13T19:40:00.000Z
 description: A funny ASCII Incredible Hulk codepen
 tags:
