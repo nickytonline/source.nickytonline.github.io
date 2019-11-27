@@ -1,6 +1,8 @@
 ---
 templateKey: blog-post
 title: 'Update Dependencies with Dependabot, Cypress and Netlify'
+devto_link: >-
+  https://dev.to/nickytonline/update-dependencies-with-dependabot-cypress-and-netlify-3lkf
 date: 2019-08-16T02:11:34.219Z
 description: >-
   How to set up your CI/CD pipeline with Netlify, Dependabot, Cypress and
