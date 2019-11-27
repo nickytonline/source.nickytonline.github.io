@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: An Enhanced TypeScript Playground
+devto_link: 'https://dev.to/nickytonline/an-enhanced-typescript-playground-49j6'
 date: 2019-02-26T03:58:04.582Z
 description: The TypeScript playground with enhancements
 tags:
