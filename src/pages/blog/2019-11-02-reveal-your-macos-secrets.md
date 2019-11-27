@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Reveal your macOS Secrets
+devto_link: 'https://dev.to/nickytonline/reveal-your-macos-secrets-4d0i'
 date: 2018-04-18T02:25:25.653Z
 description: A discussion about tips and tweaks for macOS.
 tags:
