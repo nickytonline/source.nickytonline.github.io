@@ -3,7 +3,7 @@ import { HtmlContentProps, ContentProps } from 'components';
 export interface PageTemplateProps {
     title: string;
     content: string;
-    devtoLink: string;
+    devtoLink?: string;
     contentComponent?:
         | React.ComponentClass<HtmlContentProps, {}>
         | React.FunctionComponent<HtmlContentProps>

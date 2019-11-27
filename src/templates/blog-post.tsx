@@ -20,7 +20,7 @@ export type BlogPostTemplateProps = PageTemplateProps & {
     description: string;
     tags: string[];
     date: string;
-    devtoLink: string;
+    devtoLink?: string;
     helmet?: React.ReactNode;
 };
 

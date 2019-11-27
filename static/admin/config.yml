@@ -24,7 +24,12 @@ collections:
           default: "blog-post",
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "DEV Link", name: "devto_link", widget: "string" }
+      - {
+          label: "DEV Link",
+          name: "devto_link",
+          widget: "string",
+          optional: true,
+        }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
