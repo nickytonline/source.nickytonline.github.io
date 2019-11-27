@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Toast Messages
+devto_link: 'https://dev.to/nickytonline/toast-messages-4hhd'
 date: 2019-10-24T03:45:40.498Z
 description: I made a little toast message demo tonight
 tags:
