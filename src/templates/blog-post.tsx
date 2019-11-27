@@ -20,6 +20,7 @@ export type BlogPostTemplateProps = PageTemplateProps & {
     description: string;
     tags: string[];
     date: string;
+    devtoLink: string;
     helmet?: React.ReactNode;
 };
 
@@ -31,6 +32,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = React.memo(
         tags,
         title,
         date,
+        devtoLink,
         helmet = '',
     }) => {
         const PostContent = contentComponent || Content;
@@ -47,9 +49,19 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = React.memo(
                         <div className="column is-10 is-offset-1">
                             <div className={styles.postDate}>{date}</div>
                             <PageTitle>{title}</PageTitle>
-                            <div className={styles.postDescription}>
-                                {description}
-                            </div>
+                            <ul className={styles.metaData}>
+                                {devtoLink ? (
+                                    <li className={styles.devtoLink}>
+                                        <a href={devtoLink}>
+                                            Post also available on dev.to
+                                        </a>
+                                    </li>
+                                ) : null}
+
+                                <li className={styles.postDescription}>
+                                    {description}
+                                </li>
+                            </ul>
                             <SocialLinks
                                 className={styles.socialLinks}
                                 message={title}
@@ -118,6 +130,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ data }) => {
                 }
                 tags={post.frontmatter.tags}
                 title={post.frontmatter.title}
+                devtoLink={post.frontmatter.devto_link}
             />
         </Layout>
     );
@@ -136,6 +149,7 @@ export const pageQuery = graphql`
             frontmatter {
                 date(formatString: "MMMM DD, YYYY")
                 title
+                devto_link
                 description
                 tags
             }

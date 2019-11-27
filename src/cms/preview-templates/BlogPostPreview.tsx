@@ -14,6 +14,7 @@ export const BlogPostPreview: React.FC<BlogPostPreviewProps> = ({
         date={entry.getIn(['data', 'date'])}
         tags={entry.getIn(['data', 'tags'])}
         title={entry.getIn(['data', 'title'])}
+        devtoLink={entry.getIn(['data', 'devto_link'])}
     />
 );
 
