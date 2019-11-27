@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: You do not need to use the classnames package
+devto_link: 'https://dev.to/nickytonline/you-do-no-need-to-use-the-classnames-package-1bb'
 date: 2019-10-23T18:27:07.331Z
 description: "A simple alternative to the classnames package, with no package \U0001F609"
 tags:
