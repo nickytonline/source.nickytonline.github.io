@@ -72,7 +72,7 @@
     "gatsby-plugin-manifest": "2.2.31",
     "gatsby-plugin-netlify": "2.1.27",
     "gatsby-plugin-netlify-cms": "4.1.30",
-    "gatsby-plugin-offline": "3.0.25",
+    "gatsby-plugin-offline": "3.0.26",
     "gatsby-plugin-purgecss": "4.0.1",
     "gatsby-plugin-react-helmet": "3.1.16",
     "gatsby-plugin-sass": "2.1.24",
