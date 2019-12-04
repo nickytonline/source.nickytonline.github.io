@@ -14,7 +14,7 @@
     "clean": "rimraf .cache public src/cms/*.js",
     "prebuild": "CI=1 npm i cypress && npm run clean && npm run lint && npm run type-check && npm run build-cms-admin",
     "build": "gatsby build && cp ./keybase.txt ./public/",
-    "postbuild": "gatsby serve & npm run e2e && fkill :9000 --force",
+    "postbuild": "gatsby serve & npm run e2e && for pid in `ps -ef | grep gatsby | awk '{print $2}'`;do kill $pid;done",
     "prebuild-cms-admin": "npm run clean && cp -R node_modules/gatsby/cache-dir/ .cache/",
     "build-cms-admin": "webpack --config webpack.config.cms.ts",
     "postbuild-cms-admin": "rimraf .cache",
