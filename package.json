@@ -96,7 +96,7 @@
     "react-social-sharing": "3.0.1",
     "react-spring": "8.0.27",
     "react-use": "13.10.0",
-    "snyk": "^1.254.0"
+    "snyk": "^1.256.0"
   },
   "devDependencies": {
     "@babel/core": "7.7.4",
