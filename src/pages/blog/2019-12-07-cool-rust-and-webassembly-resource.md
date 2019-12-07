@@ -12,4 +12,4 @@ I still haven’t really dug into [Rust](https://www.rust-lang.org) and [WebAsse
 
 https://twitter.com/rikarends/status/1202898165420249089
 
-You can compile and run it right in the browser. It looks like a really great way to learn Rust and WASM. 👏
+It looks like a really great way to learn Rust and WASM. 👏
