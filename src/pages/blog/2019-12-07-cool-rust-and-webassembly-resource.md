@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Cool Rust and WebAssembly Resource
+devto_link: 'https://dev.to/nickytonline/cool-rust-and-webassembly-resource-33j6'
 date: 2019-12-07T12:56:29.950Z
 description: A cool Rust and WebAssembly Resource
 tags:
