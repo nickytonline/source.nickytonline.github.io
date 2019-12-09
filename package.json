@@ -99,7 +99,7 @@
     "snyk": "^1.256.0"
   },
   "devDependencies": {
-    "@babel/core": "7.7.4",
+    "@babel/core": "7.7.5",
     "@babel/plugin-proposal-class-properties": "7.7.4",
     "@babel/plugin-proposal-object-rest-spread": "7.7.4",
     "@babel/plugin-syntax-dynamic-import": "7.7.4",
