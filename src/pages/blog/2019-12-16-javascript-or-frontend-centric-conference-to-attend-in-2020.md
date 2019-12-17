@@ -13,7 +13,7 @@ tags:
 ---
 The only conference I’ve ever attended was [JBCN](https://www.jbcnconf.com/2016/) in 2016 for Java when I worked in Barcelona because my company at the time were sponsors.‪
 
-I’ve never been to a JavaScript or Frontend centric conference before. If you were to pick one to attend, regardless of location and cost, which one would you choose?‬
+I’ve never been to a JavaScript or frontend centric conference before. If you were to pick one to attend, regardless of location and cost, which one would you choose?‬
 
 <center>
 
