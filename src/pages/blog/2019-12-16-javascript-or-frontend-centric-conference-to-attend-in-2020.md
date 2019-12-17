@@ -1,6 +1,8 @@
 ---
 templateKey: blog-post
 title: JavaScript or Frontend centric conference to attend in 2020?
+devto_link: >-
+  https://dev.to/nickytonline/javascript-or-frontend-centric-conference-to-attend-in-2020-m44
 date: 2019-12-17T02:05:30.273Z
 description: Looking for a JavaScript or Frontend centric conference to attend in 2020.
 tags:
@@ -14,3 +16,7 @@ I’ve never been to a JavaScript or Frontend centric conference before. If you 
 
 ![Morphius asking Neo to choose the red or blue pill](https://media.giphy.com/media/OvDTq5V3EepBS/giphy.gif)
 </center>
+
+P.S. I’m also a as fan of React, so the conference could be React centric.
+
+Drop a [comment here](https://dev.to/nickytonline/javascript-or-frontend-centric-conference-to-attend-in-2020-m44/#comments) with suggestions. Thanks in advance!
