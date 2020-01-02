@@ -20,13 +20,13 @@ I enjoyed another great year in open source and also contributed to some new pro
 
 ### Project: @raee/gatsby-remark-oembed
 
-My site which is pretty much just a blog at the moment uses Gatsby. One intersting plugin I came across was from [@raee](https://dev.to/raae) called [gatsby-remark-oembed](https://github.com/raae/gatsby-remark-oembed). It allows you to embed resources as widgets that support oembed, e.g. Twitter.
+My site which is pretty much just a blog at the moment uses Gatsby. One interesting plugin I came across was from [@raee](https://dev.to/raae) called gatsby-remark-oembed. It allows you to embed resources as widgets that support oembed, e.g. Twitter.
 
 I got it all installed but ran into issues. In the end, the documentation for setting up the plugin needed to be updated. I [put up a PR](https://github.com/raae/gatsby-remark-oembed/pull/35) to update the documentation, so others wouldn't stumble on the issue I ran into. And of course I wrote about it. Check out my post [Any contribution to Open Source is valuable](/blog/2019-01-21-any-contribution-to-oss-is-valuable/).
 
 ### Project: Gatsby
 
-This was a big contribution LOL. I added my site to the list of showcased sites. As a thank your for my first PR, I got myself some Gatsby socks. I also wrote a short post on [showcasing your Gatsby site](/blog/2019-02-28-showcase-your-gatsby-site/).
+This was a big contribution LOL. I added my site to the list of showcased sites. As a thank you for my first PR, I got myself some Gatsby socks. I also wrote a short post on [showcasing your Gatsby site](/blog/2019-02-28-showcase-your-gatsby-site/).
 
 ### Project: Refined GitHub
 
@@ -36,7 +36,7 @@ https://twitter.com/sindresorhus/status/1093893754992320513
 
 ### Project: TypeScript
 
-This was a contribution to the TypeScript repostiory, but in the form of filing an issue. While working on the Refined GitHub extension refactor to TypeScript, I discovered an [issue with the NamedNodeMap interface](https://github.com/Microsoft/TypeScript/issues/30928) in the core types that ships with TypeScript. The issue got labeled as a bug so it is in their backlog now.
+This was a contribution to the TypeScript repository, but in the form of filing an issue. While working on the Refined GitHub extension refactor to TypeScript, I discovered an [issue with the NamedNodeMap interface](https://github.com/Microsoft/TypeScript/issues/30928) in the core types that ships with TypeScript. The issue got labelled as a bug so it is in their backlog now.
 
 ### Project: dev.to codebase
 
@@ -44,9 +44,9 @@ I [continued to contribute](https://github.com/thepracticaldev/dev.to/commits?au
 
 ### Hacktoberfest
 
-This year was my first year participating in Hacktoberfest. It was a fun endeavour which included contributions to DEV as well as adding some automation for properly formatting markdown iles for the learnstorybook.com project. You can read about it in my post, [My Hacktoberfest 2019](/blog/2019-10-14-my-hacktoberfest-2019/).
+This year was my first year participating in Hacktoberfest. It was a fun endeavour which included contributions to DEV as well as adding some automation for properly formatting markdown files for the learnstorybook.com project. You can read about it in my post, [My Hacktoberfest 2019](/blog/2019-10-14-my-hacktoberfest-2019/).
 
-https://www.instagram.com/p/B5WKOqIJZCX/?utm_source=ig_web_copy_link
+https://www.instagram.com/p/B5WKOqIJZCX/
 
 ### Open Source in 2020
 
@@ -60,15 +60,15 @@ https://www.instagram.com/p/B0ClFBSJ4Hu/
 
 Initially, it was quite tough, because even though I had completed my physiotherapy for my torn calf, I was nowhere near being in any kind of running shape. I ended up joining an Orange Theory and the rest was history. I busted my but and got back into pretty awesome shape, dropping literally 35-40lbs of fat.
 
-https://www.instagram.com/p/B1xaOVvp820/?utm_source=ig_web_copy_link
+https://www.instagram.com/p/B1xaOVvp820/
 
-I put a couple back on as it’s the Christmas holidays, but will be getting back into the swing of things post holidays.
+I put a couple back on as it’s the Christmas holidays, but will be getting back into the swing of things post-holidays.
 
 ## Automating Deployments for My Site
 
-I don’t know about you, but updating dependencies for your site is a pain because it you need to build with the new dependencies and make sure everything still works fine. Or even code changes for new stuff. For my blog, it is not a mission critical site, but I took my Cypress knowledge, a dash of Dependabot and Netlify to put it all together. Let the robots do the heavy lifting.
+I don’t know about you, but updating dependencies for your site is a pain because if you need to build with the new dependencies and make sure everything still works fine. Or even code changes for new stuff. For my blog, it is not a mission-critical site, but I took my Cypress knowledge, a dash of Dependabot and Netlify to put it all together. Let the robots do the heavy lifting.
 
-I have probably already save a good 50 hours this year not updating and testing dependency updates and will probably save myself hundreds of hours, maybe the low thousands of hours next year.
+I have probably already saved a good 50 hours this year not updating and testing dependency updates and will probably save myself hundreds of hours, maybe the low thousands of hours next year.
 
 And yes, I wrote a post about it. Check out my post [Update Dependencies with Dependabot, Cypress and Netlify](https://www.iamdeveloper.com/blog/2019-08-15-update-dependencies-with-dependabot-cypress-and-netlify/).
 
@@ -82,11 +82,11 @@ One day, I received a message on LinkedIn and noticed that it was a message from
 
 I passed the initial phone screen and then prepped for my first interview with a frontend engineer from one of the teams at Facebook. I spent a lot of time preparing, and ended up doing really well. To be honest, I didn’t think I would make it past the first interview. I just always assumed the big companies were never achievable. A side effect of having imposter syndrome even after years of experience. 🙃
 
-I moved on to the second interview, and once again did well. I got the phone call from Facebook that they wanted to move to the final step, an interview in Menlo Park. They flew me down for the weekend and then I was to interview on the Monday. I had never been to California, so I was very excited to go.
+I moved on to the second interview, and once again did well. I got the phone call from Facebook that they wanted to move to the final step, an interview in Menlo Park. They flew me down for the weekend and then I was to interview on Monday. I had never been to California, so I was very excited to go.
 
-One of my cousins lives in California, so I also took the opportunity to visit some family. Aside from tha or, I contacted [Brian Vaughn](https://twitter.com/brian_d_vaughn), one of the core React team members just to see if he wanted to grab a bite to eat/coffee with a random Canadian. I’ll be honest, I generally do not ask strangers to meet up, but he seemed like such a nice person on Twitter and GitHub, that I just went for it. We grabbed some sushi and a coffee on the Sunday and just chit-chatted. It was really nice of him to do that while I was there.
+One of my cousins lives in California, so I also took the opportunity to visit some family. Aside from that or, I contacted [Brian Vaughn](https://twitter.com/brian_d_vaughn), one of the core React team members just to see if he wanted to grab a bite to eat/coffee with a random Canadian. I’ll be honest, I generally do not ask strangers to meet up, but he seemed like such a nice person on Twitter and GitHub, that I just went for it. We grabbed some sushi and a coffee on Sunday and just chit-chatted. It was really nice of him to do that while I was there.
 
-https://www.instagram.com/p/B3Aii_CpCP0/?utm_source=ig_web_copy_link
+https://www.instagram.com/p/B3Aii_CpCP0/
 
 Thanks Brian and I am definitely hooked on Philz coffee now! Philz Coffee… please come to Canada, specifically Montreal. 😆
 
@@ -102,7 +102,7 @@ And yes, I have a post about that, [Take Chances and Stand Out](https://www.iamd
 
 ## Building a Course
 
-This is a work in progress, but I started work on a TypeScript course. It's not finished yet and I have never written a course or any type of education material, but I am very excited to get it completed. Special shoutout to [Ali Spittel](https://twitter.com/ASpittel) for providing me with with some great coaching for writing this course.
+This is a work in progress, but I started work on a TypeScript course. It's not finished yet and I have never written a course or any type of education material, but I am very excited to get it completed. Special shoutout to [Ali Spittel](https://twitter.com/ASpittel) for providing me with some great coaching for writing this course.
 
 I will definitely let you all know when it's available.
 
