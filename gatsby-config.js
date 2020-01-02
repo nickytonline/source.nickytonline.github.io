@@ -187,7 +187,7 @@ module.exports = {
                                 // Important to exclude providers
                                 // that adds js to the page.
                                 // If you do not need them.
-                                include: ['Twitter'],
+                                include: ['Twitter', 'Instagram'],
                             },
                         },
                     },
