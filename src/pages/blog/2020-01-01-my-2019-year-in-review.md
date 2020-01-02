@@ -48,7 +48,7 @@ This year was my first year participating in Hacktoberfest. It was a fun endeavo
 
 https://www.instagram.com/p/B5WKOqIJZCX/
 
-### Open Source in 2020
+### Open-Source in 2020
 
 I will definitely continue to contribute to open source in 2020. What about you?
 
@@ -66,7 +66,7 @@ I put a couple back on as it’s the Christmas holidays, but will be getting bac
 
 ## Automating Deployments for My Site
 
-I don’t know about you, but updating dependencies for your site is a pain because if you need to build with the new dependencies and make sure everything still works fine. Or even code changes for new stuff. For my blog, it is not a mission-critical site, but I took my Cypress knowledge, a dash of Dependabot and Netlify to put it all together. Let the robots do the heavy lifting.
+I don’t know about you, but updating dependencies for your site is a pain because you need to make sure everything still works fine. Or even code changes for new stuff. For my blog, it is not a mission-critical site, but I took my Cypress knowledge, a dash of Dependabot and Netlify to put it all together. Let the robots do the heavy lifting.
 
 I have probably already saved a good 50 hours this year not updating and testing dependency updates and will probably save myself hundreds of hours, maybe the low thousands of hours next year.
 
