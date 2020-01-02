@@ -58,7 +58,7 @@ I’ve been athletic pretty much since elementary school, but in recent years, I
 
 https://www.instagram.com/p/B0ClFBSJ4Hu/
 
-Initially, it was quite tough, because even though I had completed my physiotherapy for my torn calf, I was nowhere near being in any kind of running shape. I ended up joining an Orange Theory and the rest was history. I busted my but and got back into pretty awesome shape, dropping literally 35-40lbs of fat.
+Initially, it was quite tough, because even though I had completed my physiotherapy for my torn calf, I was nowhere near being in any kind of running shape. I ended up joining an Orange Theory and the rest was history. I busted my butt and got back into pretty awesome shape, dropping literally 35-40lbs of fat.
 
 https://www.instagram.com/p/B1xaOVvp820/
 
