@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: My 2019 in Review
-devto_link:
+devto_link: 'https://dev.to/nickytonline/my-2019-year-in-review-23i1'
 date: 2020-01-01T12:05:30.273Z
 description: A recap of my 2019
 tags:
@@ -83,6 +83,8 @@ One day, I received a message on LinkedIn and noticed that it was a message from
 I passed the initial phone screen and then prepped for my first interview with a frontend engineer from one of the teams at Facebook. I spent a lot of time preparing, and ended up doing really well. To be honest, I didn’t think I would make it past the first interview. I just always assumed the big companies were never achievable. A side effect of having imposter syndrome even after years of experience. 🙃
 
 I moved on to the second interview, and once again did well. I got the phone call from Facebook that they wanted to move to the final step, an interview in Menlo Park. They flew me down for the weekend and then I was to interview on Monday. I had never been to California, so I was very excited to go.
+
+![Facebook badge](/img/fb_badge.png)
 
 One of my cousins lives in California, so I also took the opportunity to visit some family. Aside from that or, I contacted [Brian Vaughn](https://twitter.com/brian_d_vaughn), one of the core React team members just to see if he wanted to grab a bite to eat/coffee with a random Canadian. I’ll be honest, I generally do not ask strangers to meet up, but he seemed like such a nice person on Twitter and GitHub, that I just went for it. We grabbed some sushi and a coffee on Sunday and just chit-chatted. It was really nice of him to do that while I was there.
 
