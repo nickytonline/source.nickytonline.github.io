@@ -80,7 +80,7 @@ I improved the page load times of the product I work on, [Shotgun](https://shotg
 
 One day, I received a message on LinkedIn and noticed that it was a message from a recruiter from Facebook. Even though I was quite happy with my current job, it seemed silly not to entertain the thought of potentially working at Facebook and the fact that they contacted me made me feel pretty good.
 
-I passed the initial phone screen and then prepped for my first interview with a frontend engineer from one of the teams at Facebook. I spent a lot of time preparing, and ended up doing really well. To be honest, I didn’t think I would make it past the first interview. I just always assumed the big companies were never achievable. A side effect of having imposter syndrome even after years of experience. 🙃
+I passed the initial phone screen and then prepped for my first interview that would be with a frontend engineer from one of the teams at Facebook. I spent a lot of time preparing, and ended up doing really well. To be honest, I didn’t think I would make it past the first interview. I just always assumed the big companies were never achievable. A side effect of having imposter syndrome even after years of experience. 🙃
 
 I moved on to the second interview, and once again did well. I got the phone call from Facebook that they wanted to move to the final step, an interview in Menlo Park. They flew me down for the weekend and then I was to interview on Monday. I had never been to California, so I was very excited to go.
 
