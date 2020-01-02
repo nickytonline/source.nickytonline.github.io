@@ -112,6 +112,10 @@ I will definitely let you all know when it's available.
 
 I created the [@vscodetips](https://twitter.com/vscodetips) Twitter account back in September 2017 and it looks like this year, it’s gained a lot of traction. It gained ~2000 users in 2019. By no means a huge amount of followers in the Twittersphere at almost 3500 users, but I’m still pretty happy about that. People seemed to enjoy the tips I post or things I retweet related to VS Code. If you’re one of VS Code Tips followers, thanks!
 
+https://twitter.com/vscodetips/status/1212631550321451008
+
+VS Code tips is [also on DEV](https://dev.to/vscodetips), but I have not done much there yet.
+
 ## New Beginnings Starting in 2020
 
 As the year came to a close, I decided to accept an unbelievably amazing opportunity. I am very excited about it! It is a fully remote position working with a dope team. I cannot wait to get started. I will share more about this in early 2020.
