@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: My 2019 in Review
+title: My 2019 Year in Review
 devto_link: 'https://dev.to/nickytonline/my-2019-year-in-review-23i1'
 date: 2020-01-01T12:05:30.273Z
 description: A recap of my 2019
