@@ -5,7 +5,7 @@ devto_link: 'https://dev.to/nickytonline/my-2019-year-in-review-23i1'
 date: 2020-01-01T12:05:30.273Z
 description: A recap of my 2019
 tags:
-    - yearinreview
+  - yearinreview
 ---
 
 ## The Intro
@@ -44,7 +44,7 @@ I [continued to contribute](https://github.com/thepracticaldev/dev.to/commits?au
 
 ### Hacktoberfest
 
-This year was my first year participating in Hacktoberfest. It was a fun endeavour which included contributions to DEV as well as adding some automation for properly formatting markdown files for the learnstorybook.com project. You can read about it in my post, [My Hacktoberfest 2019](/blog/2019-10-14-my-hacktoberfest-2019/).
+This year was my first year participating in Hacktoberfest. It was a fun endeavour which included contributions to DEV as well as adding some automation for properly formatting markdown files for the [learnstorybook.com](https://www.learnstorybook.com/) project. You can read about it in my post, [My Hacktoberfest 2019](/blog/2019-10-14-my-hacktoberfest-2019/).
 
 https://www.instagram.com/p/B5WKOqIJZCX/
 
