@@ -126,6 +126,10 @@ const BlogPost: React.FC<BlogPostProps> = ({ data }) => {
                             name="description"
                             content={`${post.frontmatter.description}`}
                         />
+                        <meta
+                            name="twitter:description"
+                            content={`${post.frontmatter.description}`}
+                        />
                     </Helmet>
                 }
                 tags={post.frontmatter.tags}
