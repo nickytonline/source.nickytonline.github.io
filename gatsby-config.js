@@ -144,7 +144,22 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
-                    'gatsby-remark-social-cards',
+                    {
+                        resolve: 'gatsby-remark-social-cards',
+                        options: {
+                            title: {
+                                style: 'bold',
+                                size: 32,
+                            },
+                            meta: {
+                                parts: [
+                                    '- Nick Taylor » ',
+                                    { field: 'date', format: 'mmmm dS, yyyy' },
+                                ],
+                            },
+                            background: '#d2cffd',
+                        },
+                    },
                     {
                         resolve: `gatsby-remark-prismjs`,
                         options: {
