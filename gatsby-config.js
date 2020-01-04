@@ -100,6 +100,7 @@ module.exports = {
                             destinationDir: 'static',
                         },
                     },
+                    'gatsby-remark-social-cards',
                 ],
             },
         },
