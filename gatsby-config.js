@@ -100,7 +100,6 @@ module.exports = {
                             destinationDir: 'static',
                         },
                     },
-                    'gatsby-remark-social-cards',
                 ],
             },
         },
@@ -145,6 +144,7 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
+                    'gatsby-remark-social-cards',
                     {
                         resolve: `gatsby-remark-prismjs`,
                         options: {
