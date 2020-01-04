@@ -15,22 +15,22 @@ import commonStyles from './common-page.module.scss';
 
 export type ContactPageTemplateProps = PageTemplateProps;
 
-export const ContactPageTemplate: React.FC<
-ContactPageTemplateProps
-> = React.memo(({ title, content, contentComponent }) => {
-    const PageContent = contentComponent || Content;
+export const ContactPageTemplate: React.FC<ContactPageTemplateProps> = React.memo(
+    ({ title, content, contentComponent }) => {
+        const PageContent = contentComponent || Content;
 
-    return (
-        <Section
-            className={`${styles.contactBackground} ${commonStyles.commonPage}`}
-        >
-            <Container>
-                <PageTitle>{title}</PageTitle>
-                <PageContent className="content" content={content} />
-            </Container>
-        </Section>
-    );
-});
+        return (
+            <Section
+                className={`${styles.contactBackground} ${commonStyles.commonPage}`}
+            >
+                <Container>
+                    <PageTitle>{title}</PageTitle>
+                    <PageContent className="content" content={content} />
+                </Container>
+            </Section>
+        );
+    },
+);
 
 ContactPageTemplate.displayName = 'ContactPageTemplate';
 
@@ -49,7 +49,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ data }) => {
     const { markdownRemark: post } = data;
 
     return (
-        <Layout>
+        <Layout slug="/contact/">
             <ContactPageTemplate
                 contentComponent={HTMLContent}
                 title={post.frontmatter.title}

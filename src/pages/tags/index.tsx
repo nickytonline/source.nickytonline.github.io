@@ -25,7 +25,7 @@ const TagsPage: React.FC<TagsPageProps> = ({
         },
     },
 }) => (
-    <Layout>
+    <Layout slug="/tags/">
         <Section>
             <Helmet title={`Tags | ${title}`} />
             <Container className={`content ${styles.content}`}>

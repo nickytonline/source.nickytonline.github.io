@@ -4,7 +4,7 @@ import { Layout, PageTitle, Section, Container } from 'components';
 import styles from './404.module.scss';
 
 const NotFoundPage: React.FC<{}> = () => (
-    <Layout>
+    <Layout slug="/">
         <Section className={styles.notFoundBackground}>
             <Container>
                 <PageTitle>NOT FOUND</PageTitle>

@@ -37,7 +37,7 @@ const TagRoute: React.FC<TagRouteProps> = React.memo(
         } tagged with “${tag}”`;
 
         return (
-            <Layout>
+            <Layout slug={`/tags/${tag}/`}>
                 <Section>
                     <Helmet title={`${tag} | ${title}`} />
                     <Container className="content">

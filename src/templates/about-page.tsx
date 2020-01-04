@@ -46,7 +46,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
     const { markdownRemark: post } = data;
 
     return (
-        <Layout>
+        <Layout slug="/about/">
             <AboutPageTemplate
                 contentComponent={HTMLContent}
                 title={post.frontmatter.title}

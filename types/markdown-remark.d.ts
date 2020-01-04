@@ -6,5 +6,9 @@ export interface MarkdownRemark {
         description: string;
         tags: string[];
     };
+
+    fields: {
+        slug: string;
+    };
     html: string;
 }

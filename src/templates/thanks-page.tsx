@@ -52,7 +52,7 @@ const ThanksPage: React.FC<ThanksPageProps> = ({ data }) => {
     const { markdownRemark: post } = data;
 
     return (
-        <Layout>
+        <Layout slug="/thanks/">
             <ThanksPageTemplate
                 contentComponent={HTMLContent}
                 title={post.frontmatter.title}

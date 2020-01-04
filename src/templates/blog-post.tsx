@@ -113,7 +113,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ data }) => {
     const { markdownRemark: post } = data;
 
     return (
-        <Layout>
+        <Layout slug={post.fields.slug}>
             <BlogPostTemplate
                 content={post.html}
                 contentComponent={HTMLContent}
@@ -152,6 +152,10 @@ export const pageQuery = graphql`
                 devto_link
                 description
                 tags
+            }
+
+            fields {
+                slug
             }
         }
     }
