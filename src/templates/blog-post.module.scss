@@ -37,6 +37,8 @@
 }
 
 .postContent {
+    max-width: 60ch;
+
     a {
         @include dope-link-style;
     }
