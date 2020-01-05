@@ -78,6 +78,12 @@ const arrayToFlatten = [ [1,2,3], [4,5,6], [7,8,9] ];
 const flattenedArray = [].concat(...arrayToFlatten);
 ```
 
+2020 Update for the above is
+
+```javascript
+[ [1,2,3], [4,5,6], [7,8,9] ].flatMap(x=>x)
+```
+
 Leave your suggestions [here](https://dev.to/nickytonline/handy-js-snippets-352f/#comments).
 
 And go!
