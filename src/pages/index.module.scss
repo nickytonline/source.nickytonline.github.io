@@ -1,16 +1,16 @@
 @import '../components/vars';
 
 .postDate {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
 }
 
 .mainBackground {
-  @media screen and (min-width: 1025px) {
-    & {
-      background-image: url(/img/undraw_post_online_dkuk.svg);
-      padding-bottom: calc(100vw * 0.25);
+    @media screen and (min-width: 1025px) {
+        & {
+            background-image: url(/img/undraw_blooming_jtv6.svg);
+            padding-bottom: calc(100vw * 0.25);
+        }
     }
-  }
 }

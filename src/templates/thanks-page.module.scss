@@ -1,18 +1,18 @@
 @import '../components/mixins';
 
 .thanks.thanks {
-  ul {
-    @include dope-list('👏');
-  }
+    ul {
+        @include dope-list('👏');
+    }
 }
 
 .thanksBackground {
-  @media screen and (min-width: 813px) {
-    & {
-      background-size: calc(100vw * 0.3);
-      background-position-x: center;
-      background-position-y: center;
-      background-image: url(/img/undraw_having_fun_iais.svg);
+    @media screen and (min-width: 813px) {
+        & {
+            background-size: calc(100vw * 0.3);
+            background-position-x: center;
+            background-position-y: center;
+            background-image: url(/img/undraw_good_team_m7uu.svg);
+        }
     }
-  }
 }
