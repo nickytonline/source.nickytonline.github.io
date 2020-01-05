@@ -26,3 +26,7 @@ I'm going to throw out a couple here that I might consider, but I'd love to hear
 </center>
 
 You can [leave your suggestions here](https://dev.to/nickytonline/looking-for-great-headphones-10pl/#comments).
+
+** UPDATE JANUARY 4TH, 2020 **
+
+I decided to go with the Sony WH-1000XM3.
