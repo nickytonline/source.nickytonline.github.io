@@ -2,7 +2,7 @@
 templateKey: about-page
 title: About Me
 ---
-<div><img src="/img/nick.jpg" width="150" height="150" alt="Nick Taylor profile photo" class="profile-photo" /> I am a Senior Software Developer at Autodesk working on the <a href="https://www.shotgunsoftware.com" title="Shotgun">Shotgun</a> product. I am a big fan of TypeScript, JavaScript, React and Node. Once upon a time, I was into C#/ASP.NET. Aside from programming, I enjoy hitting the gym, snowboarding in the winter and a long long time ago, rugby. I am also not a big fan of spiders. <img src="/img/nick-rugby.jpg" alt="Nick playing rugby" width="150" height="150" class="sports-photo" /></div>
+<div><img src="/img/nick.jpg" width="150" height="150" alt="Nick Taylor profile photo" class="profile-photo" /> My name is Nick Taylor. I am a Senior Software Developer at Autodesk working on the <a href="https://www.shotgunsoftware.com" title="Shotgun">Shotgun</a> product. I am a big fan of TypeScript, JavaScript, React and Node. Once upon a time, I was into C#/ASP.NET. Aside from programming, I enjoy hitting the gym, snowboarding in the winter and a long long time ago, rugby. I am also not a big fan of spiders. <img src="/img/nick-rugby.jpg" alt="Nick playing rugby" width="150" height="150" class="sports-photo" /></div>
 
 I enjoy contributing to open source. Here are some highlights of my most recent open source work.
 
