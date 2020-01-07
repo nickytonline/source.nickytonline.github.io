@@ -181,7 +181,7 @@ Emily Freeman ([@editingemily](https://dev.to/editingemily)) started this in I b
 
 DEV has so many great posts from people from all over the globe in regards to frontend. I'll share some that I love, but definitely navigate around. So many great ones.
 
-* [HTML can do that?](https://dev.to/ananyaneogi/html-can-do-that-c0n)
+* Ananya Neogi‘s post [HTML can do that?](https://dev.to/ananyaneogi/html-can-do-that-c0n)
 
 * Lydia Hallie's ([@lydiahallie](https://dev.to/lydiahallie)) posts on JavaScript
 
