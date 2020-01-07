@@ -284,4 +284,4 @@ Until next time peeps!
 
 ![Stay tuned](https://media.giphy.com/media/J4zA6LplubvC5weDyo/giphy.gif)
 
-[Join in the on DEV to comment](https://dev.to/nickytonline/frontend-developer-resources-246j/#comments)
+[Join in on the conversation on on DEV](https://dev.to/nickytonline/frontend-developer-resources-246j/#comments)
