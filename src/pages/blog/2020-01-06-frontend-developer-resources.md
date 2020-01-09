@@ -4,15 +4,16 @@ title: Frontend Developer Resources
 devto_link: 'https://dev.to/nickytonline/frontend-developer-resources-246j'
 date: 2020-01-06T05:00:00.000Z
 description: >-
-  Tools I use in my day-to-day as well as other resources that I use, even if
-  they aren't everyday "go-to"s in regards to frontend. I've also popped in some
-  resources that I think will just be helpful.
+    Tools I use in my day-to-day as well as other resources that I use, even if
+    they aren't everyday "go-to"s in regards to frontend. I've also popped in some
+    resources that I think will just be helpful.
 tags:
-  - frontend
-  - javascript
-  - css
-  - html
+    - frontend
+    - javascript
+    - css
+    - html
 ---
+
 The cover image is a partial screenshot of my site's thank you page, but the illustration comes from the wonderful work of Katerina Limpitsouni's [undraw.co](https://undraw.co)
 
 It’s 2020, post [year in review](https://dev.to/nickytonline/my-2019-year-in-review-23i1), so let’s start off with some 2020 content.
@@ -83,15 +84,15 @@ I purchased [Every Layout](https://every-layout.dev/) while on sale last year, b
 
 There are tonnes of sites out there, so I'm just going to drop a few since this post is already an 11 minute read LOL.
 
-* [CSS Tricks](https://css-tricks.com)
-* [MDN](https://developer.mozilla.org/)
-* [Dev Docs](https://devdocs.io)
+-   [CSS Tricks](https://css-tricks.com)
+-   [MDN](https://developer.mozilla.org/)
+-   [Dev Docs](https://devdocs.io)
 
 ### Know Your CSS Triggers
 
 I do not know the list of all CSS triggers by heart, so [CSS Triggers](https://csstriggers.com/) is a great resource.
 
-Also, speaking of CSS Tricks, here's a [short but quick explanation](https://css-tricks.com/css-triggers/) by Chris Coyier (@chriscoyier) about CSS triggers. 
+Also, speaking of CSS Tricks, here's a [short but quick explanation](https://css-tricks.com/css-triggers/) by Chris Coyier (@chriscoyier) about CSS triggers.
 
 ### Kata Time
 
@@ -101,8 +102,8 @@ One that I revisit every now and then is [JS Katas](https://jskatas.org/), previ
 
 This is a great genre of learning. There are paid resources, but a couple of notable free ones are:
 
-* [Flexbox Froggy](https://flexboxfroggy.com/)
-* [CSSBattle](https://cssbattle.dev/)
+-   [Flexbox Froggy](https://flexboxfroggy.com/)
+-   [CSSBattle](https://cssbattle.dev/)
 
 ### TypeScript
 
@@ -112,12 +113,11 @@ Having said that, I've worked on several large projects using TypeScript and can
 
 If you've been on the fence about TypeScript, consider giving it a try in 2020. There is a huge ecosystem of types now and a lot of the popular frameworks either provide out of the box support or pretty easy setups to get going with TypoScript:
 
-* React via [Create React App](https://create-react-app.dev/docs/adding-typescript/). TLDR; `npx create-react-app my-app --template typescript`
-* Angular (TypeScript out of the box)
-* Vue with [some simple setup]
-(https://vuejs.org/v2/guide/typescript.html)
-* Next.js (TypeScript out of the box)
-* [NestJS](https://nestjs.com/) has a [TypeScript Starter project](https://github.com/nestjs/typescript-starter)
+-   React via [Create React App](https://create-react-app.dev/docs/adding-typescript/). TLDR; `npx create-react-app my-app --template typescript`
+-   Angular (TypeScript out of the box)
+-   Vue with [some simple setup](https://vuejs.org/v2/guide/typescript.html)
+-   Next.js (TypeScript out of the box)
+-   [NestJS](https://nestjs.com/) has a [TypeScript Starter project](https://github.com/nestjs/typescript-starter)
 
 There is also [TSDX](https://github.com/jaredpalmer/tsdx), which is some fantastic work by Jared Palmer (@jaredpalmer). It's a great bootstrapping tool for TypeScript for different types of projects and it's officially endorsed by the TypeScript team.
 
@@ -151,6 +151,10 @@ This is the handy work of [Adam Argyle](https://www.twitter.com/argyleink).
 
 https://www.youtube.com/watch?v=lc9PZxX6mIQ
 
+**Update January 8th 2020:** Adam, Tweeted back to me that you can launch tota11y from VisBug. Cool stuff. Thanks Adam!
+
+https://twitter.com/argyleink/status/1215052867716804608?s=20
+
 Note: This browser extension is currently only available for Chrome.
 
 ### Your Browser's Developer Tools
@@ -163,9 +167,9 @@ Someone that knows these tools well and that I highly suggest you follow is Umar
 
 What's going on with your web requests? Looks like there is a traffic jam. These tools have your back:
 
-* [Fiddler](https://www.telerik.com/download/fiddler) (cross-platform, but at the moment, it's only decent on a Windows machine.) Fiddler was my go-to for anything network related when I was on a Windows machine. Replaying requests, modifying payloads, proxying through it to capture traffic from the site/application you're working on.
-* [Postman](https://www.getpostman.com/)
-* [Postwoman](https://postwoman.io/). Here's a great post covering the 1.0 release, [Launching Postwoman v1.0 👽 - free, fast & beautiful alternative to Postman 🎉](https://dev.to/liyasthomas/postwoman-v1-0-a-free-fast-beautiful-alternative-to-postman-mn0).
+-   [Fiddler](https://www.telerik.com/download/fiddler) (cross-platform, but at the moment, it's only decent on a Windows machine.) Fiddler was my go-to for anything network related when I was on a Windows machine. Replaying requests, modifying payloads, proxying through it to capture traffic from the site/application you're working on.
+-   [Postman](https://www.getpostman.com/)
+-   [Postwoman](https://postwoman.io/). Here's a great post covering the 1.0 release, [Launching Postwoman v1.0 👽 - free, fast & beautiful alternative to Postman 🎉](https://dev.to/liyasthomas/postwoman-v1-0-a-free-fast-beautiful-alternative-to-postman-mn0).
 
 ### Josh Comeau's Picks
 
@@ -181,13 +185,13 @@ Emily Freeman ([@editingemily](https://dev.to/editingemily)) started this in I b
 
 DEV has so many great posts from people from all over the globe in regards to frontend. I'll share some that I love, but definitely navigate around. So many great ones.
 
-* Ananya Neogi‘s post [HTML can do that?](https://dev.to/ananyaneogi/html-can-do-that-c0n)
+-   Ananya Neogi‘s post [HTML can do that?](https://dev.to/ananyaneogi/html-can-do-that-c0n)
 
-* Lydia Hallie's ([@lydiahallie](https://dev.to/lydiahallie)) posts on JavaScript
+-   Lydia Hallie's ([@lydiahallie](https://dev.to/lydiahallie)) posts on JavaScript
 
 https://twitter.com/dabit3/status/1213135686502699008
 
-* Michael Chan's [React Holiday Series](https://dev.to/chantastic/learn-react-in-25-short-lessons-react-holiday-2019-24np)
+-   Michael Chan's [React Holiday Series](https://dev.to/chantastic/learn-react-in-25-short-lessons-react-holiday-2019-24np)
 
 ### Visual Studio Code
 
@@ -225,13 +229,12 @@ More and more development is being done directly on the web, whether it be proof
 
 Here's some staples:
 
-* [codepen](https://codepen.io/)
-* [CodeSandbox](https://codesandbox.io/)
-* [Stackblitz](https://stackblitz.com/)
-* [jsbin](https://jsbin.com/)
-* [jsfiddle](https://jsfiddle.net/)
-* [repl.it](https://repl.it/)
-
+-   [codepen](https://codepen.io/)
+-   [CodeSandbox](https://codesandbox.io/)
+-   [Stackblitz](https://stackblitz.com/)
+-   [jsbin](https://jsbin.com/)
+-   [jsfiddle](https://jsfiddle.net/)
+-   [repl.it](https://repl.it/)
 
 ## Paid Tools/Resources
 
@@ -255,7 +258,7 @@ As mentioned above, I purchased [Every Layout](https://every-layout.dev/checkout
 
 There are browser extensions that do part of what xScope does, but a few years ago, a co-worker introduced me to [xScope](https://xscope.app). The only downside to this tool is that it is only available for Mac. If you are on a Mac though, I highly recommend it.
 
-![Screenshot of xScope in action](/img/xscope_screenshot.png) 
+![Screenshot of xScope in action](/img/xscope_screenshot.png)
 
 ### Sizzy
 
@@ -267,10 +270,10 @@ There are browser extensions that do part of what xScope does, but a few years a
 
 These will most likely not come as a surprise, but it's worth mentioning them.
 
-* [Egghead](https://egghead.io) (a happy subscriber)
-* [Frontend Masters](https://frontendmasters.com/) (a happy subscriber. Thank you for the subscription [Shotgun](https://www.shotgunsoftware.com/)!)
-* [testingjavascript.com](https://testingjavascript.com/) (a happy license owner. Thanks x 2 Shotgun!)
-* Anything Wes Bos. Check out his [courses](https://wesbos.com/courses/).
+-   [Egghead](https://egghead.io) (a happy subscriber)
+-   [Frontend Masters](https://frontendmasters.com/) (a happy subscriber. Thank you for the subscription [Shotgun](https://www.shotgunsoftware.com/)!)
+-   [testingjavascript.com](https://testingjavascript.com/) (a happy license owner. Thanks x 2 Shotgun!)
+-   Anything Wes Bos. Check out his [courses](https://wesbos.com/courses/).
 
 Also, there is a new kid on the block, [Educative](https://educative.io). Looks like they are gaining some traction, so probably worth checking out as well. [They're also on DEV](https://dev.to/educative), posting great content.
 
