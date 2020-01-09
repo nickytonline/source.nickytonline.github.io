@@ -4,14 +4,14 @@ title: Frontend Developer Resources
 devto_link: 'https://dev.to/nickytonline/frontend-developer-resources-246j'
 date: 2020-01-06T05:00:00.000Z
 description: >-
-    Tools I use in my day-to-day as well as other resources that I use, even if
-    they aren't everyday "go-to"s in regards to frontend. I've also popped in some
-    resources that I think will just be helpful.
+  Tools I use in my day-to-day as well as other resources that I use, even if
+  they aren't everyday "go-to"s in regards to frontend. I've also popped in some
+  resources that I think will just be helpful.
 tags:
-    - frontend
-    - javascript
-    - css
-    - html
+  - frontend
+  - javascript
+  - css
+  - html
 ---
 
 The cover image is a partial screenshot of my site's thank you page, but the illustration comes from the wonderful work of Katerina Limpitsouni's [undraw.co](https://undraw.co)
@@ -151,7 +151,7 @@ This is the handy work of [Adam Argyle](https://www.twitter.com/argyleink).
 
 https://www.youtube.com/watch?v=lc9PZxX6mIQ
 
-**Update January 8th 2020:** Adam, Tweeted back to me that you can launch tota11y from VisBug. Cool stuff. Thanks Adam!
+**Update January 8th 2020:** Adam Tweeted back to me that you can launch tota11y from VisBug. Cool stuff. Thanks Adam!
 
 https://twitter.com/argyleink/status/1215052867716804608?s=20
 
