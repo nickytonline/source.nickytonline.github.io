@@ -21,6 +21,8 @@ Thanks to all the wonderful projects that made it possible to build this blog.
 - [Dependabot](https://dependabot.com 'Dependabot website')
 - and OSS in general.
 
+I wrote about automating my deployments for those interested in my post [Update Dependencies with Dependabot, Cypress and Netlify](https://dev.to/nickytonline/update-dependencies-with-dependabot-cypress-and-netlify-3lkf).
+
 To get up and running:
 
 - clone the repository by running `git clone git@github.com:nickytonline/www.iamdeveloper.com.git` or `git clone https://github.com/nickytonline/www.iamdeveloper.com.git`
