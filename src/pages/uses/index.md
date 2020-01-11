@@ -3,9 +3,9 @@ templateKey: uses-page
 title: Uses
 ---
 
-Like many developers, I decided to make a **uses** page as well. If you decide to make your own, consider adding it to [uses.tech](https://uses.tech]) that was created by [Wes Bos](https://twitter.com/wesbos).
+This page details pretty much all I use as a developer. If you decide to make your own, consider adding it to [uses.tech](https://uses.tech]) that was created by [Wes Bos](https://twitter.com/wesbos).
 
-I use a Mac so most tools are OS agnostic, but there are definitely some Mac only ones, e.g. xScope.
+I use a Mac so most tools are macOS specific, but there are definitely some OS agnostic ones in the list as well.
 
 ## Editor
 
