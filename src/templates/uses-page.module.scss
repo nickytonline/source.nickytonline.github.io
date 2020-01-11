@@ -1,0 +1,15 @@
+@import '../components/mixins';
+
+.usesBackground {
+    @media screen and (min-width: 813px) {
+        & {
+            background-image: url(/img/undraw_work_time_lhoj.svg);
+        }
+    }
+
+    .uses.uses {
+        ul {
+            @include dope-list('🛠️');
+        }
+    }
+}

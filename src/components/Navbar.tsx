@@ -111,6 +111,13 @@ export const Navbar: React.FC<NavbarProps> = React.memo(({ siteMetadata }) => {
                         >
                             Thanks
                         </Link>
+                        <Link
+                            className="navbar-item"
+                            to="/uses"
+                            aria-label="Uses"
+                        >
+                            Uses
+                        </Link>
                         {Object.entries(socialLinks).map(
                             ([id, { url, name }]) => (
                                 <SocialIcon
