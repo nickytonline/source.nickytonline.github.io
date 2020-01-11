@@ -10,7 +10,7 @@ I use a Mac so most tools are OS agnostic, but there are definitely some Mac onl
 ## Editor
 
 -   [VS Code Insider’s Edition](https://code.visualstudio.com/insiders/), here’s [my setup](https://www.iamdeveloper.com/blog/2017-12-20-my-visual-studio-code-setup/)
--   Theme: [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl) by [Sarah Drasner](https://twitter.com/sarah_edo) \* Occasionally I switch to [Material theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme).
+-   Theme: [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl) by [Sarah Drasner](https://twitter.com/sarah_edo) - Occasionally I switch to [Material theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme).
 -   Font: [Dank Mono](https://dank.sh) by [Phil Plückthun](https://twitter.com/_philpl)
 
 ### Chrome/Brave/Firefox Browser Extensions
@@ -33,7 +33,7 @@ https://twitter.com/argyleink/status/1215052867716804608
 -   [Alfred](https://www.alfredapp.com/) - Workflows, snippets, MacOS spotlight on steroids
 -   [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) - Prevent your Mac from going to sleep
 -   [f.lux](https://justgetflux.com/) - Be kind to your eyeballs
--   [Fork](https://git-fork.com/) - Visualize your git repos
+-   [Fork](https://git-fork.com/) - A great git GUI
 -   [Bear](https://bear.app/) - Awesome note taking app
 -   [Better Touch Tool](https://folivora.ai/) - Add extra gestures to your mouse/trackpad
 -   [Docker Desktop](https://www.docker.com/products/docker-desktop) - Because Docker

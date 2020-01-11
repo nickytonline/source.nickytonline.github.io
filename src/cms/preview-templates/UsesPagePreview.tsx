@@ -4,7 +4,7 @@ import { PagePreviewProps } from './page-preview-props';
 
 export type UsesPagePreviewProps = PagePreviewProps;
 
-export const ThanksPagePreview: React.FC<UsesPagePreviewProps> = ({
+export const UsesPagePreview: React.FC<UsesPagePreviewProps> = ({
     entry,
     widgetFor,
 }) => (
@@ -14,4 +14,4 @@ export const ThanksPagePreview: React.FC<UsesPagePreviewProps> = ({
     />
 );
 
-ThanksPagePreview.displayName = 'ThanksPagePreview';
+UsesPagePreview.displayName = 'UsesPagePreview';
