@@ -25,6 +25,8 @@ https://twitter.com/argyleink/status/1215052867716804608
 
 -   [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) - Because React
 -   [Axe](https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd) - For web accessibility testing
+-   [HTTPS Everywhere](https://www.eff.org/https-everywhere) - What it's called is what it does 😉 (not required for Brave browser)
+-   [uBlock](https://ublock.org/) - An ad blocker (not required for Brave browser)
 
 ## Desktop Apps
 
@@ -52,12 +54,17 @@ Also, for those interested, here’s a big list I made for [Frontend Developer R
 
 ## Office Setup
 
--   Desk: [MotionGrey Adjustable Dual Motors Electric Sit to Stand Computer Office Standing Desk](https://www.bestbuy.ca/en-ca/product/motiongrey-adjustable-dual-motors-electric-sit-to-stand-computer-office-standing-desk-black-frame-table-top-included/12852211) - I snagged it at a great price. IT appears to go on sale often.
+-   Desk: [MotionGrey Adjustable Dual Motors Electric Sit to Stand Computer Office Standing Desk](https://www.bestbuy.ca/en-ca/product/motiongrey-adjustable-dual-motors-electric-sit-to-stand-computer-office-standing-desk-black-frame-table-top-included/12852211) - I snagged it at a great price. It appears to go on sale often.
 -   Headphones: [Sony WH-1000XM3](https://www.sony.com/electronics/headband-headphones/wh-1000xm3/buy/wh1000xm3-s) - I snagged them during Boxing Day week.
 -   Stand for Mac: [Rain mStand 360](https://www.raindesigninc.com/mstand360.html)
 -   Wireless charger for phone: [Anker Wireless Charger](https://www.amazon.ca/gp/product/B07THL8PP1/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1)
 -   Web Cam: If at my desk, I use the [Logitech C922x Pro Stream Webcam](https://www.amazon.ca/gp/product/B01LXCDPPK/ref=ppx_yo_dt_b_asin_image_o07_s00?ie=UTF8&psc=1)
--   Office air purifier: [LEVOIT Air Purifier Core 300](https://www.amazon.ca/gp/product/B07S3D4MRJ/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1)
--   [Laptop Webcam Cover](https://www.amazon.ca/gp/product/B0748FZX99/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
+    -   [Laptop Webcam Cover](https://www.amazon.ca/gp/product/B0748FZX99/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
+-   [iKross Single Monitor Desk Mount with Free Stand Base](https://www.amazon.ca/gp/product/B07CVR6355)
+-   [BenQ GW2760HS 27-inch FHD 1920x1080 HDMI VGA LED Monitor](https://www.amazon.com/BenQ-GW2760HS-27-inch-1920x1080-Monitor/dp/B00ITORMDC)
+-   [Anker Premium 60W 5-Port Desktop Charger](https://www.amazon.ca/gp/product/B072K5ZJXF)
+-   [Seagate Backup Plus Slim 2TB External Drive](https://www.amazon.ca/gp/product/B00FRHTTIA)
+-   [Anker USB-C to HDMI Adapter](http://amazon.ca/gp/product/B01MYUCWOK)
 -   Working from home sneakers: [Under Armour Men’s Charged Commit 2.0 Cross Trainer](https://www.amazon.ca/gp/product/B07HKTJN5F/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
 -   Footrest for standing desk: [HOMCOM Ergonomic Footrest Adjustable Height and Angle Home Office Foot Rest Stool](https://www.amazon.ca/gp/product/B07331MQNW/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
+-   Office air purifier: [LEVOIT Air Purifier Core 300](https://www.amazon.ca/gp/product/B07S3D4MRJ/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1)
