@@ -57,9 +57,9 @@ Also, for those interested, here’s a big list I made for [Frontend Developer R
 -   Desk: [MotionGrey Adjustable Dual Motors Electric Sit to Stand Computer Office Standing Desk](https://www.bestbuy.ca/en-ca/product/motiongrey-adjustable-dual-motors-electric-sit-to-stand-computer-office-standing-desk-black-frame-table-top-included/12852211) - I snagged it at a great price. It appears to go on sale often.
 -   Headphones: [Sony WH-1000XM3](https://www.sony.com/electronics/headband-headphones/wh-1000xm3/buy/wh1000xm3-s) - I snagged them during Boxing Day week.
 -   Stand for Mac: [Rain mStand 360](https://www.raindesigninc.com/mstand360.html)
--   Wireless charger for phone: [Anker Wireless Charger](https://www.amazon.ca/gp/product/B07THL8PP1/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1)
--   [Logitech C922x Pro Stream Webcam](https://www.amazon.ca/gp/product/B01LXCDPPK/ref=ppx_yo_dt_b_asin_image_o07_s00?ie=UTF8&psc=1)
-    -   [Laptop Webcam Cover](https://www.amazon.ca/gp/product/B0748FZX99/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
+-   Wireless charger for phone: [Anker Wireless Charger](https://www.amazon.ca/gp/product/B07THL8PP1)
+-   [Logitech C922x Pro Stream](https://www.amazon.ca/gp/product/B01LXCDPPK/) webcam
+    -   [Laptop Webcam Cover](https://www.amazon.ca/gp/product/B0748FZX99/)
 -   [iKross Single Monitor Desk Mount with Free Stand Base](https://www.amazon.ca/gp/product/B07CVR6355)
 -   [BenQ GW2760HS 27-inch FHD 1920x1080 HDMI VGA LED Monitor](https://www.amazon.com/BenQ-GW2760HS-27-inch-1920x1080-Monitor/dp/B00ITORMDC)
 -   [Anker Premium 60W 5-Port Desktop Charger](https://www.amazon.ca/gp/product/B072K5ZJXF)
