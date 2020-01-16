@@ -46,56 +46,60 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = React.memo(
                 {helmet}
                 <Container className="content">
                     <div className="columns">
-                        <div className="column is-10 is-offset-1">
-                            <div className={styles.postDate}>{date}</div>
-                            <PageTitle>{title}</PageTitle>
-                            <ul className={styles.metaData}>
-                                {devtoLink ? (
-                                    <li className={styles.devtoLink}>
-                                        <a href={devtoLink}>
-                                            Post also available on dev.to
-                                        </a>
-                                    </li>
-                                ) : null}
+                        <article className="column is-10 is-offset-1">
+                            <header>
+                                <time className={styles.postDate}>{date}</time>
+                                <PageTitle>{title}</PageTitle>
+                                <ul className={styles.metaData}>
+                                    {devtoLink ? (
+                                        <li className={styles.devtoLink}>
+                                            <a href={devtoLink}>
+                                                Post also available on dev.to
+                                            </a>
+                                        </li>
+                                    ) : null}
 
-                                <li className={styles.postDescription}>
-                                    {description}
-                                </li>
-                            </ul>
-                            <SocialLinks
-                                className={styles.socialLinks}
-                                message={title}
-                                url={url}
-                                tags={tags}
-                            />
+                                    <li className={styles.postDescription}>
+                                        {description}
+                                    </li>
+                                </ul>
+                                <SocialLinks
+                                    className={styles.socialLinks}
+                                    message={title}
+                                    url={url}
+                                    tags={tags}
+                                />
+                            </header>
                             <PostContent
                                 className={styles.postContent}
                                 content={content}
                             />
-                            <SocialLinks
-                                className={styles.socialLinksBottom}
-                                message={title}
-                                url={url}
-                                tags={tags}
-                            />
-                            {tags && tags.length ? (
-                                <div className={styles.tagContainer}>
-                                    <h4>Tags</h4>
-                                    <ul className={styles.tagList}>
-                                        {tags.map(tag => (
-                                            <li key={`${tag}tag`}>
-                                                <BlogTag
-                                                    url={`/tags/${kebabCase(
-                                                        tag,
-                                                    )}/`}
-                                                    name={tag}
-                                                />
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ) : null}
-                        </div>
+                            <footer>
+                                <SocialLinks
+                                    className={styles.socialLinksBottom}
+                                    message={title}
+                                    url={url}
+                                    tags={tags}
+                                />
+                                {tags && tags.length ? (
+                                    <div className={styles.tagContainer}>
+                                        <h4>Tags</h4>
+                                        <ul className={styles.tagList}>
+                                            {tags.map(tag => (
+                                                <li key={`${tag}tag`}>
+                                                    <BlogTag
+                                                        url={`/tags/${kebabCase(
+                                                            tag,
+                                                        )}/`}
+                                                        name={tag}
+                                                    />
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ) : null}
+                            </footer>
+                        </article>
                     </div>
                 </Container>
             </Section>

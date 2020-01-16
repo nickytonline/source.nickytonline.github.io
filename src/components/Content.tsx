@@ -9,7 +9,7 @@ export type HtmlContentProps = ContentProps<string>;
 
 export const HTMLContent: React.FC<HtmlContentProps> = React.memo(
     ({ content, className }) => (
-        <div
+        <main
             className={className}
             dangerouslySetInnerHTML={{ __html: content }}
         />
@@ -19,7 +19,7 @@ export const HTMLContent: React.FC<HtmlContentProps> = React.memo(
 HTMLContent.displayName = 'HTMLContent';
 
 export const Content: React.FC<ContentProps> = ({ content, className }) => (
-    <div className={className}>{content}</div>
+    <main className={className}>{content}</main>
 );
 
 Content.displayName = 'Content';
