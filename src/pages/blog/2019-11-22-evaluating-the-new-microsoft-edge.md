@@ -51,6 +51,4 @@ I will just end with this. The new Microsoft Edge is still in Beta, so the annoy
 
 In the meantime, I am going to Tweet them this post to provide them with my constructive feedback.
 
-Feel free to [leave some feeback here](https://dev.to/nickytonline/evaluating-the-new-microsoft-edge-4m1j/#comments).
-
 Happy coding!

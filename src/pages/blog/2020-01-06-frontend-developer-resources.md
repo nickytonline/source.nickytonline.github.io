@@ -4,14 +4,14 @@ title: Frontend Developer Resources
 devto_link: 'https://dev.to/nickytonline/frontend-developer-resources-246j'
 date: 2020-01-06T05:00:00.000Z
 description: >-
-  Tools I use in my day-to-day as well as other resources that I use, even if
-  they aren't everyday "go-to"s in regards to frontend. I've also popped in some
-  resources that I think will just be helpful.
+    Tools I use in my day-to-day as well as other resources that I use, even if
+    they aren't everyday "go-to"s in regards to frontend. I've also popped in some
+    resources that I think will just be helpful.
 tags:
-  - frontend
-  - javascript
-  - css
-  - html
+    - frontend
+    - javascript
+    - css
+    - html
 ---
 
 The cover image is a partial screenshot of my site's thank you page, but the illustration comes from the wonderful work of Katerina Limpitsouni's [undraw.co](https://undraw.co)
@@ -286,5 +286,3 @@ If you have resources not listed that you think other frontend developers would 
 Until next time peeps!
 
 ![Stay tuned](https://media.giphy.com/media/J4zA6LplubvC5weDyo/giphy.gif)
-
-[Join in on the conversation on DEV](https://dev.to/nickytonline/frontend-developer-resources-246j/#comments)

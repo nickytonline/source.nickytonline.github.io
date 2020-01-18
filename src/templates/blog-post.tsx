@@ -14,6 +14,7 @@ import {
 } from 'components';
 import { MarkdownRemark } from 'types/markdown-remark';
 import { PageTemplateProps } from './page-template-props';
+import { DevToCommentLink } from './DevToCommentLink';
 import styles from './blog-post.module.scss';
 
 export type BlogPostTemplateProps = PageTemplateProps & {
@@ -73,6 +74,10 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = React.memo(
                             <PostContent
                                 className={styles.postContent}
                                 content={content}
+                            />
+                            <DevToCommentLink
+                                url={devtoLink}
+                                className={styles.postContent}
                             />
                             <footer>
                                 <SocialLinks

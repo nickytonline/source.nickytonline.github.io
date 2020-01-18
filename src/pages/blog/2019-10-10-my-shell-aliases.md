@@ -5,10 +5,11 @@ devto_link: 'https://dev.to/nickytonline/my-shell-aliases-1obk'
 date: 2019-10-11T01:45:17.110Z
 description: 'Some of the aliases I have for my preferred shell, zsh'
 tags:
-  - zsh
-  - cli
-  - shell
+    - zsh
+    - cli
+    - shell
 ---
+
 Everyone has their favourite aliases for git and the shell. I have written about [my git aliases](https://www.iamdeveloper.com/blog/2018-08-25-my-git-aliases/) before but not my shell aliases. It is not a long list, but I have some that I find useful that you may find useful as well.
 
 Currently, my preferred shell is zsh. Here is what I currently have in config.
@@ -33,4 +34,4 @@ crat() {
 
 The `edge` and `chrome` aliases are useful to me because I like to use VS Code when debugging. Having the browsers start up with remote debugging makes that process easier.
 
-What's in your shell aliases? [Leave a comment here](https://dev.to/nickytonline/my-shell-aliases-1obk#comments).
+What's in your shell aliases?

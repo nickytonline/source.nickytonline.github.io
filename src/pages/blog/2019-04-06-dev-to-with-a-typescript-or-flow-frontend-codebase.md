@@ -2,13 +2,13 @@
 templateKey: blog-post
 title: dev.to with a TypeScript or Flow frontend codebase?
 devto_link: >-
-  https://dev.to/nickytonline/dev-to-with-a-typescript-or-flow-frontend-codebase-1n33
+    https://dev.to/nickytonline/dev-to-with-a-typescript-or-flow-frontend-codebase-1n33
 date: 2019-04-07T03:37:54.849Z
 description: A discussion on porting the dev.to codebase to TypeScript or Flow
 tags:
-  - typescript
-  - flow
-  - devto
+    - typescript
+    - flow
+    - devto
 ---
 
 Before the [dev.to](https://dev.to) codebase was opensourced, I was working on it in the private repository and created an issue in there, [Consider using Flow or TypeScript in the Front-End Codebase](https://github.com/thepracticaldev/dev.to/issues/383#issue-351630725), that has since been copied to the public repository (thanks [@maestromac](https://dev.to/maestromac)!).
@@ -29,12 +29,12 @@ https://twitter.com/chantastic/status/1111321292966264832
 
 Also check out the [TypeScript tag](https://dev.to/t/typescript) on dev.to
 
-* [Unofficial Playground](https://www.iamdeveloper.com/blog/2019-02-25-an-enhanced-typescript-playground/)
-* [Official TypeScript Playground](https://www.typescriptlang.org/play/)
+-   [Unofficial Playground](https://www.iamdeveloper.com/blog/2019-02-25-an-enhanced-typescript-playground/)
+-   [Official TypeScript Playground](https://www.typescriptlang.org/play/)
 
 ## Flow
 
-[Flow](https://flow.org/) is another main option in the frontend in regards to types, although I've never used it myself. 
+[Flow](https://flow.org/) is another main option in the frontend in regards to types, although I've never used it myself.
 
 Here are some links if you want to read up on Flow.
 
@@ -61,7 +61,7 @@ If you really don't want to see the codebase converted to use types, that's OK t
 
 </center>
 
-Are static types something that would interest people in the dev.to community who are contributing to or are thinking about contributing to the frontend codebase? Feel free to discuss in the [comments on dev.to](https://dev.to/nickytonline/dev-to-with-a-typescript-or-flow-frontend-codebase-1n33#comments) and/or jump on over to the [GitHub issue](https://github.com/thepracticaldev/dev.to/issues/383#issue-351630725) and comment there.
+Are static types something that would interest people in the dev.to community who are contributing to or are thinking about contributing to the frontend codebase? Feel free to jump on over to the [GitHub issue](https://github.com/thepracticaldev/dev.to/issues/383#issue-351630725) and comment there.
 
 <center>
 
