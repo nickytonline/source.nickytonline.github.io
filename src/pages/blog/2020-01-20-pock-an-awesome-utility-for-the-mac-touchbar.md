@@ -18,6 +18,4 @@ I also do not really use the touch bar except for mapping it to function keys (<
 
 ![Keyboard preferences for mapping function keys in touch bar for certain apps](https://raw.githubusercontent.com/nickytonline/www.iamdeveloper.com/master/static/img/keyboard_settings_mapped_shortcuts_touchbar.png)
 
-Having said that, I came across a very interesting project a few weeks ago called Pock that lets you put the Dock into the touch bar. This combined with "permanently" hiding the Dock makes the touch bar more useful for me. If I'm honest, it's just to see if I have a Slack notification, but that alone is worth it.
-
-{%github https://github.com/pigigaldi/Pock %}
+Having said that, I came across a very interesting project a few weeks ago called [Pock](https://github.com/pigigaldi/Pock) that lets you put the Dock into the touch bar. This combined with "permanently" hiding the Dock makes the touch bar more useful for me. If I'm honest, it's just to see if I have a Slack notification, but that alone is worth it.
