@@ -109,7 +109,7 @@
     "@types/node": "12.12.14",
     "@types/react": "16.9.15",
     "@types/react-helmet": "5.0.14",
-    "@types/webpack": "4.41.0",
+    "@types/webpack": "4.41.3",
     "@typescript-eslint/eslint-plugin": "2.9.0",
     "@typescript-eslint/parser": "2.9.0",
     "babel-loader": "8.0.6",
