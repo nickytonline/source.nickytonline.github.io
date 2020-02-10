@@ -55,6 +55,7 @@ Also, for those interested, here’s a big list I made for [Frontend Developer R
 ## Office Setup
 
 -   Desk: [MotionGrey Adjustable Dual Motors Electric Sit to Stand Computer Office Standing Desk](https://www.bestbuy.ca/en-ca/product/motiongrey-adjustable-dual-motors-electric-sit-to-stand-computer-office-standing-desk-black-frame-table-top-included/12852211) - I snagged it at a great price. It appears to go on sale often.
+-   Chair: Herman Miller Aeron. These are pricey, so look out for one on online classifieds. I snagged one with a bunch of new parts for just under a third of the price.
 -   Headphones: [Sony WH-1000XM3](https://www.sony.com/electronics/headband-headphones/wh-1000xm3/buy/wh1000xm3-s) - I snagged them during Boxing Day week.
 -   Stand for Mac: [Rain mStand 360](https://www.raindesigninc.com/mstand360.html)
 -   Wireless charger for phone: [Anker Wireless Charger](https://www.amazon.ca/gp/product/B07THL8PP1)
