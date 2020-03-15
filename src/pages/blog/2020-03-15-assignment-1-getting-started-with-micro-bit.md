@@ -8,7 +8,7 @@ tags:
   - micro-bit
   - beginners
 ---
-[micro:bit](https://microbit.org/) Educational Foundation is an awesome initiative that was created by a [UK-based not for profit organization](https://microbit.org/about/) with the goal of getting everyone to learn to code. micro:bits are small pieces of hardware that you can program and it's a lot of fun.
+The [micro:bit](https://microbit.org/) Educational Foundation is an awesome initiative that was created by a [UK-based not for profit organization](https://microbit.org/about/) with the goal of getting everyone to learn to code. micro:bits are small pieces of hardware that you can program and it's a lot of fun.
 
 Most people I know are at home with their children due to COVID-19 at the moment, so I thought this would be a fun activity that your child or your child and you can do. Even as an adult, it's quite a lot of fun. 😃
 
